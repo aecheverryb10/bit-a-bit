@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
 	output: 'export',
-	// basePath: isProd ? './' : undefined,
+	assetPrefix: 'https://aecheverryb10.github.io/bit-a-bit'
 };
 
 export default nextConfig;
