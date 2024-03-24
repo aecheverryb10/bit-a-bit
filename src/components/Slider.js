@@ -1,27 +1,30 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import Image from "next/image";
+import FsLightbox from "fslightbox-react";
 
 //Swiper
 import { Swiper, SwiperSlide, } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/keyboard";
-
 import { Keyboard } from "swiper/modules";
 
 const Slider = (props) => {
     const { slides = [] } = props;
+    //States
+    const [isDisabled, setIsDisabled] = useState({ prev: true, next: false });
+    const [photo, setPhoto] = useState(0);
+    const [toggler, setToggler] = useState(false);
+    //Ref
     const swiperRef = useRef();
 
-    //States
-    const [isDisabled, setIsDisabled] = useState({ prev: swiperRef.current?.isBeginning, next: swiperRef.current?.isEnd });
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (swiperRef.current) {
             updateStateControllers()
         }
     }, []);
+
 
     const updateStateControllers = () => {
         setIsDisabled({
@@ -30,37 +33,40 @@ const Slider = (props) => {
         });
     }
 
+
     return (
         <div>
             <Swiper
                 keyboard={{
                     enabled: true,
                 }}
+                modules={[Keyboard]}
                 onKeyPress={(swiper, code) => {
-                    const AVAILABLE_KEYS =[37,39]
-                    if(AVAILABLE_KEYS.includes(code) ){
-                        updateStateControllers()
+                    const AVAILABLE_KEYS = [37, 39];
+                    if (AVAILABLE_KEYS.includes(code)) {
+                        updateStateControllers();
                     }
                 }}
-                modules={[Keyboard]}
                 onSwiper={swiper => swiperRef.current = swiper}
-                spaceBetween={50}
                 slidesPerView={3}
+                spaceBetween={50}
             >
                 {
-                    slides.length !== 0 && slides.map(slide => {
+                    slides.map((slide, index) => {
                         const { src, alt, caption } = slide;
                         return (
                             <SwiperSlide key={alt}>
                                 <div style={{ position: "relative" }}>
                                     <Image
                                         alt={alt}
-                                        src={src}
-                                        width={100}
                                         height={100}
-                                        style={{
-                                            width: "fit-content"
+                                        onClick={() => {
+                                            setToggler(!toggler);
+                                            setPhoto(index + 1);
                                         }}
+                                        src={src}
+                                        style={{width: "fit-content"}}
+                                        width={100}
                                     />
                                 </div>
                                 {
@@ -97,6 +103,12 @@ const Slider = (props) => {
                     Next
                 </button>
             </div>
+
+            <FsLightbox
+				toggler={toggler}
+                sources={slides.map(slide => slide.src)}
+                slide={photo}
+            />            
         </div>
     );
 };
