@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 //Swiper
@@ -12,15 +12,35 @@ import { Keyboard } from "swiper/modules";
 
 const Slider = (props) => {
     const { slides = [] } = props;
-
     const swiperRef = useRef();
+
+    //States
+    const [isDisabled, setIsDisabled] = useState({ prev: swiperRef.current?.isBeginning, next: swiperRef.current?.isEnd });
+
+    useEffect(() => {
+        if (swiperRef.current) {
+            updateStateControllers()
+        }
+    }, []);
+
+    const updateStateControllers = () => {
+        setIsDisabled({
+            prev:swiperRef.current.isBeginning, 
+            next:swiperRef.current.isEnd
+        });
+    }
 
     return (
         <div>
             <Swiper
-                loop={true}
                 keyboard={{
                     enabled: true,
+                }}
+                onKeyPress={(swiper, code) => {
+                    const AVAILABLE_KEYS =[37,39]
+                    if(AVAILABLE_KEYS.includes(code) ){
+                        updateStateControllers()
+                    }
                 }}
                 modules={[Keyboard]}
                 onSwiper={swiper => swiperRef.current = swiper}
@@ -56,14 +76,24 @@ const Slider = (props) => {
                 }
             </Swiper>
             <div>
-                <button onClick={() => {
-                    swiperRef.current.slidePrev();
-                }}>
+                <button
+                    className="disabled:opacity-50"
+                    disabled={isDisabled.prev}
+                    onClick={() => {
+                        swiperRef.current.slidePrev();
+                        updateStateControllers()
+                    }}
+                >
                     Prev
                 </button>
-                <button onClick={() => {
-                    swiperRef.current.slideNext();
-                }}>
+                <button
+                    className="disabled:opacity-50"
+                    disabled={isDisabled.next}
+                    onClick={() => {
+                        swiperRef.current.slideNext();
+                        updateStateControllers()
+                    }}
+                >
                     Next
                 </button>
             </div>
@@ -71,5 +101,4 @@ const Slider = (props) => {
     );
 };
 
-
-export default Slider;;
+export default Slider
