@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
-/* 
+ 
 const nextConfig = {
-	output: 'export',
-	assetPrefix: 'https://aecheverryb10.github.io/bit-a-bit'
-}; */
+	output: 'export'
+};
 
 export default nextConfig;
