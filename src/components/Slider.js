@@ -1,5 +1,5 @@
 'use client';
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import FsLightbox from 'fslightbox-react';
 
@@ -18,7 +18,7 @@ const Slider = (props) => {
   //Ref
   const swiperRef = useRef();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (swiperRef.current) {
       updateStateControllers();
     }
@@ -93,11 +93,7 @@ const Slider = (props) => {
         </button>
       </div>
 
-      <FsLightbox
-        toggler={toggler}
-        sources={slides.map((slide) => slide.src)}
-        slide={photo}
-      />
+      <FsLightbox toggler={toggler} sources={slides.map((slide) => slide.src)} slide={photo} />
     </div>
   );
 };
