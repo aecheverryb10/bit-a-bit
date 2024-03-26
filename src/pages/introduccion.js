@@ -1,3 +1,9 @@
+import Timeline from '@/components/Timeline';
+
 export default function Introduccion() {
-  return <p>jeje</p>;
+  return (
+    <>
+      <Timeline/>
+    </>
+  );
 }

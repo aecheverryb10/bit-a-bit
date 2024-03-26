@@ -6,7 +6,7 @@ const timeline_data = [
 			{
 				title: "Inicios del Siglo XVIII",
 				description: "Nacen las tarjetas perforadas",
-				image: "/public/img/timeline/tecnologias_mecanicas/siglo_xviii.jpg",
+				image: "/img/timeline/tecnologias_mecanicas/siglo_xviii.jpg",
 				caption: (
 					<>
 						Museo de Ciencias de Londres / Biblioteca de imágenes de ciencia y sociedad, <a href='https://creativecommons.org/licenses/by-sa/2.0/' target="_blank">CC BY-SA 2.0</a>, via Wikimedia Commons
@@ -16,7 +16,7 @@ const timeline_data = [
 			{
 				title: "1763",
 				description: "Se inventa la primera máquina a vapor.",
-				image: "/public/img/timeline/tecnologias_mecanicas/1763.jpg",
+				image: "/img/timeline/tecnologias_mecanicas/1763.jpg",
 				caption: (
 					<>
 						DigbyDalton, <a href='https://creativecommons.org/licenses/by-sa/3.0/' target="_blank">CC BY-SA 3.0</a>, via Wikimedia Commons
@@ -26,7 +26,7 @@ const timeline_data = [
 			{
 				title: "Inicios del Siglo XIX",
 				description: "Se inventa la máquina de tejer basada en las tarjetas perforadas en Francia.",
-				image: "/public/img/timeline/tecnologias_mecanicas/siglo_xviii.jpg",
+				image: "/img/timeline/tecnologias_mecanicas/siglo_xix.jpg",
 				caption: (
 					<>
 						User Ghw on en.wikipedia, Public domain, via Wikimedia Commons
@@ -36,7 +36,7 @@ const timeline_data = [
 			{
 				title: "1804",
 				description: "Primera locomotora a vapor",
-				image: "/public/img/timeline/tecnologias_mecanicas/1804.jpg",
+				image: "/img/timeline/tecnologias_mecanicas/1804.jpg",
 				caption: (
 					<>
 						Science Museum, Public domain, via Wikimedia Commons
@@ -46,7 +46,7 @@ const timeline_data = [
 			{
 				title: "1855",
 				description: "Primer automóvil de gasolina",
-				image: "/public/img/timeline/tecnologias_mecanicas/1855.jpg",
+				image: "/img/timeline/tecnologias_mecanicas/1855.jpg",
 				caption: (
 					<>
 						Public domain, via Wikimedia Commons
@@ -61,11 +61,12 @@ const timeline_data = [
 			{
 				title: "1876-1879",
 				description: "Teléfonos y bombillas eléctricas",
+				image: "/img/timeline/tecnologias_electronicas/1876.jpg",
 				children: [
 					{
 						title: "1876",
 						description: "Patente del primer teléfono que funciona con electricidad",
-						image: "/public/img/timeline/tecnologias_electronicas/1876.jpg",
+						image: "/img/timeline/tecnologias_electronicas/1876.jpg",
 						caption: (
 							<>
 								Public domain, via Wikimedia Commons
@@ -75,7 +76,7 @@ const timeline_data = [
 					{
 						title: "1879",
 						description: "Patente de la bombilla eléctrica",
-						image: "/public/img/timeline/tecnologias_electronicas/1879.jpg",
+						image: "/img/timeline/tecnologias_electronicas/1879.jpg",
 						caption: (
 							<>
 								William J. Hammer, Public domain, via Wikimedia Commons
@@ -87,7 +88,7 @@ const timeline_data = [
 			{
 				title: "1890",
 				description: "Se inventa la máquina electromecánica para tabular información en tarjetas perforadas",
-				image: "/public/img/timeline/tecnologias_electronicas/1890.jpg",
+				image: "/img/timeline/tecnologias_electronicas/1890.jpg",
 				caption: (
 					<>
 						Adam Schuster, <a href='https://creativecommons.org/licenses/by/2.0/' target='_blank'>CC BY 2.0</a>, via Wikimedia Commons
@@ -97,11 +98,12 @@ const timeline_data = [
 			{
 				title: "1895-1906",
 				description: "El Cinematógrafo y el primer avión",
+				image: "/img/timeline/tecnologias_electronicas/1895.jpg",
 				children: [
 					{
 						title: "1895",
 						description: "Invención del cinematógrafo y primeras proyecciones de cine.",
-						image: "/public/img/timeline/tecnologias_electronicas/1895.jpg",
+						image: "/img/timeline/tecnologias_electronicas/1895.jpg",
 						caption: (
 							<>
 								Modificado por Mcapdevila - <a href='https://commons.wikimedia.org/wiki/File:Cinematograf-Camera2.jpg' target='_blank'>proceso de modificación</a>, <a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a>, via Wikimedia Commons
@@ -111,7 +113,7 @@ const timeline_data = [
 					{
 						title: "1903",
 						description: "Fabrican el primer avión con motor",
-						image: "/public/img/timeline/tecnologias_electronicas/1903.jpg",
+						image: "/img/timeline/tecnologias_electronicas/1903.jpg",
 						caption: (
 							<>
 								John T. Daniels, Public domain, via Wikimedia Commons
@@ -123,7 +125,7 @@ const timeline_data = [
 			{
 				title: "1914-1918",
 				description: "1era Guerra Mundial ",
-				image: "/public/img/timeline/tecnologias_electronicas/1914_1918.jpg",
+				image: "/img/timeline/tecnologias_electronicas/1914_1918.jpg",
 				caption: "Ernest Brooks, Public domain, via Wikimedia Commons"
 			},
 		]
@@ -134,11 +136,12 @@ const timeline_data = [
 			{
 				title: "1922 - 1926",
 				description: "Cine sonoro y la televisión",
+				image: "/img/timeline/tecnologias_computacionales/1922.jpg",
 				children: [
 					{
 						title: "1922",
 						description: "Producción de la primera película sonora",
-						image: "/public/img/timeline/1922.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1922.jpg",
 						caption: (
 							<>
 								William Dickson (director); <a href='https://commons.wikimedia.org/wiki/File:Cinematograf-Camera2.jpg' target='_blank'>William Heise (cinematographer)</a>, <a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>Public domain</a>, via Wikimedia Commons
@@ -148,7 +151,7 @@ const timeline_data = [
 					{
 						title: "1926",
 						description: "Primeras demostraciones de la televisión mecánica",
-						image: "/public/img/timeline/1926.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1926.jpg",
 						caption: (
 							<>
 								Orrin Dunlap, Jr., Public domain, via Wikimedia Commons
@@ -160,11 +163,12 @@ const timeline_data = [
 			{
 				title: "1930-1941",
 				description: "Primeras computadoras",
+				image: "/img/timeline/tecnologias_computacionales/1930.jpg",
 				children: [
 					{
 						title: "1930",
 						description: "En Alemania se crea la computadora Z1",
-						image: "/public/img/timeline/1930.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1930.jpg",
 						caption: (
 							<>
 								Stahlkocher, <a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a>, via Wikimedia Commons
@@ -174,7 +178,7 @@ const timeline_data = [
 					{
 						title: "1934",
 						description: "Creación de la Oficina de Computación Thomas J. Watson con la ayuda de IBM en la Universidad de Columbia",
-						image: "/public/img/timeline/1934.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1934.jpg",
 						caption: (
 							<>
 								CUCCA Newsletter, via Columbia.edu
@@ -184,7 +188,7 @@ const timeline_data = [
 					{
 						title: "1941",
 						description: "La Computadora Z3 usa el sistema de numeración binario.",
-						image: "/public/img/timeline/1941.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1941.jpg",
 						caption: (
 							<>
 								Venusianer, <a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a>, via Wikimedia Commons
@@ -196,11 +200,12 @@ const timeline_data = [
 			{
 				title: "1939-1945",
 				description: "2da Guerra Mundial",
+				image: "/img/timeline/tecnologias_computacionales/1930_2.jpg",
 				children: [
 					{
 						title: "1930",
 						description: "Invención de la bomba atómica.",
-						image: "/public/img/timeline/tecnologias_computacionales/1930_2.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1930_2.jpg",
 						caption: (
 							<>
 								Courtesy of US Govt. Defense Threat Reduction Agency, Public domain, via Wikimedia Commons
@@ -210,7 +215,7 @@ const timeline_data = [
 					{
 						title: "1939",
 						description: "Desarrollo del análisis criptográfico con la Máquina Enigma.",
-						image: "/public/img/timeline/tecnologias_computacionales/1939.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1939.jpg",
 						caption: (
 							<>
 								Museo della Scienza e della Tecnologia "Leonardo da Vinci", <a href='https://creativecommons.org/licenses/by-sa/4.0' target='_blank'>CC BY-SA 4.0</a>, via Wikimedia Commons
@@ -220,7 +225,7 @@ const timeline_data = [
 					{
 						title: "1942",
 						description: "Patente de la primera versión del espectro ensanchado que permitiría las comunicaciones inalámbricas de largas distancias (wifi).",
-						image: "/public/img/timeline/tecnologias_computacionales/1942.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1942.jpg",
 						caption: (
 							<>
 								Public domain, via Wikimedia Commons
@@ -232,11 +237,12 @@ const timeline_data = [
 			{
 				title: "1946-1952",
 				description: "Inicia la computación digital comercial",
+				image: "/img/timeline/tecnologias_computacionales/1946.jpg",
 				children: [
 					{
 						title: "1946",
 						description: "Se crea «ENIAC», la calculadora electrónica que inauguró la era de la computación digital norteamericana",
-						image: "/public/img/timeline/tecnologias_computacionales/1946.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1946.jpg",
 						caption: (
 							<>
 								U.S. Army Photo, Public domain, via Wikimedia Commons
@@ -246,7 +252,7 @@ const timeline_data = [
 					{
 						title: "1950",
 						description: "UNIVAC 1, la primera computadora de uso.comercial.",
-						image: "/public/img/timeline/tecnologias_computacionales/1950.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1950.jpg",
 						caption: (
 							<>
 								Daderot, Public domain, via Wikimedia Commons
@@ -256,7 +262,7 @@ const timeline_data = [
 					{
 						title: "1952",
 						description: "Nought and crosses u “OXO”, el primer videojuego de la historia.",
-						image: "/public/img/timeline/tecnologias_computacionales/1952.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1952.jpg",
 						caption: (
 							<>
 								Public domain, via Wikimedia Commons
@@ -268,11 +274,12 @@ const timeline_data = [
 			{
 				title: "1957-1960",
 				description: "Primeras computadoras en América Latina y el Caribe",
+				image: "/img/timeline/tecnologias_computacionales/1957.jpg",
 				children: [
 					{
 						title: "1957",
 						description: "Se instala la primera computadora en Colombia: una IBM 650 traída por Bavaria.",
-						image: "/public/img/timeline/tecnologias_computacionales/1957.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1957.jpg",
 						caption: (
 							<>
 								Mahlum, Public domain, via Wikimedia Commons
@@ -282,7 +289,7 @@ const timeline_data = [
 					{
 						title: "1958-59",
 						description: "Se desarrolla COBOL, uno de los primeros lenguajes de programación de alto nivel.",
-						image: "/public/img/timeline/tecnologias_computacionales/1958_59.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1958_59.jpg",
 						caption: (
 							<>
 								Eric Peacock, <a href='https://creativecommons.org/licenses/by-sa/4.0/' target='_blank'>CC BY-SA 4.0</a>, via Wikimedia Commons
@@ -292,7 +299,7 @@ const timeline_data = [
 					{
 						title: "1960",
 						description: "Se instala la primera computadora en Brasil en la Pontificia Universidad Católica de Río de Janeiro, la Datatron Burroughs B-205.",
-						image: "/public/img/timeline/tecnologias_computacionales/1960.jpg",
+						image: "/img/timeline/tecnologias_computacionales/1960.jpg",
 						caption: (
 							<>
 								Via Tjsawyer.com  
@@ -309,11 +316,12 @@ const timeline_data = [
 			{
 				title: "1967-1976",
 				description: "Los primeros pasos del Internet ",
+				image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1967.jpg",
 				children: [
 					{
 						title: "1967",
 						description: "Desarrollo de ARPANET",
-						image: "/public/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1967.jpg",
+						image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1967.jpg",
 						caption: (
 							<>
 								ARPANET, Public domain, via Wikimedia Commons
@@ -323,7 +331,7 @@ const timeline_data = [
 					{
 						title: "1969",
 						description: "En Cuba se fabrica una microcomputadora, la CID 201-A.",
-						image: "/public/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1969.jpg",
+						image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1969.jpg",
 						caption: (
 							<>
 								Via Cubamaterial.com  
@@ -333,7 +341,7 @@ const timeline_data = [
 					{
 						title: "1970",
 						description: "Nace la Asociación Colombiana de Ingenieros de Sistemas (ACIS) en Colombia.",
-						image: "/public/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1970.png",
+						image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1970.png",
 						caption: (
 							<>
 								Via acis.org.co
@@ -343,7 +351,7 @@ const timeline_data = [
 					{
 						title: "1975-1976",
 						description: "Fundación de Microsoft y Apple",
-						image: "/public/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1975_1976.jpg",
+						image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1975_1976.jpg",
 						caption: (
 							<>
 								Via News.microsoft.com
@@ -355,11 +363,12 @@ const timeline_data = [
 			{
 				title: "1980-1987",
 				description: "HTML, URL y los teléfonos móviles",
+				image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1980.png",
 				children: [
 					{
 						title: "1980",
 						description: "Se desarrolla el lenguaje HTML, las URL y el HTTP.",
-						image: "/public/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1980.png",
+						image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1980.png",
 						caption: (
 							<>
 								Html-source-code3.png: Reisioderivative work: Rehua, Public domain, via Wikimedia Commons
@@ -369,7 +378,7 @@ const timeline_data = [
 					{
 						title: "1981",
 						description: "La primera computadora personal creada por IBM",
-						image: "/public/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1969.jpg",
+						image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1969.jpg",
 						caption: (
 							<>
 								Modificado por  Reseletti - <a href='https://commons.wikimedia.org/wiki/File:IBM_PC_5150.jpg' target='_blank'>proceso de modificación</a>, <a href='https://creativecommons.org/licenses/by-sa/3.0/deed.en' target='_blank'>CC BY-SA 3.0</a>, via Wikimedia Commons
@@ -379,7 +388,7 @@ const timeline_data = [
 					{
 						title: "1984",
 						description: "Motorola lanza el primer teléfono móvil comercial, Dynatac 8000x.",
-						image: "/public/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1984.jpg",
+						image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1984.jpg",
 						caption: (
 							<>
 								Redrum0486, <a href='https://creativecommons.org/licenses/by-sa/3.0/deed.en' target='_blank'>CC BY-SA 3.0</a>, via Wikimedia Commons
@@ -395,11 +404,12 @@ const timeline_data = [
 			{
 				title: "1991-1998",
 				description: "Páginas web y Google",
+				image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1991.jpg",
 				children: [
 					{
 						title: "1991",
 						description: "Tim Berners-Lee publica la primera página web.",
-						image: "/public/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1991.jpg",
+						image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1991.jpg",
 						caption: (
 							<>
 								Via Home.cern
@@ -409,7 +419,7 @@ const timeline_data = [
 					{
 						title: "1993",
 						description: "Se inventa el MP3 y los sistemas de compresión digital.",
-						image: "/public/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1993.png",
+						image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1993.png",
 						caption: (
 							<>
 								Public domain, via Wikimedia Commons
@@ -419,7 +429,7 @@ const timeline_data = [
 					{
 						title: "1998",
 						description: "Lanzamiento de Google",
-						image: "/public/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1998.png",
+						image: "/img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1998.png",
 						caption: (
 							<>
 								Google, Public domain, via Wikimedia Commons
@@ -436,6 +446,7 @@ const timeline_data = [
 			{
 				title: "2003-2010",
 				description: "Primeras apps",
+				image: "/img/timeline/redes_sociales/facebook_popularity.jpg",
 				children: [
 					{
 						title: "2003",
@@ -466,7 +477,7 @@ const timeline_data = [
 						description: "Nace Instagram",
 					},
 					{
-						image: "/public/img/timeline/redes_sociales/facebook_popularity.jpg",
+						image: "/img/timeline/redes_sociales/facebook_popularity.jpg",
 						caption: (
 							<>
 								Tatiraju.rishabh - <a href='https://commons.wikimedia.org/wiki/File:Facebook_popularity.PNG' target='_blank'>modification process</a>, <a href='https://creativecommons.org/licenses/by-sa/3.0/deed.en' target='_blank'>CC BY-SA 3.0</a>, via Wikimedia Commons
@@ -478,11 +489,12 @@ const timeline_data = [
 			{
 				title: "2011-2016",
 				description: "Redes 4G y 5G",
+				image: "/img/timeline/redes_sociales/2011.png",
 				children: [
 					{
 						title: "2011",
 						description: "Anuncian lanzamientos de las redes 4G en América Latina y el Caribe",
-						image: "/public/img/timeline/redes_sociales/2011.png",
+						image: "/img/timeline/redes_sociales/2011.png",
 						caption: (
 							<>
 								Foto de Iyke Ibeh de Pexels: https://www.pexels.com/es-es/foto/escritorio-ordenador-portatil-nina-sentado-17731675/
@@ -492,7 +504,7 @@ const timeline_data = [
 					{
 						title: "2015",
 						description: "La máquina de inteligencia artificial AlphaGo vence a un jugador profesional de Go",
-						image: "/public/img/timeline/redes_sociales/2015.png",
+						image: "/img/timeline/redes_sociales/2015.png",
 						caption: (
 							<>
 								Via commons.wikimedia.org   
@@ -502,7 +514,7 @@ const timeline_data = [
 					{
 						title: "2016",
 						description: "Nace TikTok. También la compañía Tesla anuncia novedades en su proyecto de vehículos autónomos.",
-						image: "/public/img/timeline/redes_sociales/2016.png",
+						image: "/img/timeline/redes_sociales/2016.png",
 						caption: (
 							<>
 								Foto de cottonbro studio de Pexels: https://www.pexels.com/es-es/foto/manos-iphone-tecnologia-monitor-5081930/
@@ -512,7 +524,7 @@ const timeline_data = [
 					{
 						title: "2017",
 						description: "La Unión Internacional de Telecomunicaciones (UIT) presenta algunas especificaciones de las redes 5G aún en desarrollo en ciertos países.",
-						image: "/public/img/timeline/redes_sociales/2017.png",
+						image: "/img/timeline/redes_sociales/2017.png",
 						caption: (
 							<>
 								Foto de Ivan Samkov de Pexels: https://www.pexels.com/es-es/foto/hombre-persona-gafas-de-sol-telefono-inteligente-7902344/
@@ -524,11 +536,12 @@ const timeline_data = [
 			{
 				title: "2018-2020",
 				description: "Asistentes virtuales y la Pandemia",
+				image: "/img/timeline/redes_sociales/2018.jpg",
 				children: [
 					{
 						title: "2018",
 						description: "Se popularizan los asistentes virtuales como Alexa (Amazon), Google Assistant y Siri (Apple).",
-						image: "/public/img/timeline/redes_sociales/2018.jpg",
+						image: "/img/timeline/redes_sociales/2018.jpg",
 						caption: (
 							<>
 								Maurizio Pesce from Milan, Italia, CC BY 2.0, via Wikimedia Commons
@@ -538,7 +551,7 @@ const timeline_data = [
 					{
 						title: "2019",
 						description: "Lanzan los primeros teléfonos con pantallas flexibles.",
-						image: "/public/img/timeline/redes_sociales/2019.jpg",
+						image: "/img/timeline/redes_sociales/2019.jpg",
 						caption: (
 							<>
 								Foto de Onur Binay en Unsplash 
@@ -548,7 +561,7 @@ const timeline_data = [
 					{
 						title: "2020",
 						description: " Desarrollo de tecnologías médicas y de contención sanitaria (robots, drones, apps de rastreo, plataformas de videollamadas, trabajo remoto, entre otros.) ",
-						image: "/public/img/timeline/redes_sociales/2020.jpg",
+						image: "/img/timeline/redes_sociales/2020.jpg",
 						caption: (
 							<>
 								Foto de Surface en Unsplash
@@ -560,11 +573,12 @@ const timeline_data = [
 			{
 				title: "2021-2023",
 				description: "La Inteligencia artificial y la realidad virtual en su esplendor",
+				image: "/img/timeline/redes_sociales/2021.png",
 				children: [
 					{
 						title: "2021",
 						description: " Facebook anuncia el cambio de nombre de la compañía a Meta y el desarrollo de un metaverso.",
-						image: "/public/img/timeline/redes_sociales/2021.png",
+						image: "/img/timeline/redes_sociales/2021.png",
 						caption: (
 							<>
 								Meta Platforms, Public domain, via Wikimedia Commons
@@ -574,7 +588,7 @@ const timeline_data = [
 					{
 						title: "2022",
 						description: "Se lanza ChatGPT, prototipo de chatbot de inteligencia artificial.",
-						image: "/public/img/timeline/redes_sociales/2022.png",
+						image: "/img/timeline/redes_sociales/2022.png",
 						caption: (
 							<>
 								OpenAI, Public domain, via Wikimedia Commons
@@ -584,7 +598,7 @@ const timeline_data = [
 					{
 						title: "2023",
 						description: " Avances en la computación cuántica, la ciberseguridad, la web 3.0 y la realidad virtual, aumentada y mixta, entre otros.",
-						image: "/public/img/timeline/redes_sociales/2023.jpg",
+						image: "/img/timeline/redes_sociales/2023.jpg",
 						caption: (
 							<>
 								Foto de stephan sorkin en Unsplash
@@ -596,3 +610,5 @@ const timeline_data = [
 		]
 	},
 ];
+
+export default timeline_data
