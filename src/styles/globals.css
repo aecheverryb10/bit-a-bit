@@ -38,3 +38,15 @@ body {
   background-blend-mode: lighten;
   mix-blend-mode: normal;
 }
+
+.color-capitulo1{
+  background: linear-gradient(233.61deg, rgba(44, 42, 153, 0) 32.27%, rgba(74, 70, 255, 0.7) 91.55%);
+}
+
+.color-capitulo2{
+  background: linear-gradient(230.79deg, rgba(22, 7, 38, 0) 26.49%, rgba(82, 24, 140, 0.7) 88.17%);
+}
+
+.color-capitulo3{
+  background: linear-gradient(220.11deg, rgba(1, 133, 103, 0) 19.69%, rgba(2, 235, 182, 0.5) 92.67%);
+}

@@ -32,16 +32,21 @@ module.exports = {
       },   
       colors: {
         'blue': {
-          100: '#081c59'
+          100: '#081c59',
+          'base': '#4A46FF'
+        },
+        'purple': {
+          'base': '#52188C'
+        },
+        'green': {
+          'light': '#02EBB6'
         }
       },
       borderRadius: {
         small : '0.3125em'
       },
       boxShadow: {
-        'item': 'rgba(0, 0, 0, 0.2) 0px 2px 10px',
-        'main-bar': '0px 0px 5px rgba(0, 0, 0, 0.1)',
-        'scrolled-title': '0 2px 3px 0 rgba(0,0,0,.08),0 1px 0 0 rgba(29,28,29,0.13)'
+        'capitulo': '10px 4px 15px rgba(0, 0, 0, 0.5)',
       },
     },
   },
