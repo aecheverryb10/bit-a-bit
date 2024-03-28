@@ -34,6 +34,7 @@ module.exports = {
         blue: {
           100: '#081c59',
           base: '#4A46FF',
+          dark: '#171C30',
         },
         purple: {
           base: '#52188C',
