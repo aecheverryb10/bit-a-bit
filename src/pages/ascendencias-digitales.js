@@ -41,7 +41,12 @@ export default function AscendenciasDigitales() {
           </p>
         </ParrafoInicial>
         <MainSection>
-          <h3>Preludios digitales: hacia una comprensión histórica de lo digital</h3>
+          <div className='bg-purple-base bg-opacity-70 text-white'>
+            <h3 className='pl-40 py-10 font-normal text-3xl'>
+              Preludios digitales:{' '}
+              <span className='block font-extralight'>hacia una comprensión histórica de lo digital</span>
+            </h3>
+          </div>
         </MainSection>
         <BloqueTexto>
           <p>
