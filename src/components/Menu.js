@@ -11,7 +11,7 @@ const Menu = () => {
   const { height, width } = barraMenu.current?.getBoundingClientRect() ?? {};
 
   return (
-    <div className='fixed z-50 xl:pr-40 w-full'>
+    <div className='fixed z-50 xl:pr-20 w-full'>
       <div className='bg-black text-white py-4 shadow-lg relative z-10' ref={barraMenu}>
         <div className='container flex items-center px-9'>
           <button className='flex items-center' onClick={() => setIsOpen(!isOpen)}>
