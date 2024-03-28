@@ -12,7 +12,6 @@ const ScrollImage = (props) => {
 
 	const containerRef = useRef();
 	const captionRef = useRef();
-	const imageRef = useRef();
 	const gradientRef = useRef();
 
 	useGSAP(() => {
@@ -56,7 +55,6 @@ const ScrollImage = (props) => {
 					{caption}
 				</div>
 				<Image
-					ref={imageRef}
 					alt={alt}
 					src={img}
 					fill
