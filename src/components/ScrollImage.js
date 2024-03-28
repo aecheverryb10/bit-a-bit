@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 
 const ScrollImage = (props) => {
-	const {alt, img, caption}=props
+	const { alt, img, caption } = props;
 
 	gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -26,7 +26,7 @@ const ScrollImage = (props) => {
 				endTrigger: containerRef.current,
 				end: "bottom",
 			}
-		})
+		});
 		tl_caption.to(captionRef.current, { top: "10%" });
 
 		// gsap code here...
@@ -37,17 +37,21 @@ const ScrollImage = (props) => {
 				start: "top 50%",
 				markers: true,
 				endTrigger: containerRef.current,
-				end: "bottom 50%",
+				end: "bottom",
 			},
-		})
+		});
 		tl_gradient
-			.to(containerRef.current, { opacity: 1 })
+			.to(gradientRef.current, { opacity: 0 })
+			.set(gradientRef.current, { bottom: 0, rotate: 180, top: "auto" })
+			.to(gradientRef.current, { opacity: 1 });
+
+
 	}, { scope: containerRef });
 
 	return (
-		<div className='bg-black h-screen opacity-0' ref={containerRef}>
-			{/* <div ref={gradientRef} className='absolute bg-gradient-to-b from-20% from-black to-transparent h-[80vh] w-full top-0 z-10'/> */}
-			<div className='container relative h-screen'>
+		<div className='bg-white h-[105vh]' ref={containerRef}>
+			<div ref={gradientRef} className='absolute bg-gradient-to-b from-20% from-white to-transparent h-screen w-full top-0 z-10' />
+			<div className='relative h-screen'>
 				<div ref={captionRef} className='absolute right-0 bottom-0 text-white z-10'>
 					{caption}
 				</div>
@@ -57,10 +61,11 @@ const ScrollImage = (props) => {
 					src={img}
 					fill
 					objectPosition='center'
+					objectFit='cover'
 				/>
 			</div>
 		</div>
-	)
+	);
 };
 
-export default ScrollImage
+export default ScrollImage;
