@@ -50,3 +50,7 @@ body {
 .color-capitulo3{
   background: linear-gradient(220.11deg, rgba(1, 133, 103, 0) 19.69%, rgba(2, 235, 182, 0.5) 92.67%);
 }
+
+.main-content p:not(:last-of-type){
+  @apply mb-10;
+}
