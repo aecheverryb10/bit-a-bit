@@ -341,7 +341,7 @@ const timeline_data = [
 					{
 						title: "1970",
 						description: "Nace la Asociación Colombiana de Ingenieros de Sistemas (ACIS) en Colombia.",
-						image: "./img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1970.png",
+						image: "./img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1970.jpg",
 						caption: (
 							<>
 								Via acis.org.co
@@ -389,6 +389,7 @@ const timeline_data = [
 						title: "1984",
 						description: "Motorola lanza el primer teléfono móvil comercial, Dynatac 8000x.",
 						image: "./img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1984.jpg",
+						image_className: "!w-auto",
 						caption: (
 							<>
 								Redrum0486, <a href='https://creativecommons.org/licenses/by-sa/3.0/deed.en' target='_blank'>CC BY-SA 3.0</a>, via Wikimedia Commons
@@ -478,6 +479,7 @@ const timeline_data = [
 					},
 					{
 						image: "./img/timeline/redes_sociales/facebook_popularity.jpg",
+						className: "w-2/5",
 						caption: (
 							<>
 								Tatiraju.rishabh - <a href='https://commons.wikimedia.org/wiki/File:Facebook_popularity.PNG' target='_blank'>modification process</a>, <a href='https://creativecommons.org/licenses/by-sa/3.0/deed.en' target='_blank'>CC BY-SA 3.0</a>, via Wikimedia Commons
