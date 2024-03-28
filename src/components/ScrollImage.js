@@ -37,20 +37,16 @@ const ScrollImage = (props) => {
 				start: "top 50%",
 				markers: true,
 				endTrigger: containerRef.current,
-				end: "bottom",
+				end: "bottom 50%",
 			},
 		})
 		tl_gradient
-			.to(gradientRef.current, { opacity: 0 })
-			.set(gradientRef.current, { bottom: 0, rotate:180, top: "auto" })
-			.to(gradientRef.current, { opacity: 1 })
-		
-		
+			.to(containerRef.current, { opacity: 1 })
 	}, { scope: containerRef });
 
 	return (
-		<div className='bg-black h-[110vh]' ref={containerRef}>
-			<div ref={gradientRef} className='absolute bg-gradient-to-b from-20% from-black to-transparent h-[80vh] w-full top-0 z-10'/>
+		<div className='bg-black h-screen opacity-0' ref={containerRef}>
+			{/* <div ref={gradientRef} className='absolute bg-gradient-to-b from-20% from-black to-transparent h-[80vh] w-full top-0 z-10'/> */}
 			<div className='container relative h-screen'>
 				<div ref={captionRef} className='absolute right-0 bottom-0 text-white z-10'>
 					{caption}
