@@ -13,38 +13,45 @@ const ScrollImage = (props) => {
 	const containerRef = useRef();
 	const captionRef = useRef();
 	const imageRef = useRef();
+	const gradientRef = useRef();
 
 	useGSAP(() => {
 		// gsap code here...
-		gsap.set(imageRef.current, { maskImage: "linear-gradient(transparent, black 20%)" }); // <-- automatically reverted
-
-		// const pin_image
-
-		// ScrollTrigger.create({
-		// 	pin: true,
-		// 	trigger: containerRef.current,
-		// 	start: "top",
-		// 	endTrigger: containerRef.current,
-		// 	end: "bottom",
-		// })
-
 		const tl_caption = gsap.timeline({
 			scrollTrigger: {
 				pin: true,
-				scrub: 1,
-				markers: true,
+				scrub: true,
 				trigger: containerRef.current,
 				start: "top",
 				endTrigger: containerRef.current,
 				end: "bottom",
 			}
 		})
-		tl_caption.to(captionRef.current, { top: 0 });
+		tl_caption.to(captionRef.current, { top: "10%" });
+
+		// gsap code here...
+		const tl_gradient = gsap.timeline({
+			scrollTrigger: {
+				scrub: true,
+				trigger: containerRef.current,
+				start: "top 50%",
+				markers: true,
+				endTrigger: containerRef.current,
+				end: "bottom",
+			},
+		})
+		tl_gradient
+			.to(gradientRef.current, { opacity: 0 })
+			.set(gradientRef.current, { bottom: 0, rotate:180, top: "auto" })
+			.to(gradientRef.current, { opacity: 1 })
+		
+		
 	}, { scope: containerRef });
 
 	return (
-		<div className='bg-black h-[100vh]' ref={containerRef}>
-			<div className='container relative h-screen '>
+		<div className='bg-black h-[110vh]' ref={containerRef}>
+			<div ref={gradientRef} className='absolute bg-gradient-to-b from-20% from-black to-transparent h-[80vh] w-full top-0 z-10'/>
+			<div className='container relative h-screen'>
 				<div ref={captionRef} className='absolute right-0 bottom-0 text-white z-10'>
 					{caption}
 				</div>
@@ -53,6 +60,7 @@ const ScrollImage = (props) => {
 					alt={alt}
 					src={img}
 					fill
+					objectPosition='center'
 				/>
 			</div>
 		</div>
