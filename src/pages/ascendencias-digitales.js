@@ -2,6 +2,8 @@ import { slider_data } from '@/data/slider_data';
 import Slider from '@/components/Slider';
 import { BloqueTexto, MainSection, ParrafoInicial } from '@/components/Elements';
 import Capitulo from '@/components/Capitulo';
+import ScrollImage from '@/components/ScrollImage';
+import ScrollVideo from '@/components/ScrollVideo';
 
 export default function AscendenciasDigitales() {
   return (
@@ -100,11 +102,10 @@ export default function AscendenciasDigitales() {
             representado por sistemas electrónicos y computacionales
           </p>
         </BloqueTexto>
-        <video width='320' height='240' controls={true}>
-          <source src='./video/ques-es-lo-digital.mp4' type='video/mp4' />
-          Your browser does not support the video tag.
-        </video>
-
+        <ScrollVideo
+          url='./video/ques-es-lo-digital.mp4'
+          type='video/mp4'
+        />        
         <BloqueTexto>
           <p>
             La digitalización puede ser entendida como el proceso de “conversión de datos y procesos analógicos a un
