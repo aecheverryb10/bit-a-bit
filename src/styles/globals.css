@@ -33,12 +33,6 @@ body {
 	@apply h-full;
 }
 
-.bg-portada{
-  background: radial-gradient(55.03% 119.59% at 101.46% -1.89%, rgba(2, 235, 182, 0.32) 0%, rgba(161, 105, 250, 0.04) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  background-blend-mode: lighten;
-  mix-blend-mode: normal;
-}
-
 .color-capitulo1{
   background: linear-gradient(233.61deg, rgba(44, 42, 153, 0) 32.27%, rgba(74, 70, 255, 0.7) 91.55%);
 }
