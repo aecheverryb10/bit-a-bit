@@ -3,6 +3,7 @@ import Slider from '@/components/Slider';
 import { BloqueTexto, MainSection, ParrafoInicial } from '@/components/Elements';
 import Capitulo from '@/components/Capitulo';
 import ScrollImage from '@/components/ScrollImage';
+import ScrollVideo from '@/components/ScrollVideo';
 
 export default function AscendenciasDigitales() {
   return (
@@ -53,23 +54,10 @@ export default function AscendenciasDigitales() {
             representado por sistemas electrónicos y computacionales
           </p>
         </BloqueTexto>
-        <ScrollImage
-          img={"./img/scroll_image/img_test.jpg"}
-          caption={
-            <>
-              <p>Figura 19. Mabeg [Foto]. (2006).</p>
-              <p>
-                Archivo Fotográfico Unimedios <br />
-                (Archivo de todos los años /2006/Bogotá)
-              </p>
-            </>
-          }
-        />
-        <video width='320' height='240' controls={true}>
-          <source src='./video/ques-es-lo-digital.mp4' type='video/mp4' />
-          Your browser does not support the video tag.
-        </video>
-
+        <ScrollVideo
+          url='./video/ques-es-lo-digital.mp4'
+          type='video/mp4'
+        />        
         <BloqueTexto>
           <p>
             La digitalización puede ser entendida como el proceso de “conversión de datos y procesos analógicos a un

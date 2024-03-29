@@ -34,7 +34,6 @@ const ScrollImage = (props) => {
 				scrub: true,
 				trigger: containerRef.current,
 				start: "top 50%",
-				markers: true,
 				endTrigger: containerRef.current,
 				end: "bottom",
 			},
