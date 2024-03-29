@@ -4,6 +4,7 @@ import { BloqueTexto, MainSection, ParrafoInicial } from '@/components/Elements'
 import Capitulo from '@/components/Capitulo';
 import ScrollImage from '@/components/ScrollImage';
 import ScrollVideo from '@/components/ScrollVideo';
+import Timeline from '@/components/Timeline';
 
 export default function AscendenciasDigitales() {
   return (
@@ -102,10 +103,7 @@ export default function AscendenciasDigitales() {
             representado por sistemas electrónicos y computacionales
           </p>
         </BloqueTexto>
-        <ScrollVideo
-          url='./video/ques-es-lo-digital.mp4'
-          type='video/mp4'
-        />        
+        <ScrollVideo url='./video/ques-es-lo-digital.mp4' type='video/mp4' />
         <BloqueTexto>
           <p>
             La digitalización puede ser entendida como el proceso de “conversión de datos y procesos analógicos a un
@@ -287,9 +285,11 @@ export default function AscendenciasDigitales() {
             avances y formadores de los primeros profesionales de la era informática.
           </p>
         </BloqueTexto>
-        <h1 className='text-9xl'>LINEA DEL TIEMPO</h1>
+        <Timeline />
 
-        <h2>¿Qué pasó en Colombia?</h2>
+        <MainSection>
+          <h2>¿Qué pasó en Colombia?</h2>
+        </MainSection>
         <BloqueTexto>
           <p>
             Como se señaló, Colombia fue uno de los primeros países en conectarse con las tecnologías computacionales en
