@@ -1,3 +1,5 @@
+import ScrollImage from '@/components/ScrollImage';
+
 export default function CulturaDigital() {
   return (
     <>
@@ -68,7 +70,18 @@ export default function CulturaDigital() {
         funcionar con perillas y botones, a teclados y ratones, pantallas táctiles, proyectores portátiles y celulares
       </p>
 
-      <h1 className='text-9xl'>FOTO</h1>
+      <ScrollImage
+        img={"./img/scroll_image/img_test.jpg"}
+        caption={
+          <>
+            <p>Figura 19. Mabeg [Foto]. (2006).</p>
+            <p>
+              Archivo Fotográfico Unimedios <br />
+              (Archivo de todos los años /2006/Bogotá)
+            </p>
+          </>
+        }
+      />
 
       <p>
         A grandes rasgos, la cultura puede entenderse como las ideas, valores y prácticas colectivas que configuran el
