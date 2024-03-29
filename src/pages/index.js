@@ -128,43 +128,109 @@ export default function Home() {
         </div>
       </div> */}
       <div
-        className='w-full min-h-[100vh] flex flex-col align-center justify-center relative bg-blend-mode-lighten mix-blend-mode-lighten'
+        className='w-full min-h-[100vh] flex flex-col align-center justify-center relative bg-blend-mode-lighten mix-blend-mode-lighten relative'
         style={{
           background: `linear-gradient(39.2deg, rgba(255, 118, 87, 0.2) -7.15%, rgba(0, 0, 0, 0.2) 68.29%), radial-gradient(77.64% 135.08% at 72.62% -5.14%, #326799 0%, rgba(78, 173, 215, 0.348804) 32.19%, rgba(161, 105, 250, 0.04) 100%)`,
         }}
       >
-        <div className='grow flex flex-col align-center justify-center relative'>
+        <div className='absolute w-full h-[calc(100%_-_54px)] 2xl:h-[calc(100%_-_78px)] top-0'>
+          <div className='absolute w-full pl-28'>
+            <div className='h-8 border-r border-white w-px' />
+            <div className='flex w-[8%] items-center -mt-[12px]'>
+              <span className={`block w-full border-t border-white`}></span>
+              <span className='w-6 h-6 rounded-full border-white border block -mr-[14px]' />
+              <span className='w-2 h-2 rounded-full bg-white block ' />
+            </div>
+          </div>
+
+          <div className='absolute flex w-[15%] items-center bottom-[25%]'>
+            <span className={`block w-full border-t border-white`}></span>
+            <span className='w-6 h-6 rounded-full border-white border block -mr-[15px]' />
+            <span className='w-2 h-2 rounded-full bg-white block ' />
+          </div>
+
+          <div className='absolute flex w-[8%] items-center bottom-[8%]'>
+            <span className={`block w-full border-t border-white`}></span>
+            <span className='w-6 h-6 rounded-full border-white border block -mr-[14px]' />
+            <span className='w-2 h-2 rounded-full bg-white block ' />
+          </div>
+
+          <div className='absolute h-[7.8em] right-[35%] w-px border-l border-white' />
+          <div className='absolute flex w-[10%] items-center right-[35%] top-28'>
+            <span className='w-6 h-6 rounded-full border-white border block -mr-[14px] bg-blue-100' />
+            <span className='w-2 h-2 rounded-full bg-white block ' />
+            <span className={`block w-full border-t border-white `}></span>
+          </div>
+
+          <div className='absolute flex w-[50%] items-center right-[0%] top-48'>
+            <span className='w-6 h-6 rounded-full border-white border block -mr-4 bg-blue-100' />
+            <span className='w-2 h-2 rounded-full bg-white block ' />
+            <span className={`block w-full border-t border-white `}></span>
+          </div>
+
+          <div className='absolute flex w-[25%] items-center right-[0%] top-80'>
+            <span className='w-6 h-6 rounded-full border-white border block -mr-[15px] bg-blue-100' />
+            <span className='w-2 h-2 rounded-full bg-white block ' />
+            <span className={`block w-full border-t border-white `}></span>
+          </div>
+
+          <div className='absolute w-full bottom-0 pr-[20%] flex justify-end items-start'>
+            <div className='flex w-[10%] items-center -mt-[12px]'>
+              <span className='w-6 h-6 rounded-full border-white border block -mr-[14px]' />
+              <span className='w-2 h-2 rounded-full bg-white block ' />
+              <span className={`block w-full border-t border-white`}></span>
+            </div>
+            <div className='h-16 border-r border-white w-px' />
+          </div>
+        </div>
+
+        <div className='grow flex flex-col align-center justify-center relative z-50'>
           <div className='bg-blue-100 rounded-b-xl absolute right-32 top-0 px-8 py-7'>
             <img src={'./img/escudo-unal.svg'} alt={'Escudo universidad nacional'} />
           </div>
 
-          <div className='container text-white px-20 min-h-[65vh] bg-blue-100 bg-opacity-40 bg-blend-multiply flex flex-col'>
-            <div className='grow pt-14 mb-20'>
-              <h1 className='font-medium text-8xl mb-3'>Bit a Bit</h1>
-              <h2 className='font-light text-[1.8em] tracking-widest leading-snug'>
+          <div className='container text-white px-20 2xl:px-36 2xl:min-h-[70vh] bg-blue-100 bg-opacity-40 bg-blend-multiply flex flex-col'>
+            <div className='grow pt-14 2xl:pt-28'>
+              <h1 className='font-medium text-[5em] leading-none 2xl:text-8xl mb-3'>Bit a Bit</h1>
+              <h2 className='font-light text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
                 La evolución digital en la
                 <br /> Universidad Nacional de Colombia
               </h2>
+              <div className='flex mt-10 pb-12'>
+                <img className='w-28' src={'./img/escudo-dned.svg'} alt={'Escudo DNED'} />
+                <div className='ml-7 pl-7 mr-4 border-l border-white py-4 '>
+                  <img className='w-24' src={'./img/escudo-unalab.svg'} alt={'Escudo Unalab'} />
+                </div>
+              </div>
             </div>
-            <img src={'./img/escudo-unal.svg'} alt={'Escudo universidad nacional'} />
           </div>
 
           <div className='text-center text-white -mt-10'>
             <button className='text-center block mx-auto'>
               <img className='w-14 block mx-auto' src='./img/scroll-button.svg' />{' '}
-              <span className='uppercase inline-block mt-4 text-lg tracking-wider opacity-80'>Scroll down</span>
+              <span className='inline-block mt-2 text-base font-light tracking-wider opacity-80'>
+                scroll para empezar
+              </span>
             </button>
           </div>
         </div>
-      </div>
-      <div className='bg-black text-white py-5 border-t-2 border-white'>
-        <div className='container flex justify-end'>
-          <Link className='font-light text-xl mr-12 uppercase tracking-widest flex align-center' href={'/creditos'}>
-            <img className='w-9 mr-2' src='./img/boton-siguiente.svg' alt='botón siguiente' /> <span>Créditos</span>
-          </Link>
-          <Link className='font-light text-xl uppercase tracking-widest flex align-center' href={'/autores'}>
-            <img className='w-9 mr-2' src='./img/boton-siguiente.svg' alt='botón siguiente' /> <span>Autores</span>
-          </Link>
+        <div className='bg-black text-white py-3 2xl:py-5 border-t-2 border-white'>
+          <div className='container flex justify-end'>
+            <Link
+              className='font-light text-base 2x:text-xl mr-12 uppercase tracking-widest flex align-center'
+              href={'/creditos'}
+            >
+              <img className='w-7 2xl:w-9 mr-2' src='./img/boton-siguiente.svg' alt='botón siguiente' />{' '}
+              <span>Créditos</span>
+            </Link>
+            <Link
+              className='font-light text-base 2x:text-xl uppercase tracking-widest flex align-center'
+              href={'/autores'}
+            >
+              <img className='w-7 2xl:w-9 mr-2' src='./img/boton-siguiente.svg' alt='botón siguiente' />{' '}
+              <span>Autores</span>
+            </Link>
+          </div>
         </div>
       </div>
     </main>
