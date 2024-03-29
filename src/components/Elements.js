@@ -18,7 +18,7 @@ const ParrafoInicial = (props) => {
             <div className='border-white border-t grow w-full' />
           </div>
           <div className='absolute right-40 top-1'>
-            <span className='block h-64 border-r border-white mr-3'></span>
+            <span className={`block h-64 border-r border-white mr-3`}></span>
             <span className='w-6 h-6 rounded-full bg-green-light border block' />
             <span className='w-2 h-2 rounded-full bg-white block -mt-4 ml-2' />
           </div>
