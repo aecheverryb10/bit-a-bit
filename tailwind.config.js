@@ -51,6 +51,7 @@ module.exports = {
       },
       boxShadow: {
         capitulo: '10px 4px 15px rgba(0, 0, 0, 0.5)',
+        capituloHover: '10px 4px 15px rgba(255, 255, 255, 0.5)',
       },
       screens: {
         '2xl': '1440px',

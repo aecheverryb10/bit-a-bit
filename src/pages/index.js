@@ -4,8 +4,8 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className={`min-h-[100vh] bg-cover`} style={{ backgroundImage: `url('./img/cubierta.png')` }}>
-      {/* <div className='w-full min-h-[100vh] flex flex-col align-center justify-center relative'>
-        <div className='bg-black bg-opacity-70 py-4 text-center'>
+      <div className='w-full min-h-[100vh] flex flex-col align-center justify-center relative'>
+        <div className='bg-black bg-opacity-70 py-4 text-center shadow-xl relative z-50'>
           <div className='container'>
             <h2 className='uppercase tracking-[0.18em] text-white'>
               <span className='border-r border-white font-medium pr-4 mr-4'>Bit a bit</span>{' '}
@@ -15,52 +15,54 @@ export default function Home() {
         </div>
 
         <div className='grow'>
-          <div className='h-[775px] flex items-center flex-grow text-white'>
-            <div className='basis-full h-full bg-cover'>
+          <div className='h-[700px] 2xl:h-[calc(100vh_-_56px)] flex items-center flex-grow text-white'>
+            <Link href={'/introduccion'} className='basis-full h-full bg-cover group'>
               <div className='flex flex-col h-full'>
                 <div className='text-center py-28'>
                   <p className='text-9xl font-thin'></p>
                 </div>
-                <div className='grow border-y border-white grow font-light text-3xl flex justify-end'>
-                  <div className=''>
+                <div className='grow border-y border-white font-light text-3xl flex justify-end'>
+                  <div className='h-full tracking-wider w-64 2xl:w-80 px-16 transition-all group-hover:bg-white group-hover:bg-opacity-10'>
                     <span className='block border-l border-white h-16 mx-auto w-0' />
                     <span className='block rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center'>
                       <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
                     </span>
-                    <h2 className='mt-7'>Introducción</h2>
+                    <h2 className='mt-7 text-2xl 2xl:text-3xl'>Introducción</h2>
                   </div>
                 </div>
-                <div className='bg-blend-multiply text-center py-24'></div>
+                <div className='bg-blend-multiply text-center py-20 2xl:py-24'></div>
               </div>
-            </div>
+            </Link>
 
-            <div
-              className='z-20 relative basis-1/5 h-full shadow-capitulo'
+            <Link
+              href={'/ascendencias-digitales'}
+              className='group z-20 relative basis-1/5 h-full shadow-capitulo block'
               style={{
                 background: `linear-gradient(233.61deg, rgba(74, 70, 255, 0.2) 32.21%, rgba(44, 42, 153, 0) 91.49%), url('./img/capitulo1-portada.png') center / cover`,
               }}
             >
               <div className='flex flex-col h-full'>
-                <div className='color-capitulo1 bg-blend-multiply text-center py-12'>
+                <div className='color-capitulo1 bg-blend-multiply text-center py-12 '>
                   <p className='text-9xl font-thin'>1</p>
                 </div>
-                <div className='grow border-y border-white grow font-light'>
+                <div className='grow border-y border-white grow font-light px-8 w-64 2xl:w-80 tracking-wider transition-all group-hover:bg-blue-base group-hover:bg-opacity-10'>
                   <span className='block border-l border-white h-16 mx-auto w-0' />
                   <span className='bg-blue-base block rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center'>
                     <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
                   </span>
-                  <h2 className='text-3xl mt-7'>Ascendencias digitales</h2>
-                  <p className='font-extralight text-2xl'>
+                  <h2 className='text-2xl 2xl:text-3xl mt-7'>Ascendencias digitales</h2>
+                  <p className='font-extralight text-lg 2xl:text-xl mt-2'>
                     perspectivas globales
                     <br /> y el caso colombiano
                   </p>
                 </div>
-                <div className='color-capitulo1 bg-blend-multiply text-center py-24'></div>
+                <div className='color-capitulo1 bg-blend-multiply text-center py-20 2xl:py-24'></div>
               </div>
-            </div>
+            </Link>
 
-            <div
-              className='z-10 relative basis-1/5 h-full bg-cover shadow-capitulo'
+            <Link
+              href={'/la-universidad-nacional-de-colombia-en-la-era-digital'}
+              className='group z-10 relative basis-1/5 h-full bg-cover shadow-capitulo block'
               style={{
                 background: `linear-gradient(233.61deg, rgba(74, 70, 255, 0.2) 32.21%, rgba(44, 42, 153, 0) 91.49%), url('./img/capitulo2-portada.png') center / cover`,
               }}
@@ -69,19 +71,20 @@ export default function Home() {
                 <div className='color-capitulo2 bg-blend-multiply text-center py-12'>
                   <p className='text-9xl font-thin'>2</p>
                 </div>
-                <div className='grow border-y border-white grow font-light'>
+                <div className='grow border-y border-white grow font-light px-8 w-64 2xl:w-80 tracking-wider transition-all group-hover:bg-purple-base group-hover:bg-opacity-40'>
                   <span className='block border-l border-white h-16 mx-auto w-0' />
                   <span className='block bg-purple-base rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center'>
                     <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
                   </span>
-                  <h2 className='text-3xl mt-7'>La Universidad Nacional de Colombia en la era digital</h2>
+                  <h2 className='text-2xl 2xl:text-3xl mt-7'>La Universidad Nacional de Colombia en la era digital</h2>
                 </div>
-                <div className='color-capitulo2 bg-blend-multiply text-center py-24'></div>
+                <div className='color-capitulo2 bg-blend-multiply text-center py-20 2xl:py-24'></div>
               </div>
-            </div>
+            </Link>
 
-            <div
-              className='basis-1/5 h-full bg-cover'
+            <Link
+              href={'/cultura-digital-unal'}
+              className='group basis-1/5 h-full bg-cover block'
               style={{
                 background: `linear-gradient(233.61deg, rgba(74, 70, 255, 0.2) 32.21%, rgba(44, 42, 153, 0) 91.49%), url('./img/capitulo3-portada.png')`,
               }}
@@ -90,44 +93,45 @@ export default function Home() {
                 <div className='color-capitulo3 bg-blend-multiply text-center py-12'>
                   <p className='text-9xl font-thin'>3</p>
                 </div>
-                <div className='grow border-y border-white grow font-light'>
+                <div className='grow border-y border-white grow font-light px-8 w-64 2xl:w-80 tracking-wider transition-all group-hover:bg-green-light group-hover:bg-opacity-20'>
                   <span className='block border-l border-white h-16 mx-auto w-0' />
                   <span className='bg-green-light block rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center'>
                     <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
                   </span>
-                  <h2 className='text-3xl mt-7'>Cultura digital UNAL</h2>
-                  <p className='font-extralight text-2xl w-56'>
+                  <h2 className='text-2xl 2xl:text-3xl mt-7'>Cultura digital UNAL</h2>
+                  <p className='font-extralight text-lg 2xl:text-xl mt-2'>
                     caminos a la
                     <br /> transformación digital
                   </p>
                 </div>
-                <div className='color-capitulo3 bg-blend-multiply text-center py-24'></div>
+                <div className='color-capitulo3 bg-blend-multiply text-center py-20 2xl:py-24'></div>
               </div>
-            </div>
+            </Link>
 
-            <div className='basis-full h-full bg-cover'>
+            <Link className='basis-full h-full bg-cover group' href={'/epilogo'}>
               <div className='flex flex-col h-full'>
                 <div className='text-center py-28'>
                   <p className='text-9xl font-thin'></p>
                 </div>
-                <div className='grow border-y border-white grow font-light'>
-                  <span className='block border-l border-white h-16 mx-auto w-0' />
-                  <span className='block rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center'>
-                    <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
-                  </span>
-                  <h2 className='text-3xl mt-7'>Epílogo</h2>
-                  <p className='font-extralight text-2xl'>
-                    La transformación digital,
-                    <br /> un proceso inacabado
-                  </p>
+                <div className='grow border-y border-white font-light'>
+                  <div className='h-full tracking-wider w-64 2xl:w-80 pl-16 transition-all group-hover:bg-white group-hover:bg-opacity-10'>
+                    <span className='block border-l border-white ml-4 h-16 w-0' />
+                    <span className='block rounded-full border border-white h-8 w-8 flex items-center justify-center'>
+                      <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
+                    </span>
+                    <h2 className='text-2xl mt-7 2xl:text-3xl'>Epílogo</h2>
+                    <p className='font-extralight text-lg 2xl:text-xl mt-7 2xl:mt-4'>
+                      La transformación digital, <span className='2xl:block'>un proceso inacabado</span>
+                    </p>
+                  </div>
                 </div>
-                <div className='bg-blend-multiply text-center py-24'></div>
+                <div className='bg-blend-multiply text-center py-20 2xl:py-24'></div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
-      </div> */}
-      <div
+      </div>
+      {/* <div
         className='w-full min-h-[100vh] flex flex-col align-center justify-center relative bg-blend-mode-lighten mix-blend-mode-lighten relative'
         style={{
           background: `linear-gradient(39.2deg, rgba(255, 118, 87, 0.2) -7.15%, rgba(0, 0, 0, 0.2) 68.29%), radial-gradient(77.64% 135.08% at 72.62% -5.14%, #326799 0%, rgba(78, 173, 215, 0.348804) 32.19%, rgba(161, 105, 250, 0.04) 100%)`,
@@ -192,7 +196,7 @@ export default function Home() {
           <div className='container text-white px-20 2xl:px-36 2xl:min-h-[70vh] bg-blue-100 bg-opacity-40 bg-blend-multiply flex flex-col'>
             <div className='grow pt-14 2xl:pt-28'>
               <h1 className='font-medium text-[5em] leading-none 2xl:text-8xl mb-3'>Bit a Bit</h1>
-              <h2 className='font-light text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
+              <h2 className='font-extralight text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
                 La evolución digital en la
                 <br /> Universidad Nacional de Colombia
               </h2>
@@ -232,7 +236,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
