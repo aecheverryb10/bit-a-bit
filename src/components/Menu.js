@@ -40,6 +40,7 @@ const Menu = () => {
             const activeItem = asPath === `/${url}`;
             return (
               <Link
+                key={`item-menu-${index}`}
                 className={`${capitulosIniciales ? 'text-2xl' : 'text-5xl '} d-block basis-1/5 text-left px-6 pb-10 ${
                   activeItem ? 'bg-black bg-opacity-80' : ''
                 }`}

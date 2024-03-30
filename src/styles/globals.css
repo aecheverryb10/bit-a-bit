@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import './audio-player.css';
+@import './react-modal.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;

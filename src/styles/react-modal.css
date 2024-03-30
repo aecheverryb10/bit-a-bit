@@ -1,0 +1,34 @@
+.ReactModal__Overlay {
+  opacity: 0;
+  z-index: 100;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.react-modal-overlay-base, .react-modal-overlay{
+  position: fixed;
+  background-color: rgba(2,35,68,.45);
+  transition: opacity 200ms ease-in-out;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.react-modal-overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.react-modal-content{
+  width: 100%;
+}
