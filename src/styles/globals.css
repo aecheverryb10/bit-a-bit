@@ -53,6 +53,7 @@ body {
 
 .caps{
   font-variant: small-caps;
+  text-transform: lowercase;
 }
 
 em{

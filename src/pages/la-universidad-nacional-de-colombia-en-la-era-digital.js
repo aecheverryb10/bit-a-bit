@@ -224,7 +224,7 @@ export default function UniversidadEraDigital() {
           </p>
         </BloqueTexto>
         <ScrollImage
-          img={'./img/figura_4.jpg'}
+          img={'./img/figura_4.png'}
           caption={
             <>
               <p>

@@ -4,12 +4,14 @@ export const slider_data = [
     alt: 'Figura 5',
     caption: (
       <>
-        <p>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
           <strong>Figura 5.</strong> Laboratorio de Electrónica-Circuitos Eléctricos, Facultad de Minas, Medellín
           (s.f.).
         </p>
-        <p>Fuente: Archivo Fotográfico Unimedios</p>
-        <p>(Históricas/Minas)</p>
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Archivo Fotográfico Unimedios</p>
+          <p>(Históricas/Minas)</p>
+        </div>
       </>
     ),
   },
@@ -18,24 +20,29 @@ export const slider_data = [
     alt: 'Figura 6',
     caption: (
       <>
-        <p>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
           <strong>Figura 6.</strong> Laboratorio de Electrónica, Facultad de Minas, Medellín (s.f.).
         </p>
-        <p>Fuente: Archivo Fotográfico Unimedios</p>
-        <p>(Históricas/Minas)</p>
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Archivo Fotográfico Unimedios</p>
+          <p>(Históricas/Minas)</p>
+        </div>
       </>
     ),
   },
   {
     src: './img/figura_7.jpg',
     alt: 'Figura 7',
+    title: 'Laboratorio de Electrónica, Facultad de Minas, Medellín (s.f.)',
     caption: (
       <>
-        <p>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
           <b>Figura 7.</b> Laboratorio de Electrónica, Facultad de Minas, Medellín (s.f.).
         </p>
-        <p>Fuente: Archivo Fotográfico Unimedios</p>
-        <p>(Históricas/Minas)</p>
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Archivo Fotográfico Unimedios</p>
+          <p>(Históricas/Minas)</p>
+        </div>
       </>
     ),
   },
@@ -44,11 +51,14 @@ export const slider_data = [
     alt: 'Figura 8',
     caption: (
       <>
-        <p>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
           <b>Figura 8.</b> Laboratorio de Electrónica, Facultad de Minas, Medellín (s.f.).
         </p>
-        <p>Fuente: Archivo Fotográfico Unimedios</p>
-        <p>(Históricas/Minas)</p>
+
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Archivo Fotográfico Unimedios</p>
+          <p>(Históricas/Minas)</p>
+        </div>
       </>
     ),
   },
