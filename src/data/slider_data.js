@@ -1,53 +1,54 @@
 export const slider_data = [
   {
-    src: '/slider/foto1.jpg',
-    alt: 'Figure 1',
+    src: './img/figura_5.jpg',
+    alt: 'Figura 5',
     caption: (
       <>
         <p>
-          <b>Figura 1.</b> Mabeg [Foto]. (2006).
+          <strong>Figura 5.</strong> Laboratorio de Electrónica-Circuitos Eléctricos, Facultad de Minas, Medellín
+          (s.f.).
         </p>
-        <p>Archivo Fotográfico Unimedios</p>
-        <p>(Archivo de todos los años /2006/Bogotá)</p>
+        <p>Fuente: Archivo Fotográfico Unimedios</p>
+        <p>(Históricas/Minas)</p>
       </>
     ),
   },
   {
-    src: './slider/foto2.jpg',
-    alt: 'Figure 2',
+    src: './img/figura_6.jpg',
+    alt: 'Figura 6',
     caption: (
       <>
         <p>
-          <b>Figura 2.</b> Mabeg [Foto]. (2006).{' '}
+          <strong>Figura 6.</strong> Laboratorio de Electrónica, Facultad de Minas, Medellín (s.f.).
         </p>
-        <p>Archivo Fotográfico Unimedios</p>
-        <p>(Archivo de todos los años /2006/Bogotá)</p>
+        <p>Fuente: Archivo Fotográfico Unimedios</p>
+        <p>(Históricas/Minas)</p>
       </>
     ),
   },
   {
-    src: './slider/foto3.jpg',
-    alt: 'Figure 3',
+    src: './img/figura_7.jpg',
+    alt: 'Figura 7',
     caption: (
       <>
         <p>
-          <b>Figura 3.</b> Mabeg [Foto]. (2006).{' '}
+          <b>Figura 7.</b> Laboratorio de Electrónica, Facultad de Minas, Medellín (s.f.).
         </p>
-        <p>Archivo Fotográfico Unimedios</p>
-        <p>(Archivo de todos los años /2006/Bogotá)</p>
+        <p>Fuente: Archivo Fotográfico Unimedios</p>
+        <p>(Históricas/Minas)</p>
       </>
     ),
   },
   {
-    src: './slider/foto1.jpg',
-    alt: 'Figure 4',
+    src: './img/figura_8.jpg',
+    alt: 'Figura 8',
     caption: (
       <>
         <p>
-          <b>Figura 4.</b> Mabeg [Foto]. (2006).{' '}
+          <b>Figura 8.</b> Laboratorio de Electrónica, Facultad de Minas, Medellín (s.f.).
         </p>
-        <p>Archivo Fotográfico Unimedios</p>
-        <p>(Archivo de todos los años /2006/Bogotá)</p>
+        <p>Fuente: Archivo Fotográfico Unimedios</p>
+        <p>(Históricas/Minas)</p>
       </>
     ),
   },

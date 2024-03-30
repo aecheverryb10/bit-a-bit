@@ -50,3 +50,11 @@ body {
 .main-content p:not(:last-of-type){
   @apply mb-10;
 }
+
+.caps{
+  font-variant: small-caps;
+}
+
+em{
+  @apply italic;
+}
