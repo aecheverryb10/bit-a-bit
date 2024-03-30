@@ -1,10 +1,17 @@
 import Capitulo from '@/components/Capitulo';
-import { BloqueTexto, ParrafoInicial } from '@/components/Elements';
+import { BloqueTexto, ParrafoInicial, TituloCapitulo } from '@/components/Elements';
 
 export default function Introduccion() {
   return (
     <>
       <Capitulo>
+        <TituloCapitulo>
+          <div className='flex items-center'>
+            <div className='py-20'>
+              <h1 className='text-6xl font-light'>Introducción</h1>
+            </div>
+          </div>
+        </TituloCapitulo>
         <ParrafoInicial>
           <p>
             La transformación digital, última etapa en el largo y complejo proceso de apropiación de las tecnologías

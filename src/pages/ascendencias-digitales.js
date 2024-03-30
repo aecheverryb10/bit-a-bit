@@ -1,4 +1,4 @@
-import { BloqueTexto, MainSection, ParrafoInicial } from '@/components/Elements';
+import { BloqueTexto, MainSection, ParrafoInicial, TituloCapitulo } from '@/components/Elements';
 import Capitulo from '@/components/Capitulo';
 import ScrollVideo from '@/components/ScrollVideo';
 import Timeline from '@/components/Timeline';
@@ -7,65 +7,20 @@ export default function AscendenciasDigitales() {
   return (
     <>
       <Capitulo>
-        <section>
-          <div className='text-white pt-24 pb-40 '>
-            <div className='flex justify-end mb-8'>
-              <div className='flex w-[70%] items-center'>
-                <span className='w-6 h-6 rounded-full bg-green-light border block -mr-4' />
-                <span className='w-2 h-2 rounded-full bg-white block ' />
-                <span className={`block w-full border-t border-white`}></span>
-              </div>
-            </div>
-
-            <div className='mb-12'>
-              <div className='flex w-[20%] items-center'>
-                <span className={`block w-full border-t border-white`}></span>
-                <span className='w-6 h-6 rounded-full border-white border block -mr-4' />
-                <span className='w-2 h-2 rounded-full bg-white block ' />
-              </div>
-            </div>
-
-            <div className='flex w-[80%] items-center -mb-3'>
-              <span className={`block w-full border-t border-white`}></span>
-              <span className='w-6 h-6 rounded-full bg-green-light border block -mr-4' />
-              <span className='w-2 h-2 rounded-full block bg-white' />
-            </div>
-
-            <div className='container pl-36'>
-              <div className='flex items-center'>
-                <span
-                  style={{ background: `linear-gradient(159.71deg, #02EBB6 0.2%, rgba(115, 115, 115, 0) 41.04%)` }}
-                  className='text-9xl font-extralight border-2 px-10 py-6 mr-8'
-                >
-                  1
-                </span>
-                <div>
-                  <h1 className='text-6xl font-light'>Ascendencias digitales</h1>
-                  <p className='text-4xl font-extralight mt-2'>perspectivas globales y el caso colombiano</p>
-                </div>
-              </div>
-            </div>
-
-            <div className='flex justify-end mb-20'>
-              <div
-                className='h-[1px] w-[76%] -mt-[1px]'
-                style={{ background: `linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2) 100%)` }}
-              />
-            </div>
-
-            <div className='flex justify-between'>
-              <div className='flex w-[60%] items-center -mb-3'>
-                <span className={`block w-full border-t border-white`}></span>
-                <span className='w-2 h-2 rounded-full block bg-white' />
-              </div>
-
-              <div className='flex w-[20%] items-center'>
-                <span className='w-6 h-6 rounded-full bg-green-light border block -mr-4' />
-                <span className={`block w-full border-t border-white`}></span>
-              </div>
+        <TituloCapitulo>
+          <div className='flex items-center'>
+            <span
+              style={{ background: `linear-gradient(159.71deg, #02EBB6 0.2%, rgba(115, 115, 115, 0) 41.04%)` }}
+              className='text-9xl font-extralight border-2 px-10 py-6 mr-8'
+            >
+              1
+            </span>
+            <div>
+              <h1 className='text-6xl font-light'>Ascendencias digitales</h1>
+              <p className='text-4xl font-extralight mt-2'>perspectivas globales y el caso colombiano</p>
             </div>
           </div>
-        </section>
+        </TituloCapitulo>
 
         <ParrafoInicial>
           <p className='mb-6 first-letter:text-7xl first-letter:me-4 first-letter:tracking-n first-letter:float-start first-letter:font-sans first-letter:font-extralight'>

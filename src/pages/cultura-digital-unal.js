@@ -1,15 +1,29 @@
 import Capitulo from '@/components/Capitulo';
-import { BloqueTexto, MainSection, ParrafoInicial } from '@/components/Elements';
+import { BloqueTexto, MainSection, ParrafoInicial, TituloCapitulo } from '@/components/Elements';
 import Podcast from '@/components/Podcast';
 import ScrollImage from '@/components/ScrollImage';
 import ScrollVideo from '@/components/ScrollVideo';
 import Slider from '@/components/Slider';
-import { slider_data, slider_data2 } from '@/data/slider_data';
+import { slider_data2 } from '@/data/slider_data';
 
 export default function CulturaDigital() {
   return (
     <>
       <Capitulo>
+        <TituloCapitulo>
+          <div className='flex items-center'>
+            <span
+              style={{ background: `linear-gradient(159.71deg, #02EBB6 0.2%, rgba(115, 115, 115, 0) 41.04%)` }}
+              className='text-9xl font-extralight border-2 px-10 py-6 mr-8'
+            >
+              3
+            </span>
+            <div>
+              <h1 className='text-6xl font-light'>Cultura Digital Unal:</h1>
+              <p className='text-4xl font-extralight mt-2'>caminos a la transformación digital</p>
+            </div>
+          </div>
+        </TituloCapitulo>
         <ParrafoInicial>
           <p>
             En el siglo <span className='caps'>XXI</span>, Internet se ha convertido en el artefacto por excelencia del
@@ -361,6 +375,7 @@ export default function CulturaDigital() {
         <Podcast
           title={'Seguridad y la ética en la Universidad Nacional'}
           subtitle={'Una conversación con el director de la DNED, el profesor Johan Sebastián Eslava Garzón'}
+          src={'./audio/recurso_5_ciberataques.mp3'}
         />
         <MainSection>
           <h3>Iniciativas estratégicas de apropiación y optimización tecnológica</h3>
@@ -558,7 +573,10 @@ export default function CulturaDigital() {
             de relacionarse con el mundo y las nuevas tecnologías —recurso 5 (Acuerdo 113 de 2013).
           </p>
         </BloqueTexto>
-        <Podcast title={'Conversación con el exdirector de la DNED, el profesor Gustavo Pérez Zapata.'} />
+        <Podcast
+          title={'Conversación con el exdirector de la DNED, el profesor Gustavo Pérez Zapata.'}
+          src={'./audio/recurso_6_transformacion_digital.mp3'}
+        />
         <BloqueTexto>
           <p>
             Con la creación de la <span className='caps'>DNED</span>, también comenzó a hablarse institucionalmente de{' '}
@@ -671,6 +689,7 @@ export default function CulturaDigital() {
           title={
             'Charla con la profesora y coordinadora de la división UNALab, Liz Karen Herrera Quintero, acerca de la Cultura Digital en la Unal.'
           }
+          src={'./audio/recurso_7_cultura_digital.mp3'}
         />
         <BloqueTexto>
           <p>
@@ -1234,7 +1253,7 @@ export default function CulturaDigital() {
           </p>
         </BloqueTexto>
         <ScrollImage
-          img1={'./img/figura_24.jpg'}
+          img={'./img/figura_24.jpg'}
           caption={
             <>
               <p>

@@ -1,5 +1,5 @@
 import Capitulo from '@/components/Capitulo';
-import { BloqueTexto, MainSection, ParrafoInicial } from '@/components/Elements';
+import { BloqueTexto, MainSection, ParrafoInicial, TituloCapitulo } from '@/components/Elements';
 import Podcast from '@/components/Podcast';
 import ScrollImage from '@/components/ScrollImage';
 import Slider from '@/components/Slider';
@@ -9,6 +9,21 @@ export default function UniversidadEraDigital() {
   return (
     <>
       <Capitulo>
+        <TituloCapitulo>
+          <div className='flex items-center'>
+            <span
+              style={{ background: `linear-gradient(159.71deg, #02EBB6 0.2%, rgba(115, 115, 115, 0) 41.04%)` }}
+              className='text-9xl font-extralight border-2 px-10 py-6 mr-8'
+            >
+              2
+            </span>
+            <div>
+              <h1 className='text-6xl font-light'>
+                La Universidad Nacional de Colombia <span className='block'>en la era digital</span>
+              </h1>
+            </div>
+          </div>
+        </TituloCapitulo>
         <ParrafoInicial>
           <p>
             Las computadoras están compuestas por circuitos eléctricos que desempeñan una función fundamental: llevar a
@@ -395,7 +410,7 @@ export default function UniversidadEraDigital() {
         </BloqueTexto>
         <Podcast
           title={`¿Cómo eran las clases de Ingeniería de Sistemas en la Sede Bogotá de la Universidad Nacional de Colombia en los años 1990?`}
-          src={'./audio/recurso_4_Inteligencia artificial.mp3'}
+          src={'./audio/recurso_4_inteligencia_artificial.mp3'}
         />
         <MainSection>
           <h2>Bitnet, Runcol e Internet</h2>
