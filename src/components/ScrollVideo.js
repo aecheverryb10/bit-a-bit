@@ -38,8 +38,8 @@ const ScrollVideo = (props) => {
 
 
 	return (
-		<div className='bg-white relative' ref={containerRef}>
-			<ReactPlayer className='!h-screen !w-full m-auto' playing={isPlaying} url={url} controls />
+		<div className='bg-black relative z-50' ref={containerRef}>
+			<ReactPlayer className='!h-screen !w-full m-auto' playing={isPlaying} url={url} controls muted />
 		</div>
 	);
 };
