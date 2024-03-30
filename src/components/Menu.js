@@ -9,6 +9,7 @@ const Menu = () => {
   const { asPath } = useRouter();
 
   const { height, width } = barraMenu.current?.getBoundingClientRect() ?? {};
+  const currentChapter = Capitulos.find((item) => `/${item.url}` === asPath);
 
   return (
     <div className='fixed z-50 xl:pr-20 w-full'>
@@ -75,9 +76,13 @@ const Menu = () => {
           Cerrar
         </button>
       </div>
-      <div className='bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg lg:pl-80'>
-        <p className='font-extralight text-xl'>Ascendencias digitales: perspectivas globales y el caso colombiano</p>
-      </div>
+      {!!currentChapter && (
+        <div className='bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg lg:pl-80'>
+          <p className='font-extralight text-xl'>
+            {currentChapter?.title} {currentChapter?.subtitle ?? ''}
+          </p>
+        </div>
+      )}
     </div>
   );
 };
