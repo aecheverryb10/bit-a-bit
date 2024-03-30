@@ -47,8 +47,8 @@ const ScrollImage = (props) => {
 	}, { scope: containerRef });
 
 	return (
-		<div className='bg-white h-[105vh]' ref={containerRef}>
-			<div ref={gradientRef} className='absolute bg-gradient-to-b from-20% from-white to-transparent h-screen w-full top-0 z-10' />
+		<div className='bg-white h-screen' ref={containerRef}>
+			<div ref={gradientRef} className='absolute bg-gradient-to-b from-white  from-[-20%] to-transparent to-30% h-screen w-full top-0 z-10' />
 			<div className='relative h-screen'>
 				<div ref={captionRef} className='absolute right-0 bottom-0 text-white z-10'>
 					{caption}
@@ -57,8 +57,7 @@ const ScrollImage = (props) => {
 					alt={alt}
 					src={img}
 					fill
-					objectPosition='center'
-					objectFit='cover'
+					style={{'objectFit': 'cover', 'objectPosition': 'center'}}
 				/>
 			</div>
 		</div>

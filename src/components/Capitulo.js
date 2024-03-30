@@ -24,7 +24,7 @@ const Capitulo = (props) => {
         </div>
       </main>
       <div
-        className='fixed bottom-0 w-full h-80 z-20'
+        className='pointer-events-none fixed bottom-0 w-full h-80 z-20'
         style={{ background: `linear-gradient(180deg, rgba(209, 182, 253, 0) 53%, rgba(255, 255, 255, 0.37) 100%)` }}
       />
     </>
