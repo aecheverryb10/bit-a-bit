@@ -69,16 +69,16 @@ export default function AscendenciasDigitales() {
 
         <ParrafoInicial>
           <p className='mb-6 first-letter:text-7xl first-letter:me-4 first-letter:tracking-n first-letter:float-start first-letter:font-sans first-letter:font-extralight'>
-            El término digital no se ha comprendido siempre de la misma forma, aunque desde hace siglos ha guardado
-            relación con los sistemas numéricos y sus usos. Digital surge del latín digitālis, lo que es relativo a los
-            dedos, de las manos o los pies, y se cree que para finales del siglo XIV se refería a los números hasta
+            El término <em>digital</em> no se ha comprendido siempre de la misma forma, aunque desde hace siglos ha guardado
+            relación con los sistemas numéricos y sus usos. <em>Digital</em> surge del latín <em>digitālis</em>, lo que es relativo a los
+            dedos, de las manos o los pies, y se cree que para finales del siglo <span>XIV</span> se refería a los números hasta
             diez, los que pueden contarse con los dedos de las manos (Online Etymology Dictionary, 2021).
           </p>
           <p>
-            Lo anterior tiene más sentido si se considera que digitālis, a su vez, deriva de dĭgĭtus, es decir, “dedo de
-            la mano”. Esta semejanza, por ejemplo, llevó a que, en 1542, Leonard Fuch nombrara Digitalis purpurea a una
+            Lo anterior tiene más sentido si se considera que <em>digitālis</em>, a su vez, deriva de <em>dĭgĭtus</em>, es decir, “dedo de
+            la mano”. Esta semejanza, por ejemplo, llevó a que, en 1542, Leonard Fuch nombrara <em>Digitalis purpurea</em> a una
             planta que parecía un dedal (Online Etymology Dictionary, 2021). El vocablo se relaciona, además, con la
-            raíz protoindoeuropea deik, que significa mostrar o señalar (Online Etymology Dictionary, 2017). De modo
+            raíz protoindoeuropea <em>deik</em>, que significa mostrar o señalar (Online Etymology Dictionary, 2017). De modo
             que, el sentido numérico de lo digital se halla en su inseparable relación con los dedos, en lo que puede
             ser contabilizado o señalado por ellos.
           </p>
@@ -93,7 +93,7 @@ export default function AscendenciasDigitales() {
         </MainSection>
         <BloqueTexto>
           <p>
-            En el siglo XX, el concepto de digital se adaptó, para referirse, concretamente, a los datos representados
+            En el siglo <span>XX</span>, el concepto de <em>digital</em> se adaptó, para referirse, concretamente, a los datos representados
             por dígitos numéricos (Online Etymology Dictionary, 2021). La computación fue la disciplina científica que
             resignificó este término en un nuevo universo de posibilidades para usar y manipular la información. Esta
             nueva comprensión de lo digital dividió el mundo material, mecánico y analógico de uno intangible,
@@ -104,24 +104,24 @@ export default function AscendenciasDigitales() {
         <BloqueTexto>
           <p>
             La digitalización puede ser entendida como el proceso de “conversión de datos y procesos analógicos a un
-            formato legible por máquinas” (OCDE, 2019, p. 18). En otras palabras, la digitalización es un proceso de
+            formato legible por máquinas” (<span>OCDE</span>, 2019, p. 18). En otras palabras, la digitalización es un proceso de
             representación de la realidad en códigos que pueden ser leídos por máquinas. Si lo pensamos de otra forma,
             podríamos decir que este proceso es parecido a lo que pasa en una cerradura: las llaves de metal representan
             un código, el cual puede ser leído por una máquina (la cerradura). Cuando la llave se mueve, la cerradura
             lee el código y el mecanismo se activa en sus dos únicas funciones: abrir o cerrar. En términos sociales,
             puede pensarse que la era digital es una etapa histórica del ser humano en su relación con las máquinas.
-            Norbert Wiener definió esta etapa en 1948, a través del concepto de cibernética, como la nueva ciencia de la
+            Norbert Wiener definió esta etapa en 1948, a través del concepto de <em>cibernética</em>, como la nueva ciencia de la
             comunicación y control entre el ser humano y la máquina (Téllez- Valdés, 1987, p. 9).
           </p>
 
           <p>
             El tránsito del mundo analógico al mundo digital experimentó un proceso paulatino de cambio tecnológico,
             cuyos orígenes se remontan a un sistema lógico y mecánico de equivalencias: las tarjetas perforadas. En las
-            primeras décadas del siglo XVIII, nacieron las tarjetas perforadas, como una adaptación de los mecanismos de
+            primeras décadas del siglo <span>XVIII</span>, nacieron las tarjetas perforadas, como una adaptación de los mecanismos de
             relojería y las cajas de música. Su funcionamiento dependía de dos elementos: (1) las tarjetas que contienen
             perforaciones con un significado asignado y (2) la máquina que interpretaba esas perforaciones según una
             convención establecida. Era pues un sistema de equivalencias. Una de las aplicaciones pioneras de este
-            sistema fue la máquina de tejer de Joseph Marie Jacquard, en la Francia de comienzos del siglo XIX. La
+            sistema fue la máquina de tejer de Joseph Marie Jacquard, en la Francia de comienzos del siglo <span>XIX</span>. La
             máquina leía las tarjetas que contenían información sobre el camino que debían seguir los hilos para
             producir diseños determinados. Estos fueron los inicios de los sistemas del procesamiento de datos y la
             automatización (Téllez-Valdés, 1987, p. 13).
@@ -139,10 +139,10 @@ export default function AscendenciasDigitales() {
 
           <p>
             La lógica de funcionamiento de las tarjetas perforadas fue aplicada para realizar este tipo de cálculos,
-            progresivamente más complejos. A finales del siglo XIX, fue usada en Estados Unidos por Herman Hollerith en
+            progresivamente más complejos. A finales del siglo <span>XIX</span>, fue usada en Estados Unidos por Herman Hollerith en
             una máquina electromecánica para tabular información registrada en tarjetas perforadas. Su invento facilitó
             el censo de 1890, pues permitió procesar alrededor de 15 millones de registros individuales en menos de dos
-            años. Entrado el siglo XX, las tarjetas perforadas ampliaron su campo de acción en el manejo y el
+            años. Entrado el siglo <span>XX</span>, las tarjetas perforadas ampliaron su campo de acción en el manejo y el
             procesamiento de datos masivos. Tanto los entes gubernamentales como la industria privada usaron esta
             tecnología para procesos de contabilidad, cálculo y análisis estadísticos. Los sistemas de seguridad social,
             la industria de seguros, las compañías telefónicas, las empresas manufactureras y los servicios públicos
@@ -150,10 +150,10 @@ export default function AscendenciasDigitales() {
           </p>
 
           <p>
-            La primera mitad del siglo XX fue un tiempo fructífero en el desarrollo de las primeras calculadoras y
+            La primera mitad del siglo <span>XX</span> fue un tiempo fructífero en el desarrollo de las primeras calculadoras y
             computadoras electrónicas en Norteamérica y Europa. La computadora electromecánica Z1, desarrollada en
             Alemania en la década de 1930 (Rojas, 2014); la creación de la Oficina de Computación Thomas J. Watson con
-            la ayuda de International Business Machines (IBM) Corporation, en la Universidad de Columbia en 1934; la
+            la ayuda de International Business Machines (<span>IBM</span>) Corporation, en la Universidad de Columbia en 1934; la
             Eniac, calculadora electrónica que inauguró la era de la computación digital norteamericana en 1946; y la
             Univac 1, primera computadora de uso comercial en la década de 1950 (Ceruzzi, 2003, pp. 15-18). Estos casos
             marcan la primera etapa de desarrollo de las ciencias computacionales en Occidente, donde paulatinamente se
@@ -171,22 +171,22 @@ export default function AscendenciasDigitales() {
           </p>
 
           <p>
-            Es así como, en la segunda mitad del siglo XX, la computación comenzó a adquirir estos rasgos y dimensiones.
+            Es así como, en la segunda mitad del siglo <span>XX</span>, la computación comenzó a adquirir estos rasgos y dimensiones.
             Aquel fue el momento en que la naturaleza de estas tecnologías cambió, para insertarse en nuevas esferas
             sociales, económicas y culturales. En 1962, el francés Phillipe Dreyfussugirió la palabra “informática”,
-            como expresión derivada de los vocablosinformación y automatización, entendida como “el conjunto de técnicas
+            como expresión derivada de los vocablos <em>información</em> y <em>automatización</em>, entendida como “el conjunto de técnicas
             destinadas al tratamiento lógico y automático de la información”, para la toma de decisiones desde el punto
             de vista de los sistemas integrados (Téllez-Valdés, 1987, p. 11).
           </p>
 
           <p>
-            La segunda mitad del siglo XX es reconocida como la época de los más importantes avances de la informática y
+            La segunda mitad del siglo <span>XX</span> es reconocida como la época de los más importantes avances de la informática y
             la computación, por sus impactos a nivel sociocultural: por una parte, desde finales de la década de 1940,
             las computadoras pasaron de ser instrumentos especializados para la ciencia, costosos y frágiles, a
-            productos comerciales que podían fabricarse y venderse. Particularmente, IBM desarrolló equipos para el
+            productos comerciales que podían fabricarse y venderse. Particularmente, <span>IBM</span> desarrolló equipos para el
             manejo de la información para empresas estadounidenses. Posteriormente, en las dos décadas siguientes
             (1960-1970), el tamaño de las computadoras fue reduciéndose y sus funciones especializándose, de modo que
-            permitieron el surgimiento de la computación personal, una suerte de electrodoméstico en los hogares
+            permitieron el surgimiento de la computación personal, una suerte de <em>electrodoméstico</em> en los hogares
             norteamericanos y europeos. Alrededor de 1980, pasó de ser un hardware especializado a un producto
             estandarizado, definido por software comercial, y cada uno adquirió importantes sectores del mercado.
             Finalmente, en la década de 1990, las computadoras se convirtieron en agentes que tejieron redes globales,
@@ -211,10 +211,10 @@ export default function AscendenciasDigitales() {
             etc.) que encuentra sus inicios en Arpanet, una red pionera de conmutación de paquetes de información. Dos
             elementos distinguieron a esta nueva tecnología: su carácter abierto y su capacidad de transferir paquetes
             de información, cúmulos de datos con sentidos propios. Desde la posibilidad de enviar correos electrónicos
-            hasta la consolidación de la world wide web (red informática mundial), el Internet revolucionó los sistemas
+            hasta la consolidación de la <em>world wide web</em> (red informática mundial), el Internet revolucionó los sistemas
             y flujos de información entre las sociedades humanas; y, al igual que la computación, se insertó en gran
             parte de las esferas y disciplinas, transformando profundamente las formas de sociabilidad a escalas
-            globales (Leiner et al., 1997).
+            globales (Leiner <em>et al.</em>, 1997).
           </p>
 
           <p>
@@ -229,7 +229,7 @@ export default function AscendenciasDigitales() {
           </p>
 
           <p>
-            A mediados del siglo XX,se implantó la informática en Latinoamérica en medio de particulares coyunturas
+            A mediados del siglo <span>XX</span>,se implantó la informática en Latinoamérica en medio de particulares coyunturas
             políticas y contextuales. Diferentes grados de libertad para los desafíos científicos y técnicos que
             representaron estas nuevas tecnologías. Brasil y Argentina, por ejemplo, experimentaron el panorama común de
             las dictaduras y, con ello, complejos y desconfiados diálogos con las prácticas científicas (Barrancos,
@@ -241,12 +241,12 @@ export default function AscendenciasDigitales() {
           <p>
             Chile, Argentina, Venezuela, Colombia, México, Uruguay, Cuba y Brasil ingresaron a esta nueva era digital de
             la computación entre 1957 y 1973, curiosamente, los primeros fueron Cuba y Colombia; mientras que Uruguay
-            fue el último. En 1957, se instaló la primera computadora en Colombia, una IBM 650, importada por Bavaria,
+            fue el último. En 1957, se instaló la primera computadora en Colombia, una <span>IBM</span> 650, importada por Bavaria,
             empresa cervecera. Un año más tarde, México y Cuba adquirieron un equipo de la misma referencia. La llegada
             de estas máquinas requería de esfuerzos significativos en cuanto a infraestructura y acondicionamiento de
             espacios, pues eran instrumentos enormes que necesitaban refrigeración para enfriar los tubos al vacío. Cuba
             figura, pues, como pionera en el caso latinoamericano, al ser el primer país en fabricar equipos de forma
-            local, cuando en 1969 se produjo la primera microcomputadora en el país, la CID 201-A (Dávila-Sguerra, 2015,
+            local, cuando en 1969 se produjo la primera microcomputadora en el país, la <span>CID</span> 201-A (Dávila-Sguerra, 2015,
             pp. 12-13; Rodríguez y Carnota, 2015b, pp. xxiii- xxxiii).
           </p>
 
@@ -255,8 +255,8 @@ export default function AscendenciasDigitales() {
             Universidad Católica de Río de Janeiro en 1960, la Datatron Burroughs B-205, usada para trabajos de
             computación científica e ingeniería de la computación. Posteriormente, en los años 1980, Brasil se convirtió
             en uno de los pocos países con tecnologías propias en informática, alimentado por la Política Nacional de
-            Informática (PNI), que llegó a abastecer la mitad del mercado brasileño. Por su parte, Chile adquirió sus
-            primeros equipos en 1962: una IBM 1401 y una ER-56 Standard Elektrik Lorenzo, de fabricación alemana, para
+            Informática (<span>PNI</span>), que llegó a abastecer la mitad del mercado brasileño. Por su parte, Chile adquirió sus
+            primeros equipos en 1962: una <span>IBM</span> 1401 y una <span>ER</span>-56 Standard Elektrik Lorenzo, de fabricación alemana, para
             la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile (Rodríguez y Carnota, 2015b, pp.
             xxv-xxvi).
           </p>
@@ -292,7 +292,7 @@ export default function AscendenciasDigitales() {
             Como se señaló, Colombia fue uno de los primeros países en conectarse con las tecnologías computacionales en
             el contexto latinoamericano. Su recorrido en la era digital podría encontrar uno de sus orígenes en 1930,
             década en la cual comenzaron a usarse tarjetas perforadas electrónicas para realizar los censos nacionales.
-            A lo largo del siglo XX y durante lo corrido del siglo siguiente, estas nuevas tecnologías se adaptaron a
+            A lo largo del siglo <span>XX</span> y durante lo corrido del siglo siguiente, estas nuevas tecnologías se adaptaron a
             las distintas necesidades: censo de las poblaciones, administración informática de empresas e instituciones
             estatales, contabilidad e investigación en distintas universidades, entre otras.
           </p>
@@ -316,8 +316,8 @@ export default function AscendenciasDigitales() {
           <p>
             La computación moderna, surgida a nivel global en los años treinta, llegó a Colombia a finales de la década
             de 1950. En este proceso, el sector productivo antecedió, a las universidades, abriendo camino para la
-            posterior investigación académica. Entre 1957 y 1958, cuatro empresas colombianas adquirieron un mainframe
-            IBM 650, a saber, Bavaria, Coltejer, las Empresas Públicas de Medellín (EPM) y Ecopetrol. Posteriormente, en
+            posterior investigación académica. Entre 1957 y 1958, cuatro empresas colombianas adquirieron un <em>mainframe</em>
+            <span>IBM</span> 650, a saber, Bavaria, Coltejer, las Empresas Públicas de Medellín (<span>EPM</span>) y Ecopetrol. Posteriormente, en
             1963 y 1968, llegaron estos mismos equipos a la Universidad de los Andes y la Universidad Nacional de
             Colombia, respectivamente. En el caso de la Universidad de los Andes, el computador llegó al Departamento de
             Ingeniería Eléctrica, donde permitió la creación de los primeros programas académicos en esta nueva
@@ -350,7 +350,7 @@ export default function AscendenciasDigitales() {
           </p>
 
           <p>
-            Aunado a lo anterior, la integración de las tecnologías computacionales en la segunda mitad siglo XX
+            Aunado a lo anterior, la integración de las tecnologías computacionales en la segunda mitad siglo <span>XX</span>
             colombiano partió del uso de los tubos al vacío, pasando por los transistores y los circuitos integrados,
             hasta llegar a los microprocesadores. Aunque, para las décadas de 1960- 1970, los computadores aún eran
             escasos, en el país hubo importantes avances tanto en el nivel investigativo, como en la formación de una
@@ -371,13 +371,13 @@ export default function AscendenciasDigitales() {
             en la educación básica (art. 23), lo cual favoreció la alfabetización informática. En paralelo a esta
             iniciativa, transcurrieron eventos como el Foro de la Asociación Colombiana de Universidades sobre
             informática y educación universitaria y el primer Simposio Colombiano de Informática, Educación y
-            Capacitación. Después, en 2008, se publicó el libro Lineamiento para la formación de planes estratégicos de
-            incorporación de las tecnologías de la información y las comunicaciones (TIC) en instituciones de educación
-            superior (Mesa, 2013, pp. 76-77).
+            Capacitación. Después, en 2008, se publicó el libro <em>Lineamiento para la formación de planes estratégicos de
+            incorporación de las tecnologías de la información y las comunicaciones (<span>TIC</span>) en instituciones de educación
+            superior</em> (Mesa, 2013, pp. 76-77).
           </p>
 
           <p>
-            En los inicios del siglo XXI, Colombia ingresó en la era de la virtualidad, en la que la conjunción del
+            En los inicios del siglo <span>XXI</span>, Colombia ingresó en la era de la virtualidad, en la que la conjunción del
             procesamiento de datos de la computación y la conectividad que Internet facilitaba propició el desarrollo de
             nuevas tecnologías, que a su vez, se integraron inseparablemente en el ámbito educativo, principalmente en
             el universitario, y de manera progresiva en las instituciones de educación básica. El impulso inicial del

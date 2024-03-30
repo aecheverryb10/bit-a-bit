@@ -13,18 +13,18 @@ export default function UniversidadEraDigital() {
       <h2>Los inicios</h2>
       <p>
         Las puertas lógicas mencionadas nacieron como circuitos electrónicos integrados, formados internamente con unos
-        dispositivos llamados transistores que, dependiendo de su composición, podían realizar funciones específicas:
+        dispositivos llamados <em>transistores</em> que, dependiendo de su composición, podían realizar funciones específicas:
         sumas, restas, multiplicaciones, inclusión y exclusión, entre otras. El principio de esto es simple: hacer
         operaciones matemáticas con solo dos dígitos: el 0 y el 1 (operaciones en el sistema numérico binario); y,
         dependiendo de la función del transistor, los sensores emitían una respuesta: prendido o apagado. Debido a ello,
         la computación requirió de un lenguaje particular para funcionar. La computación se basa en la combinación de
-        operacionessimples, operadas por tablas de verdad que asignan un valor lógico binario a cada señal: si A,
-        entonces B (Jiménez-Ramírez, 2020). Así pues, las computadoras adquirieron su renombre, por su capacidad de
+        operacionessimples, operadas por tablas de verdad que asignan un valor lógico binario a cada señal: <em>si A,
+        entonces B</em> (Jiménez-Ramírez, 2020). Así pues, las computadoras adquirieron su renombre, por su capacidad de
         computar a través de circuitos eléctricos.
       </p>
 
       <p>
-        En la Universidad Nacional de Colombia, el término computar ha evolucionado a lo largo del tiempo. En 1868, se
+        En la Universidad Nacional de Colombia, el término <em>computar</em> ha evolucionado a lo largo del tiempo. En 1868, se
         usaba para referirse al cálculo manual de las notas y faltas de los estudiantes, un proceso que determinaba su
         estado académico al finalizar el periodo. En aquella época, la operación consistía en sumar números que
         representaban el desempeño de los alumnos en los diferentes cursos (Universidad Nacional de Colombia, 1868, pp.
@@ -33,10 +33,10 @@ export default function UniversidadEraDigital() {
       </p>
 
       <p>
-        Para la segunda mitad del siglo XX, con el surgimiento de las ciencias computacionales y la aparición de los
+        Para la segunda mitad del siglo <span>XX</span>, con el surgimiento de las ciencias computacionales y la aparición de los
         primeros equipos comerciales, empezó a desarrollarse una variedad de análisis sobre la relevancia de estas
-        ciencias en diferentes áreas del conocimiento. En 1954, se publicó un artículo en la Revista de la Facultad de
-        Medicina, donde se presentaba el sanguinómetro, una computadora fabricada en Estados Unidos diseñada para contar
+        ciencias en diferentes áreas del conocimiento. En 1954, se publicó un artículo en la <em>Revista de la Facultad de
+        Medicina</em>, donde se presentaba el <em>sanguinómetro</em>, una computadora fabricada en Estados Unidos diseñada para contar
         glóbulos rojos de manera automática. Este avance marcó un hito en la integración de la tecnología y la medicina,
         demostrando el potencial de las ciencias computacionales para revolucionar diversos campos. Esta computadora
         contaba con una cámara de televisión que detectaba los glóbulos y un contador que los registraba a través de
@@ -69,26 +69,32 @@ export default function UniversidadEraDigital() {
         comparación con los análogos, además requerían de grandes esfuerzos de programación para solucionar algunos
         problemas que para el otro tipo de computadoras resultaba sencillo. Por tal razón, para esta época los
         computadores análogos ya eran una herramienta básica para los ingenieros y los científicos, mientras que los
-        digitales aún estaban en proceso de desarrollo (López, 1965, p. 46). Ambos tipos de computador hicieron parte
+        digitales aún estaban en proceso de desarrollo (López, 1965, p. 46). </p>
+        
+        <p>
+        Ambos tipos de computador hicieron parte
         constitutiva de la universidad, pero el desarrollo del campo de la computación digital representó,
         particularmente, un reto para la institución. El más evidente: ¿cómo adquiriría la universidad estos equipos tan
         costosos? También, ¿cómo construiría una escuela que pudiese comprender, estudiar y desarrollar los complejos
         lenguajes de la programación? Incluso a nivel global, el reto era reciente, apenas en 1954, Jhon Backtus lideró
-        los estudios en programación con una IBM que, eventualmente, llevaría a la creación de Fortran considerado “el
-        primer lenguaje de programación de alto nivel” (Boletín de Matemáticas, 1973, p. 323).
+        los estudios en programación con una <span>IBM</span> que, eventualmente, llevaría a la creación de Fortran considerado “el
+        primer lenguaje de programación de alto nivel” (<em>Boletín de Matemáticas</em>, 1973, p. 323).
       </p>
 
       <p>
-        Así, el concepto digital, en el sentido informático, comenzó a hacer parte esencial de los problemas
+        Así, el concepto <em>digital</em>, en el sentido informático, comenzó a hacer parte esencial de los problemas
         investigativos de la Universidad Nacional de Colombia que, para esos años, se enlazaba con otro problema de
         proporciones similares: las telecomunicaciones. Eran las dos caras de la era digital, por un lado, la velocidad
         de procesar información; por el otro, la capacidad de enviar esa información de un lugar a otro, de conectar a
         las personas y las instituciones. En el Acuerdo 1 de 1954, el Consejo Académico creó el curso de
         Telecomunicaciones, en la Facultad de Matemáticas e Ingeniería, influenciado y financiado por la compañía
-        Ericsson Ltda. de Bogotá (Acuerdo 1 de 1954) —figura 3. La relación entre esta compañía y Colombia inició en
+        Ericsson Ltda. de Bogotá (Acuerdo 1 de 1954) —figura 3. </p>
+        
+        <p>
+        La relación entre esta compañía y Colombia inició en
         1896, cuando Lars Magnus Ericsson envió a la Empresa de Teléfonos de Bogotá cincuenta aparatos telefónicos.
         Medio siglo después, en 1945, Ericsson se constituyó legalmente como una empresa en Colombia, aportando desde
-        esos años a la automatización de los servicios de telefonía en el país (Ericsson in Colombia, 2023).
+        esos años a la automatización de los servicios de telefonía en el país (<em>Ericsson in Colombia</em>, 2023).
       </p>
 
       <h1 className='text-9xl'>FOTO</h1>
@@ -104,20 +110,20 @@ export default function UniversidadEraDigital() {
       </p>
 
       <p>
-        Si la era digital tuviese que resumirse en dos conceptos podríamos elegir los de computar y conmutar, dicho de
-        otro modo, calcular e intercambiar. En electrónica, conmutar significa “cambiar el sentido de una señal o
+        Si la era digital tuviese que resumirse en dos conceptos podríamos elegir los de <em>computar</em> y <em>conmutar</em>, dicho de
+        otro modo, calcular e intercambiar. En electrónica, <em>conmutar</em> significa “cambiar el sentido de una señal o
         corriente eléctrica” (Asociación de Academias de la Lengua Española [Asale] y Real Academia de la Lengua
-        Española [RAE], 2023) y es fundamental tanto en los sistemas de comunicación como en los computacionales. Los
+        Española [<span>RAE</span>], 2023) y es fundamental tanto en los sistemas de comunicación como en los computacionales. Los
         conmutadores son dispositivos que crean una ruta adecuada para que la información viaje de una fuente a un
         destino determinado. Sus usos son múltiples, desde lo más básico que son los circuitos, hasta las redes
-        computacionales que permiten conmutar paquetes de datos con distintas tecnologías enlaces de transmisión (Tema
-        4. Redes de conmutación, 2023). La creación de este curso planteaba un escenario valioso para el desarrollo y la
+        computacionales que permiten conmutar paquetes de datos con distintas tecnologías enlaces de transmisión (<em>Tema
+        4. Redes de conmutación</em>, 2023). La creación de este curso planteaba un escenario valioso para el desarrollo y la
         compresión de las redes locales de comunicación, la transmisión de datos a largas distancias y la práctica en
         tecnologías de la conmutación.
       </p>
 
       <p>
-        Desde 1958, se tiene registro del uso de máquinas de IBM en el Departamento de Matemáticas y Estadística
+        Desde 1958, se tiene registro del uso de máquinas de <span>IBM</span> en el Departamento de Matemáticas y Estadística
         (Acuerdo 24 de 1958), pero solo hasta 1960 se creó una dependencia específica enfocada a “entrar de lleno en el
         campo de la utilización de las máquinas computadoras”: la Oficina Preparativa de Cómputos Electrónicos en la
         Facultad de Matemáticas (Acuerdo 76 de 1960). Esta oficina tenía el objetivo de impulsar los trabajos de
@@ -132,7 +138,7 @@ export default function UniversidadEraDigital() {
         En los primeros años la universidad pudo acceder a los equipos a través del alquiler, gracias a la cooperación
         con otros centros y entidades oficiales (Acuerdo 76 de 1960). Por ejemplo, en 1965 se celebra un contrato con el
         Instituto Colombiano para la Reforma Agraria (Incora), para el arrendamiento de un computador electrónico y un
-        operador de consola. El Incora, a su vez, tenía contrato con IBM Colombia para el uso de estos equipos
+        operador de consola. El Incora, a su vez, tenía contrato con <span>IBM</span> Colombia para el uso de estos equipos
         (Resolución 322 de 1965). La llegada de los equipos implicó, asimismo, la capacitación de personas para
         participar de su uso.
       </p>
@@ -140,15 +146,15 @@ export default function UniversidadEraDigital() {
       <p>
         Con la creación del Centro de Computación en 1964, se inició el proceso de consolidación de una escuela de la
         computación y la programación en la Universidad Nacional de Colombia. Para ese año ya se habían desarrollado
-        varios contratos con IBM de Colombia SA (Resolución 142 de 1964) y se comenzaban a dividir las tareas de las
+        varios contratos con <span>IBM</span> de Colombia SA (Resolución 142 de 1964) y se comenzaban a dividir las tareas de las
         personas que participarían en esta dependencia: un jefe administrativo, un encargado de la enseñanza y la
         investigación, un programador y un perforador de tarjetas (Acuerdo 7 de 1966).
       </p>
 
       <p>
         Para ocupar estos cargos, se debía tener tanto conocimientos en ingeniería, matemáticas o física, como en campos
-        más específicos que solo maneja IBM, como 1620, sistematización, perforación de tarjetas y análisis de
-        computación. En definitiva, la cooperación entre IBM y la Universidad Nacional de Colombia fue cardinal en estas
+        más específicos que solo maneja <span>IBM</span>, como 1620, sistematización, perforación de tarjetas y análisis de
+        computación. En definitiva, la cooperación entre <span>IBM</span> y la Universidad Nacional de Colombia fue cardinal en estas
         primeras etapas —figura 4 (Acuerdo 172 de 1965).
       </p>
 
@@ -157,7 +163,7 @@ export default function UniversidadEraDigital() {
       <p>
         En 1965, la sede Medellín de la Universidad Nacional estableció un fondo especial para apoyar a la Facultad
         Nacional de Minas de Medellín, creando el Centro Universitario de Computación (Resolución 61 de 1965). Este
-        centro adquirió una serie de equipos de IBM para su operación, incluyendo una unidad central 1131-2B, una
+        centro adquirió una serie de equipos de <span>IBM</span> para su operación, incluyendo una unidad central 1131-2B, una
         impresora 1132-1, una lectora perforadora 1442- 1, discos magnéticos 2135-1, así como perforadoras,
         clasificadoras, interpretadoras y tabuladoras (Resolución 232 de 1967). Este desarrollo representó un cambio
         significativo en la forma en que se producía el conocimiento, marcando la transición de procesos manuales y el
@@ -171,7 +177,7 @@ export default function UniversidadEraDigital() {
         La introducción de la computación trajo consigo la profesionalización de los programas académicos. En la década
         de 1960, la Facultad de Ingeniería, con el apoyo de la Organización de las Naciones Unidas para la Educación, la
         Ciencia y la Cultura (Unesco), emprendió la tarea de diseñar un programa de especialización para graduados.
-        Después de varios años de colaboración, el Consejo Superior Universitario (CSU) aprobó la creación del programa
+        Después de varios años de colaboración, el Consejo Superior Universitario (<span>CSU</span>) aprobó la creación del programa
         de Magíster en Ingeniería de Sistemas en 1967, uno de los primeros posgrados en esta área del conocimiento en
         América Latina. En 1973 se estableció una sección de Ingeniería de Sistemas, que concentró todas las actividades
         relacionadas y se independizó de los demás departamentos de la Facultad, convirtiéndose en 1978 en el
@@ -180,7 +186,7 @@ export default function UniversidadEraDigital() {
 
       <p>
         Con la creación del departamento, nació la carrera de Ingeniería de Sistemas, respaldada por el Acuerdo 1 del 14
-        de marzo de 1978 del Consejo Superior Universitario (CSU). Esta carrera tuvo una importancia crucial para el
+        de marzo de 1978 del Consejo Superior Universitario (<span>CSU</span>). Esta carrera tuvo una importancia crucial para el
         desarrollo de la disciplina en la universidad y el país, destacándose por su enfoque en la investigación de
         operaciones, la programación y el cálculo automático, y el análisis y diseño de sistemas de información. Estos
         enfoques permitieron formar profesionales que impulsaron la gestión administrativa, científica y tecnológica,
@@ -195,7 +201,7 @@ export default function UniversidadEraDigital() {
         La introducción de nuevas tecnologías y conocimientos transformó la universidad en todas sus áreas del
         conocimiento, aunque en distintos grados según las características disciplinarias. La adopción de tecnologías
         digitales significó un cambio fundamental a nivel académico, administrativo y productivo. Durante la segunda
-        mitad del siglo XX, se desarrollaron una serie de políticas y proyectos que contribuyeron a la creación de una
+        mitad del siglo <span>XX</span>, se desarrollaron una serie de políticas y proyectos que contribuyeron a la creación de una
         cultura digital y un sólido marco institucional enfocado en la investigación, la gestión y el gobierno
         electrónico. Este último se refiere al uso de tecnologías de la información y la comunicación para ofrecer
         servicios, administrar recursos y asegurar una gobernanza efectiva (Naser y Concha, 2011, p. 11). A
@@ -257,7 +263,7 @@ export default function UniversidadEraDigital() {
         Información y Procesos (Osip), con una apuesta por sistematizar la información interna de la universidad:
         archivo del personal docente, información y procesos de estudiantes e información administrativa de las
         facultades. Todo ello se hizo con el objetivo de procesar la información y enviarla al Consejo Superior
-        Universitario (CSU), direcciones nacionales y decanaturas para la toma de decisiones (Acuerdo 7 de 1982).
+        Universitario (<span>CSU</span>), direcciones nacionales y decanaturas para la toma de decisiones (Acuerdo 7 de 1982).
         Finalmente, antes de terminar la década se crearía el Centro de Equipos Interfacultades en la sede Bogotá
         (Ceif), que serviría de unificador y veedor del uso correcto de los equipos en la Universidad. Los miembros del
         Centro debían mantener, recuperar y montar los equipos necesarios para las actividades académicas (Acuerdo 66 de
@@ -323,7 +329,7 @@ export default function UniversidadEraDigital() {
       <h2>Bitnet, Runcol e Internet</h2>
 
       <p>
-        El siglo XX terminó con la construcción de la primera red de universidades e instituciones académicas que se
+        El siglo <span>XX</span> terminó con la construcción de la primera red de universidades e instituciones académicas que se
         comunicaban a grandes distancias y vertiginosas velocidades. Indudablemente, Internet cambió para siempre la
         forma como las instituciones educativas realizan sus labores. En la última década del siglo, funcionarios y
         docentes usaron las redes Bitnet y Runcol para comunicarse a largas distancias con otros centros académicos (J.
@@ -336,7 +342,7 @@ export default function UniversidadEraDigital() {
         equipos, líneas de comunicación, personas y programas (Gamboa, 1994). En 1991, se logró enlazar un canal análogo
         entre Bogotá y Nueva York que permitió la conexión de Colombia a esta red. A medida que las universidades fueron
         acoplándose a la Bitnet, se creó una subred llamada Red de Universidades Colombianas (Runcol), en la que
-        participaron más de treinta instituciones educativas (Redacción El Tiempo, 1997).
+        participaron más de treinta instituciones educativas (Redacción <em>El Tiempo</em>, 1997).
       </p>
 
       <p>
@@ -357,7 +363,7 @@ export default function UniversidadEraDigital() {
       </p>
 
       <p>
-        A pesar de estas limitaciones, desde los primeros años del siglo XXI se llevaron a cabo iniciativas al respecto.
+        A pesar de estas limitaciones, desde los primeros años del siglo <span>XXI</span> se llevaron a cabo iniciativas al respecto.
         Un ejemplo de ello se encuentra en la sede Arauca, que en el año 2000 propuso un reglamento para el uso del Aula
         de Sistemas, donde los estudiantes tenían derecho a navegar por Internet durante una hora al día (Resolución 17
         de 2000). Aunque no disponemos de información sobre si las condiciones eran idóneas o no para que estas
@@ -367,7 +373,7 @@ export default function UniversidadEraDigital() {
 
       <h1 className='text-9xl'>DOBLE FOTO</h1>
 
-      <h2>Siglo XXI. Los softwares en la Universidad Nacional de Colombia</h2>
+      <h2>Siglo <span>XXI</span>. Los softwares en la Universidad Nacional de Colombia</h2>
       <p>
         Durante la década de 1990, varios de los softwares que se usaban en la Universidad Nacional de Colombia eran
         “hechos en casa”. Antes de la reestructuración de la institución en 1997, que representó cierto nivel de
@@ -387,7 +393,7 @@ export default function UniversidadEraDigital() {
       </p>
 
       <p>
-        Con estos antecedentes, los primeros pasos de la universidad en el siglo XXI estuvieron marcados por una
+        Con estos antecedentes, los primeros pasos de la universidad en el siglo <span>XXI</span> estuvieron marcados por una
         fructífera relación con la programación y el desarrollo y uso de software computacional. Uno de los primeros y
         más importantes fue la implementación del Sistema de Gestión e Información Bibliográfica Aleph, que se convirtió
         en la columna vertebral del control bibliográfico de todos los materiales de la universidad y sus sedes. Aleph
@@ -435,7 +441,7 @@ export default function UniversidadEraDigital() {
         Por su parte, Quipu fue implementado en pleno año 2000 como el Sistema de Información Financiera de la
         universidad, utilizado para el desarrollo de las actividades financieras y administrativas con vista en los
         objetivos misionales. En sus inicios, Quipu pretendía facilitar la formulación de políticas para la elaboración,
-        ejecución y control presupuestal por medio de la generación de informes (Zambrano-García et al., 2009, p. 2). A
+        ejecución y control presupuestal por medio de la generación de informes (Zambrano-García <em>et al.</em>, 2009, p. 2). A
         pesar de que el sistema no funcionaría de formas óptimas en sus primeros años de vida, permitió la unificación
         del complejo entramado financiero y administrativo de la universidad, que no solo tenía que ver con un
         conocimiento técnico en programación, sino también con las diversas pericias económicas, administrativas y
@@ -464,10 +470,10 @@ export default function UniversidadEraDigital() {
 
       <p>
         Ahora bien, con el fin de superar las dificultades en la administración y planeación académica se creó el
-        Sistema de Información Académica (SIA), entre 1999 y 2003; fruto de un esfuerzo conjunto entre la Universidad
-        Nacional y la Oficina de Cooperación Universitaria (OCU) en donde se incorporaron tres aplicaciones para el
-        manejo y flujo de la información de la universidad. En conjunto con la OCU, se implementó una solución
-        informática a nivel corporativo llamada Universidad XXI; un sistema que automatizó todos los procesos de gestión
+        Sistema de Información Académica (<span>SIA</span>), entre 1999 y 2003; fruto de un esfuerzo conjunto entre la Universidad
+        Nacional y la Oficina de Cooperación Universitaria (<span>OCU</span>) en donde se incorporaron tres aplicaciones para el
+        manejo y flujo de la información de la universidad. En conjunto con la <span>OCU</span>, se implementó una solución
+        informática a nivel corporativo llamada <em>Universidad <span>XXI</span></em>; un sistema que automatizó todos los procesos de gestión
         académica, en lo concerniente a los integrantes de la universidad, la planificación y el seguimiento de recursos
         docentes. Esta aplicación es manejada solo por los usuarios de nivel administrativo, para gestionar procesos de
         organización e inscripción de estudiantes, gestión de títulos y solicitudes, matrículas, listas de
@@ -475,7 +481,7 @@ export default function UniversidadEraDigital() {
       </p>
 
       <p>
-        Por otro lado, encontramos el portal Unal SIA, el sitio web del Sistema de Información Académica desarrollado
+        Por otro lado, encontramos el portal Unal <span>SIA</span>, el sitio web del Sistema de Información Académica desarrollado
         por la Universidad Nacional de Colombia. Este portal, además de ser la plataforma gráfica con la cual los
         usuarios interactúan directamente –los del ámbito académico (docentes, estudiantes y administrativos) y también
         los visitantes–, permitió optimizar los procesos de carácter académico, ampliando los mecanismos de comunicación
@@ -485,18 +491,18 @@ export default function UniversidadEraDigital() {
       </p>
 
       <p>
-        Por último, como componente final de este sistema de información, encontramos los Indicadores SIA, una
-        aplicación desarrollada por la OCU, orientada al análisis de datos y la toma de decisiones. Esto se logra
+        Por último, como componente final de este sistema de información, encontramos los Indicadores <span>SIA</span>, una
+        aplicación desarrollada por la <span>OCU</span>, orientada al análisis de datos y la toma de decisiones. Esto se logra
         gracias a la conceptualización de la realidad universitaria por medio del análisis de información procedente de
-        Universidad XXI (Acuña-Garzón, 2016, p. 20).
+        Universidad <span>XXI</span> (Acuña-Garzón, 2016, p. 20).
       </p>
 
       <p>
-        El SIA se implementó en Manizales en 2002, como sede pionera de la Universidad Nacional de Colombia; y su portal
+        El <span>SIA</span> se implementó en Manizales en 2002, como sede pionera de la Universidad Nacional de Colombia; y su portal
         entró en funcionamiento completo a partir de 2003, bajo la coordinación de las Oficinas de Registro y Matrícula
         y el Centro de Cómputo. Este sistema ha soportado las necesidades de las nueve sedes de la universidad y los
         cerca de 50 000 estudiantes (41 500 de pregrado y 8500 de posgrado), más los cerca de 3200 profesores y 3100
-        miembros del personal administrativo (DNINFOA, 2019).
+        miembros del personal administrativo (<span>DNINFOA</span>, 2019).
       </p>
 
       <p>
@@ -513,18 +519,18 @@ export default function UniversidadEraDigital() {
 
       <p>
         Con el desarrollo e implementación de estos sistemas de información, la Universidad Nacional de Colombia se pudo
-        entender, por primera vez en su historia, como una universidad digital, la misma que se encontraba en proceso de
-        asimilación de la cultura de los bits (los dígitos binarios). La universidad digital puede ser entendida como
+        entender, por primera vez en su historia, como una <em>universidad digital</em>, la misma que se encontraba en proceso de
+        asimilación de la cultura de los <em>bits</em> (los dígitos binarios). La universidad digital puede ser entendida como
         una institución y una comunidad en la que existe la interoperabilidad entre los usuarios que, en este caso,
         incluye a la comunidad universitaria y la ciudadanía interesada, así como las interfaces tecnológicas, los
-        canales de comunicación, los planes y normativas en torno a las TIC, la gestión de estas, y la infraestructura
+        canales de comunicación, los planes y normativas en torno a las <span>TIC</span>, la gestión de estas, y la infraestructura
         material para el procesamiento y el manejo de los sistemas de información (García-Peñalvo, 2008).
       </p>
 
       <p>
         Esta universidad, que ya no se limita a la infraestructura física y a las personas que interactúan con ella,
         pasó a tener también una plataforma virtual en la que todos los miembros podían interactuar de diversas maneras.
-        Lo que podía percibirse, entrado el siglo XXI, era la comunicación constante entre un grupo especializado de
+        Lo que podía percibirse, entrado el siglo <span>XXI</span>, era la comunicación constante entre un grupo especializado de
         personas conocedoras de las ciencias de la computación, la informática y las comunicaciones, y un grupo de
         personas aún en proceso de comprender y asimilar estas tecnologías.
       </p>
@@ -533,7 +539,7 @@ export default function UniversidadEraDigital() {
         A pesar de que los sistemas de información permitieron el funcionamiento de la Universidad Nacional de Colombia
         dentro de la era digital, el reto no solo fue tecnológico, también el choque con el uso de las tecnologías por
         la comunidad universitaria representa una de las mayores limitaciones para el correcto funcionamiento y
-        apropiación de las nuevas tecnologías. En otras palabras, una vez instaurados los sistemas TIC, la universidad
+        apropiación de las nuevas tecnologías. En otras palabras, una vez instaurados los sistemas <span>TIC</span>, la universidad
         enfrentó el desafío de consolidar una cultura digital dentro de su comunidad, la comprensión de sus herramientas
         tecnológicas y sus interfaces, las que conectan el sistema con la realidad práctica.
       </p>
@@ -541,7 +547,7 @@ export default function UniversidadEraDigital() {
       <p>
         Este proceso de adaptación tuvo dos caras: por un lado, estaba el desarrollo y la implementación interna de
         estas tecnologías que, por lo complejo de sus necesidades técnicas y materiales, requirió la conformación de
-        equipos interdisciplinarios. Para implementar sistemas como Sara, SIA o Hermes, se requirió no solo la
+        equipos interdisciplinarios. Para implementar sistemas como Sara, <span>SIA</span> o Hermes, se requirió no solo la
         participación de ingenieros e ingenieras de sistemas, sino también contadores, matemáticos, administradoras y
         diseñadoras. Esto implicó una adaptación disciplinaria a las tecnologías computacionales, tanto en sus lógicas
         técnicas como en sus estructuras conceptuales.
