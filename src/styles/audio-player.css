@@ -1,0 +1,26 @@
+.rhap_additional-controls, .rhap_volume-controls{
+  display: none!important;
+}
+
+.rhap_controls-section{
+  flex-grow: 0!important;
+}
+
+.rhap_container{
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5)!important;
+  padding: 5px 10px!important;
+}
+
+.rhap_time{
+  color: #fff !important;
+}
+.rhap_main-controls-button{
+  color: #02EBB6!important;
+}
+.rhap_progress-indicator{
+  background-color: #02EBB6!important;
+  width: 15px !important; 
+  height: 15px !important;   
+  top: -6px !important;
+}

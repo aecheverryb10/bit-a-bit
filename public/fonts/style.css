@@ -7,3 +7,23 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Ancizar Sans';
+    src: url('AncizarSans-RegularItalic.woff2') format('woff2'),
+        url('AncizarSans-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ancizar Sans';
+    src: url('AncizarSans-Extrabold.woff2') format('woff2'),
+        url('AncizarSans-Extrabold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+

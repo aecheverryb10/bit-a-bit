@@ -1,8 +1,5 @@
-import { slider_data } from '@/data/slider_data';
-import Slider from '@/components/Slider';
 import { BloqueTexto, MainSection, ParrafoInicial } from '@/components/Elements';
 import Capitulo from '@/components/Capitulo';
-import ScrollImage from '@/components/ScrollImage';
 import ScrollVideo from '@/components/ScrollVideo';
 import Timeline from '@/components/Timeline';
 
@@ -402,9 +399,6 @@ export default function AscendenciasDigitales() {
           </p>
         </BloqueTexto>
       </Capitulo>
-      {/* <div>
-        <Slider slides={slider_data} />
-      </div> */}
     </>
   );
 }
