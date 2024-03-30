@@ -1,11 +1,18 @@
+"use client"
 import Head from 'next/head';
 import '../styles/globals.css';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+
+// Register plugins
+gsap.registerPlugin(ScrollTrigger);
 
 function App({ Component, pageProps }) {
+
   return (
     <>
       {/* <Header/> */}
-
       <Head>
         <title>Bit a bit</title>
         <link rel='icon' href='./favicon.ico' />

@@ -4,12 +4,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-
 const ScrollImage = (props) => {
 	const { alt, img, caption } = props;
-
-	gsap.registerPlugin(useGSAP, ScrollTrigger);
-
 	const containerRef = useRef();
 	const captionRef = useRef();
 	const gradientRef = useRef();
@@ -28,6 +24,7 @@ const ScrollImage = (props) => {
 		});
 		tl_caption.to(captionRef.current, { top: "10%" });
 
+	
 		// gsap code here...
 		const tl_gradient = gsap.timeline({
 			scrollTrigger: {
@@ -39,10 +36,11 @@ const ScrollImage = (props) => {
 			},
 		});
 		tl_gradient
-			.to(gradientRef.current, { opacity: 0 })
-			.set(gradientRef.current, { bottom: 0, rotate: 180, top: "auto" })
-			.to(gradientRef.current, { opacity: 1 });
-
+		.to(gradientRef.current, { opacity: 0 })
+		.set(gradientRef.current, { bottom: 0, rotate: 180, top: "auto" })
+		.to(gradientRef.current, { opacity: 1 });
+		
+		ScrollTrigger.refresh();
 
 	}, { scope: containerRef });
 

@@ -1,14 +1,10 @@
 import { useRef } from 'react';
-import Image from 'next/image';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-
 const ScrollImageVertical = (props) => {
 	const { alt, img, caption } = props;
-
-	gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 	const containerRef = useRef();
 	const captionRef = useRef();
@@ -42,6 +38,8 @@ const ScrollImageVertical = (props) => {
 			.to(gradientRef.current, { opacity: 0 })
 			.set(gradientRef.current, { bottom: 0, rotate: 180, top: "auto" })
 			.to(gradientRef.current, { opacity: 1 });
+		
+		ScrollTrigger.refresh();
 	}, { scope: containerRef });
 
 	return (

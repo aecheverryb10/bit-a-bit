@@ -2,6 +2,7 @@ import Capitulo from '@/components/Capitulo';
 import { BloqueTexto, MainSection, ParrafoInicial, TituloCapitulo } from '@/components/Elements';
 import Podcast from '@/components/Podcast';
 import ScrollImage from '@/components/ScrollImage';
+import ScrollImageVertical from '@/components/ScrollImageVertical';
 import Slider from '@/components/Slider';
 import { slider_data } from '@/data/slider_data';
 
@@ -100,7 +101,7 @@ export default function UniversidadEraDigital() {
             46).
           </p>
         </BloqueTexto>
-        <ScrollImage
+        <ScrollImageVertical
           img={'./img/figura_2.jpg'}
           caption={
             <>
@@ -149,7 +150,8 @@ export default function UniversidadEraDigital() {
             telefonía en el país (<em>Ericsson in Colombia</em>, 2023).
           </p>
         </BloqueTexto>
-        <ScrollImage
+
+        <ScrollImageVertical
           img={'./img/figura_3.jpg'}
           caption={
             <>
@@ -223,8 +225,9 @@ export default function UniversidadEraDigital() {
             etapas —figura 4 (Acuerdo 172 de 1965).
           </p>
         </BloqueTexto>
+        
         <ScrollImage
-          img={'./img/figura_4.jpg'}
+          img={'./img/figura_4.png'}
           caption={
             <>
               <p>
@@ -234,6 +237,7 @@ export default function UniversidadEraDigital() {
             </>
           }
         />
+
         <BloqueTexto>
           <p>
             En 1965, la sede Medellín de la Universidad Nacional estableció un fondo especial para apoyar a la Facultad
@@ -246,7 +250,7 @@ export default function UniversidadEraDigital() {
             Electrónica de la Facultad de Minas se muestra en las figuras 5-8.
           </p>
         </BloqueTexto>
-        <Slider slides={slider_data} />
+        {/* <Slider slides={slider_data} /> */}
         <BloqueTexto>
           <p>
             La introducción de la computación trajo consigo la profesionalización de los programas académicos. En la
@@ -471,15 +475,15 @@ export default function UniversidadEraDigital() {
               <p>Fuente: Archivo Fotográfico Unimedios (Archivo de todos los años/2005/Arauca)</p>
             </>
           }
-          img2={'./img/figura_10.jpg'}
-          caption2={
-            <>
-              <p>
-                <strong>Figura 10.</strong> Aula de Sistemas de la Sede Arauca (2005).
-              </p>
-              <p>Fuente: Archivo Fotográfico Unimedios (Archivo de todos los años/2005/Arauca)</p>
-            </>
-          }
+          // img2={'./img/figura_10.jpg'}
+          // caption2={
+          //   <>
+          //     <p>
+          //       <strong>Figura 10.</strong> Aula de Sistemas de la Sede Arauca (2005).
+          //     </p>
+          //     <p>Fuente: Archivo Fotográfico Unimedios (Archivo de todos los años/2005/Arauca)</p>
+          //   </>
+          // }
         />
         <MainSection>
           <h2>
@@ -535,15 +539,15 @@ export default function UniversidadEraDigital() {
               <p>Fuente: Archivo Fotográfico Unimedios (Históricas/60s)</p>
             </>
           }
-          img2={'./img/figura_12.jpg'}
-          caption2={
-            <>
-              <p>
-                <strong>Figura 12.</strong> Biblioteca Central (2022), Sede Bogotá.
-              </p>
-              <p>Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Biblioteca Central).</p>
-            </>
-          }
+          // img2={'./img/figura_12.jpg'}
+          // caption2={
+          //   <>
+          //     <p>
+          //       <strong>Figura 12.</strong> Biblioteca Central (2022), Sede Bogotá.
+          //     </p>
+          //     <p>Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Biblioteca Central).</p>
+          //   </>
+          // }
         />
         <BloqueTexto>
           <p>

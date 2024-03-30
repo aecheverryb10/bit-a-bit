@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
@@ -9,7 +8,6 @@ const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 
 const ScrollVideo = (props) => {
 	const { url } = props;
-	gsap.registerPlugin(useGSAP, ScrollTrigger);
 	//States
 	const [isPlaying, setIsPlaying] = useState(false);
 
@@ -33,11 +31,12 @@ const ScrollVideo = (props) => {
 			onLeaveBack: () => playPauseVideo(false),
 		});
 
+		ScrollTrigger.refresh();
 	}, { scope: containerRef });
 
 
 	return (
-		<div className='bg-black z-50 h-screen' ref={containerRef}>
+		<div className='bg-black h-screen' ref={containerRef}>
 			<ReactPlayer className='!h-screen !w-full m-auto' playing={isPlaying} url={url} controls muted />
 		</div>
 	);
