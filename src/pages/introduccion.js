@@ -7,7 +7,7 @@ export default function Introduccion() {
         aprendizaje y la integración de estas tecnologías en las sociedades. En el caso de la educación superior en
         Colombia, este proceso ha ocurrido de manera diferenciada en las universidades, al ser nodos de conexión con el
         mundo global, donde se genera conocimiento, se fortalece y se potencia la investigación e innovación. Desde
-        mediados del siglo XX, las ciencias computacionales comenzaron a expandirse por todo el planeta y, con ello,
+        mediados del siglo <span>XX</span>, las ciencias computacionales comenzaron a expandirse por todo el planeta y, con ello,
         gradualmente, los computadores se integraron en diversos aspectos de la vida cotidiana: computadores para enviar
         correos, calcular, medir, regular, escribir, enseñar y automatizar procesos. Una adaptación de la vida diaria de
         las personas a un mundo digital que, paulatinamente, se volvió inseparable.
@@ -28,7 +28,7 @@ export default function Introduccion() {
         una institución pionera en desarrollar procesos para fortalecer la transformación digital en la docencia, la
         investigación y la extensión centrada en la comunidad universitaria. Una institución que integró la
         infraestructura tecnológica y los procesos desarrollados por la comunidad académica con las tecnologías de la
-        información y las comunicaciones (TIC), transformándolas en herramientas vitales para su funcionamiento.
+        información y las comunicaciones (<span>TIC</span>), transformándolas en herramientas vitales para su funcionamiento.
       </p>
 
       <p>
@@ -45,7 +45,7 @@ export default function Introduccion() {
       <p>
         El segundo capítulo explora la llegada de las tecnologías computacionales a la Universidad Nacional de Colombia.
         Presenta un abordaje de lleno en el caso universitario y algunas de sus sedes, desde la década de 1960 hasta los
-        albores del siglo XXI. Esta sección recorre los esfuerzos de las personas de las diferentes sedes y dependencias
+        albores del siglo <span>XXI</span>. Esta sección recorre los esfuerzos de las personas de las diferentes sedes y dependencias
         por incorporar las tecnologías digitales y desarrollarlas de forma autónoma; una apuesta por comprender las
         ciencias de la conmutación y la computación, es decir, las ciencias de intercambiar y calcular información.
         Gracias a una reflexión sobre los aportes de la computación análoga y digital en los procesos académicos,
