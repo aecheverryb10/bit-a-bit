@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -11,19 +11,18 @@ const ScrollVideo = (props) => {
 	const { url } = props;
 	gsap.registerPlugin(useGSAP, ScrollTrigger);
 	//States
-	const [isPlaying, setIsPlaying]=useState(false)
+	const [isPlaying, setIsPlaying] = useState(false);
 
 	//Refs
 	const containerRef = useRef();
 
 	useGSAP(() => {
 		const playPauseVideo = async (value) => {
-			setIsPlaying(value)
+			setIsPlaying(value);
 		};
 
 		ScrollTrigger.create({
 			pin: true,
-			scrub: true,
 			trigger: containerRef.current,
 			start: "top",
 			endTrigger: containerRef.current,
@@ -38,7 +37,7 @@ const ScrollVideo = (props) => {
 
 
 	return (
-		<div className='bg-black relative z-50' ref={containerRef}>
+		<div className='bg-black z-50 h-screen' ref={containerRef}>
 			<ReactPlayer className='!h-screen !w-full m-auto' playing={isPlaying} url={url} controls muted />
 		</div>
 	);
