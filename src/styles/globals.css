@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import './audio-player.css';
 @import './react-modal.css';
+@import './timeline.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -53,6 +54,7 @@ body {
 
 .caps{
   font-variant: small-caps;
+  text-transform: lowercase;
 }
 
 em{
