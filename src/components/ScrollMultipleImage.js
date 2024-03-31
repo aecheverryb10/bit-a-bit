@@ -21,7 +21,7 @@ const ScrollMultipleImages = (props) => {
 			},
 		});
 		for (let i = 0; i <= images.length; i++){
-			tl_images.to(`.image--container-${i}`, { opacity: 1 });
+			tl_images.from(`.image--container-${i}`, { opacity: 0 });
 		}
 
 		ScrollTrigger.refresh();
@@ -30,13 +30,13 @@ const ScrollMultipleImages = (props) => {
 
 	return (
 		<div ref={containerRef}>
-			<div className='flex'>
+			<div className='flex relative'>
 				{/* Images */}
 				<div ref={imagesRef} className='w-full '>
 					<div className='relative' style={{ height: `${images.length + 1}00vh` }}>
 						{
 							images.map((item, index) => (
-								<div className={`${index === 0 ? "opacity-100" : ""} absolute image--container image--container-${index} h-screen w-full top-0`} key={`images-${item.key}`}>
+								<div className={`${index === 0 ? "opacity-100" : ""} absolute image--container-${index} h-screen w-full top-0`} key={`images-${item.key}`}>
 									{/* eslint-disable-next-line @next/next/no-img-element */}
 									<img
 										className='image h-full w-full object-cover object-center '
@@ -46,7 +46,7 @@ const ScrollMultipleImages = (props) => {
 								</div>
 							))
 						}
-						<div className={`image--container absolute image--container-0 h-screen w-full top-${images.length + 1}`} />
+						<div className={`absolute image--container-${images.length} h-screen w-full `} />
 					</div>
 				</div>
 				{/* Captions */}
