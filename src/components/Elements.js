@@ -96,4 +96,15 @@ const TituloCapitulo = (props) => {
   );
 };
 
-export { MainSection, ParrafoInicial, BloqueTexto, TituloCapitulo };
+const Subtitulo = (props) => {
+  const { children } = props;
+  return (
+    <MainSection>
+      <div className='bg-purple-base bg-opacity-70 text-white'>
+        <h2 className='pl-40 py-10 font-normal text-3xl'>{children}</h2>
+      </div>
+    </MainSection>
+  );
+};
+
+export { MainSection, ParrafoInicial, BloqueTexto, TituloCapitulo, Subtitulo };

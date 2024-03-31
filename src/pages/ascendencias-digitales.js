@@ -1,4 +1,4 @@
-import { BloqueTexto, MainSection, ParrafoInicial, TituloCapitulo } from '@/components/Elements';
+import { BloqueTexto, MainSection, ParrafoInicial, Subtitulo, TituloCapitulo } from '@/components/Elements';
 import Capitulo from '@/components/Capitulo';
 import ScrollVideo from '@/components/ScrollVideo';
 import Timeline from '@/components/Timeline';
@@ -39,14 +39,10 @@ export default function AscendenciasDigitales() {
             inseparable relación con los dedos, en lo que puede ser contabilizado o señalado por ellos.
           </p>
         </ParrafoInicial>
-        <MainSection>
-          <div className='bg-purple-base bg-opacity-70 text-white'>
-            <h3 className='pl-40 py-10 font-normal text-3xl'>
-              Preludios digitales:{' '}
-              <span className='block font-extralight'>hacia una comprensión histórica de lo digital</span>
-            </h3>
-          </div>
-        </MainSection>
+        <Subtitulo>
+          <>Preludios digitales:</>
+          <span className='block font-extralight'>hacia una comprensión histórica de lo digital</span>
+        </Subtitulo>
         <BloqueTexto>
           <p>
             En el siglo <span className='caps'>XX</span>, el concepto de <em>digital</em> se adaptó, para referirse,
@@ -244,10 +240,9 @@ export default function AscendenciasDigitales() {
           </p>
         </BloqueTexto>
         <Timeline />
-
-        <MainSection>
-          <h2>¿Qué pasó en Colombia?</h2>
-        </MainSection>
+        <Subtitulo>
+          <>¿Qué pasó en Colombia?</>
+        </Subtitulo>
         <BloqueTexto>
           <p>
             Como se señaló, Colombia fue uno de los primeros países en conectarse con las tecnologías computacionales en

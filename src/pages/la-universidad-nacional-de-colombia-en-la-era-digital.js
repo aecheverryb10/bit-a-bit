@@ -1,5 +1,5 @@
 import Capitulo from '@/components/Capitulo';
-import { BloqueTexto, MainSection, ParrafoInicial, TituloCapitulo } from '@/components/Elements';
+import { BloqueTexto, MainSection, ParrafoInicial, Subtitulo, TituloCapitulo } from '@/components/Elements';
 import Podcast from '@/components/Podcast';
 import ScrollImage from '@/components/ScrollImage';
 import ScrollImageVertical from '@/components/ScrollImageVertical';
@@ -47,9 +47,7 @@ export default function UniversidadEraDigital() {
             </>
           }
         />
-        <MainSection>
-          <h2>Los inicios</h2>
-        </MainSection>
+        <Subtitulo>Los inicios</Subtitulo>
         <BloqueTexto>
           <p>
             Las puertas lógicas mencionadas nacieron como circuitos electrónicos integrados, formados internamente con
@@ -251,7 +249,7 @@ export default function UniversidadEraDigital() {
             Electrónica de la Facultad de Minas se muestra en las figuras 5-8.
           </p>
         </BloqueTexto>
-        {/* <Slider slides={slider_data} /> */}
+        <Slider slides={slider_data} />
         <BloqueTexto>
           <p>
             La introducción de la computación trajo consigo la profesionalización de los programas académicos. En la
@@ -277,9 +275,7 @@ export default function UniversidadEraDigital() {
             de recursos y el desarrollo social y económico (Castellanos-Aceros, 2001, pp. 116–117).
           </p>
         </BloqueTexto>
-        <MainSection>
-          <h2>Políticas y proyectos en la transición hacia una cultura digital</h2>
-        </MainSection>
+        <Subtitulo>Políticas y proyectos en la transición hacia una cultura digital</Subtitulo>
         <BloqueTexto>
           <p>
             La introducción de nuevas tecnologías y conocimientos transformó la universidad en todas sus áreas del
@@ -292,11 +288,8 @@ export default function UniversidadEraDigital() {
             efectiva (Naser y Concha, 2011, p. 11). A continuación, se destacan algunos de los hitos más importantes en
             este proceso de transformación digital.
           </p>
-        </BloqueTexto>
-        <MainSection>
-          <h3>Las telecomunicaciones</h3>
-        </MainSection>
-        <BloqueTexto>
+
+          <h3 className='text-2xl text-purple-base font-sans mb-10'>Las telecomunicaciones</h3>
           <p>
             Como se dijo, para finales de la década de 1960, se crearon varias dependencias especializadas en las
             ciencias computacionales y se estableció un curso completo sobre telecomunicaciones en 1954. Para esta
@@ -328,11 +321,7 @@ export default function UniversidadEraDigital() {
             programa buscaba explorar las principales áreas de innovación de la época, como la microelectrónica, las
             telecomunicaciones y la informática, a través de la investigación y el diseño (Acuerdo 34 de 1991).
           </p>
-        </BloqueTexto>
-        <MainSection>
-          <h3>Proyectos y dependencias</h3>
-        </MainSection>
-        <BloqueTexto>
+          <h3 className='text-2xl text-purple-base font-sans mb-10'>Proyectos y dependencias</h3>
           <p>
             Como puede intuirse, hasta ese momento, las tecnologías computacionales y de las telecomunicaciones aún no
             estaban estrictamente integradas a proyectos o dependencias de la universidad; a primera vista, cada una iba
@@ -417,9 +406,7 @@ export default function UniversidadEraDigital() {
           title={`¿Cómo eran las clases de Ingeniería de Sistemas en la Sede Bogotá de la Universidad Nacional de Colombia en los años 1990?`}
           src={'./audio/recurso_4_inteligencia_artificial.mp3'}
         />
-        <MainSection>
-          <h2>Bitnet, Runcol e Internet</h2>
-        </MainSection>
+        <Subtitulo>Bitnet, Runcol e Internet</Subtitulo>
         <BloqueTexto>
           <p>
             El siglo <span className='caps'>XX</span> terminó con la construcción de la primera red de universidades e
@@ -467,39 +454,38 @@ export default function UniversidadEraDigital() {
           </p>
         </BloqueTexto>
         <ScrollMultipleImages
-          images={
-            [
-              {
-                img: './img/figura_9.jpg',
-                caption: (
-                  <>
-                    <p>
-                      <strong>Figura 9.</strong> Universidad Nacional – Sede Arauca (2005).
-                    </p>
-                    <p>Fuente: Archivo Fotográfico Unimedios (Archivo de todos los años/2005/Arauca)</p>
-                  </>
-                ),
-                key: 'Universidad Nacional – Sede Arauca (2005).'
-              },
-              {
-                img: './img/figura_10.jpg',
-                caption: (
-                  <>
-                    <p>
-                      <strong>Figura 10.</strong> Aula de Sistemas de la Sede Arauca (2005).
-                    </p>
-                    <p>Fuente: Archivo Fotográfico Unimedios (Archivo de todos los años/2005/Arauca)</p>
-                  </>
-                ),
-                key: 'Aula de Sistemas de la Sede Arauca (2005)'
-              }
-            ]}
+          images={[
+            {
+              img: './img/figura_9.jpg',
+              caption: (
+                <>
+                  <p>
+                    <strong>Figura 9.</strong> Universidad Nacional – Sede Arauca (2005).
+                  </p>
+                  <p>Fuente: Archivo Fotográfico Unimedios (Archivo de todos los años/2005/Arauca)</p>
+                </>
+              ),
+              key: 'Universidad Nacional – Sede Arauca (2005).',
+            },
+            {
+              img: './img/figura_10.jpg',
+              caption: (
+                <>
+                  <p>
+                    <strong>Figura 10.</strong> Aula de Sistemas de la Sede Arauca (2005).
+                  </p>
+                  <p>Fuente: Archivo Fotográfico Unimedios (Archivo de todos los años/2005/Arauca)</p>
+                </>
+              ),
+              key: 'Aula de Sistemas de la Sede Arauca (2005)',
+            },
+          ]}
         />
-        <MainSection>
-          <h2>
+        <Subtitulo>
+          <>
             Siglo <span className='caps'>XXI</span>. Los softwares en la Universidad Nacional de Colombia
-          </h2>
-        </MainSection>
+          </>
+        </Subtitulo>
         <BloqueTexto>
           <p>
             Durante la década de 1990, varios de los softwares que se usaban en la Universidad Nacional de Colombia eran
@@ -540,33 +526,32 @@ export default function UniversidadEraDigital() {
           </p>
         </BloqueTexto>
         <ScrollMultipleImages
-          images={
-            [
-              {
-                img: './img/figura_11.jpg',
-                caption: (
-                  <>
-                    <p>
-                      <strong>Figura 11.</strong> Biblioteca Central años 60, Sede Bogotá (1968).
-                    </p>
-                    <p>Fuente: Archivo Fotográfico Unimedios (Históricas/60s)</p>
-                  </>
-                ),
-                key: 'Biblioteca Central años 60, Sede Bogotá (1968).'
-              },
-              {
-                img: './img/figura_12.jpg',
-                caption: (
-                  <>
-                    <p>
-                      <strong>Figura 12.</strong> Biblioteca Central (2022), Sede Bogotá.
-                    </p>
-                    <p>Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Biblioteca Central).</p>
-                    / </>
-                ),
-                key: 'Biblioteca Central (2022), Sede Bogotá.'
-              }
-            ]}
+          images={[
+            {
+              img: './img/figura_11.jpg',
+              caption: (
+                <>
+                  <p>
+                    <strong>Figura 11.</strong> Biblioteca Central años 60, Sede Bogotá (1968).
+                  </p>
+                  <p>Fuente: Archivo Fotográfico Unimedios (Históricas/60s)</p>
+                </>
+              ),
+              key: 'Biblioteca Central años 60, Sede Bogotá (1968).',
+            },
+            {
+              img: './img/figura_12.jpg',
+              caption: (
+                <>
+                  <p>
+                    <strong>Figura 12.</strong> Biblioteca Central (2022), Sede Bogotá.
+                  </p>
+                  <p>Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Biblioteca Central).</p>/{' '}
+                </>
+              ),
+              key: 'Biblioteca Central (2022), Sede Bogotá.',
+            },
+          ]}
         />
         <BloqueTexto>
           <p>

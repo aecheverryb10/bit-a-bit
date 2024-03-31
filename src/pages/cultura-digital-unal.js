@@ -1,7 +1,8 @@
 import Capitulo from '@/components/Capitulo';
-import { BloqueTexto, MainSection, ParrafoInicial, TituloCapitulo } from '@/components/Elements';
+import { BloqueTexto, MainSection, ParrafoInicial, Subtitulo, TituloCapitulo } from '@/components/Elements';
 import Podcast from '@/components/Podcast';
 import ScrollImage from '@/components/ScrollImage';
+import ScrollMultipleImages from '@/components/ScrollMultipleImage';
 import ScrollVideo from '@/components/ScrollVideo';
 import Slider from '@/components/Slider';
 import { slider_data2 } from '@/data/slider_data';
@@ -83,7 +84,7 @@ export default function CulturaDigital() {
             y la solidaridad —recurso 4 (Morales, 2019).
           </p>
         </BloqueTexto>
-        <Podcast />
+        <Podcast subtitle={'Una conversación con el profesor Fabio Augusto González Osorio'} />
         <BloqueTexto>
           <p>
             Este era el contexto tecnológico en el que se encontraba inmersa la Universidad Nacional de Colombia entrado
@@ -147,12 +148,12 @@ export default function CulturaDigital() {
             acceder a la clase de la misma manera y con las mismas facilidades.
           </p>
         </BloqueTexto>
-        <MainSection>
-          <h2>
+        <Subtitulo>
+          <>
             Institucionalización <span className='caps'>TIC</span>: <span className='caps'>CNTIC</span>,{' '}
             <span className='caps'>DNTIC</span>, Peti, <span className='caps'>DNED</span>/UNALab
-          </h2>
-        </MainSection>
+          </>
+        </Subtitulo>
         <BloqueTexto>
           <p>
             En 2009, se redefinieron las políticas digitales en la Universidad Nacional de Colombia. El Comité Nacional
@@ -185,11 +186,9 @@ export default function CulturaDigital() {
             de los sistemas y la definición de los diferentes perfiles que accedían, entre administrativos, estudiantes,
             docentes y contratistas (Acuerdo 46 de 2009).
           </p>
-        </BloqueTexto>
-        <MainSection>
-          <h3>Plan Estratégico de Tecnologías de Información y Comunicaciones</h3>
-        </MainSection>
-        <BloqueTexto>
+          <h3 className='text-2xl text-purple-base font-sans mb-10'>
+            Plan Estratégico de Tecnologías de Información y Comunicaciones
+          </h3>
           <p>
             Con el tiempo, los esfuerzos por regular el uso de las tecnologías de la información se aglutinaron en
             detallados programas. En 2012, durante la rectoría de Ignacio Mantilla (2012- 2018), se aprobó el Plan
@@ -248,11 +247,9 @@ export default function CulturaDigital() {
             Estos se plantearon como actualizaciones progresiva del plan anterior (Acuerdo 227 de 2016;{' '}
             <span className='caps'>DNED</span>, 2022).
           </p>
-        </BloqueTexto>
-        <MainSection>
-          <h3>Dirección Nacional de Tecnologías de la Información y las Comunicaciones</h3>
-        </MainSection>
-        <BloqueTexto>
+          <h3 className='text-2xl text-purple-base font-sans mb-10'>
+            Dirección Nacional de Tecnologías de la Información y las Comunicaciones
+          </h3>
           <p>
             Con la reestructuración académico-administrativa a nivel nacional en 2013, la Vicerrectoría General fijó sus
             funciones y definió las dependencias adscritas. Entre ellas tenía a cargo la Dirección Nacional de
@@ -283,11 +280,7 @@ export default function CulturaDigital() {
             todos los miembros de su comunidad, los edificios físicos y sus dependencias, así como los proyectos que
             sustentan su desarrollo académico y administrativo (Resolución 464 de 2014).
           </p>
-        </BloqueTexto>
-        <MainSection>
-          <h3>Derecho y seguridad informática</h3>
-        </MainSection>
-        <BloqueTexto>
+          <h3 className='text-2xl text-purple-base font-sans mb-10'>Derecho y seguridad informática</h3>
           <p>
             El aumento en el uso de las tecnologías de la información, la masificación del uso de computadoras, la
             expansión de internet y la gigantesca acumulación de datos por parte de gobiernos y empresas han generado la
@@ -377,10 +370,10 @@ export default function CulturaDigital() {
           subtitle={'Una conversación con el director de la DNED, el profesor Johan Sebastián Eslava Garzón'}
           src={'./audio/recurso_5_ciberataques.mp3'}
         />
-        <MainSection>
-          <h3>Iniciativas estratégicas de apropiación y optimización tecnológica</h3>
-        </MainSection>
         <BloqueTexto>
+          <h3 className='text-2xl text-purple-base font-sans mb-10'>
+            Iniciativas estratégicas de apropiación y optimización tecnológica
+          </h3>
           <p>
             Paralelamente, en el mismo año en que se desplegaba la política de seguridad informática, se actualizó el
             Plan Estratégico de Tecnologías de Información y las Comunicaciones, implementado hasta 2018, tomando un
@@ -504,13 +497,9 @@ export default function CulturaDigital() {
             inclusión social y el reconocimiento de la riqueza y la diversidad de las regiones (Dirección Nacional de
             Planeación y Estadística, 2019).
           </p>
-        </BloqueTexto>
-        <MainSection>
-          <h3>
+          <h3 className='text-2xl text-purple-base font-sans mb-10'>
             Estrategia de Transformación Digital 2019-2021: fundación de la Dirección Nacional de Estrategia Digital
           </h3>
-        </MainSection>
-        <BloqueTexto>
           <p>
             En este punto, la consolidación de una cultura digital y la apropiación tecnológica significaba trabajar en
             favor de una universidad conectada con el país y el mundo a través de la cooperación y el intercambio de
@@ -757,9 +746,7 @@ export default function CulturaDigital() {
             con el mundo (Dirección Nacional de Planeación y Estadística, 2019, pp. 141-142).
           </p>
         </BloqueTexto>
-        <MainSection>
-          <h2>Experiencias de cultura y transformación digital</h2>
-        </MainSection>
+        <Subtitulo>Experiencias de cultura y transformación digital</Subtitulo>
 
         <ScrollImage
           img={'./img/figura_15.jpg'}
@@ -1079,9 +1066,7 @@ export default function CulturaDigital() {
           </p>
         </BloqueTexto>
         <ScrollVideo url='./video/recurso_10_ conv_estudiantes.mp4' type='video/mp4' />
-        <MainSection>
-          <h2>Ilusiones y retos tecnológicos en el camino a la transformación digital</h2>
-        </MainSection>
+        <Subtitulo>Ilusiones y retos tecnológicos en el camino a la transformación digital</Subtitulo>
         <BloqueTexto>
           <p>
             Las reflexiones en torno a la transversalidad de las tecnologías digitales en la vida de las sociedades del
@@ -1252,25 +1237,31 @@ export default function CulturaDigital() {
             integración cultural y el bienestar colectivo (figuras 24-25).
           </p>
         </BloqueTexto>
-        <ScrollImage
-          img={'./img/figura_24.jpg'}
-          caption={
-            <>
-              <p>
-                <strong>Figura 24.</strong> Laboratorio de Biología de Embriones.
-              </p>
-              <p>Fuente: Archivo Fotográfico Unimedios (Nicol Torres/2023/Laboratorio de Biología de Embriones).</p>
-            </>
-          }
-          img2={'./img/figura_25.jpg'}
-          caption2={
-            <>
-              <p>
-                <strong>Figura 25.</strong> Laboratorio de Ingeniería.
-              </p>
-              <p>Fuente: Archivo Fotográfico Unimedios (Nicol Torres/2023/Laboratorio de Ingeniería).</p>
-            </>
-          }
+        <ScrollMultipleImages
+          images={[
+            {
+              img: './img/figura_24.jpg',
+              caption: (
+                <>
+                  <p>
+                    <strong>Figura 24.</strong> Laboratorio de Biología de Embriones.
+                  </p>
+                  <p>Fuente: Archivo Fotográfico Unimedios (Nicol Torres/2023/Laboratorio de Biología de Embriones).</p>
+                </>
+              ),
+            },
+            {
+              img: './img/figura_25.jpg',
+              caption: (
+                <>
+                  <p>
+                    <strong>Figura 25.</strong> Laboratorio de Ingeniería.
+                  </p>
+                  <p>Fuente: Archivo Fotográfico Unimedios (Nicol Torres/2023/Laboratorio de Ingeniería).</p>
+                </>
+              ),
+            },
+          ]}
         />
       </Capitulo>
     </>

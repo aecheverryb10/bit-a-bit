@@ -70,11 +70,13 @@ const slider_data2 = [
     alt: 'Figura 20',
     caption: (
       <>
-        <p>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
           <strong>Figura 20.</strong> Salón de la Colección de entomología de la Orinoquía, Universidad Nacional.
         </p>
-        <p>Fuente: Archivo Fotográfico Unimedios</p>
-        <p>(Alvis García/s.f./Archivo de Sede Orinoquía).</p>
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Archivo Fotográfico Unimedios</p>
+          <p>(Alvis García/s.f./Archivo de Sede Orinoquía).</p>
+        </div>
       </>
     ),
   },
@@ -83,11 +85,13 @@ const slider_data2 = [
     alt: 'Figura 21',
     caption: (
       <>
-        <p>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
           <strong>Figura 21.</strong> Ejemplares de la Colección de entomología de la Orinoquía, Universidad Nacional.
         </p>
-        <p>Fuente: Archivo Fotográfico Unimedios</p>
-        <p>(Alvis García/s.f./Archivo de Sede Orinoquía).</p>
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Archivo Fotográfico Unimedios</p>
+          <p>(Alvis García/s.f./Archivo de Sede Orinoquía).</p>
+        </div>
       </>
     ),
   },
@@ -96,11 +100,14 @@ const slider_data2 = [
     alt: 'Figura 22',
     caption: (
       <>
-        <p>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
           <b>Figura 22.</b> Ejemplares de insectos de la Colección de entomología de la Orinoquía, Universidad Nacional.
         </p>
-        <p>Fuente: Archivo Fotográfico Unimedios </p>
-        <p>(Alvis García/s.f./Archivo de Sede Orinoquía).</p>
+
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Archivo Fotográfico Unimedios </p>
+          <p>(Alvis García/s.f./Archivo de Sede Orinoquía).</p>
+        </div>
       </>
     ),
   },
@@ -109,12 +116,14 @@ const slider_data2 = [
     alt: 'Figura 23',
     caption: (
       <>
-        <p>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
           <b>Figura 23.</b> Ejemplares de mariposas de la Colección de entomología de la Orinoquía, Universidad
           Nacional.
         </p>
-        <p>Fuente: Archivo Fotográfico Unimedios</p>
-        <p>(Alvis García/s.f./Archivo de Sede Orinoquía).</p>
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Archivo Fotográfico Unimedios</p>
+          <p>(Alvis García/s.f./Archivo de Sede Orinoquía).</p>
+        </div>
       </>
     ),
   },
