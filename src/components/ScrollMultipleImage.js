@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import Image from 'next/image';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -7,18 +6,9 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const ScrollMultipleImages = (props) => {
 	const { images } = props;
 	const containerRef = useRef();
-	const captionRef = useRef();
 	const imagesRef = useRef();
 
 	useGSAP(() => {
-		for (let i = 0; i <= images.length; i++) {
-			// console.log(`.image--container-${i}`);
-			// const opacity = i === images.length ? 1 : 0;
-			gsap.set(`.image--container-${i}`, { opacity: 0 });
-			// if (i === 0) {
-			// 	// tl_images.to(`.image--container-${i - 1}`, { opacity: 0 }, 0)
-			// }
-		}
 		// gsap code here...
 		const tl_images = gsap.timeline({
 			scrollTrigger: {
@@ -28,16 +18,10 @@ const ScrollMultipleImages = (props) => {
 				start: "top",
 				endTrigger: imagesRef.current,
 				end: "bottom bottom",
-				markers: true
 			},
 		});
 		for (let i = 0; i <= images.length; i++){
-			console.log(`.image--container-${i}`);
-			const opacity = i === images.length ? 1 : 0
 			tl_images.to(`.image--container-${i}`, { opacity: 1 });
-			// if (i === 0) {
-			// 	// tl_images.to(`.image--container-${i - 1}`, { opacity: 0 }, 0)
-			// }
 		}
 
 		ScrollTrigger.refresh();

@@ -539,25 +539,34 @@ export default function UniversidadEraDigital() {
             A. Sánchez Peña, comunicación personal, 14 de junio de 2023).
           </p>
         </BloqueTexto>
-        <ScrollImage
-          img={'./img/figura_11.jpg'}
-          caption={
-            <>
-              <p>
-                <strong>Figura 11.</strong> Biblioteca Central años 60, Sede Bogotá (1968).
-              </p>
-              <p>Fuente: Archivo Fotográfico Unimedios (Históricas/60s)</p>
-            </>
-          }
-        // img2={'./img/figura_12.jpg'}
-        // caption2={
-        //   <>
-        //     <p>
-        //       <strong>Figura 12.</strong> Biblioteca Central (2022), Sede Bogotá.
-        //     </p>
-        //     <p>Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Biblioteca Central).</p>
-        //   </>
-        // }
+        <ScrollMultipleImages
+          images={
+            [
+              {
+                img: './img/figura_11.jpg',
+                caption: (
+                  <>
+                    <p>
+                      <strong>Figura 11.</strong> Biblioteca Central años 60, Sede Bogotá (1968).
+                    </p>
+                    <p>Fuente: Archivo Fotográfico Unimedios (Históricas/60s)</p>
+                  </>
+                ),
+                key: 'Biblioteca Central años 60, Sede Bogotá (1968).'
+              },
+              {
+                img: './img/figura_12.jpg',
+                caption: (
+                  <>
+                    <p>
+                      <strong>Figura 12.</strong> Biblioteca Central (2022), Sede Bogotá.
+                    </p>
+                    <p>Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Biblioteca Central).</p>
+                    / </>
+                ),
+                key: 'Biblioteca Central (2022), Sede Bogotá.'
+              }
+            ]}
         />
         <BloqueTexto>
           <p>
