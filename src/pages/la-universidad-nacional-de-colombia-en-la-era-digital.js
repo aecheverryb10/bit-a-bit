@@ -3,6 +3,7 @@ import { BloqueTexto, MainSection, ParrafoInicial, TituloCapitulo } from '@/comp
 import Podcast from '@/components/Podcast';
 import ScrollImage from '@/components/ScrollImage';
 import ScrollImageVertical from '@/components/ScrollImageVertical';
+import ScrollMultipleImages from '@/components/ScrollMultipleImage';
 import Slider from '@/components/Slider';
 import { slider_data } from '@/data/slider_data';
 
@@ -225,7 +226,7 @@ export default function UniversidadEraDigital() {
             etapas —figura 4 (Acuerdo 172 de 1965).
           </p>
         </BloqueTexto>
-        
+
         <ScrollImage
           img={'./img/figura_4.png'}
           caption={
@@ -465,25 +466,34 @@ export default function UniversidadEraDigital() {
             las redes estaban avanzando (figuras 9-10).
           </p>
         </BloqueTexto>
-        <ScrollImage
-          img={'./img/figura_9.jpg'}
-          caption={
-            <>
-              <p>
-                <strong>Figura 9.</strong> Universidad Nacional – Sede Arauca (2005).
-              </p>
-              <p>Fuente: Archivo Fotográfico Unimedios (Archivo de todos los años/2005/Arauca)</p>
-            </>
-          }
-          // img2={'./img/figura_10.jpg'}
-          // caption2={
-          //   <>
-          //     <p>
-          //       <strong>Figura 10.</strong> Aula de Sistemas de la Sede Arauca (2005).
-          //     </p>
-          //     <p>Fuente: Archivo Fotográfico Unimedios (Archivo de todos los años/2005/Arauca)</p>
-          //   </>
-          // }
+        <ScrollMultipleImages
+          images={
+            [
+              {
+                img: './img/figura_9.jpg',
+                caption: (
+                  <>
+                    <p>
+                      <strong>Figura 9.</strong> Universidad Nacional – Sede Arauca (2005).
+                    </p>
+                    <p>Fuente: Archivo Fotográfico Unimedios (Archivo de todos los años/2005/Arauca)</p>
+                  </>
+                ),
+                key: 'Universidad Nacional – Sede Arauca (2005).'
+              },
+              {
+                img: './img/figura_10.jpg',
+                caption: (
+                  <>
+                    <p>
+                      <strong>Figura 10.</strong> Aula de Sistemas de la Sede Arauca (2005).
+                    </p>
+                    <p>Fuente: Archivo Fotográfico Unimedios (Archivo de todos los años/2005/Arauca)</p>
+                  </>
+                ),
+                key: 'Aula de Sistemas de la Sede Arauca (2005)'
+              }
+            ]}
         />
         <MainSection>
           <h2>
@@ -539,15 +549,15 @@ export default function UniversidadEraDigital() {
               <p>Fuente: Archivo Fotográfico Unimedios (Históricas/60s)</p>
             </>
           }
-          // img2={'./img/figura_12.jpg'}
-          // caption2={
-          //   <>
-          //     <p>
-          //       <strong>Figura 12.</strong> Biblioteca Central (2022), Sede Bogotá.
-          //     </p>
-          //     <p>Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Biblioteca Central).</p>
-          //   </>
-          // }
+        // img2={'./img/figura_12.jpg'}
+        // caption2={
+        //   <>
+        //     <p>
+        //       <strong>Figura 12.</strong> Biblioteca Central (2022), Sede Bogotá.
+        //     </p>
+        //     <p>Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Biblioteca Central).</p>
+        //   </>
+        // }
         />
         <BloqueTexto>
           <p>
