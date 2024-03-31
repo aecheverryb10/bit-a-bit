@@ -11,21 +11,23 @@ export default function UniversidadEraDigital() {
   return (
     <>
       <Capitulo>
+
         <TituloCapitulo>
           <div className='flex items-center'>
             <span
               style={{ background: `linear-gradient(159.71deg, #02EBB6 0.2%, rgba(115, 115, 115, 0) 41.04%)` }}
-              className='text-9xl font-extralight border-2 px-10 py-6 mr-8'
+              className='chapter-number text-9xl font-extralight border-2 px-10 py-6 mr-8'
             >
               2
             </span>
-            <div>
-              <h1 className='text-6xl font-light'>
+            <div className='overflow-hidden'>
+              <h1 className='chapter-title text-6xl font-light'>
                 La Universidad Nacional de Colombia <span className='block'>en la era digital</span>
               </h1>
             </div>
           </div>
         </TituloCapitulo>
+
         <ParrafoInicial>
           <p className='first-letter:text-7xl first-letter:me-4 first-letter:tracking-n first-letter:float-start first-letter:font-sans first-letter:font-extralight'>
             Las computadoras están compuestas por circuitos eléctricos que desempeñan una función fundamental: llevar a

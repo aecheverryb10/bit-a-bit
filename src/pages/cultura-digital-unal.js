@@ -15,13 +15,13 @@ export default function CulturaDigital() {
           <div className='flex items-center'>
             <span
               style={{ background: `linear-gradient(159.71deg, #02EBB6 0.2%, rgba(115, 115, 115, 0) 41.04%)` }}
-              className='text-9xl font-extralight border-2 px-10 py-6 mr-8'
+              className='chapter-number text-9xl font-extralight border-2 px-10 py-6 mr-8'
             >
               3
             </span>
-            <div>
-              <h1 className='text-6xl font-light'>Cultura Digital Unal:</h1>
-              <p className='text-4xl font-extralight mt-2'>caminos a la transformación digital</p>
+            <div className='overflow-hidden'>
+              <h1 className='chapter-title text-6xl font-light'>Cultura Digital Unal:</h1>
+              <p className='chapter-title text-4xl font-extralight mt-2'>caminos a la transformación digital</p>
             </div>
           </div>
         </TituloCapitulo>
