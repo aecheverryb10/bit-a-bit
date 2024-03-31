@@ -40,7 +40,7 @@ const Slider = (props) => {
             background: `linear-gradient(257.93deg, #52188C 13.06%, #061445 109.1%)`,
           }}
         />
-        <img className='absolute h-full opacity-10' src='./img/Texture 34.png' alt='textura' />
+        <img className='absolute h-full opacity-10' src='./img/texture_34.png' alt='textura' />
         <div className='py-20 pl-20'>
           <Swiper
             keyboard={{

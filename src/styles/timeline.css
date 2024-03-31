@@ -1,0 +1,17 @@
+
+.timeline-section-0 .timeline-periods .timeline-period:nth-of-type(2){
+  flex-basis: 50%;
+}
+.timeline-section-0 .timeline-periods .timeline-period:nth-of-type(5){
+  padding-left: 10%;
+}
+
+.timeline-section-1 .timeline-periods, .timeline-section-2 .timeline-periods, .timeline-section-3 .timeline-periods, .timeline-section-4 .timeline-periods{
+  justify-content: space-between;
+  align-items: start;
+}
+
+.timeline-section-3 .timeline-periods{
+  max-width: 900px;
+  margin: 0 auto;
+}

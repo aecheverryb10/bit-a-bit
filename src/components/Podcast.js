@@ -17,7 +17,7 @@ const Podcast = (props) => {
             background: `radial-gradient(62.07% 180.09% at 100% -13.31%, rgba(45, 244, 198, 0.26) 0%, #171C30 56.39%)`,
           }}
         />
-        <img className='absolute w-full opacity-20' src='./img/Texture 34.png' alt='textura' />
+        <img className='absolute w-full opacity-20' src='./img/texture_34.png' alt='textura' />
         <div className='pl-48 pr-16 py-16 relative z-10 bg-blue-dark bg-opacity-30'>
           <div className='max-w-[700px] font-ancizar leading-none'>
             <p className='text-xl'>Le invitamos a escuchar el podcast </p>

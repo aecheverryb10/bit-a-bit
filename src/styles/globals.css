@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import './audio-player.css';
 @import './react-modal.css';
+@import './timeline.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
