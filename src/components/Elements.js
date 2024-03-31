@@ -76,6 +76,8 @@ const TituloCapitulo = (props) => {
     for (let i = 0; i < chapter_title.length; i++) {
       title_animation.to(chapter_title[i], { x: 0, opacity: 1, duration: 1.5 },3)
     }
+
+    title_animation.duration(3)
   }, { scope: containerRef })
 
   return (

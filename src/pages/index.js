@@ -1,82 +1,148 @@
+import { useRef } from 'react';
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 import Link from 'next/link';
 /* Rectangle 78 */
 
 export default function Home() {
+  const containerRef = useRef();
+
+  useGSAP(() => {
+    gsap.set(".line-left", { x: "-103%", opacity: 0 });
+    gsap.set(".line-right", { x: "103%", opacity: 0 });
+    gsap.set(".line-top", { y: "-103%", opacity: 0 });
+    gsap.set(".line-bottom", { y: "103%", opacity: 0 });
+    gsap.set(".line-horizontal", { x: "-103%", opacity: 0});
+    gsap.set(".line-horizontal2", { x: "103%", opacity: 0});
+    gsap.set(".un-logo", { y: "-103%" });
+    
+    gsap.set(".cover-title", { y: "-103%", opacity: 0 });
+    gsap.set(".cover-subtitle", { x: "-10%", opacity: 0 });
+    gsap.set(".cover-shields", { opacity: 0 });
+
+
+    const lines_left = gsap.utils.toArray(".line-left");
+    const lines_right = gsap.utils.toArray(".line-right")
+    const lines_top = gsap.utils.toArray(".line-top")
+    const lines_bottom = gsap.utils.toArray(".line-bottom")
+    const lines_horizontal = gsap.utils.toArray(".line-horizontal")
+    const lines_horizontal2 = gsap.utils.toArray(".line-horizontal2")
+    const shields = gsap.utils.toArray(".img-shield")
+
+    for (let index = 0; index < shields.length; index++) {
+      gsap.set(shields[index], { x: index === 0 ? "130%" : "-130%"});      
+    }
+
+    const cover_animation = gsap.timeline();
+
+    for (let i = 0; i < lines_left.length; i++) {
+      cover_animation.to(lines_left[i], { x: 0, opacity: 1, duration: 1 }, 0);
+    }
+    for (let i = 0; i < lines_right.length; i++) {
+      cover_animation.to(lines_right[i], { x: 0, opacity: 1, duration: 1 }, 0);
+    }
+    for (let i = 0; i < lines_top.length; i++) {
+      cover_animation.to(lines_top[i], { y: 0, opacity: 1, duration: 1 }, 0);
+    }
+    for (let i = 0; i < lines_bottom.length; i++) {
+      cover_animation.to(lines_bottom[i], { y: 0, opacity: 1, duration: 1 }, 0);
+    }
+    for (let i = 0; i < lines_horizontal.length; i++) {
+      cover_animation.to(lines_horizontal[i], { x: 0, opacity: 1, duration: 1, overflow: "visible" }, 0);
+    }
+    for (let i = 0; i < lines_horizontal2.length; i++) {
+      cover_animation.to(lines_horizontal2[i], { x: 0, opacity: 1, duration: 1, overflow: "visible" }, 0);
+    }
+    
+    cover_animation.to(".un-logo", {y: 0, duration:1});
+    cover_animation.to(".cover-title", {y: 0, duration:1, opacity: 1});
+    cover_animation.to(".cover-subtitle", {x: 0, duration:1.5, opacity: 1});
+    cover_animation.to(".cover-shields", { opacity: 1 });
+    
+    cover_animation.to(".img-shield", {x:0, opacity: 1});
+
+    cover_animation.duration(4)
+
+    gsap.from('.scroll-img', { y: -10, ease: "circ.out", repeat:-1, yoyo: true})
+  }, { scope: containerRef });
+
   return (
-    <main className={`min-h-[100vh] bg-cover`} style={{ backgroundImage: `url('./img/cubierta.png')` }}>
+    <main className={`min-h-[100vh] bg-cover`} ref={containerRef} style={{ backgroundImage: `url('./img/cubierta.png')` }}>
       <div
-        className='w-full min-h-[100vh] flex flex-col align-center justify-center relative bg-blend-mode-lighten mix-blend-mode-lighten relative'
+        className='w-full min-h-[100vh] flex flex-col align-center justify-center relative bg-blend-mode-lighten mix-blend-mode-lighten'
         style={{
           background: `linear-gradient(39.2deg, rgba(255, 118, 87, 0.2) -7.15%, rgba(0, 0, 0, 0.2) 68.29%), radial-gradient(77.64% 135.08% at 72.62% -5.14%, #326799 0%, rgba(78, 173, 215, 0.348804) 32.19%, rgba(161, 105, 250, 0.04) 100%)`,
         }}
       >
-        <div className='absolute w-full h-[calc(100%_-_54px)] 2xl:h-[calc(100%_-_78px)] top-0'>
+        <div className='overflow-hidden absolute w-full h-[calc(100%_-_54px)] 2xl:h-[calc(100%_-_78px)] top-0'>
           <div className='absolute w-full pl-28'>
-            <div className='h-8 border-r border-white w-px' />
-            <div className='flex w-[8%] items-center -mt-[12px]'>
+            <div className='line-top h-8 border-r border-white w-px' />
+            <div className='line-horizontal flex w-[8%] items-center -mt-[12px]'>
               <span className={`block w-full border-t border-white`}></span>
               <span className='w-6 h-6 rounded-full border-white border block -mr-[14px]' />
               <span className='w-2 h-2 rounded-full bg-white block ' />
             </div>
           </div>
 
-          <div className='absolute flex w-[15%] items-center bottom-[25%]'>
+          <div className='line-left absolute flex w-[15%] items-center bottom-[25%]'>
             <span className={`block w-full border-t border-white`}></span>
             <span className='w-6 h-6 rounded-full border-white border block -mr-[15px]' />
             <span className='w-2 h-2 rounded-full bg-white block ' />
           </div>
 
-          <div className='absolute flex w-[8%] items-center bottom-[8%]'>
+          <div className='line-left absolute flex w-[8%] items-center bottom-[8%]'>
             <span className={`block w-full border-t border-white`}></span>
             <span className='w-6 h-6 rounded-full border-white border block -mr-[14px]' />
             <span className='w-2 h-2 rounded-full bg-white block ' />
           </div>
 
-          <div className='absolute h-[7.8em] right-[35%] w-px border-l border-white' />
-          <div className='absolute flex w-[10%] items-center right-[35%] top-28'>
+          <div className='line-top absolute h-[7.8em] right-[35%] w-px border-l border-white' />
+          <div className='line-horizontal2 absolute flex w-[10%] items-center right-[35%] top-28'>
             <span className='w-6 h-6 rounded-full border-white border block -mr-[14px] bg-blue-100' />
             <span className='w-2 h-2 rounded-full bg-white block ' />
             <span className={`block w-full border-t border-white `}></span>
           </div>
 
-          <div className='absolute flex w-[50%] items-center right-[0%] top-48'>
+          <div className='line-right absolute flex w-[50%] items-center right-[0%] top-48'>
             <span className='w-6 h-6 rounded-full border-white border block -mr-4 bg-blue-100' />
             <span className='w-2 h-2 rounded-full bg-white block ' />
             <span className={`block w-full border-t border-white `}></span>
           </div>
 
-          <div className='absolute flex w-[25%] items-center right-[0%] top-80'>
+          <div className='line-right absolute flex w-[25%] items-center right-[0%] top-80'>
             <span className='w-6 h-6 rounded-full border-white border block -mr-[15px] bg-blue-100' />
             <span className='w-2 h-2 rounded-full bg-white block ' />
             <span className={`block w-full border-t border-white `}></span>
           </div>
 
           <div className='absolute w-full bottom-0 pr-[20%] flex justify-end items-start'>
-            <div className='flex w-[10%] items-center -mt-[12px]'>
+            <div className='line-horizontal2 flex w-[10%] items-center -mt-[12px]'>
               <span className='w-6 h-6 rounded-full border-white border block -mr-[14px]' />
               <span className='w-2 h-2 rounded-full bg-white block ' />
               <span className={`block w-full border-t border-white`}></span>
             </div>
-            <div className='h-16 border-r border-white w-px' />
+            <div className='line-bottom h-16 border-r border-white w-px' />
           </div>
         </div>
 
         <div className='grow flex flex-col align-center justify-center relative z-50'>
-          <div className='bg-blue-100 rounded-b-xl absolute right-32 top-0 px-8 py-7'>
+          <div className='un-logo bg-blue-100 rounded-b-xl absolute right-32 top-0 px-8 py-7'>
             <img src={'./img/escudo-unal.svg'} alt={'Escudo universidad nacional'} />
           </div>
 
           <div className='container text-white px-20 2xl:px-36 2xl:min-h-[70vh] bg-blue-100 bg-opacity-40 bg-blend-multiply flex flex-col'>
-            <div className='grow pt-14 2xl:pt-28'>
-              <h1 className='font-medium text-[5em] leading-none 2xl:text-8xl mb-3'>Bit a Bit</h1>
-              <h2 className='font-extralight text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
+            <div className='grow pt-14 2xl:pt-28 overflow-hidden'>
+              <h1 className='cover-title font-medium text-[5em] leading-none 2xl:text-8xl mb-3'>Bit a Bit</h1>
+              <h2 className='cover-subtitle font-extralight text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
                 La evolución digital en la
                 <br /> Universidad Nacional de Colombia
               </h2>
-              <div className='flex mt-10 pb-12'>
-                <img className='w-28' src={'./img/escudo-dned.svg'} alt={'Escudo DNED'} />
-                <div className='ml-7 pl-7 mr-4 border-l border-white py-4 '>
-                  <img className='w-24' src={'./img/escudo-unalab.svg'} alt={'Escudo Unalab'} />
+              <div className='cover-shields flex mt-10 pb-12'>
+                <div className='w-28 my-auto overflow-hidden'>
+                  <img className='img-shield ' src={'./img/escudo-dned.svg'} alt={'Escudo DNED'} />
+                </div>
+                <div className='ml-7 pl-7 mr-4 border-l border-white py-4  overflow-hidden'>
+                  <img className='img-shield w-24' src={'./img/escudo-unalab.svg'} alt={'Escudo Unalab'} />
                 </div>
               </div>
             </div>
@@ -84,14 +150,14 @@ export default function Home() {
 
           <div className='text-center text-white -mt-10'>
             <button className='text-center block mx-auto'>
-              <img className='w-14 block mx-auto' src='./img/scroll-button.svg' />{' '}
+              <img className='scroll-img w-14 block mx-auto' src='./img/scroll-button.svg' />{' '}
               <span className='inline-block mt-2 text-base font-light tracking-wider opacity-80'>
                 scroll para empezar
               </span>
             </button>
           </div>
         </div>
-        <div className='bg-black text-white py-3 2xl:py-5 border-t-2 border-white'>
+        <div className='bg-black text-white py-3 2xl:py-5 border-t-2 border-white z-40'>
           <div className='container flex justify-end'>
             <Link
               className='font-light text-base 2x:text-xl mr-12 uppercase tracking-widest flex align-center'
