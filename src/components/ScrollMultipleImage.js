@@ -29,7 +29,7 @@ const ScrollMultipleImages = (props) => {
 	}, { scope: containerRef });
 
 	return (
-		<div ref={containerRef}>
+		<div className='overflow-hidden' ref={containerRef}>
 			<div className='flex relative'>
 				{/* Images */}
 				<div ref={imagesRef} className='w-full '>
