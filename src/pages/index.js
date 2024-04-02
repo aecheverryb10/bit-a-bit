@@ -12,9 +12,7 @@ export default function Home() {
     gsap.set(".line-right", { x: "103%", opacity: 0 });
     gsap.set(".line-top", { y: "-103%", opacity: 0 });
     gsap.set(".line-bottom", { y: "103%", opacity: 0 });
-    gsap.set(".line-horizontal", { x: "-103%", opacity: 0});
-    gsap.set(".line-horizontal2", { x: "103%", opacity: 0});
-    gsap.set(".un-logo", { y: "-103%" });
+    gsap.set(".line-right", { x: "103%", opacity: 0});
     
     gsap.set(".cover-title", { y: "-103%", opacity: 0 });
     gsap.set(".cover-subtitle", { x: "-10%", opacity: 0 });
@@ -25,8 +23,6 @@ export default function Home() {
     const lines_right = gsap.utils.toArray(".line-right")
     const lines_top = gsap.utils.toArray(".line-top")
     const lines_bottom = gsap.utils.toArray(".line-bottom")
-    const lines_horizontal = gsap.utils.toArray(".line-horizontal")
-    const lines_horizontal2 = gsap.utils.toArray(".line-horizontal2")
     const shields = gsap.utils.toArray(".img-shield")
 
     for (let index = 0; index < shields.length; index++) {
@@ -47,16 +43,9 @@ export default function Home() {
     for (let i = 0; i < lines_bottom.length; i++) {
       cover_animation.to(lines_bottom[i], { y: 0, opacity: 1, duration: 1 }, 0);
     }
-    for (let i = 0; i < lines_horizontal.length; i++) {
-      cover_animation.to(lines_horizontal[i], { x: 0, opacity: 1, duration: 1, overflow: "visible" }, 0);
-    }
-    for (let i = 0; i < lines_horizontal2.length; i++) {
-      cover_animation.to(lines_horizontal2[i], { x: 0, opacity: 1, duration: 1, overflow: "visible" }, 0);
-    }
     
-    cover_animation.to(".un-logo", {y: 0, duration:1});
     cover_animation.to(".cover-title", {y: 0, duration:1, opacity: 1});
-    cover_animation.to(".cover-subtitle", {x: 0, duration:1.5, opacity: 1});
+    cover_animation.to(".cover-subtitle", {x: 0, duration:1, opacity: 1}, 1);
     cover_animation.to(".cover-shields", { opacity: 1 });
     
     cover_animation.to(".img-shield", {x:0, opacity: 1});
@@ -77,7 +66,7 @@ export default function Home() {
         <div className='overflow-hidden absolute w-full h-[calc(100%_-_54px)] 2xl:h-[calc(100%_-_78px)] top-0'>
           <div className='absolute w-full pl-28'>
             <div className='line-top h-8 border-r border-white w-px' />
-            <div className='line-horizontal flex w-[8%] items-center -mt-[12px]'>
+            <div className='line-left flex w-[8%] items-center -mt-[12px]'>
               <span className={`block w-full border-t border-white`}></span>
               <span className='w-6 h-6 rounded-full border-white border block -mr-[14px]' />
               <span className='w-2 h-2 rounded-full bg-white block ' />
@@ -97,7 +86,7 @@ export default function Home() {
           </div>
 
           <div className='line-top absolute h-[7.8em] right-[35%] w-px border-l border-white' />
-          <div className='line-horizontal2 absolute flex w-[10%] items-center right-[35%] top-28'>
+          <div className='line-right absolute flex w-[10%] items-center right-[35%] top-28'>
             <span className='w-6 h-6 rounded-full border-white border block -mr-[14px] bg-blue-100' />
             <span className='w-2 h-2 rounded-full bg-white block ' />
             <span className={`block w-full border-t border-white `}></span>
@@ -116,7 +105,7 @@ export default function Home() {
           </div>
 
           <div className='absolute w-full bottom-0 pr-[20%] flex justify-end items-start'>
-            <div className='line-horizontal2 flex w-[10%] items-center -mt-[12px]'>
+            <div className='line-right flex w-[10%] items-center -mt-[12px]'>
               <span className='w-6 h-6 rounded-full border-white border block -mr-[14px]' />
               <span className='w-2 h-2 rounded-full bg-white block ' />
               <span className={`block w-full border-t border-white`}></span>
