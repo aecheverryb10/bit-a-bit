@@ -1,4 +1,4 @@
-import { BloqueTexto, MainSection, ParrafoInicial, Subtitulo, TituloCapitulo } from '@/components/Elements';
+import { BloqueTexto, MainSection, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
 import Capitulo from '@/components/Capitulo';
 import ScrollVideo from '@/components/ScrollVideo';
 import Timeline from '@/components/Timeline';
@@ -53,7 +53,7 @@ export default function AscendenciasDigitales() {
           </p>
         </BloqueTexto>
         <ScrollVideo url='./video/ques-es-lo-digital.mp4' type='video/mp4' />
-        <BloqueTexto>
+        <BloqueTexto shadow={false} noPaddingBottom={true}>
           <p>
             La digitalización puede ser entendida como el proceso de “conversión de datos y procesos analógicos a un
             formato legible por máquinas” (<span className='caps'>OCDE</span>, 2019, p. 18). En otras palabras, la
@@ -148,7 +148,11 @@ export default function AscendenciasDigitales() {
             convirtieron en agentes que tejieron redes globales, un medio de comunicación sin precedentes (Ceruzzi,
             2003, pp. 14-15), que afectó gran parte de las disciplinas.
           </p>
-
+        </BloqueTexto>
+        <Resaltado>
+          <>las computadoras fueron creadas para computar, es decir, para resolver complejos problemas matemáticos</>
+        </Resaltado>
+        <BloqueTexto noPaddingTop={true} noPaddingBottom={true}>
           <p>
             De forma particular, el nacimiento de las computadoras profundizó las reflexiones en torno a las diferencias
             entre las máquinas (hardware) y el conjunto de instrucciones que las dirigían para realizar tareas
@@ -193,7 +197,14 @@ export default function AscendenciasDigitales() {
             bloqueo estadounidense y la posterior caída del socialismo en Europa Oriental (Aguirre y Carnota, 2009, p.
             15).
           </p>
-
+        </BloqueTexto>
+        <Resaltado>
+          <>
+            las computadoras pasaron de ser instrumentos especializados para la ciencia, costosos y frágiles, a
+            productos comerciales que podían fabricarse y venderse
+          </>
+        </Resaltado>
+        <BloqueTexto noPaddingTop={true}>
           <p>
             Chile, Argentina, Venezuela, Colombia, México, Uruguay, Cuba y Brasil ingresaron a esta nueva era digital de
             la computación entre 1957 y 1973, curiosamente, los primeros fueron Cuba y Colombia; mientras que Uruguay
@@ -243,7 +254,7 @@ export default function AscendenciasDigitales() {
         <Subtitulo>
           <>¿Qué pasó en Colombia?</>
         </Subtitulo>
-        <BloqueTexto>
+        <BloqueTexto noPaddingBottom={true}>
           <p>
             Como se señaló, Colombia fue uno de los primeros países en conectarse con las tecnologías computacionales en
             el contexto latinoamericano. Su recorrido en la era digital podría encontrar uno de sus orígenes en 1930,
@@ -305,7 +316,14 @@ export default function AscendenciasDigitales() {
             alianza entre la computación, las redes eléctricas y las redes telefónicas y radiales que permitieron el
             intercambio de datos contables y financieros (Jarava- Otero, 2020, pp. 17-18).
           </p>
-
+        </BloqueTexto>
+        <Resaltado>
+          <>
+            La evolución de la informática en Colombia tomaría distintos caminos para satisfacer las diversas
+            necesidades de instituciones en el sector privado, académico y estatal
+          </>
+        </Resaltado>
+        <BloqueTexto noPaddingTop={true}>
           <p>
             Aunado a lo anterior, la integración de las tecnologías computacionales en la segunda mitad siglo{' '}
             <span className='caps'>XX</span>
@@ -321,7 +339,6 @@ export default function AscendenciasDigitales() {
             Educativa (Ribiecol), en 1990. Los tres son algunos ejemplos que impulsaron la creación de grupos de
             investigación, enfocados a la educación y la informática (Mesa, 2013, pp. 74-76).
           </p>
-
           <p>
             Más tarde, también se llevaron a cabo significativos eventos y políticas que permitieron el diálogo entre
             esta comunidad. Por un lado, puede mencionarse la Ley 115 de 1994, por medio de la cual se expidió la “Ley

@@ -8,11 +8,13 @@ import Link from 'next/link';
 const Capitulo = (props) => {
   const { asPath } = useRouter();
   const currentChapterPosition = Capitulos.findIndex((item) => `/${item?.url}` === asPath);
+  const currentChapter = Capitulos[currentChapterPosition];
   const prevChapter = Capitulos[currentChapterPosition - 1];
   const nextChapter = Capitulos[currentChapterPosition + 1];
+  const defaultBackground = `radial-gradient(63.95% 32.77% at 13.12% 8.61%, #E9AAFF 0%, #00FFE0 100%)`;
+  
   const {
     children,
-    background = `radial-gradient(63.95% 32.77% at 13.12% 8.61%, #E9AAFF 0%, #00FFE0 100%)`,
     image = 'bg-capitulo1.png',
   } = props;
 
@@ -20,10 +22,10 @@ const Capitulo = (props) => {
   return (
     <>
       <Menu />
-      <main className={`min-h-[100vh]`} style={{ background: background }}>
+      <main className={`min-h-[100vh] bg-blend-multiply`} style={{ background: currentChapter?.background ?? defaultBackground }}>
         <div className='w-full min-h-[100vh]'>
           <div
-            className='fixed top-0 w-full h-[2900px] bg-cover z-0'
+            className='fixed top-0 w-full h-[2900px] bg-cover z-0 mix-blend-multiply'
             style={{ backgroundImage: `url('./img/${image}')` }}
           ></div>
           <div className='relative z-10' ref={contenido}>

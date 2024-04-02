@@ -26,7 +26,7 @@ export default function CulturaDigital() {
           </div>
         </TituloCapitulo>
         <ParrafoInicial>
-          <p>
+          <p className='first-letter:text-7xl first-letter:me-4 first-letter:tracking-n first-letter:float-start first-letter:font-sans first-letter:font-extralight'>
             En el siglo <span className='caps'>XXI</span>, Internet se ha convertido en el artefacto por excelencia del
             vasto universo de las tecnologías digitales. Se transformó en un dispositivo cultural que generó nuevas
             formas de relacionamiento social y produjo nuevas identidades. Internet es una herramienta, pero también un

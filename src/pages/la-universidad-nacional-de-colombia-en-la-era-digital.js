@@ -27,7 +27,7 @@ export default function UniversidadEraDigital() {
           </div>
         </TituloCapitulo>
         <ParrafoInicial>
-          <p>
+          <p className='first-letter:text-7xl first-letter:me-4 first-letter:tracking-n first-letter:float-start first-letter:font-sans first-letter:font-extralight'> 
             Las computadoras están compuestas por circuitos eléctricos que desempeñan una función fundamental: llevar a
             cabo operaciones lógicas. A diferencia de los circuitos que tradicionalmente se encontraban en los
             dispositivos electrónicos y que se utilizaban para encender-apagar, regular el flujo eléctrico, convertir la

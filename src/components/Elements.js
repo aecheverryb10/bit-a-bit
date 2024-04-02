@@ -32,11 +32,11 @@ const ParrafoInicial = (props) => {
 };
 
 const BloqueTexto = (props) => {
-  const { children, shadow=true } = props;
+  const { children, shadow = true, noPaddingBottom = false, noPaddingTop = false } = props;
   return (
     <MainSection>
       <div className={`bg-white bg-opacity-70 ${shadow ? 'shadow-xl' : ''}`}>
-        <div className='pl-40 pr-16 pt-16 pb-28'>
+        <div className={`pl-40 pr-16 ${noPaddingTop ? '' : 'pt-16'} ${noPaddingBottom ? '' : 'pb-28'}`}>
           <div className='max-w-[700px] main-content text-lg font-serif leading-relaxed'>{children}</div>
         </div>
       </div>
@@ -107,4 +107,22 @@ const Subtitulo = (props) => {
   );
 };
 
-export { MainSection, ParrafoInicial, BloqueTexto, TituloCapitulo, Subtitulo };
+const Resaltado = (props) => {
+  const { children } = props;
+  return (
+    <MainSection>
+      <div className={`bg-white bg-opacity-70 py-16 font-ancizar font-bold `}>
+        <div className='flex max-w-[700px]'>
+          <div className='flex items-center justify-start'>
+            <span className={`block w-40 border-2 border-purple-base`}></span>
+            <span className='w-8 h-8 rounded-full border-purple-base border-4 block -mr-[22px]' />
+            <span className='w-3 h-3 rounded-full bg-purple-base block ' />
+          </div>
+          <p className='text-2xl text-purple-base pl-10'>{children}</p>
+        </div>
+      </div>
+    </MainSection>
+  );
+};
+
+export { MainSection, ParrafoInicial, BloqueTexto, TituloCapitulo, Subtitulo, Resaltado };

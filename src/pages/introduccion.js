@@ -1,5 +1,5 @@
 import Capitulo from '@/components/Capitulo';
-import { BloqueTexto, ParrafoInicial, TituloCapitulo } from '@/components/Elements';
+import { BloqueTexto, MainSection, ParrafoInicial, Resaltado, TituloCapitulo } from '@/components/Elements';
 
 export default function Introduccion() {
   return (
@@ -13,7 +13,7 @@ export default function Introduccion() {
           </div>
         </TituloCapitulo>
         <ParrafoInicial>
-          <p>
+          <p className='first-letter:text-7xl first-letter:me-4 first-letter:tracking-n first-letter:float-start first-letter:font-sans first-letter:font-extralight'>
             La transformación digital, última etapa en el largo y complejo proceso de apropiación de las tecnologías
             digitales, implica cambios culturales y organizacionales; un camino discontinuo que involucra el acceso, el
             aprendizaje y la integración de estas tecnologías en las sociedades. En el caso de la educación superior en
@@ -26,7 +26,7 @@ export default function Introduccion() {
             paulatinamente, se volvió inseparable.
           </p>
         </ParrafoInicial>
-        <BloqueTexto>
+        <BloqueTexto shadow={false} noPaddingBottom={true}>
           <p>
             Poco se ha documentado sobre una historia de la evolución digital en la Universidad Nacional de Colombia,
             del tránsito entre las tecnologías mecánicas y análogas a las tecnologías computacionales, y cómo este
@@ -56,7 +56,15 @@ export default function Introduccion() {
             consolidar una escuela de la computación en el país, con recursos y tecnologías del exterior, pero con
             iniciativas, propuestas e ideas locales.
           </p>
-
+        </BloqueTexto>
+        <Resaltado>
+          <>
+            La Universidad Nacional de Colombia se convirtió en una institución pionera en desarrollar procesos para
+            fortalecer la transformación digital en la docencia, la investigación y la extensión centrada en la
+            comunidad universitaria
+          </>
+        </Resaltado>
+        <BloqueTexto noPaddingTop={true}>
           <p>
             El segundo capítulo explora la llegada de las tecnologías computacionales a la Universidad Nacional de
             Colombia. Presenta un abordaje de lleno en el caso universitario y algunas de sus sedes, desde la década de
