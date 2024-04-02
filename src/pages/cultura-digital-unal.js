@@ -1263,6 +1263,7 @@ export default function CulturaDigital() {
             },
           ]}
         />
+
       </Capitulo>
     </>
   );

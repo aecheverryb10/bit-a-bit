@@ -21,6 +21,7 @@ const ScrollVideo = (props) => {
 
 		ScrollTrigger.create({
 			pin: true,
+			pinSpacing: false,
 			trigger: containerRef.current,
 			start: "top",
 			endTrigger: containerRef.current,
