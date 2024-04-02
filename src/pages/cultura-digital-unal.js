@@ -1,5 +1,5 @@
 import Capitulo from '@/components/Capitulo';
-import { BloqueTexto, MainSection, ParrafoInicial, Subtitulo, TituloCapitulo } from '@/components/Elements';
+import { BloqueTexto, MainSection, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
 import Podcast from '@/components/Podcast';
 import ScrollImage from '@/components/ScrollImage';
 import ScrollMultipleImages from '@/components/ScrollMultipleImage';
@@ -154,7 +154,7 @@ export default function CulturaDigital() {
             <span className='caps'>DNTIC</span>, Peti, <span className='caps'>DNED</span>/UNALab
           </>
         </Subtitulo>
-        <BloqueTexto>
+        <BloqueTexto noPaddingBottom={true} shadow={false}>
           <p>
             En 2009, se redefinieron las políticas digitales en la Universidad Nacional de Colombia. El Comité Nacional
             de Informática y Telecomunicaciones, creado en 1998, cambió levemente su nombre por Comité Nacional de
@@ -214,7 +214,14 @@ export default function CulturaDigital() {
             parte de una estrategia institucional que no solo optimizaba los procesos, sino que, primordialmente,
             permitía lograr los objetivos misionales de la universidad (Grupo Consultor Peti, 2011).
           </p>
-
+        </BloqueTexto>
+        <Resaltado>
+          <>
+            Esta fue la primera vez en la que se estableció un plan no solo para solucionar problemas del pasado y del
+            presente, sino también para anticiparse a los retos del futuro
+          </>
+        </Resaltado>
+        <BloqueTexto noPaddingTop={true} noPaddingBottom={true}>
           <p>
             El Peti enfocó sus esfuerzos en dos agentes principales: (1) los usuarios y (2) la institución. En torno a
             los primeros, los distintos cuerpos colegiados debían procurar cumplir determinados requisitos en el marco
@@ -231,7 +238,6 @@ export default function CulturaDigital() {
             <span className='caps'>TIC</span>; los indicadores y estadísticas; la integración de la información; y,
             finalmente, la memoria institucional e información histórica (Grupo Consultor Peti, 2011, pp. 1-22).
           </p>
-
           <p>
             En este contexto, el Peti de 2012 puede entenderse como un referente que integró los esfuerzos y visiones
             sobre el desarrollo tecnológico de estudiantes, investigadores, profesores y administrativos. Gracias a esta
@@ -318,7 +324,15 @@ export default function CulturaDigital() {
             tecnológica, apuntando a modelos sostenibles, progresivos y adaptables a los cambios tecnológicos adscritos
             a la normatividad y la legislación (Acuerdo 228 de 2016).
           </p>
-
+        </BloqueTexto>
+        <Resaltado>
+          <>
+            Es importante considerar que el concepto de <em>transformación digital</em> no solo implica un cambio de las
+            tecnologías, ni se limita a la llegada de máquinas digitales o la presencia de grandes redes que transportan
+            información
+          </>
+        </Resaltado>
+        <BloqueTexto noPaddingTop={true}>
           <p>
             Esta nueva política es definida como una “estrategia mediante la cual se reconoce que la tecnología de la
             información y la comunicación es una herramienta necesaria para el desarrollo institucional, pero que
@@ -370,7 +384,7 @@ export default function CulturaDigital() {
           subtitle={'Una conversación con el director de la DNED, el profesor Johan Sebastián Eslava Garzón'}
           src={'./audio/recurso_5_ciberataques.mp3'}
         />
-        <BloqueTexto>
+        <BloqueTexto noPaddingBottom={true}>
           <h3 className='text-2xl text-purple-base font-sans mb-10'>
             Iniciativas estratégicas de apropiación y optimización tecnológica
           </h3>
@@ -421,7 +435,14 @@ export default function CulturaDigital() {
             institucional para cada uno de los procesos misionales y de apoyo de la universidad (
             <span className='caps'>DNTIC</span>, 2015).
           </p>
-
+        </BloqueTexto>
+        <Resaltado>
+          <>
+            la pandemia puso de manifiesto las enormes brechas tecnológicas de los estudiantes, profesores y personal
+            administrativo en el uso y acceso de las tecnologías
+          </>
+        </Resaltado>
+        <BloqueTexto noPaddingTop={true}>
           <p>
             En cuanto a los sistemas de información, se planteó la necesidad de crear un modelo de consolidación y
             actualización de los sistemas de información de misión crítica: Sara, <span className='caps'>SIA</span> y
@@ -1263,7 +1284,6 @@ export default function CulturaDigital() {
             },
           ]}
         />
-
       </Capitulo>
     </>
   );

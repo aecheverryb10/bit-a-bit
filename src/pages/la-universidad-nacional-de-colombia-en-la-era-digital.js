@@ -1,5 +1,5 @@
 import Capitulo from '@/components/Capitulo';
-import { BloqueTexto, MainSection, ParrafoInicial, Subtitulo, TituloCapitulo } from '@/components/Elements';
+import { BloqueTexto, MainSection, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
 import Podcast from '@/components/Podcast';
 import ScrollImage from '@/components/ScrollImage';
 import ScrollImageVertical from '@/components/ScrollImageVertical';
@@ -27,7 +27,7 @@ export default function UniversidadEraDigital() {
           </div>
         </TituloCapitulo>
         <ParrafoInicial>
-          <p className='first-letter:text-7xl first-letter:me-4 first-letter:tracking-n first-letter:float-start first-letter:font-sans first-letter:font-extralight'> 
+          <p className='first-letter:text-7xl first-letter:me-4 first-letter:tracking-n first-letter:float-start first-letter:font-sans first-letter:font-extralight'>
             Las computadoras están compuestas por circuitos eléctricos que desempeñan una función fundamental: llevar a
             cabo operaciones lógicas. A diferencia de los circuitos que tradicionalmente se encontraban en los
             dispositivos electrónicos y que se utilizaban para encender-apagar, regular el flujo eléctrico, convertir la
@@ -161,7 +161,7 @@ export default function UniversidadEraDigital() {
             </>
           }
         />
-        <BloqueTexto>
+        <BloqueTexto noPaddingBottom={true} shadow={false}>
           <p>
             No era extraño que una empresa de tal trayectoria propiciara el desarrollo de esta ciencia en las
             universidades. El Acuerdo 1 de 1954 evidenciaba que la universidad estaba conectada a un esfuerzo mayor por
@@ -197,7 +197,14 @@ export default function UniversidadEraDigital() {
             administrativos. En este sentido, se pensaba en el aprovechamiento de las máquinas no solo con fines de
             investigación, sino también para optimizar procesos internos de la institución.
           </p>
-
+        </BloqueTexto>
+        <Resaltado>
+          <>
+            Si la era digital tuviese que resumirse en dos conceptos podríamos elegir los de <em>computar</em> y{' '}
+            <em>conmutar</em>, dicho de otro modo, calcular e intercambiar
+          </>
+        </Resaltado>
+        <BloqueTexto noPaddingTop={true}>
           <p>
             En los primeros años la universidad pudo acceder a los equipos a través del alquiler, gracias a la
             cooperación con otros centros y entidades oficiales (Acuerdo 76 de 1960). Por ejemplo, en 1965 se celebra un
@@ -206,7 +213,6 @@ export default function UniversidadEraDigital() {
             <span className='caps'>IBM</span> Colombia para el uso de estos equipos (Resolución 322 de 1965). La llegada
             de los equipos implicó, asimismo, la capacitación de personas para participar de su uso.
           </p>
-
           <p>
             Con la creación del Centro de Computación en 1964, se inició el proceso de consolidación de una escuela de
             la computación y la programación en la Universidad Nacional de Colombia. Para ese año ya se habían
@@ -276,7 +282,7 @@ export default function UniversidadEraDigital() {
           </p>
         </BloqueTexto>
         <Subtitulo>Políticas y proyectos en la transición hacia una cultura digital</Subtitulo>
-        <BloqueTexto>
+        <BloqueTexto noPaddingBottom={true} shadow={false}>
           <p>
             La introducción de nuevas tecnologías y conocimientos transformó la universidad en todas sus áreas del
             conocimiento, aunque en distintos grados según las características disciplinarias. La adopción de
@@ -310,7 +316,14 @@ export default function UniversidadEraDigital() {
             Colombiana de Telecomunicaciones (Telecom), la Empresa de Energía Eléctrica de Bogotá y el Departamento de
             Planeación (Acuerdo 95 de 1985).
           </p>
-
+        </BloqueTexto>
+        <Resaltado>
+          <>
+            Para la década de 1980, los estudiantes de ingeniería ya podían tener acercamientos prácticos a los equipos
+            computacionales
+          </>
+        </Resaltado>
+        <BloqueTexto noPaddingTop={true} noPaddingBottom={true} shadow={false}>
           <p>
             La colaboración con estas entidades facilitó el desarrollo de investigaciones y cursos dentro de las
             carreras existentes, así como la creación de nuevos programas académicos con enfoques especializados. Se
@@ -369,7 +382,14 @@ export default function UniversidadEraDigital() {
             operación. Si las instrucciones no se escribían correctamente en la tarjeta, el resultado arrojaba un error
             y debía repetirse todo el proceso (J. I. Peña Reyes, comunicación personal, 25 de agosto de 2023).
           </p>
-
+        </BloqueTexto>
+        <Resaltado>
+          <>
+            la Universidad Nacional de Colombia se pudo entender, por primera vez en su historia, como una{' '}
+            <em>universidad digital</em>
+          </>
+        </Resaltado>
+        <BloqueTexto noPaddingTop={true}>
           <p>
             La computación avanzaba a pasos de gigante. Para inicios de la década de 1980, los estudiantes tuvieron
             contacto con las computadoras a través de las perforadoras de tarjetas; pero al finalizarla, ya tendrían
