@@ -32,10 +32,10 @@ const ParrafoInicial = (props) => {
 };
 
 const BloqueTexto = (props) => {
-  const { children } = props;
+  const { children, shadow=true } = props;
   return (
     <MainSection>
-      <div className='bg-white bg-opacity-70 shadow-xl'>
+      <div className={`bg-white bg-opacity-70 ${shadow ? 'shadow-xl' : ''}`}>
         <div className='pl-40 pr-16 pt-16 pb-28'>
           <div className='max-w-[700px] main-content text-lg font-serif leading-relaxed'>{children}</div>
         </div>

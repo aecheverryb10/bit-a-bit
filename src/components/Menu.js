@@ -23,10 +23,12 @@ const Menu = () => {
             </span>
             <span className='uppercase tracking-widest'>Menú</span>
           </button>
-          <h2 className='uppercase tracking-[0.18em] text-white text-sm pl-24'>
-            <span className='border-r border-white font-medium pr-4 mr-4'>Bit a bit</span>{' '}
-            <span className='font-light'>La evolución digital en la Universidad Nacional de Colombia</span>
-          </h2>
+          <Link href='./'>
+            <h2 className='uppercase tracking-[0.18em] text-white text-sm pl-24'>
+              <span className='border-r border-white font-medium pr-4 mr-4'>Bit a bit</span>{' '}
+              <span className='font-light'>La evolución digital en la Universidad Nacional de Colombia</span>
+            </h2>
+          </Link>
         </div>
       </div>
 

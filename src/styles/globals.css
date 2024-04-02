@@ -60,3 +60,19 @@ body {
 em{
   @apply italic;
 }
+
+.caption-element{
+  max-width: 300px;
+}
+
+.caption-element p:first-child{
+  @apply font-light text-3xl bg-black bg-opacity-40 p-6;
+}
+
+.caption-element.vertical p:first-child{
+  @apply bg-opacity-100;
+}
+
+.caption-element p:nth-child(2){
+  @apply bg-white text-black py-4 text-md px-6 font-light;
+}

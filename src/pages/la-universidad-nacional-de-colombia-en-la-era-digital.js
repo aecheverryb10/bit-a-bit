@@ -48,7 +48,7 @@ export default function UniversidadEraDigital() {
           }
         />
         <Subtitulo>Los inicios</Subtitulo>
-        <BloqueTexto>
+        <BloqueTexto shadow={false}>
           <p>
             Las puertas lógicas mencionadas nacieron como circuitos electrónicos integrados, formados internamente con
             unos dispositivos llamados <em>transistores</em> que, dependiendo de su composición, podían realizar
@@ -111,7 +111,7 @@ export default function UniversidadEraDigital() {
             </>
           }
         />
-        <BloqueTexto>
+        <BloqueTexto shadow={false}>
           <p>
             Más allá de los tecnicismos, la opción por uno u otro tenía implicaciones significativas para su uso
             práctico en el ámbito educativo. Las computadoras digitales podían realizar cálculos más veloces y precisos,

@@ -48,7 +48,7 @@ const ScrollImage = (props) => {
 		<div className='bg-white h-screen' ref={containerRef}>
 			<div ref={gradientRef} className='absolute bg-gradient-to-b from-white  from-[-20%] to-transparent to-30% h-screen w-full top-0 z-10' />
 			<div className='relative h-screen'>
-				<div ref={captionRef} className='absolute right-0 bottom-0 text-white z-10'>
+				<div ref={captionRef} className='caption-element absolute right-24 bottom-0 text-white z-10'>
 					{caption}
 				</div>
 				<Image

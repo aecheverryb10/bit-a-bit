@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { MainSection } from './Elements';
 
 const ScrollImageVertical = (props) => {
 	const { alt, img, caption } = props;
@@ -43,24 +44,25 @@ const ScrollImageVertical = (props) => {
 	}, { scope: containerRef });
 
 	return (
-		<div className='h-screen' ref={containerRef}>
-			<div className='relative h-screen'>
-				<div ref={captionRef} className='absolute right-0 bottom-0 text-white z-10'>
+		<section className='pl-20 max-w-[1440px] '>
+		<div className='h-screen bg-white bg-opacity-70' ref={containerRef}>
+			<div className='relative h-screen '>
+				<div ref={captionRef} className='absolute right-48 bottom-0 text-white z-10 caption-element vertical'>
 					{caption}
 				</div>
-				<div className='relative w-fit mx-auto'>
+				<div className='relative w-fit'>
 					<div ref={gradientRef} className='absolute bg-gradient-to-b from-white  from-[-20%] to-transparent to-30% h-screen top-0 z-10 w-full ' />
 					{/* eslint-disable-next-line @next/next/no-img-element */}
 					<img
-						className='h-screen w-auto'
+						className='h-screen w-auto shadow-2xl'
 						alt={alt}
 						src={img}
-						fill
 						style={{ 'objectFit': 'contain', 'objectPosition': 'center' }}
 					/>
 				</div>
 			</div>
 		</div>
+		</section>
 	);
 };
 

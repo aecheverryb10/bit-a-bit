@@ -53,8 +53,8 @@ const ScrollMultipleImages = (props) => {
 				<div className='h-full absolute right-0'>
 					{
 						images.map(item => (
-							<div className='h-screen flex justify-end items-end' key={`caption-${item.key}`}>
-								<div className='image--caption right-0 bottom-0 text-white'>
+							<div className='h-screen flex justify-end items-end pr-24' key={`caption-${item.key}`}>
+								<div className='image-caption  bottom-0 text-white caption-element'>
 									{item.caption}
 								</div>
 							</div>
