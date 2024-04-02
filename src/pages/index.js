@@ -47,10 +47,9 @@ export default function Home() {
     cover_animation.to(".cover-title", {y: 0, duration:1, opacity: 1});
     cover_animation.to(".cover-subtitle", {x: 0, duration:1, opacity: 1}, 1);
     cover_animation.to(".cover-shields", { opacity: 1 });
-    
     cover_animation.to(".img-shield", {x:0, opacity: 1});
 
-    cover_animation.duration(4)
+    cover_animation.duration(2.5)
 
     gsap.from('.scroll-img', { y: -10, ease: "circ.out", repeat:-1, yoyo: true})
   }, { scope: containerRef });
