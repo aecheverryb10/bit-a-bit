@@ -18,7 +18,6 @@ const ScrollMultipleImages = (props) => {
 				start: "top",
 				endTrigger: imagesRef.current,
 				end: "bottom bottom",
-				markers: true
 			},
 		});
 		for (let i = 0; i <= images.length; i++){
