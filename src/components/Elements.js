@@ -71,7 +71,7 @@ const TituloCapitulo = (props) => {
           <span className='w-2 h-2 rounded-full block bg-white' />
         </div>
 
-        <div className='container pl-36'>{children}</div>
+        <div className='chapter-title container pl-36'>{children}</div>
 
         <div className='flex justify-end mb-20'>
           <div

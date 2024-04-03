@@ -1,11 +1,14 @@
 import Capitulos from '@/data/capitulos';
+import { useGSAP } from '@gsap/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
+import { gsap } from "gsap";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const barraMenu = useRef();
+  const purpleBar= useRef();
   const { asPath } = useRouter();
 
   const { height, width } = barraMenu.current?.getBoundingClientRect() ?? {};
@@ -56,6 +59,18 @@ const Menu = () => {
     };
   }, [observers]);
 
+
+  useGSAP(() => {
+    const tl_caption = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".chapter-title",
+        start: "bottom",
+        // markers: true,
+        toggleActions: 'play none none reverse',
+      }
+    });
+    tl_caption.from(purpleBar.current, { y: "-103%", duration:1 });
+  },[])
 
   return (
     <div className='fixed z-50 xl:pr-20 w-full'>
@@ -123,7 +138,7 @@ const Menu = () => {
         </button>
       </div>
       {!!currentChapter && (
-        <div className='bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg lg:pl-80'>
+        <div ref={purpleBar} className='bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg lg:pl-80'>
           <p className='font-extralight text-xl'>
             {/* {currentChapter?.title} {currentChapter?.subtitle ?? ''} */}
             {currentTitle.text}
