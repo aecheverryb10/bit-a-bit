@@ -12,17 +12,17 @@ const Capitulo = (props) => {
   const prevChapter = Capitulos[currentChapterPosition - 1];
   const nextChapter = Capitulos[currentChapterPosition + 1];
   const defaultBackground = `radial-gradient(63.95% 32.77% at 13.12% 8.61%, #E9AAFF 0%, #00FFE0 100%)`;
-  
-  const {
-    children,
-    image = 'bg-capitulo1.png',
-  } = props;
+
+  const { children, image = 'bg-capitulo1.png' } = props;
 
   const contenido = useRef();
   return (
     <>
       <Menu />
-      <main className={`min-h-[100vh] bg-blend-multiply chapter`} style={{ background: currentChapter?.background ?? defaultBackground }}>
+      <main
+        className={`min-h-[100vh] bg-blend-multiply chapter`}
+        style={{ background: currentChapter?.background ?? defaultBackground }}
+      >
         <div className='w-full min-h-[100vh]'>
           <div
             className='fixed top-0 w-full h-[2900px] bg-cover z-0 mix-blend-multiply'
@@ -36,7 +36,9 @@ const Capitulo = (props) => {
                   {prevChapter && (
                     <Link
                       href={prevChapter?.url}
-                      className=' text-white grow relative block overflow-hidden border-r-4 border-white'
+                      className={`text-white grow relative block overflow-hidden ${
+                        nextChapter ? 'border-r-4 border-white' : ''
+                      }`}
                     >
                       <div className='absolute bg-blue-dark w-full h-full' />
                       <img
