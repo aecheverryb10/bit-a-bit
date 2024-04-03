@@ -24,6 +24,8 @@ const ScrollImageVertical = (props) => {
 			}
 		});
 		tl_caption.to(captionRef.current, { top: "10%" });
+		tl_caption.scrollTrigger.refresh()
+
 
 		// gsap code here...
 		const tl_gradient = gsap.timeline({
@@ -40,7 +42,7 @@ const ScrollImageVertical = (props) => {
 			.set(gradientRef.current, { bottom: 0, rotate: 180, top: "auto" })
 			.to(gradientRef.current, { opacity: 1 });
 		
-		ScrollTrigger.refresh();
+		tl_gradient.scrollTrigger.refresh()
 	}, { scope: containerRef });
 
 	return (

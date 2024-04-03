@@ -1,3 +1,5 @@
+import { useLayoutEffect } from 'react';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Capitulo from '@/components/Capitulo';
 import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
 import Podcast from '@/components/Podcast';
@@ -9,6 +11,11 @@ import { slider_data2 } from '@/data/slider_data';
 import { Tooltip } from 'react-tooltip';
 
 export default function CulturaDigital() {
+
+  useLayoutEffect(() => {
+    ScrollTrigger.refresh()
+  }, [])
+
   return (
     <>
       <Capitulo>

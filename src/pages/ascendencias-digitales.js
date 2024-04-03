@@ -1,4 +1,4 @@
-import { BloqueTexto, MainSection, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
+import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
 import Capitulo from '@/components/Capitulo';
 import ScrollVideo from '@/components/ScrollVideo';
 import Timeline from '@/components/Timeline';

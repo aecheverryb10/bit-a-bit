@@ -24,7 +24,7 @@ const ScrollMultipleImages = (props) => {
 			tl_images.from(`.image--container-${i}`, { opacity: 0 });
 		}
 
-		ScrollTrigger.refresh();
+		tl_images.scrollTrigger.refresh();
 
 	}, { scope: containerRef });
 
