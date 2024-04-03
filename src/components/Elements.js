@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const MainSection = (props) => {
   const { children } = props;
@@ -50,35 +50,38 @@ const BloqueTexto = (props) => {
 
 const TituloCapitulo = (props) => {
   const { children } = props;
-  const containerRef = useRef()
-  
-  useGSAP(() => {
-    gsap.set(".line-left", { x: "-103%", opacity:0 })
-    gsap.set(".line-right", { x: "103%", opacity:0 })
-    gsap.set(".chapter-number", { y: "-100%", opacity:0})
-    gsap.set(".chapter-title", { x: "-100%", opacity: 0 })
-    
-    const lines_left = gsap.utils.toArray(".line-left")
-    const lines_right = gsap.utils.toArray(".line-right")
-    const chapter_title = gsap.utils.toArray(".chapter-title")
+  const containerRef = useRef();
 
-    const title_animation = gsap.timeline()
+  useGSAP(
+    () => {
+      gsap.set('.line-left', { x: '-103%', opacity: 0 });
+      gsap.set('.line-right', { x: '103%', opacity: 0 });
+      gsap.set('.chapter-number', { y: '-100%', opacity: 0 });
+      gsap.set('.chapter-title', { x: '-100%', opacity: 0 });
 
-    for (let i = 0; i < lines_left.length; i++) {
-      title_animation.to(lines_left[i], { x: 0, opacity:1, duration:2 }, 0)
-    }
-    for (let i = 0; i < lines_right.length; i++) {
-      title_animation.to(lines_right[i], { x: 0, opacity:1, duration:2 }, 0)
-    }
-    
-    title_animation.to(".chapter-number", { y: 0, opacity: 1, duration: 1})
-    
-    for (let i = 0; i < chapter_title.length; i++) {
-      title_animation.to(chapter_title[i], { x: 0, opacity: 1, duration: 1.5 },3)
-    }
+      const lines_left = gsap.utils.toArray('.line-left');
+      const lines_right = gsap.utils.toArray('.line-right');
+      const chapter_title = gsap.utils.toArray('.chapter-title');
 
-    title_animation.duration(3)
-  }, { scope: containerRef })
+      const title_animation = gsap.timeline();
+
+      for (let i = 0; i < lines_left.length; i++) {
+        title_animation.to(lines_left[i], { x: 0, opacity: 1, duration: 2 }, 0);
+      }
+      for (let i = 0; i < lines_right.length; i++) {
+        title_animation.to(lines_right[i], { x: 0, opacity: 1, duration: 2 }, 0);
+      }
+
+      title_animation.to('.chapter-number', { y: 0, opacity: 1, duration: 1 });
+
+      for (let i = 0; i < chapter_title.length; i++) {
+        title_animation.to(chapter_title[i], { x: 0, opacity: 1, duration: 1.5 }, 3);
+      }
+
+      title_animation.duration(3);
+    },
+    { scope: containerRef }
+  );
 
   return (
     <section ref={containerRef} className=' overflow-hidden'>
@@ -105,7 +108,7 @@ const TituloCapitulo = (props) => {
           <span className='w-2 h-2 rounded-full block bg-white' />
         </div>
 
-        <div className='container container-title pl-36 overflow-hidden'>{children}</div>
+        <div className='container chapter-title pl-36 overflow-hidden'>{children}</div>
 
         <div className='flex justify-end mb-20'>
           <div
