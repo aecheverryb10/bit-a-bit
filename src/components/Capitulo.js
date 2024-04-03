@@ -22,7 +22,7 @@ const Capitulo = (props) => {
   return (
     <>
       <Menu />
-      <main className={`min-h-[100vh] bg-blend-multiply`} style={{ background: currentChapter?.background ?? defaultBackground }}>
+      <main className={`min-h-[100vh] bg-blend-multiply chapter`} style={{ background: currentChapter?.background ?? defaultBackground }}>
         <div className='w-full min-h-[100vh]'>
           <div
             className='fixed top-0 w-full h-[2900px] bg-cover z-0 mix-blend-multiply'

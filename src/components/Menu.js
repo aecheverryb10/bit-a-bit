@@ -1,7 +1,7 @@
 import Capitulos from '@/data/capitulos';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +10,52 @@ const Menu = () => {
 
   const { height, width } = barraMenu.current?.getBoundingClientRect() ?? {};
   const currentChapter = Capitulos.find((item) => `/${item.url}` === asPath);
+
+  const [currentTitle, setCurrentTitle] = useState({ text: currentChapter.title, position: 0 });
+  const [observers, setObservers] = useState([]);
+
+
+  useEffect(() => {
+    const getAllHeadlines = () => {
+      const container = document.querySelector(".chapter");
+      if (container) {
+        const headlineTags = container.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        const observers = Array.from(headlineTags).map((headline, index) => {
+          const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+              setCurrentTitle({ text: entries[0].target.textContent, position: index });
+            } else {
+              if (!(entries[0].intersectionRect.top < (window.innerHeight / 2))) {
+                setCurrentTitle({ text: headlineTags[index - 1].textContent, position: index - 1 });
+              }
+            }
+          }, {
+            root: null,
+            rootMargin: "-35px",
+            threshold: 1.0
+          });
+
+          observer.observe(headline);
+          return observer;
+        });
+
+        setObservers(observers);
+      }
+    };
+
+    getAllHeadlines();
+  }, [currentChapter]);
+
+
+  useEffect(() => {
+    return () => {
+      observers.forEach(observer => {
+        observer.disconnect();
+      });
+    };
+  }, [observers]);
+
 
   return (
     <div className='fixed z-50 xl:pr-20 w-full'>
@@ -44,18 +90,16 @@ const Menu = () => {
             return (
               <Link
                 key={`item-menu-${index}`}
-                className={`${capitulosIniciales ? 'text-2xl' : 'text-5xl '} d-block basis-1/5 text-left px-6 pb-10 ${
-                  activeItem ? 'bg-black bg-opacity-80' : ''
-                }`}
+                className={`${capitulosIniciales ? 'text-2xl' : 'text-5xl '} d-block basis-1/5 text-left px-6 pb-10 ${activeItem ? 'bg-black bg-opacity-80' : ''
+                  }`}
                 href={url}
               >
                 <div className='mb-10'>
                   <span className='block ml-3 w-px h-28 border-r border-white' />
                   <span className='block ml-2 w-2 h-2 rounded-full bg-white relative z-10' />
                   <span
-                    className={`block w-6 h-6 rounded-full border border-white -mt-4 ${
-                      activeItem ? 'bg-purple-base' : ''
-                    }`}
+                    className={`block w-6 h-6 rounded-full border border-white -mt-4 ${activeItem ? 'bg-purple-base' : ''
+                      }`}
                   />
                 </div>
                 {capitulosIniciales ? title : index}
@@ -81,7 +125,8 @@ const Menu = () => {
       {!!currentChapter && (
         <div className='bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg lg:pl-80'>
           <p className='font-extralight text-xl'>
-            {currentChapter?.title} {currentChapter?.subtitle ?? ''}
+            {/* {currentChapter?.title} {currentChapter?.subtitle ?? ''} */}
+            {currentTitle.text}
           </p>
         </div>
       )}
