@@ -129,4 +129,69 @@ const slider_data2 = [
   },
 ];
 
-export { slider_data2 };
+const slider_data3 = [
+  {
+    src: './img/figura_26.jpg',
+    alt: 'Figura 26',
+    caption: (
+      <>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
+          <strong>Figura 26.</strong> Universidad Nacional –Sede Bogotá.
+        </p>
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Laboratorio de innovación, creatividad y nuevas tecnologías LAB101 Unal</p>
+          <p>(Jhon Prieto/2023/ Sede Bogotá).</p>
+        </div>
+      </>
+    ),
+  },
+  {
+    src: './img/figura_27.jpg',
+    alt: 'Figura 27',
+    caption: (
+      <>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
+          <strong>Figura 27.</strong> Nuevo Edificio para las Artes Sede Bogotá.
+        </p>
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Laboratorio de innovación, creatividad y nuevas tecnologías LAB101 Unal</p>
+          <p>(Jhon Prieto/2023/Nuevo Edificio para las Artes Sede Bogotá).</p>
+        </div>
+      </>
+    ),
+  },
+  {
+    src: './img/figura_28.jpg',
+    alt: 'Figura 28',
+    caption: (
+      <>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
+          <b>Figura 28.</b> Edificio Aulas de Ciencias Gloria Galeano Garcés.
+        </p>
+
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Laboratorio de innovación, creatividad y nuevas tecnologías LAB101 Unal</p>
+          <p>(Jhon Prieto/2023/ Edificio Aulas de Ciencias Gloria Galeano Garcés).</p>
+        </div>
+      </>
+    ),
+  },
+  {
+    src: './img/figura_29.jpg',
+    alt: 'Figura 29',
+    caption: (
+      <>
+        <p className='font-light text-xl 2xl:text-2xl  mb-3'>
+          <b>Figura 29.</b> Edificio 401 de Ingeniería.
+        </p>
+
+        <div className='text-lg font-extralight'>
+          <p>Fuente: Laboratorio de innovación, creatividad y nuevas tecnologías LAB101 Unal</p>
+          <p>(Jhon Prieto/2023/ Edificio 401 de ingeniería).</p>
+        </div>
+      </>
+    ),
+  },
+];
+
+export { slider_data3 };

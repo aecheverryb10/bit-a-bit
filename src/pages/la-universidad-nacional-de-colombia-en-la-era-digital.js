@@ -4,6 +4,7 @@ import Podcast from '@/components/Podcast';
 import ScrollImage from '@/components/ScrollImage';
 import ScrollImageVertical from '@/components/ScrollImageVertical';
 import ScrollMultipleImages from '@/components/ScrollMultipleImage';
+import ScrollVideo from '@/components/ScrollVideo';
 import Slider from '@/components/Slider';
 import { slider_data } from '@/data/slider_data';
 
@@ -422,10 +423,8 @@ export default function UniversidadEraDigital() {
             consolidó como la plataforma y medio de comunicación de la Universidad —recurso 3 (Resolución 863 de 1997).
           </p>
         </BloqueTexto>
-        <Podcast
-          title={`¿Cómo eran las clases de Ingeniería de Sistemas en la Sede Bogotá de la Universidad Nacional de Colombia en los años 1990?`}
-          src={'./audio/recurso_4_inteligencia_artificial.mp3'}
-        />
+
+        <ScrollVideo url='./video/ques-es-lo-digital.mp4' type='video/mp4' />
         <Subtitulo>Bitnet, Runcol e Internet</Subtitulo>
         <BloqueTexto>
           <p>

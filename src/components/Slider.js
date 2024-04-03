@@ -10,7 +10,7 @@ import { Keyboard, Autoplay } from 'swiper/modules';
 import { Portal } from 'react-portal';
 
 const Slider = (props) => {
-  const { slides = [] } = props;
+  const { slides = [], correctHeight } = props;
   //States
   const [isDisabled, setIsDisabled] = useState({ prev: true, next: false });
   const [photo, setPhoto] = useState(0);
@@ -67,7 +67,7 @@ const Slider = (props) => {
               const { src, alt, caption } = slide;
               return (
                 <SwiperSlide key={alt}>
-                  <div style={{ width: 'w-full', position: 'relative' }}>
+                  <div className='h-full' style={{ position: 'relative' }}>
                     <img
                       alt={alt}
                       onClick={() => {
@@ -75,7 +75,7 @@ const Slider = (props) => {
                         setPhoto(index + 1);
                       }}
                       src={src}
-                      className='h-auto w-full'
+                      style={correctHeight ? { height: '300px', width: 'auto' } : { width: '100%' }}
                     />
                     {caption && <div className='mt-8 pr-8'>{caption}</div>}
                   </div>

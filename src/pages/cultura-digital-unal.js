@@ -6,6 +6,7 @@ import ScrollMultipleImages from '@/components/ScrollMultipleImage';
 import ScrollVideo from '@/components/ScrollVideo';
 import Slider from '@/components/Slider';
 import { slider_data2 } from '@/data/slider_data';
+import { Tooltip } from 'react-tooltip';
 
 export default function CulturaDigital() {
   return (
@@ -26,7 +27,7 @@ export default function CulturaDigital() {
           </div>
         </TituloCapitulo>
         <ParrafoInicial>
-          <p className='first-letter:text-7xl first-letter:me-4 first-letter:tracking-n first-letter:float-start first-letter:font-sans first-letter:font-extralight'>
+          <p className='mb-6 first-letter:text-7xl first-letter:me-4 first-letter:tracking-n first-letter:float-start first-letter:font-sans first-letter:font-extralight'>
             En el siglo <span className='caps'>XXI</span>, Internet se ha convertido en el artefacto por excelencia del
             vasto universo de las tecnologías digitales. Se transformó en un dispositivo cultural que generó nuevas
             formas de relacionamiento social y produjo nuevas identidades. Internet es una herramienta, pero también un
@@ -615,84 +616,97 @@ export default function CulturaDigital() {
             División Universidad Laboratorio (UNALab) y la División de Gestión Tecnológica (Acuerdo 316 de 2019). Cada
             una de estas dependencias se explica en las siguientes líneas.
           </p>
+          <div className='pl-14'>
+            <p>
+              <em>Oficina de Arquitectura Organizacional</em>. Tiene la función de proponer políticas, estándares e
+              iniciativas de arquitectura organizacional de <span className='caps'>TI</span>, de conformidad con los
+              lineamientos de estrategia digital establecidos. Su objetivo es establecer de forma eficaz los estándares
+              de dicha arquitectura en todas las sedes. Esta oficina es, además, la nueva responsable de actualizar el
+              plan estratégico de <span className='caps'>TI</span>, alineado con los objetivos de la universidad, junto
+              con el mapa de ruta, considerando los entornos actuales. La oficina debe estar en constante observación de
+              la universidad en su conjunto, pues precisa alinear la arquitectura organizacional con los procesos
+              institucionales (Resolución 318 de 2020).
+            </p>
 
-          <p>
-            <em>Oficina de Arquitectura Organizacional</em>. Tiene la función de proponer políticas, estándares e
-            iniciativas de arquitectura organizacional de <span className='caps'>TI</span>, de conformidad con los
-            lineamientos de estrategia digital establecidos. Su objetivo es establecer de forma eficaz los estándares de
-            dicha arquitectura en todas las sedes. Esta oficina es, además, la nueva responsable de actualizar el plan
-            estratégico de <span className='caps'>TI</span>, alineado con los objetivos de la universidad, junto con el
-            mapa de ruta, considerando los entornos actuales. La oficina debe estar en constante observación de la
-            universidad en su conjunto, pues precisa alinear la arquitectura organizacional con los procesos
-            institucionales (Resolución 318 de 2020).
-          </p>
+            <p>
+              <em>Oficina de Gestión de Información</em>. Está a cargo de diseñar los planes y modelos de planeación y
+              gobierno de componentes de información, para garantizar la interoperabilidad, la seguridad y la calidad de
+              la información institucional. Esta dependencia tiene la responsabilidad de observar el ciclo de vida de
+              los datos que circulan en la institución, a fin de implementar estrategias que cumplan los criterios de
+              seguridad de la universidad.
+            </p>
 
-          <p>
-            <em>Oficina de Gestión de Información</em>. Está a cargo de diseñar los planes y modelos de planeación y
-            gobierno de componentes de información, para garantizar la interoperabilidad, la seguridad y la calidad de
-            la información institucional. Esta dependencia tiene la responsabilidad de observar el ciclo de vida de los
-            datos que circulan en la institución, a fin de implementar estrategias que cumplan los criterios de
-            seguridad de la universidad.
-          </p>
+            <p>
+              <em>Oficina de Gobierno y Gestión Administrativa</em>. Brinda orientación a las instancias directivas de
+              la universidad en el diseño de políticas, lineamientos, estrategias e iniciativas para llevar a cabo el
+              seguimiento y la evaluación en asuntos <span className='caps'>TIC</span> y la transformación digital. Su
+              papel es fundamental, pues se encarga del mantenimiento de acuerdos de gobierno{' '}
+              <span className='caps'>TI</span>, es decir la protección de las correctas prácticas en el uso de los
+              recursos tecnológicos. Para ello, debe analizar e identificar los factores del entorno y sus tendencias,
+              además de indagar sobre la aplicabilidad de regulaciones externas — obligaciones legales y contractuales
+              en relación con el gobierno de tecnologías de la información—.
+            </p>
 
-          <p>
-            <em>Oficina de Gobierno y Gestión Administrativa</em>. Brinda orientación a las instancias directivas de la
-            universidad en el diseño de políticas, lineamientos, estrategias e iniciativas para llevar a cabo el
-            seguimiento y la evaluación en asuntos <span className='caps'>TIC</span> y la transformación digital. Su
-            papel es fundamental, pues se encarga del mantenimiento de acuerdos de gobierno{' '}
-            <span className='caps'>TI</span>, es decir la protección de las correctas prácticas en el uso de los
-            recursos tecnológicos. Para ello, debe analizar e identificar los factores del entorno y sus tendencias,
-            además de indagar sobre la aplicabilidad de regulaciones externas — obligaciones legales y contractuales en
-            relación con el gobierno de tecnologías de la información—.
-          </p>
+            <p>
+              <em>División Universidad Laboratorio</em>. Esta es la dependencia más cercana a la comunidad académica, en
+              la medida en que se encarga de comunicarse con los docentes, los estudiantes, los investigadores y el
+              personal administrativo, tanto para responder a las necesidades e iniciativas tecnológicas, como para
+              incentivar procesos de innovación y emprendimiento. Para ello, debe cumplir su función como observatorio
+              tecnológico de las nuevas tendencias, tanto técnicas como pedagógicas y de estrategia digital. Su accionar
+              busca cumplir los objetivos misionales de la universidad en cuanto al impacto en el desarrollo territorial
+              y el bienestar de las comunidades del país.
+            </p>
 
-          <p>
-            <em>División Universidad Laboratorio</em>. Esta es la dependencia más cercana a la comunidad académica, en
-            la medida en que se encarga de comunicarse con los docentes, los estudiantes, los investigadores y el
-            personal administrativo, tanto para responder a las necesidades e iniciativas tecnológicas, como para
-            incentivar procesos de innovación y emprendimiento. Para ello, debe cumplir su función como observatorio
-            tecnológico de las nuevas tendencias, tanto técnicas como pedagógicas y de estrategia digital. Su accionar
-            busca cumplir los objetivos misionales de la universidad en cuanto al impacto en el desarrollo territorial y
-            el bienestar de las comunidades del país.
-          </p>
+            <p>
+              La división, conocida también como UNALab, ha emprendido, desde 2020, importantes labores para la
+              adaptación y aprovechamiento de las tecnologías digitales. UNALab se convirtió en un gestor estratégico de
+              nivel nacional, para la transformación digital. A través de la articulación con la comunidad
+              universitaria, ha potenciado las capacidades internas de la institución y promovido la resolución de retos
+              y necesidades institucionales y académicas (Cómbita-Pulido <em>et al.</em>, 2023).
+            </p>
 
-          <p>
-            La división, conocida también como UNALab, ha emprendido, desde 2020, importantes labores para la adaptación
-            y aprovechamiento de las tecnologías digitales. UNALab se convirtió en un gestor estratégico de nivel
-            nacional, para la transformación digital. A través de la articulación con la comunidad universitaria, ha
-            potenciado las capacidades internas de la institución y promovido la resolución de retos y necesidades
-            institucionales y académicas (Cómbita-Pulido <em>et al.</em>, 2023).
-          </p>
+            <p>
+              Con su enfoque en investigación y extensión, UNALab ha implementado experiencias novedosas en la
+              universidad, para articular la realidad material con el mundo digital. Un ejemplo de esto es el Maratón
+              Virtual de Co-creación, realizado en 2020, que abordó cinco retos instruccionales con la participación de
+              docentes, estudiantes y grupos de investigación. Esta iniciativa articuló la <em>innovación abierta</em>{' '}
+              con el uso de tecnologías digitales. Los cinco retos que se trataron en este evento fueron la arquitectura
+              organizacional, el acceso editorial con tecnologías digitales, la red de egresados, la gestión inteligente
+              del territorio y las bibliotecas en Palmira (Universidad Nacional de Colombia, 2020).
+            </p>
 
-          <p>
-            Con su enfoque en investigación y extensión, UNALab ha implementado experiencias novedosas en la
-            universidad, para articular la realidad material con el mundo digital. Un ejemplo de esto es el Maratón
-            Virtual de Co-creación, realizado en 2020, que abordó cinco retos instruccionales con la participación de
-            docentes, estudiantes y grupos de investigación. Esta iniciativa articuló la <em>innovación abierta</em> con
-            el uso de tecnologías digitales. Los cinco retos que se trataron en este evento fueron la arquitectura
-            organizacional, el acceso editorial con tecnologías digitales, la red de egresados, la gestión inteligente
-            del territorio y las bibliotecas en Palmira (Universidad Nacional de Colombia, 2020).
-          </p>
+            <p>
+              Otro ejemplo de aportes novedosos fue el lanzamiento de la primera Cátedra Nacional de Transformación
+              Digital en 2021. Durante las sesiones de esta cátedra, se han revisado ejemplos de transformación digital
+              para visibilizar la importancia de convertir procesos análogos y objetos físicos en digitales, para
+              potencializar su utilidad (<span className='caps'>LAB101</span> Unal, 2021).
+            </p>
 
-          <p>
-            Otro ejemplo de aportes novedosos fue el lanzamiento de la primera Cátedra Nacional de Transformación
-            Digital en 2021. Durante las sesiones de esta cátedra, se han revisado ejemplos de transformación digital
-            para visibilizar la importancia de convertir procesos análogos y objetos físicos en digitales, para
-            potencializar su utilidad (<span className='caps'>LAB101</span> Unal, 2021).
-          </p>
-
-          <p>
-            Actualmente, UNALab cuenta con iniciativas y proyectos prometedores que fomentan y fortalecen la cultura
-            digital en la universidad, principalmente centrados en un modelo inter-sedes, en diálogo con las tendencias
-            tecnológicas y las iniciativas de la Cuarta Revolución Industrial. Entre estas iniciativas, se encuentran
-            los talleres de cultura digital para toda la comunidad universitaria; la medición de madurez digital para
-            visibilizar el desarrollo de las diferentes sedes y facultades; la creación de Aulas STEAM en las sedes
-            Medellín, Bogotá y Tumaco, con la misión de replicar el modelo del Aula STEM – Laboratorio de Fabricación
-            (FabLab) de la Sede Manizales; el diseño de estrategias para visibilizar y cerrar las brechas de género; y
-            el desarrollo de aplicaciones y entornos virtuales de aprendizaje inmersivo, para fortalecer la
-            comunicación, el trabajo y el bienestar de la comunidad Unal—recurso 7 (UNALab, 2023)1.
-          </p>
-          <h1 className='text-9xl'>CITA</h1>
+            <p>
+              Actualmente, UNALab cuenta con iniciativas y proyectos prometedores que fomentan y fortalecen la cultura
+              digital en la universidad, principalmente centrados en un modelo inter-sedes, en diálogo con las
+              tendencias tecnológicas y las iniciativas de la Cuarta Revolución Industrial. Entre estas iniciativas, se
+              encuentran los talleres de cultura digital para toda la comunidad universitaria; la medición de madurez
+              digital para visibilizar el desarrollo de las diferentes sedes y facultades; la creación de Aulas STEAM en
+              las sedes Medellín, Bogotá y Tumaco, con la misión de replicar el modelo del Aula STEM – Laboratorio de
+              Fabricación (FabLab) de la Sede Manizales; el diseño de estrategias para visibilizar y cerrar las brechas
+              de género; y el desarrollo de aplicaciones y entornos virtuales de aprendizaje inmersivo, para fortalecer
+              la comunicación, el trabajo y el bienestar de la comunidad Unal —recurso 7 (UNALab, 2023){' '}
+              <sup
+                data-tooltip-id='tooltip'
+                data-tooltip-html={`Al respecto, ver el Capítulo 2 de <em>Transformación digital. Experiencias colectivas,</em> donde se narra cómo UNALab potencia las capacidades internas en la Universidad Nacional de Colombia (<a href="https://repositorio.unal.edu.co/handle/unal/83373" style='cursor:pointer;' target='_blank'>https://repositorio.unal.edu.co/handle/unal/83373).</a>`}
+              >
+                1
+              </sup>
+              .
+            </p>
+          </div>
+          <Tooltip
+            openOnClick={true}
+            clickeable={true}
+            id='tooltip'
+            style={{ maxWidth: '600px', pointerEvents: 'all' }}
+          />
         </BloqueTexto>
 
         <Podcast
@@ -971,7 +985,7 @@ export default function CulturaDigital() {
             <span className='caps'>DNED</span>, alineadas con esta estrategia, principalmente, las que fortalecen la
             cultura digital y han experimentado un avance significativo:
           </p>
-          <ul>
+          <ul className='pl-10'>
             <li>
               — Desarrollo y escalamiento institucional del sistema Horus Unal, para la visualización de la capacidad
               investigativa y la producción científica de la Universidad.
@@ -1226,7 +1240,7 @@ export default function CulturaDigital() {
             espacios —figuras 20-23 (Carreño- Ortiz, comunicación personal, 4 de agosto de 2023).
           </p>
         </BloqueTexto>
-        <Slider slides={slider_data2} />
+        <Slider correctHeight={true} slides={slider_data2} />
 
         <BloqueTexto>
           <p>

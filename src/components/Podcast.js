@@ -10,7 +10,7 @@ const Podcast = (props) => {
 
   return (
     <div className='pl-32 max-w-[1440px]'>
-      <div className='rounded-l-[30px] text-white relative overflow-hidden'>
+      <div className='rounded-l-[30px] text-white relative overflow-hidden shadow-xl'>
         <div
           className='absolute w-full h-full'
           style={{
