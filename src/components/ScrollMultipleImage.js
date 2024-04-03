@@ -18,13 +18,14 @@ const ScrollMultipleImages = (props) => {
 				start: "top",
 				endTrigger: imagesRef.current,
 				end: "bottom bottom",
+				markers: true
 			},
 		});
 		for (let i = 0; i <= images.length; i++){
 			tl_images.from(`.image--container-${i}`, { opacity: 0 });
 		}
 
-		ScrollTrigger.refresh();
+		tl_images.scrollTrigger.refresh();
 
 	}, { scope: containerRef });
 
