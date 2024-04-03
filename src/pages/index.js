@@ -58,7 +58,7 @@ export default function Home() {
 
     gsap.from('.scroll-img', { y: -10, ease: "circ.out", repeat: -1, yoyo: true })
     
-    const tl = gsap.timeline({
+    const tl_cover = gsap.timeline({
       scrollTrigger: {
         start: 0,
         end: 1,
@@ -68,7 +68,7 @@ export default function Home() {
       }
     })
 
-    tl.to(coverRef.current, { top: "-100%", ease: "none" })
+    tl_cover.to(coverRef.current, { top: "-100%", opacity:0, ease: "none" })
 
   }, { scope: containerRef });
 
