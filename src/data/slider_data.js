@@ -194,4 +194,4 @@ const slider_data3 = [
   },
 ];
 
-export { slider_data3 };
+export { slider_data2, slider_data3 };

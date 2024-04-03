@@ -9,11 +9,9 @@ import Slider from '@/components/Slider';
 import { slider_data } from '@/data/slider_data';
 
 export default function UniversidadEraDigital() {
-
   return (
     <>
       <Capitulo>
-
         <TituloCapitulo>
           <div className='flex items-center'>
             <span
@@ -331,12 +329,12 @@ export default function UniversidadEraDigital() {
           <p>
             La colaboración con estas entidades facilitó el desarrollo de investigaciones y cursos dentro de las
             carreras existentes, así como la creación de nuevos programas académicos con enfoques especializados. Se
-            reconocía ampliamente que las denominadas "nuevas tecnologías de la información" tenían impacto en todas las
-            actividades humanas. Por tanto, los programas curriculares debían abordar problemas a través de un enfoque
-            sistemático en la aplicación de estas tecnologías. Un ejemplo de esto fue la creación de la carrera de
-            Ingeniería Electrónica en 1991, en la Facultad de Ingeniería y Arquitectura de la Sede Manizales. Este
-            programa buscaba explorar las principales áreas de innovación de la época, como la microelectrónica, las
-            telecomunicaciones y la informática, a través de la investigación y el diseño (Acuerdo 34 de 1991).
+            reconocía ampliamente que las denominadas &quot;nuevas tecnologías de la información&rdquo; tenían impacto
+            en todas las actividades humanas. Por tanto, los programas curriculares debían abordar problemas a través de
+            un enfoque sistemático en la aplicación de estas tecnologías. Un ejemplo de esto fue la creación de la
+            carrera de Ingeniería Electrónica en 1991, en la Facultad de Ingeniería y Arquitectura de la Sede Manizales.
+            Este programa buscaba explorar las principales áreas de innovación de la época, como la microelectrónica,
+            las telecomunicaciones y la informática, a través de la investigación y el diseño (Acuerdo 34 de 1991).
           </p>
           <h3 className='text-2xl text-purple-base font-sans mb-10'>Proyectos y dependencias</h3>
           <p>
