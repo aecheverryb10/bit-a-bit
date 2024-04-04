@@ -13,7 +13,7 @@ const Capitulo = (props) => {
   const nextChapter = Capitulos[currentChapterPosition + 1];
   const defaultBackground = `radial-gradient(63.95% 32.77% at 13.12% 8.61%, #E9AAFF 0%, #00FFE0 100%)`;
 
-  const { children, image = 'bg-capitulo1.png' } = props;
+  const { children, image = 'bg-capitulo1.png', background } = props;
 
   const contenido = useRef();
   return (
@@ -21,7 +21,7 @@ const Capitulo = (props) => {
       <Menu />
       <main
         className={`min-h-[100vh] bg-blend-multiply chapter`}
-        style={{ background: currentChapter?.background ?? defaultBackground }}
+        style={{ background: currentChapter?.background ?? background ?? defaultBackground }}
       >
         <div className='w-full min-h-[100vh]'>
           <div
@@ -30,47 +30,49 @@ const Capitulo = (props) => {
           ></div>
           <div className='relative z-10' ref={contenido}>
             {children}
-            <MainSection>
-              <div className='bg-white bg-opacity-70 shadow-xl'>
-                <div className='flex'>
-                  {prevChapter && (
-                    <Link
-                      href={prevChapter?.url}
-                      className={`text-white grow relative block overflow-hidden ${
-                        nextChapter ? 'border-r-4 border-white' : ''
-                      }`}
-                    >
-                      <div className='absolute bg-blue-dark w-full h-full' />
-                      <img
-                        className='top-0 left-0 absolute top-[-50%] w-full opacity-20'
-                        src={prevChapter?.img}
-                        alt='textura'
-                      />
-                      <div className='mx-auto w-96 relative z-50 pt-20 pb-28 '>
-                        <p className='font-light text-xl mb-2'>Capitulo anterior</p>
-                        <p className='font-light text-4xl'>{prevChapter?.title}</p>
-                        {prevChapter?.subtitle && <p className='font-extralight text-2xl'>{prevChapter?.subtitle}</p>}
-                      </div>
-                    </Link>
-                  )}
-                  {nextChapter && (
-                    <Link href={nextChapter?.url} className=' text-white grow relative block overflow-hidden'>
-                      <div className='absolute bg-blue-dark w-full h-full' />
-                      <img
-                        className='top-0 left-0 absolute top-[-50%] w-full opacity-20'
-                        src={nextChapter?.img}
-                        alt='textura'
-                      />
-                      <div className='mx-auto w-96 relative z-50 pt-20 pb-28 '>
-                        <p className='font-light text-xl mb-2'>Siguiente capítulo</p>
-                        <p className='font-light text-4xl'>{nextChapter?.title}</p>
-                        {nextChapter?.subtitle && <p className='font-extralight text-2xl'>{nextChapter?.subtitle}</p>}
-                      </div>
-                    </Link>
-                  )}
+            {currentChapter && (
+              <MainSection>
+                <div className='bg-white bg-opacity-70 shadow-xl'>
+                  <div className='flex'>
+                    {prevChapter && (
+                      <Link
+                        href={prevChapter?.url}
+                        className={`text-white grow relative block overflow-hidden ${
+                          nextChapter ? 'border-r-4 border-white' : ''
+                        }`}
+                      >
+                        <div className='absolute bg-blue-dark w-full h-full' />
+                        <img
+                          className='top-0 left-0 absolute top-[-50%] w-full opacity-20'
+                          src={prevChapter?.img}
+                          alt='textura'
+                        />
+                        <div className='mx-auto w-96 relative z-50 pt-20 pb-28 '>
+                          <p className='font-light text-xl mb-2'>Capitulo anterior</p>
+                          <p className='font-light text-4xl'>{prevChapter?.title}</p>
+                          {prevChapter?.subtitle && <p className='font-extralight text-2xl'>{prevChapter?.subtitle}</p>}
+                        </div>
+                      </Link>
+                    )}
+                    {nextChapter && (
+                      <Link href={nextChapter?.url} className=' text-white grow relative block overflow-hidden'>
+                        <div className='absolute bg-blue-dark w-full h-full' />
+                        <img
+                          className='top-0 left-0 absolute top-[-50%] w-full opacity-20'
+                          src={nextChapter?.img}
+                          alt='textura'
+                        />
+                        <div className='mx-auto w-96 relative z-50 pt-20 pb-28 '>
+                          <p className='font-light text-xl mb-2'>Siguiente capítulo</p>
+                          <p className='font-light text-4xl'>{nextChapter?.title}</p>
+                          {nextChapter?.subtitle && <p className='font-extralight text-2xl'>{nextChapter?.subtitle}</p>}
+                        </div>
+                      </Link>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </MainSection>
+              </MainSection>
+            )}
           </div>
         </div>
       </main>

@@ -14,7 +14,7 @@ const Menu = () => {
   const { height, width } = barraMenu.current?.getBoundingClientRect() ?? {};
   const currentChapter = Capitulos.find((item) => `/${item.url}` === asPath);
 
-  const [currentTitle, setCurrentTitle] = useState({ text: currentChapter.title, position: 0 });
+  const [currentTitle, setCurrentTitle] = useState({ text: currentChapter?.title, position: 0 });
   const [observers, setObservers] = useState([]);
 
   useEffect(() => {
