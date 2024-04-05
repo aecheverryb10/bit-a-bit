@@ -1,5 +1,5 @@
 import { useLayoutEffect } from 'react';
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Capitulo from '@/components/Capitulo';
 import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
 import Podcast from '@/components/Podcast';
@@ -11,10 +11,9 @@ import { slider_data2 } from '@/data/slider_data';
 import { Tooltip } from 'react-tooltip';
 
 export default function CulturaDigital() {
-
   useLayoutEffect(() => {
-    ScrollTrigger.refresh()
-  }, [])
+    ScrollTrigger.refresh();
+  }, []);
 
   return (
     <>
@@ -1107,7 +1106,7 @@ export default function CulturaDigital() {
             entre las personas, y los distintostipos de hardware y software —recurso 10 (García-Camargo, 2023).
           </p>
         </BloqueTexto>
-        <ScrollVideo url='./video/recurso_10_ conv_estudiantes.mp4' type='video/mp4' />
+        <ScrollVideo url='https://youtu.be/w4UeMPSTuR8' type='video/mp4' />
         <Subtitulo>Ilusiones y retos tecnológicos en el camino a la transformación digital</Subtitulo>
         <BloqueTexto>
           <p>

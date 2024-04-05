@@ -52,7 +52,7 @@ export default function AscendenciasDigitales() {
             mecánico y analógico de uno intangible, representado por sistemas electrónicos y computacionales
           </p>
         </BloqueTexto>
-        <ScrollVideo url='./video/ques-es-lo-digital.mp4' type='video/mp4' />
+        <ScrollVideo url='https://youtu.be/Cypiyk-Q-2A' type='video/mp4' />
         <BloqueTexto shadow={false} noPaddingBottom={true}>
           <p>
             La digitalización puede ser entendida como el proceso de “conversión de datos y procesos analógicos a un
