@@ -15,7 +15,7 @@ export default function AscendenciasDigitales() {
             >
               1
             </span>
-            <div className='overflow-hidden'>
+            <div className='overflow-hidden py-3'>
               <h1 className='chapter-title text-6xl font-light'>Ascendencias digitales</h1>
               <p className='chapter-title text-4xl font-extralight mt-2'>perspectivas globales y el caso colombiano</p>
             </div>

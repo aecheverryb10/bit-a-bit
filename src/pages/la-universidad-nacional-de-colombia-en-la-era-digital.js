@@ -20,7 +20,7 @@ export default function UniversidadEraDigital() {
             >
               2
             </span>
-            <div className='overflow-hidden'>
+            <div className='overflow-hidden py-3'>
               <h1 className='chapter-title text-6xl font-light'>
                 La Universidad Nacional de Colombia <span className='block'>en la era digital</span>
               </h1>
