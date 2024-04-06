@@ -384,7 +384,7 @@ export default function CulturaDigital() {
             herramienta educativa para guiar las acciones de la sociedad, basada en los principios de fomento y respeto
             por los valores jurídicos (Fregoso-Zárate, 2017, pp. 109-113). Así, la Universidad Nacional de Colombia
             construyó en la segunda década del siglo <span className='caps'>XXI</span> las bases normativas que
-            regulaban sus experiencias en la era digital —recurso 4.
+            regulaban sus experiencias en la era digital —recurso 5.
           </p>
         </BloqueTexto>
         <Podcast
@@ -588,7 +588,7 @@ export default function CulturaDigital() {
             políticas, estrategias y prácticas en materia tecnológica de <em>cultura digital</em>. Esto significa que
             sus funciones trascienden los aportes netamente técnicos, para insertarse en las prácticas culturales de
             toda la comunidad universitaria, una apuesta por transformar las experiencias de las personas en sus formas
-            de relacionarse con el mundo y las nuevas tecnologías —recurso 5 (Acuerdo 113 de 2013).
+            de relacionarse con el mundo y las nuevas tecnologías —recurso 6 (Acuerdo 113 de 2013).
           </p>
         </BloqueTexto>
         <Podcast

@@ -85,7 +85,7 @@ const Epilogo = () => {
           el cambio cultural de nuestra comunidad universitaria. También se observa una falta de visión para impulsar
           los programas de investigación y capacitación llevados a cabo en la institución a lo largo de esta historia de
           la transformación digital que se presenta en el libro. Además, puede llegar a existir una carencia de planes
-          basados en las necesidades reales de nuestra comunidad (figuras 26-28).
+          basados en las necesidades reales de nuestra comunidad (—figuras 26-28).
         </p>
       </BloqueTexto>
       <Slider slides={slider_data3} correctHeight={true} />

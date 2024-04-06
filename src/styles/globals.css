@@ -54,7 +54,7 @@ body {
 
 .caps{
   font-variant: small-caps;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 em{

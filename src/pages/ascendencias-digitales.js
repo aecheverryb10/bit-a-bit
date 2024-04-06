@@ -49,7 +49,7 @@ export default function AscendenciasDigitales() {
             concretamente, a los datos representados por dígitos numéricos (Online Etymology Dictionary, 2021). La
             computación fue la disciplina científica que resignificó este término en un nuevo universo de posibilidades
             para usar y manipular la información. Esta nueva comprensión de lo digital dividió el mundo material,
-            mecánico y analógico de uno intangible, representado por sistemas electrónicos y computacionales
+            mecánico y analógico de uno intangible, representado por sistemas electrónicos y computacionales —recurso 1.
           </p>
         </BloqueTexto>
         <ScrollVideo url='./video/ques-es-lo-digital.mp4' type='video/mp4' />
@@ -128,7 +128,7 @@ export default function AscendenciasDigitales() {
             Es así como, en la segunda mitad del siglo <span className='caps'>XX</span>, la computación comenzó a
             adquirir estos rasgos y dimensiones. Aquel fue el momento en que la naturaleza de estas tecnologías cambió,
             para insertarse en nuevas esferas sociales, económicas y culturales. En 1962, el francés Phillipe
-            Dreyfussugirió la palabra “informática”, como expresión derivada de los vocablos <em>información</em> y{' '}
+            Dreyfus sugirió la palabra “informática”, como expresión derivada de los vocablos <em>información</em> y{' '}
             <em>automatización</em>, entendida como “el conjunto de técnicas destinadas al tratamiento lógico y
             automático de la información”, para la toma de decisiones desde el punto de vista de los sistemas integrados
             (Téllez-Valdés, 1987, p. 11).
@@ -179,8 +179,8 @@ export default function AscendenciasDigitales() {
           <p>
             Ahora bien, hasta hace pocos años, se ha comenzado a reflexionar, desde una perspectiva histórica, sobre el
             impacto y el papel de las tecnologías digitales en América Latina y el Caribe. En este sentido, hay trabajos
-            pioneros que arrojan luces en torno a dos líneas de investigación: por una parte,se ha hablado de losflujos
-            de máquinas computacionales a las diferentesregiones de América Latina y el Caribe; y los usos que se le
+            pioneros que arrojan luces en torno a dos líneas de investigación: por una parte, se ha hablado de los flujos
+            de máquinas computacionales a las diferentes regiones de América Latina y el Caribe; y los usos que se le
             dieron; por otro, se ha rastreado la llegada de la informática como disciplina científica, insertándose en
             multiplicidad de centros académicos de los países latinoamericanos. Con ello, se ha pensado una historia de
             las Tecnologías de la Información y las Comunicaciones y una historia material de las máquinas digitales en
@@ -188,7 +188,7 @@ export default function AscendenciasDigitales() {
           </p>
 
           <p>
-            A mediados del siglo <span className='caps'>XX</span>,se implantó la informática en Latinoamérica en medio
+            A mediados del siglo <span className='caps'>XX</span>, se implantó la informática en Latinoamérica en medio
             de particulares coyunturas políticas y contextuales. Diferentes grados de libertad para los desafíos
             científicos y técnicos que representaron estas nuevas tecnologías. Brasil y Argentina, por ejemplo,
             experimentaron el panorama común de las dictaduras y, con ello, complejos y desconfiados diálogos con las
@@ -284,7 +284,7 @@ export default function AscendenciasDigitales() {
             La computación moderna, surgida a nivel global en los años treinta, llegó a Colombia a finales de la década
             de 1950. En este proceso, el sector productivo antecedió, a las universidades, abriendo camino para la
             posterior investigación académica. Entre 1957 y 1958, cuatro empresas colombianas adquirieron un{' '}
-            <em>mainframe</em>
+            <em>mainframe</em>{" "}
             <span className='caps'>IBM</span> 650, a saber, Bavaria, Coltejer, las Empresas Públicas de Medellín (
             <span className='caps'>EPM</span>) y Ecopetrol. Posteriormente, en 1963 y 1968, llegaron estos mismos
             equipos a la Universidad de los Andes y la Universidad Nacional de Colombia, respectivamente. En el caso de
@@ -311,7 +311,7 @@ export default function AscendenciasDigitales() {
 
           <p>
             En la década de 1970, se promovió la participación de profesionales para controlar los estados financieros
-            con el objetivo de cuidar patrimonios y registrar información (Salas-Machado, 2022, p. 4). Además,se
+            con el objetivo de cuidar patrimonios y registrar información (Salas-Machado, 2022, p. 4). Además, se
             implementó el uso de redes a partir de pulsos electrónicos que permitían transferir información; fue una
             alianza entre la computación, las redes eléctricas y las redes telefónicas y radiales que permitieron el
             intercambio de datos contables y financieros (Jarava- Otero, 2020, pp. 17-18).
@@ -326,9 +326,9 @@ export default function AscendenciasDigitales() {
         <BloqueTexto noPaddingTop={true}>
           <p>
             Aunado a lo anterior, la integración de las tecnologías computacionales en la segunda mitad siglo{' '}
-            <span className='caps'>XX</span>
+            <span className='caps'>XX</span> {" "}
             colombiano partió del uso de los tubos al vacío, pasando por los transistores y los circuitos integrados,
-            hasta llegar a los microprocesadores. Aunque, para las décadas de 1960- 1970, los computadores aún eran
+            hasta llegar a los microprocesadores. Aunque, para las décadas de 1960-1970, los computadores aún eran
             escasos, en el país hubo importantes avances tanto en el nivel investigativo, como en la formación de una
             comunidad enfocada en esta ciencia emergente. La creación del Computador Digital Didáctico (Codidac) por la
             Pontificia Universidad Javeriana entre 1969 y 1971; y el centro de cómputo en la Universidad Pedagógica y

@@ -35,7 +35,7 @@ export default function UniversidadEraDigital() {
             dispositivos electrónicos y que se utilizaban para encender-apagar, regular el flujo eléctrico, convertir la
             energía eléctrica en otras formas de energía y ampliar señales, entre otras funciones, las computadoras
             empezaron a emplear un tipo de circuito capaz de realizar operaciones matemáticas simples: las puertas
-            lógicas (figura 1).
+            lógicas (—figura 1).
           </p>
         </ParrafoInicial>
         <ScrollImage
@@ -58,7 +58,7 @@ export default function UniversidadEraDigital() {
             esto es simple: hacer operaciones matemáticas con solo dos dígitos: el 0 y el 1 (operaciones en el sistema
             numérico binario); y, dependiendo de la función del transistor, los sensores emitían una respuesta: prendido
             o apagado. Debido a ello, la computación requirió de un lenguaje particular para funcionar. La computación
-            se basa en la combinación de operacionessimples, operadas por tablas de verdad que asignan un valor lógico
+            se basa en la combinación de operaciones simples, operadas por tablas de verdad que asignan un valor lógico
             binario a cada señal: <em>si A, entonces B</em> (Jiménez-Ramírez, 2020). Así pues, las computadoras
             adquirieron su renombre, por su capacidad de computar a través de circuitos eléctricos.
           </p>
@@ -89,7 +89,7 @@ export default function UniversidadEraDigital() {
 
           <p>
             Para la comunidad universitaria, el paso de lo manual a lo automático, de lo análogo a lo digital, de lo
-            mecánico a lo electrónico significó la disminución de los tiempos para realizar tareas (figura 2). En
+            mecánico a lo electrónico significó la disminución de los tiempos para realizar tareas (—figura 2). En
             principio, el desarrollo de las tecnologías digitales encarnó eso, la aceleración de los procesos. Diego
             López, miembro de la Facultad de Ingeniería, analizó las implicaciones de este tránsito en la década de
             1960. Reflexionó sobre las diferencias entre un computador análogo y uno digital: por un lado, el computador
@@ -157,7 +157,7 @@ export default function UniversidadEraDigital() {
           caption={
             <>
               <p>
-                <strong>Figura 2.</strong> Laboratorios de Ingeniería, talleres, Bogotá (s.f.).
+                <strong>Figura 3.</strong> Laboratorios de Ingeniería, talleres, Bogotá (s.f.).
               </p>
               <p>Fuente: Archivo Fotográfico Unimedios (Históricas/Campus Bogotá).</p>
             </>
@@ -470,7 +470,7 @@ export default function UniversidadEraDigital() {
             por Internet durante una hora al día (Resolución 17 de 2000). Aunque no disponemos de información sobre si
             las condiciones eran idóneas o no para que estas actividades se efectuaran, es significativo que se
             plantearan estas posibilidades, lo que pone en evidencia la rapidez con la que las ciencias informáticas y
-            las redes estaban avanzando (figuras 9-10).
+            las redes estaban avanzando (—figuras 9 y 10).
           </p>
         </BloqueTexto>
         <ScrollMultipleImages
@@ -618,7 +618,7 @@ export default function UniversidadEraDigital() {
             registro de trayectorias y, en determinados casos, la desvinculación. Su funcionamiento inició en las sedes
             de Bogotá, Medellín, Palmira y Manizales a lo largo de 2002, experimentando en los años siguientes un
             paulatino proceso de enriquecimiento de sus funciones. En sus inicios fue adquirido como un software
-            comercial con arquitectura cliente- servidor, con módulos de nómina y puntajes. Posteriormente, en 2007, se
+            comercial con arquitectura cliente-servidor, con módulos de nómina y puntajes. Posteriormente, en 2007, se
             comienza a usar para la administración de nóminas pensionales, alcanzando a incluir a cerca de cuatro mil
             personas.
           </p>

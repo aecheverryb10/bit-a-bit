@@ -155,7 +155,7 @@ const Resaltado = (props) => {
             <span className='w-8 h-8 rounded-full border-purple-base border-4 block -mr-[22px]' />
             <span className='w-3 h-3 rounded-full bg-purple-base block ' />
           </div>
-          <p className='text-2xl text-purple-base pl-10'>{children}</p>
+          <p className='text-2xl text-purple-base pl-10'>"{children}"</p>
         </div>
       </div>
     </MainSection>
