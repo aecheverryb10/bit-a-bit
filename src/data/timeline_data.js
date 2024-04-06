@@ -399,6 +399,7 @@ const timeline_data = [
 					{
 						title: "1987",
 						description: "Jaron Lanier acuña el término de «realidad virtual»",
+						image: "./img/timeline/tecnologias_de_la_informacion_y_comunicaciones/1987.jpg",
 					},
 				]
 			},

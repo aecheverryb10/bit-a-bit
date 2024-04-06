@@ -20,7 +20,6 @@ const Podcast = (props) => {
         <img className='absolute w-full opacity-20' src='./img/texture_34.png' alt='textura' />
         <div className='pl-48 pr-16 py-16 relative z-10 bg-blue-dark bg-opacity-30'>
           <div className='max-w-[700px] font-ancizar leading-none'>
-            <p className='text-xl'>Le invitamos a escuchar el podcast </p>
             <p className='font-bold text-3xl my-4'>{title}</p>
             {subtitle && <p className='text-xl'>{subtitle}</p>}
           </div>
