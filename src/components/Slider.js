@@ -15,6 +15,7 @@ const Slider = (props) => {
   const [isDisabled, setIsDisabled] = useState({ prev: true, next: false });
   const [photo, setPhoto] = useState(0);
   const [toggler, setToggler] = useState(false);
+  const PHOTOS = slides.map((slide) => slide.src)
   //Ref
   const swiperRef = useRef();
 
@@ -107,7 +108,7 @@ const Slider = (props) => {
           </div>
         </div>
         <Portal>
-          <FsLightbox toggler={toggler} sources={slides.map((slide) => slide.src)} slide={photo} />
+          <FsLightbox toggler={toggler} sources={PHOTOS} sourceIndex={photo-1} />
         </Portal>
       </div>
     </div>
