@@ -1,6 +1,5 @@
 import Capitulo from '@/components/Capitulo';
 import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
-import Podcast from '@/components/Podcast';
 import ScrollImage from '@/components/ScrollImage';
 import ScrollImageVertical from '@/components/ScrollImageVertical';
 import ScrollMultipleImages from '@/components/ScrollMultipleImage';

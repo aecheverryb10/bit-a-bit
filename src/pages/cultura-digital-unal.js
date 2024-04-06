@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import { useEffect } from 'react';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Capitulo from '@/components/Capitulo';
 import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
@@ -12,7 +12,7 @@ import { Tooltip } from 'react-tooltip';
 
 export default function CulturaDigital() {
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     ScrollTrigger.refresh()
   }, [])
 
@@ -388,7 +388,7 @@ export default function CulturaDigital() {
           </p>
         </BloqueTexto>
         <Podcast
-          title={'Seguridad y la ética en la Universidad Nacional'}
+          title={'Recurso 2. Seguridad y la ética en la Universidad Nacional'}
           subtitle={'Una conversación con el director de la DNED, el profesor Johan Sebastián Eslava Garzón'}
           src={'./audio/recurso_5_ciberataques.mp3'}
         />
@@ -592,7 +592,7 @@ export default function CulturaDigital() {
           </p>
         </BloqueTexto>
         <Podcast
-          title={'Conversación con el exdirector de la DNED, el profesor Gustavo Pérez Zapata.'}
+          title={'Recurso 3. Conversación con el exdirector de la DNED, el profesor Gustavo Pérez Zapata.'}
           src={'./audio/recurso_6_transformacion_digital.mp3'}
         />
         <BloqueTexto>
@@ -718,7 +718,7 @@ export default function CulturaDigital() {
 
         <Podcast
           title={
-            'Charla con la profesora y coordinadora de la división UNALab, Liz Karen Herrera Quintero, acerca de la Cultura Digital en la Unal.'
+            'Recurso 4. Charla con la profesora y coordinadora de la división UNALab, Liz Karen Herrera Quintero, acerca de la Cultura Digital en la Unal.'
           }
           src={'./audio/recurso_7_cultura_digital.mp3'}
         />
@@ -913,7 +913,7 @@ export default function CulturaDigital() {
           </p>
         </BloqueTexto>
         <Podcast
-          title={'¿Existen desigualdades de género en la transformación digital de la Universidad Nacional?'}
+          title={'Recurso 5. ¿Existen desigualdades de género en la transformación digital de la Universidad Nacional?'}
           subtitle={'Una conversación con Mónica López, contratista de UNALab.'}
           src={'./audio/recurso_8_desigualdad.mp3'}
         />
@@ -1043,7 +1043,7 @@ export default function CulturaDigital() {
         </BloqueTexto>
         <Podcast
           title={
-            'Cómo la Universidad Nacional de Colombia está apostando por la innovación, utilizando los datos para la toma de decisiones.'
+            'Recurso 6. Cómo la Universidad Nacional de Colombia está apostando por la innovación, utilizando los datos para la toma de decisiones.'
           }
           src={'./audio/recurso_9_innovacion.mp3'}
         />

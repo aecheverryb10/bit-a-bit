@@ -3,7 +3,7 @@ import 'react-h5-audio-player/lib/styles.css';
 
 const Podcast = (props) => {
   const {
-    title = '¿Puede la Inteligencia Artificial hacer que l@s profesor@s desaparezcan?',
+    title = 'Recurso 1. ¿Puede la Inteligencia Artificial hacer que l@s profesor@s desaparezcan?',
     subtitle,
     src = './audio/recurso_4_inteligencia_artificial.mp3',
   } = props;
