@@ -424,7 +424,7 @@ export default function UniversidadEraDigital() {
           </p>
         </BloqueTexto>
 
-        <ScrollVideo url='./video/ques-es-lo-digital.mp4' type='video/mp4' />
+        <ScrollVideo url='https://youtu.be/FrbvaOtpvAo' type='video/mp4' />
         <Subtitulo>Bitnet, Runcol e Internet</Subtitulo>
         <BloqueTexto>
           <p>

@@ -1107,7 +1107,7 @@ export default function CulturaDigital() {
             entre las personas, y los distintostipos de hardware y software —recurso 10 (García-Camargo, 2023).
           </p>
         </BloqueTexto>
-        <ScrollVideo url='./video/recurso_10_ conv_estudiantes.mp4' type='video/mp4' />
+        <ScrollVideo url='https://youtu.be/w4UeMPSTuR8' type='video/mp4' />
         <Subtitulo>Ilusiones y retos tecnológicos en el camino a la transformación digital</Subtitulo>
         <BloqueTexto>
           <p>
