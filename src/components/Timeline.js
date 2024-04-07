@@ -1,5 +1,5 @@
 'use client';
-import { createRef, useRef, useState } from 'react';
+import { createRef, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 //Data
 import timeline_data from '@/data/timeline_data';
@@ -7,23 +7,67 @@ import TimelineModal from './TimelineModal';
 
 const Timeline = () => {
   //States
+  const [activeSection, setActiveSection] = useState('Tecnologías mecánicas');
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [modalData, setModalData] = useState({});
-  const [activeSection, setActiveSection] = useState('Tecnologías mecánicas');
+  const [observers, setObservers] = useState([]);
   //Refs
-  const timelineRef = useRef();
+  const timelineContainerRef = useRef();
   const sectionsRef = useRef(timeline_data.map(() => createRef()));
 
   //Move the scroll to the timeline section
   const moveTimeline = (index) => {
     const section_left = sectionsRef.current[index].current.offsetLeft;
-    timelineRef.current.style.transform = `translateX(-${section_left}px)`;
+    console.log(section_left);
+    timelineContainerRef.current.scrollTo({ left: section_left, behavior: "smooth"});
   };
 
   const openCloseModal = (data) => {
     setIsOpenModal(!isOpenModal);
     setModalData(data);
   };
+
+  // Create observers for each sections
+  useEffect(() => {
+    const getAllHeadlines = () => {
+      const container = timelineContainerRef.current
+      if (container) {
+        const sections = container.querySelectorAll('.timeline-section');
+
+        const observers = Array.from(sections).map((section, index) => {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              if (entries[0].isIntersecting) {
+                setActiveSection(entries[0].target.dataset.section)
+              } 
+            },
+            {
+              root: timelineContainerRef.current,
+              threshold: 0.5,
+            }
+          );
+
+          observer.observe(section);
+          return observer;
+        });
+
+        setObservers(observers);
+      }
+    };
+
+    getAllHeadlines();
+  }, [timelineContainerRef])
+
+
+  // Remove observers
+  useEffect(() => {
+    return () => {
+      observers.forEach((observer) => {
+        observer.disconnect();
+      });
+    };
+  }, [observers]);
+
 
   return (
     <>
@@ -60,8 +104,8 @@ const Timeline = () => {
             </nav>
 
             {/* Timeline */}
-            <div className='timeline w-full overflow-hidden '>
-              <div className='whitespace-nowrap relative w-full transition-tranform duration-700' ref={timelineRef}>
+            <div className='timeline w-full overflow-x-auto overflow-y-hidden' ref={timelineContainerRef}>
+              <div className='whitespace-nowrap relative w-full transition-tranform duration-700'>
                 {/* Sections */}
                 {timeline_data.map((section, index_section) => {
                   return (
@@ -69,6 +113,7 @@ const Timeline = () => {
                       className={`timeline-section inline-block align-top whitespace-normal w-full relative timeline-section-${index_section}`}
                       key={section.name}
                       ref={sectionsRef.current[index_section]}
+                      data-section={section.name}
                     >
                       <div className='border-t border-white w-full absolute top-80 left-0' />
                       {/* Periods */}
@@ -77,7 +122,7 @@ const Timeline = () => {
                           {section.name}
                         </p>
                       </div>
-                      <div className='timeline-periods flex flex-nowrap px-28 pt-5'>
+                      <div className='timeline-periods flex flex-nowrap px-28 pt-5 pb-10'>
                         {section.periods.map((period, index_period) => {
                           const { title, image } = period;
                           return (

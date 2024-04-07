@@ -1,3 +1,21 @@
+.timeline{
+  scrollbar-width: thin;
+  scrollbar-color: #02ebb6 #3c4058;
+}
+
+.timeline::-webkit-scrollbar {
+  width: 20px;
+}
+
+.timeline::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 10px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
 
 .timeline-section-0 .timeline-periods .timeline-period:nth-of-type(2){
   flex-basis: 50%;
@@ -15,3 +33,4 @@
   max-width: 900px;
   margin: 0 auto;
 }
+

@@ -30,7 +30,7 @@ const Menu = () => {
                 setCurrentTitle({ text: entries[0].target.textContent, position: index });
               } else {
                 if (!(entries[0].intersectionRect.top < window.innerHeight / 2)) {
-                  setCurrentTitle({ text: headlineTags[index - 1].textContent, position: index - 1 });
+                  setCurrentTitle({ text: headlineTags[index - 1]?.textContent, position: index - 1 });
                 }
               }
             },
