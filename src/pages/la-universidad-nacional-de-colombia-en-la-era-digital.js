@@ -6,6 +6,7 @@ import ScrollMultipleImages from '@/components/ScrollMultipleImage';
 import ScrollVideo from '@/components/ScrollVideo';
 import Slider from '@/components/Slider';
 import { slider_data } from '@/data/slider_data';
+import Link from 'next/link';
 
 export default function UniversidadEraDigital() {
   return (
@@ -406,12 +407,16 @@ export default function UniversidadEraDigital() {
           <p>
             Posteriormente, en la década de 1990, la Universidad Nacional de Colombia unificó en ciertas dependencias
             las ramas de la informática y las telecomunicaciones, influenciada por la irrupción de Internet en la
-            sociedad y los centros educativos (recurso 2). Con la redefinición de la estructura a nivel nacional de la
-            universidad en 1997, se crearon tres organismos esenciales en la consolidación de la cultura digital en la
-            comunidad universitaria: la División de Informática y Comunicaciones, la Dirección Nacional de Informática y
-            Comunicaciones y la Unidad de Medios de Comunicación —Unimedios (Resolución 863 de 1997). Un año después, se
-            creó el Comité Nacional de Informática y Telecomunicaciones que cobijaría a la Dirección Nacional de
-            Informática y Comunicaciones (Resolución 335 de 1998).
+            sociedad y los centros educativos (
+            <Link className='font-bold text-purple-base hover:underline' href={'./ascendencias-digitales#recurso-2'}>
+              recurso 2
+            </Link>
+            ). Con la redefinición de la estructura a nivel nacional de la universidad en 1997, se crearon tres
+            organismos esenciales en la consolidación de la cultura digital en la comunidad universitaria: la División
+            de Informática y Comunicaciones, la Dirección Nacional de Informática y Comunicaciones y la Unidad de Medios
+            de Comunicación —Unimedios (Resolución 863 de 1997). Un año después, se creó el Comité Nacional de
+            Informática y Telecomunicaciones que cobijaría a la Dirección Nacional de Informática y Comunicaciones
+            (Resolución 335 de 1998).
           </p>
 
           <p>

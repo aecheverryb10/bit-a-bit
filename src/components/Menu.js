@@ -98,14 +98,13 @@ const Menu = () => {
         style={{ top: `${isOpen ? height : -414}px`, width: `${width}px` }}
       >
         <div className='bg-blue-dark bg-opacity-90 rounded-br-[24px] flex border-t border-white'>
-          {Capitulos.map((item, index) => {
-            const { url, title, subtitle } = item;
-            const capitulosIniciales = index === 0 || index === 4;
+          {Capitulos.filter((item) => !item.notIncludeInMenu)?.map((item, index) => {
+            const { url, title, subtitle, initial } = item;
             const activeItem = asPath === `/${url}`;
             return (
               <Link
                 key={`item-menu-${index}`}
-                className={`${capitulosIniciales ? 'text-2xl' : 'text-5xl '} d-block basis-1/5 text-left px-6 pb-10 ${
+                className={`${initial ? 'text-2xl' : 'text-5xl '} d-block basis-1/5 text-left px-6 pb-10 ${
                   activeItem ? 'bg-black bg-opacity-80' : ''
                 }`}
                 href={url}
@@ -119,8 +118,8 @@ const Menu = () => {
                     }`}
                   />
                 </div>
-                {capitulosIniciales ? title : index}
-                {!capitulosIniciales && (
+                {initial ? title : index - 1}
+                {!initial && (
                   <p className='text-left text-xl font-extralight pt-4'>
                     {title}
                     <br />

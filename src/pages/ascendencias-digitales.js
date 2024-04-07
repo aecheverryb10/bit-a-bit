@@ -127,8 +127,8 @@ export default function AscendenciasDigitales() {
           <p>
             Es así como, en la segunda mitad del siglo <span className='caps'>XX</span>, la computación comenzó a
             adquirir estos rasgos y dimensiones. Aquel fue el momento en que la naturaleza de estas tecnologías cambió,
-            para insertarse en nuevas esferas sociales, económicas y culturales. En 1962, el francés Phillipe
-            Dreyfus sugirió la palabra “informática”, como expresión derivada de los vocablos <em>información</em> y{' '}
+            para insertarse en nuevas esferas sociales, económicas y culturales. En 1962, el francés Phillipe Dreyfus
+            sugirió la palabra “informática”, como expresión derivada de los vocablos <em>información</em> y{' '}
             <em>automatización</em>, entendida como “el conjunto de técnicas destinadas al tratamiento lógico y
             automático de la información”, para la toma de decisiones desde el punto de vista de los sistemas integrados
             (Téllez-Valdés, 1987, p. 11).
@@ -179,12 +179,12 @@ export default function AscendenciasDigitales() {
           <p>
             Ahora bien, hasta hace pocos años, se ha comenzado a reflexionar, desde una perspectiva histórica, sobre el
             impacto y el papel de las tecnologías digitales en América Latina y el Caribe. En este sentido, hay trabajos
-            pioneros que arrojan luces en torno a dos líneas de investigación: por una parte, se ha hablado de los flujos
-            de máquinas computacionales a las diferentes regiones de América Latina y el Caribe; y los usos que se le
-            dieron; por otro, se ha rastreado la llegada de la informática como disciplina científica, insertándose en
-            multiplicidad de centros académicos de los países latinoamericanos. Con ello, se ha pensado una historia de
-            las Tecnologías de la Información y las Comunicaciones y una historia material de las máquinas digitales en
-            el continente (Aguirre y Carnota, 2009; Rodríguez y Carnota, 2015a).
+            pioneros que arrojan luces en torno a dos líneas de investigación: por una parte, se ha hablado de los
+            flujos de máquinas computacionales a las diferentes regiones de América Latina y el Caribe; y los usos que
+            se le dieron; por otro, se ha rastreado la llegada de la informática como disciplina científica,
+            insertándose en multiplicidad de centros académicos de los países latinoamericanos. Con ello, se ha pensado
+            una historia de las Tecnologías de la Información y las Comunicaciones y una historia material de las
+            máquinas digitales en el continente (Aguirre y Carnota, 2009; Rodríguez y Carnota, 2015a).
           </p>
 
           <p>
@@ -250,7 +250,9 @@ export default function AscendenciasDigitales() {
             avances y formadores de los primeros profesionales de la era informática.
           </p>
         </BloqueTexto>
-        <Timeline />
+        <div id='recurso-2'>
+          <Timeline />
+        </div>
         <Subtitulo>
           <>¿Qué pasó en Colombia?</>
         </Subtitulo>
@@ -284,14 +286,13 @@ export default function AscendenciasDigitales() {
             La computación moderna, surgida a nivel global en los años treinta, llegó a Colombia a finales de la década
             de 1950. En este proceso, el sector productivo antecedió, a las universidades, abriendo camino para la
             posterior investigación académica. Entre 1957 y 1958, cuatro empresas colombianas adquirieron un{' '}
-            <em>mainframe</em>{" "}
-            <span className='caps'>IBM</span> 650, a saber, Bavaria, Coltejer, las Empresas Públicas de Medellín (
-            <span className='caps'>EPM</span>) y Ecopetrol. Posteriormente, en 1963 y 1968, llegaron estos mismos
-            equipos a la Universidad de los Andes y la Universidad Nacional de Colombia, respectivamente. En el caso de
-            la Universidad de los Andes, el computador llegó al Departamento de Ingeniería Eléctrica, donde permitió la
-            creación de los primeros programas académicos en esta nueva disciplina, como es el caso de la carrera de
-            Ingeniería de Sistemas, en 1967. Por su parte, la Universidad Nacional creó, en 1966, la Maestría en
-            Sistemas, una de las primeras de América Latina y el Caribe en este nivel (Mesa, 2013, pp. 74-75).
+            <em>mainframe</em> <span className='caps'>IBM</span> 650, a saber, Bavaria, Coltejer, las Empresas Públicas
+            de Medellín (<span className='caps'>EPM</span>) y Ecopetrol. Posteriormente, en 1963 y 1968, llegaron estos
+            mismos equipos a la Universidad de los Andes y la Universidad Nacional de Colombia, respectivamente. En el
+            caso de la Universidad de los Andes, el computador llegó al Departamento de Ingeniería Eléctrica, donde
+            permitió la creación de los primeros programas académicos en esta nueva disciplina, como es el caso de la
+            carrera de Ingeniería de Sistemas, en 1967. Por su parte, la Universidad Nacional creó, en 1966, la Maestría
+            en Sistemas, una de las primeras de América Latina y el Caribe en este nivel (Mesa, 2013, pp. 74-75).
           </p>
 
           <p>
@@ -326,18 +327,18 @@ export default function AscendenciasDigitales() {
         <BloqueTexto noPaddingTop={true}>
           <p>
             Aunado a lo anterior, la integración de las tecnologías computacionales en la segunda mitad siglo{' '}
-            <span className='caps'>XX</span> {" "}
-            colombiano partió del uso de los tubos al vacío, pasando por los transistores y los circuitos integrados,
-            hasta llegar a los microprocesadores. Aunque, para las décadas de 1960-1970, los computadores aún eran
-            escasos, en el país hubo importantes avances tanto en el nivel investigativo, como en la formación de una
-            comunidad enfocada en esta ciencia emergente. La creación del Computador Digital Didáctico (Codidac) por la
-            Pontificia Universidad Javeriana entre 1969 y 1971; y el centro de cómputo en la Universidad Pedagógica y
-            Tecnológica, para sistematizar labores administrativas y académicas en 1972, fueron algunos ejemplos de
-            estos avances. Además, se crearon organizaciones que estuvieron en el centro del desarrollo de nuevas
-            tecnologías: la Asociación Colombiana de Usuarios de Computadores (Acuc), en 1972; la Asociación Colombiana
-            de Ingenieros de Sistemas (Acis), en 1975; y el nodo en Colombia de la Red Iberoamericana de Informática
-            Educativa (Ribiecol), en 1990. Los tres son algunos ejemplos que impulsaron la creación de grupos de
-            investigación, enfocados a la educación y la informática (Mesa, 2013, pp. 74-76).
+            <span className='caps'>XX</span> colombiano partió del uso de los tubos al vacío, pasando por los
+            transistores y los circuitos integrados, hasta llegar a los microprocesadores. Aunque, para las décadas de
+            1960-1970, los computadores aún eran escasos, en el país hubo importantes avances tanto en el nivel
+            investigativo, como en la formación de una comunidad enfocada en esta ciencia emergente. La creación del
+            Computador Digital Didáctico (Codidac) por la Pontificia Universidad Javeriana entre 1969 y 1971; y el
+            centro de cómputo en la Universidad Pedagógica y Tecnológica, para sistematizar labores administrativas y
+            académicas en 1972, fueron algunos ejemplos de estos avances. Además, se crearon organizaciones que
+            estuvieron en el centro del desarrollo de nuevas tecnologías: la Asociación Colombiana de Usuarios de
+            Computadores (Acuc), en 1972; la Asociación Colombiana de Ingenieros de Sistemas (Acis), en 1975; y el nodo
+            en Colombia de la Red Iberoamericana de Informática Educativa (Ribiecol), en 1990. Los tres son algunos
+            ejemplos que impulsaron la creación de grupos de investigación, enfocados a la educación y la informática
+            (Mesa, 2013, pp. 74-76).
           </p>
           <p>
             Más tarde, también se llevaron a cabo significativos eventos y políticas que permitieron el diálogo entre

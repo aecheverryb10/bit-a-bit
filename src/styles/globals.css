@@ -25,7 +25,9 @@
     text-wrap: balance;
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -50,6 +52,10 @@ body {
 
 .main-content p:not(:last-of-type){
   @apply mb-10;
+}
+
+.referencias p{
+  @apply -indent-8;
 }
 
 .caps{

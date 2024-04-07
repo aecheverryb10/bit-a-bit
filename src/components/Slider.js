@@ -15,7 +15,7 @@ const Slider = (props) => {
   const [isDisabled, setIsDisabled] = useState({ prev: true, next: false });
   const [photo, setPhoto] = useState(0);
   const [toggler, setToggler] = useState(false);
-  const PHOTOS = slides.map((slide) => slide.src)
+  const PHOTOS = slides.map((slide) => slide.src);
   //Ref
   const swiperRef = useRef();
 
@@ -55,10 +55,9 @@ const Slider = (props) => {
               }
             }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
-            slidesPerView={2.8}
+            slidesPerView={3}
             breakpoints={{
-              1440: {
-                slidesPerView: 3.5,
+              1560: {
                 spaceBetween: 40,
               },
             }}
@@ -108,7 +107,7 @@ const Slider = (props) => {
           </div>
         </div>
         <Portal>
-          <FsLightbox toggler={toggler} sources={PHOTOS} sourceIndex={photo-1} />
+          <FsLightbox toggler={toggler} sources={PHOTOS} sourceIndex={photo - 1} />
         </Portal>
       </div>
     </div>

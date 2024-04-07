@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Capitulo from '@/components/Capitulo';
 import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
 import Podcast from '@/components/Podcast';
@@ -11,10 +11,9 @@ import { slider_data2 } from '@/data/slider_data';
 import { Tooltip } from 'react-tooltip';
 
 export default function CulturaDigital() {
-
   useEffect(() => {
-    ScrollTrigger.refresh()
-  }, [])
+    ScrollTrigger.refresh();
+  }, []);
 
   return (
     <>
@@ -388,9 +387,13 @@ export default function CulturaDigital() {
           </p>
         </BloqueTexto>
         <Podcast
-          title={'Recurso 2. Seguridad y la ética en la Universidad Nacional'}
+          linkSpotify={'1wBm9beSVGMhChmZQgOoGu'}
+          title={'Seguridad y la ética en la Universidad Nacional'}
           subtitle={'Una conversación con el director de la DNED, el profesor Johan Sebastián Eslava Garzón'}
-          src={'./audio/recurso_5_ciberataques.mp3'}
+          linkWeb={
+            'https://podcastradio.unal.edu.co/detalle/t1-e2-la-cultura-digital-en-la-universidad-nacional-de-colombia'
+          }
+          linkIvoox={'https://go.ivoox.com/rf/126825025'}
         />
         <BloqueTexto noPaddingBottom={true}>
           <h3 className='text-2xl text-purple-base font-sans mb-10'>
@@ -592,8 +595,12 @@ export default function CulturaDigital() {
           </p>
         </BloqueTexto>
         <Podcast
-          title={'Recurso 3. Conversación con el exdirector de la DNED, el profesor Gustavo Pérez Zapata.'}
-          src={'./audio/recurso_6_transformacion_digital.mp3'}
+          linkSpotify={'4uM5VjxFIuo6wH8RRuz26o'}
+          title={'Conversación con el exdirector de la DNED, el profesor Gustavo Pérez Zapata'}
+          linkWeb={
+            'https://podcastradio.unal.edu.co/detalle/t1-e1-la-transformacion-digital-en-la-universidad-nacional-de-colombia'
+          }
+          linkIvoox={'https://go.ivoox.com/rf/126082782'}
         />
         <BloqueTexto>
           <p>
@@ -717,10 +724,14 @@ export default function CulturaDigital() {
         </BloqueTexto>
 
         <Podcast
-          title={
-            'Recurso 4. Charla con la profesora y coordinadora de la división UNALab, Liz Karen Herrera Quintero, acerca de la Cultura Digital en la Unal.'
+          linkSpotify={'4AzdLDalrrpZ9xwsiyZIS1'}
+          linkWeb={
+            'https://podcastradio.unal.edu.co/detalle/t1-e2-la-cultura-digital-en-la-universidad-nacional-de-colombia'
           }
-          src={'./audio/recurso_7_cultura_digital.mp3'}
+          linkIvoox={'https://go.ivoox.com/rf/126459051'}
+          title={
+            'Charla con la profesora y coordinadora de la división UNALab, Liz Karen Herrera Quintero, acerca de la Cultura Digital en la Unal.'
+          }
         />
         <BloqueTexto>
           <p>

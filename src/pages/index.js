@@ -140,12 +140,8 @@ export default function Home() {
             </div>
 
             <div className='grow flex flex-col align-center justify-center relative z-50'>
-              <div className='un-logo bg-blue-100 rounded-b-xl absolute right-32 top-0 px-8 py-7'>
-                <img src={'./img/escudo-unal.svg'} alt={'Escudo universidad nacional'} />
-              </div>
-
-              <div className='container text-white px-20 2xl:px-36 2xl:min-h-[70vh] bg-blue-100 bg-opacity-40 bg-blend-multiply flex flex-col'>
-                <div className='grow pt-14 2xl:pt-28 overflow-hidden'>
+              <div className='container text-white  2xl:min-h-[70vh] bg-blue-100 bg-opacity-40 bg-blend-multiply flex flex-col'>
+                <div className='grow pt-14 2xl:pt-28 overflow-hidden px-20 2xl:px-36'>
                   <h1 className='cover-title font-medium text-[5em] leading-none 2xl:text-8xl mb-3'>Bit a Bit</h1>
                   <h2 className='cover-subtitle font-extralight text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
                     La evolución digital en la
@@ -160,6 +156,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+
+                <div className='un-logo bg-blue-100 rounded-b-xl w-full px-8 py-7 flex justify-end pr-20 2xl:pr-36'>
+                  <img src={'./img/escudo-unal.svg'} alt={'Escudo universidad nacional'} />
+                </div>
               </div>
 
               <div className='text-center text-white -mt-10'>
@@ -172,15 +172,7 @@ export default function Home() {
               </div>
             </div>
             <div className='bg-black text-white py-3 2xl:py-5 border-t-2 border-white z-40'>
-              <div className='container flex justify-between'>
-                <Link
-                  className='font-light text-base 2x:text-xl mr-12 uppercase tracking-widest flex align-center'
-                  href={'./prologo'}
-                >
-                  <img className='w-7 2xl:w-9 mr-2' src='./img/boton-siguiente.svg' alt='botón siguiente' />{' '}
-                  <span>Prólogo</span>
-                </Link>
-
+              <div className='container flex justify-end'>
                 <Link
                   className='font-light text-base 2x:text-xl mr-12 uppercase tracking-widest flex align-center'
                   href={'./creditos'}
@@ -212,14 +204,32 @@ export default function Home() {
           </div>
 
           <div className='grow'>
-            <div className='h-[680px] 2xl:h-[calc(100vh_-_56px)] flex items-center text-white'>
-              <Link href={'./introduccion'} className='basis-full h-full bg-cover group'>
+            <div className='h-[calc(100vh_-_56px)] flex items-center text-white'>
+              <Link href={'./prologo'} className='basis-full h-full bg-cover group shadow-capitulo relative z-40'>
                 <div className='flex flex-col h-full'>
                   <div className='text-center py-28'>
                     <p className='text-9xl font-thin'></p>
                   </div>
                   <div className='grow border-y border-white font-light text-3xl flex justify-end'>
-                    <div className='h-full tracking-wider w-64 2xl:w-80 px-16 transition-all group-hover:bg-white group-hover:bg-opacity-10'>
+                    <div className='h-full text-center tracking-wider w-64 2xl:w-80 px-16 transition-all group-hover:bg-white group-hover:bg-opacity-10'>
+                      <span className='block border-l border-white h-16 mx-auto w-0' />
+                      <span className='block rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center'>
+                        <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
+                      </span>
+                      <h2 className='mt-7 text-2xl 2xl:text-3xl'>Prólogo</h2>
+                    </div>
+                  </div>
+                  <div className='bg-blend-multiply text-center py-20 2xl:py-24'></div>
+                </div>
+              </Link>
+
+              <Link href={'./introduccion'} className='basis-full h-full bg-cover group shadow-capitulo relative z-30'>
+                <div className='flex flex-col h-full'>
+                  <div className='text-center py-28'>
+                    <p className='text-9xl font-thin'></p>
+                  </div>
+                  <div className='grow border-y border-white font-light text-3xl flex justify-end'>
+                    <div className='h-full text-center tracking-wider w-64 2xl:w-80 px-16 transition-all group-hover:bg-white group-hover:bg-opacity-10'>
                       <span className='block border-l border-white h-16 mx-auto w-0' />
                       <span className='block rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center'>
                         <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
