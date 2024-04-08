@@ -18,8 +18,7 @@ const Timeline = () => {
   //Move the scroll to the timeline section
   const moveTimeline = (index) => {
     const section_left = sectionsRef.current[index].current.offsetLeft;
-    console.log(section_left);
-    timelineContainerRef.current.scrollTo({ left: section_left, behavior: "smooth"});
+    timelineContainerRef.current.scrollTo({ left: section_left, behavior: 'smooth' });
   };
 
   const openCloseModal = (data) => {
@@ -30,7 +29,7 @@ const Timeline = () => {
   // Create observers for each sections
   useEffect(() => {
     const getAllHeadlines = () => {
-      const container = timelineContainerRef.current
+      const container = timelineContainerRef.current;
       if (container) {
         const sections = container.querySelectorAll('.timeline-section');
 
@@ -38,8 +37,8 @@ const Timeline = () => {
           const observer = new IntersectionObserver(
             (entries) => {
               if (entries[0].isIntersecting) {
-                setActiveSection(entries[0].target.dataset.section)
-              } 
+                setActiveSection(entries[0].target.dataset.section);
+              }
             },
             {
               root: timelineContainerRef.current,
@@ -56,8 +55,7 @@ const Timeline = () => {
     };
 
     getAllHeadlines();
-  }, [timelineContainerRef])
-
+  }, [timelineContainerRef]);
 
   // Remove observers
   useEffect(() => {
@@ -68,11 +66,10 @@ const Timeline = () => {
     };
   }, [observers]);
 
-
   return (
     <>
-      <div className='pl-32 '>
-        <div className='rounded-l-[30px] text-white relative overflow-hidden'>
+      <div className='xl:pl-32'>
+        <div className='xl:rounded-l-[30px] text-white relative overflow-hidden'>
           <div
             className='absolute w-full h-full'
             style={{
@@ -81,9 +78,11 @@ const Timeline = () => {
           />
           <img className='absolute h-full w-full opacity-10' src='./img/texture_34.png' alt='textura' />
           <div className='text-white relative z-50 pb-28 pt-20'>
-            <p className='uppercase tracking-wider text-3xl text-center'>Hitos de la transformación tecnológica</p>
+            <p className='uppercase tracking-wider text-2xl lg:text-3xl text-center'>
+              Hitos de la transformación tecnológica
+            </p>
             {/* Menu */}
-            <nav className='flex gap-3 py-10 px-28 flex-wrap max-w-[1100px]'>
+            <nav className='hidden lg:flex gap-3 py-10 px-10 xl:px-28 flex-wrap max-w-[1100px]'>
               {timeline_data.map((section, index_section) => {
                 return (
                   <button
@@ -115,20 +114,20 @@ const Timeline = () => {
                       ref={sectionsRef.current[index_section]}
                       data-section={section.name}
                     >
-                      <div className='border-t border-white w-full absolute top-80 left-0' />
+                      <div className='border-t border-white w-full absolute top-[19.3rem] lg:top-80 left-0' />
                       {/* Periods */}
-                      <div className='px-28 py-10 text-center'>
-                        <p className='border-2 border-white inline-block uppercase leading-wider text-xl px-8 py-3'>
+                      <div className='px-10 lg:px-28 py-10 text-center'>
+                        <p className='border-2 border-white inline-block uppercase leading-wider text-lg lg:text-xl px-8 py-3'>
                           {section.name}
                         </p>
                       </div>
-                      <div className='timeline-periods flex flex-nowrap px-28 pt-5 pb-10'>
+                      <div className='timeline-periods flex flex-nowrap px-10 lg:px-28 pt-5 pb-10'>
                         {section.periods.map((period, index_period) => {
                           const { title, image } = period;
                           return (
                             <div key={`${section}-${title}-${index_period}`} className={`timeline-period text-center`}>
                               <button
-                                className='relative w-[140px] h-[140px] '
+                                className='relative w-[90px] h-[90px] lg:w-[140px] lg:h-[140px] '
                                 type='button'
                                 onClick={() => openCloseModal(period)}
                               >
@@ -141,7 +140,7 @@ const Timeline = () => {
                               </button>
                               <div className='border border-dashed h-[60px] w-px mx-auto' />
                               <div className='w-2 h-2 rounded-full bg-white mx-auto' />
-                              <p className='font-light text-xl pt-6'>{title}</p>
+                              <p className='font-light text-md lg:text-xl pt-6'>{title}</p>
                             </div>
                           );
                         })}

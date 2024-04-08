@@ -4,14 +4,14 @@ import { useGSAP } from '@gsap/react';
 
 const MainSection = (props) => {
   const { children } = props;
-  return <section className='pl-52 max-w-[1440px] '>{children}</section>;
+  return <section className='px-4 md:px-10 xl:pr-0 xl:pl-52 max-w-[1440px] '>{children}</section>;
 };
 
 const ParrafoInicial = (props) => {
   const { children } = props;
   return (
     <MainSection>
-      <div className='bg-grey-light bg-opacity-30 pl-40 pt-20 pb-28 rounded-tl-[40px] 2xl:rounded-tr-[40px] shadow-xl'>
+      <div className='bg-grey-light bg-opacity-30 pl-10 lg:pl-20 xl:pl-40 pt-20 pb-28 rounded-t-[20px] xl:rounded-tr-none xl:rounded-tl-[40px] 2xl:rounded-tr-[40px] shadow-xl'>
         <div className='relative flex items-center mb-16 '>
           <div
             className='w-16 h-16 rounded-full left-[-30px] absolute'
@@ -21,13 +21,13 @@ const ParrafoInicial = (props) => {
             <span className='w-1 h-1 rounded-full bg-white' />
             <div className='border-white border-t grow w-full' />
           </div>
-          <div className='absolute right-40 top-1'>
+          <div className='absolute right-40 top-1 hidden lg:block'>
             <span className={`block h-64 border-r border-white mr-3`}></span>
             <span className='w-6 h-6 rounded-full bg-green-light border block' />
             <span className='w-2 h-2 rounded-full bg-white block -mt-4 ml-2' />
           </div>
         </div>
-        <div className='pr-16'>
+        <div className='pr-10 lg:pr-16'>
           <div className='max-w-[700px] text-white font-ancizar text-xl leading-relaxed'>{children}</div>
         </div>
       </div>
@@ -40,7 +40,11 @@ const BloqueTexto = (props) => {
   return (
     <MainSection>
       <div className={`bg-white bg-opacity-70 ${shadow ? 'shadow-xl' : ''}`}>
-        <div className={`pl-40 pr-16 ${noPaddingTop ? '' : 'pt-16'} ${noPaddingBottom ? '' : 'pb-28'}`}>
+        <div
+          className={`pl-10 lg:pl-20 xl:pl-40 pr-10 lg:pr-16 ${noPaddingTop ? '' : 'pt-16'} ${
+            noPaddingBottom ? '' : 'pb-28'
+          }`}
+        >
           <div className='max-w-[700px] main-content text-lg font-serif leading-relaxed'>{children}</div>
         </div>
       </div>
@@ -85,7 +89,7 @@ const TituloCapitulo = (props) => {
 
   return (
     <section ref={containerRef} className=' overflow-hidden'>
-      <div className='text-white pt-24 pb-40 '>
+      <div className='text-white py-16 lg:pt-24 lg:pb-40 '>
         <div className='flex justify-end mb-8'>
           <div className='line-right flex w-[70%] items-center'>
             <span className='w-6 h-6 rounded-full bg-green-light border block -mr-4' />
@@ -97,7 +101,7 @@ const TituloCapitulo = (props) => {
         <div className='mb-12'>
           <div className='line-left flex w-[20%] items-center'>
             <span className={`block w-full border-t border-white`}></span>
-            <span className='w-6 h-6 rounded-full border-white border block -mr-4' />
+            <span className='w-6 h-6 rounded-full border-white border block -mr-[14px]' />
             <span className='w-2 h-2 rounded-full bg-white block ' />
           </div>
         </div>
@@ -108,7 +112,7 @@ const TituloCapitulo = (props) => {
           <span className='w-2 h-2 rounded-full block bg-white' />
         </div>
 
-        <div className='container container-title pl-36 overflow-hidden'>{children}</div>
+        <div className='lg:container container-title px-10 lg:pl-36 overflow-hidden'>{children}</div>
 
         <div className='flex justify-end mb-20'>
           <div
@@ -138,7 +142,7 @@ const Subtitulo = (props) => {
   return (
     <MainSection>
       <div className='bg-purple-base bg-opacity-70 text-white'>
-        <h2 className='pl-40 py-10 font-normal text-3xl'>{children}</h2>
+        <h2 className='pl-10 lg:pl-20 xl:pl-40 py-10 font-normal text-3xl'>{children}</h2>
       </div>
     </MainSection>
   );
@@ -149,13 +153,13 @@ const Resaltado = (props) => {
   return (
     <MainSection>
       <div className={`bg-white bg-opacity-70 py-16 font-ancizar font-bold `}>
-        <div className='flex max-w-[700px]'>
-          <div className='flex items-center justify-start'>
-            <span className={`block w-40 border-2 border-purple-base`}></span>
+        <div className='flex max-w-[760px]'>
+          <div className='items-center justify-start hidden md:flex'>
+            <span className={`block w-20 lg:w-40 border-2 border-purple-base`}></span>
             <span className='w-8 h-8 rounded-full border-purple-base border-4 block -mr-[22px]' />
             <span className='w-3 h-3 rounded-full bg-purple-base block ' />
           </div>
-          <p className='text-2xl text-purple-base pl-10'>"{children}"</p>
+          <p className='text-2xl text-purple-base pl-10 pr-10 lg:pr-0'>"{children}"</p>
         </div>
       </div>
     </MainSection>

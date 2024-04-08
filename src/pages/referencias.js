@@ -6,7 +6,7 @@ const Referencias = () => {
     <Capitulo background={`radial-gradient(63.95% 32.77% at 13.12% 8.61%, #78BEFF 0%, #326799 100%)`}>
       <MainSection>
         <div className={`bg-white bg-opacity-30 shadow-xl pt-40 pb-20 relative`}>
-          <div className={`pl-40 pr-16 main-content referencias`}>
+          <div className={`px-14 lg:pl-40 lg:pr-16 main-content referencias`}>
             <div className='max-w-[700px] text-white text-lg font-serif leading-relaxed '>
               <h3 className='text-6xl font-light text-white font-sans mb-10 -indent-8'>Referencias</h3>
               <p>

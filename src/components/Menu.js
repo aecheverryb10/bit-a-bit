@@ -11,6 +11,7 @@ const Menu = () => {
   const purpleBar = useRef();
   const { asPath } = useRouter();
 
+  const menuElement = useRef();
   const { height, width } = barraMenu.current?.getBoundingClientRect() ?? {};
   const currentChapter = Capitulos.find((item) => `/${item.url}` === asPath);
 
@@ -73,10 +74,15 @@ const Menu = () => {
   }, []);
 
   return (
-    <div className='fixed z-50 xl:pr-20 w-full'>
+    <div
+      className='fixed z-50 xl:pr-20 w-full'
+      onMouseLeave={() => {
+        setIsOpen(false);
+      }}
+    >
       <div className='bg-black text-white py-4 shadow-lg relative z-10' ref={barraMenu}>
-        <div className='container flex items-center px-9'>
-          <button className='flex items-center' onClick={() => setIsOpen(!isOpen)}>
+        <div className='lg:container flex items-center px-9'>
+          <button className='flex items-center' onMouseOver={() => setIsOpen(true)} onClick={() => setIsOpen(!isOpen)}>
             <span className='pr-4'>
               <span className='w-6 block border-t-2 border-white rounded-full' />
               <span className='w-6 block border-t-2 border-white rounded-full my-[6px] ml-1' />
@@ -86,8 +92,10 @@ const Menu = () => {
           </button>
           <Link href='./'>
             <h2 className='uppercase tracking-[0.18em] text-white text-sm pl-24'>
-              <span className='border-r border-white font-medium pr-4 mr-4'>Bit a bit</span>{' '}
-              <span className='font-light'>La evolución digital en la Universidad Nacional de Colombia</span>
+              <span className='lg:border-r border-white font-medium pr-4 mr-4'>Bit a bit</span>{' '}
+              <span className='font-light hidden lg:inline-block'>
+                La evolución digital en la Universidad Nacional de Colombia
+              </span>
             </h2>
           </Link>
         </div>
@@ -95,21 +103,27 @@ const Menu = () => {
 
       <div
         className='absolute transition-all duration-500 z-100 text-white'
-        style={{ top: `${isOpen ? height : -414}px`, width: `${width}px` }}
+        style={{
+          top: `${isOpen ? height : `-${menuElement?.current?.getBoundingClientRect()?.height ?? 600}`}px`,
+          width: `${width}px`,
+        }}
       >
-        <div className='bg-blue-dark bg-opacity-90 rounded-br-[24px] flex border-t border-white'>
+        <div
+          className='bg-blue-dark bg-opacity-90 rounded-br-[24px] flex flex-col xl:flex-row border-t border-white max-h-[80vh] xl:max-h-none overflow-auto'
+          ref={menuElement}
+        >
           {Capitulos.filter((item) => !item.notIncludeInMenu)?.map((item, index) => {
             const { url, title, subtitle, initial } = item;
             const activeItem = asPath === `/${url}`;
             return (
               <Link
                 key={`item-menu-${index}`}
-                className={`${initial ? 'text-2xl' : 'text-5xl '} d-block basis-1/5 text-left px-6 pb-10 ${
-                  activeItem ? 'bg-black bg-opacity-80' : ''
-                }`}
+                className={`${
+                  initial ? 'text-2xl' : 'text-5xl '
+                } d-block basis-1/5 text-left px-6 py-6 xl:pt-0 xl:pb-10 ${activeItem ? 'bg-black bg-opacity-80' : ''}`}
                 href={url}
               >
-                <div className='mb-10'>
+                <div className='xl:mb-10 hidden xl:block'>
                   <span className='block ml-3 w-px h-28 border-r border-white' />
                   <span className='block ml-2 w-2 h-2 rounded-full bg-white relative z-10' />
                   <span
@@ -118,14 +132,16 @@ const Menu = () => {
                     }`}
                   />
                 </div>
-                {initial ? title : index - 1}
-                {!initial && (
-                  <p className='text-left text-xl font-extralight pt-4'>
-                    {title}
-                    <br />
-                    {subtitle ?? ''}
-                  </p>
-                )}
+                <div className='flex xl:flex-col'>
+                  {initial ? title : index - 1}
+                  {!initial && (
+                    <p className='text-left text-xl font-extralight pl-5 xl:pl-0 xl:pt-4'>
+                      {title}
+                      <br />
+                      {subtitle ?? ''}
+                    </p>
+                  )}
+                </div>
               </Link>
             );
           })}
@@ -141,7 +157,7 @@ const Menu = () => {
       {!!currentChapter && (
         <div
           ref={purpleBar}
-          className='bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg lg:pl-80'
+          className='bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg pl-8 lg:pl-48 xl:pl-80'
         >
           <p className='font-extralight text-xl'>
             {/* {currentChapter?.title} {currentChapter?.subtitle ?? ''} */}

@@ -33,21 +33,21 @@ const Capitulo = (props) => {
             {currentChapter && (
               <MainSection>
                 <div className='bg-white bg-opacity-70 shadow-xl'>
-                  <div className='flex'>
+                  <div className='flex flex-col lg:flex-row'>
                     {prevChapter && (
                       <Link
                         href={prevChapter?.url}
                         className={`text-white grow relative block overflow-hidden ${
-                          nextChapter ? 'border-r-4 border-white' : ''
+                          nextChapter ? 'border-b-4 lg:border-b-0 lg:border-r-4 border-white' : ''
                         }`}
                       >
                         <div className='absolute bg-blue-dark w-full h-full' />
                         <img
-                          className='top-0 left-0 absolute top-[-50%] w-full opacity-20'
+                          className='top-0 left-0 absolute w-full h-auto opacity-20'
                           src={prevChapter?.img}
                           alt='textura'
                         />
-                        <div className='mx-auto w-96 relative z-50 pt-20 pb-28 '>
+                        <div className='px-8 mx-auto w-96 relative z-50 pt-20 pb-28 '>
                           <p className='font-light text-xl mb-2'>Capitulo anterior</p>
                           <p className='font-light text-4xl'>{prevChapter?.title}</p>
                           {prevChapter?.subtitle && <p className='font-extralight text-2xl'>{prevChapter?.subtitle}</p>}
@@ -58,11 +58,11 @@ const Capitulo = (props) => {
                       <Link href={nextChapter?.url} className=' text-white grow relative block overflow-hidden'>
                         <div className='absolute bg-blue-dark w-full h-full' />
                         <img
-                          className='top-0 left-0 absolute top-[-50%] w-full opacity-20'
+                          className='top-0 left-0 absolute w-full h-auto opacity-20'
                           src={nextChapter?.img}
                           alt='textura'
                         />
-                        <div className='mx-auto w-96 relative z-50 pt-20 pb-28 '>
+                        <div className='px-8 mx-auto w-96 relative z-50 pt-20 pb-28 '>
                           <p className='font-light text-xl mb-2'>Siguiente capítulo</p>
                           <p className='font-light text-4xl'>{nextChapter?.title}</p>
                           {nextChapter?.subtitle && <p className='font-extralight text-2xl'>{nextChapter?.subtitle}</p>}

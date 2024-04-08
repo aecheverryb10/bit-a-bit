@@ -50,7 +50,7 @@ body {
   background: linear-gradient(220.11deg, rgba(1, 133, 103, 0) 19.69%, rgba(2, 235, 182, 0.5) 92.67%);
 }
 
-.main-content p:not(:last-of-type){
+.main-content p:not(:last-of-type), li{
   @apply mb-10;
 }
 
@@ -72,7 +72,7 @@ em{
 }
 
 .caption-element p:first-child{
-  @apply font-light text-3xl bg-black bg-opacity-40 p-6;
+  @apply font-light text-xl lg:text-3xl bg-black bg-opacity-40 p-6;
 }
 
 .caption-element.vertical p:first-child{
@@ -80,5 +80,5 @@ em{
 }
 
 .caption-element p:nth-child(2){
-  @apply bg-white text-black py-4 text-md px-6 font-light;
+  @apply bg-white text-black py-4 text-sm lg:text-md px-6 font-light;
 }

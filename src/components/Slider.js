@@ -33,7 +33,7 @@ const Slider = (props) => {
   };
 
   return (
-    <div className='pl-32 '>
+    <div className='lg:pl-32 '>
       <div className='rounded-l-[30px] text-white relative overflow-hidden shadow-2xl'>
         <div
           className='absolute w-full h-full'
@@ -42,7 +42,7 @@ const Slider = (props) => {
           }}
         />
         <img className='absolute h-full opacity-10' src='./img/texture_34.png' alt='textura' />
-        <div className='py-20 pl-20'>
+        <div className='py-20 px-10 lg:pr-0 lg:pl-20'>
           <Swiper
             keyboard={{
               enabled: true,
@@ -55,13 +55,19 @@ const Slider = (props) => {
               }
             }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
-            slidesPerView={3}
+            slidesPerView={1}
+            spaceBetween={35}
             breakpoints={{
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
               1560: {
                 spaceBetween: 40,
               },
             }}
-            spaceBetween={35}
           >
             {slides.map((slide, index) => {
               const { src, alt, caption } = slide;

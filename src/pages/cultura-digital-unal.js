@@ -19,14 +19,14 @@ export default function CulturaDigital() {
     <>
       <Capitulo>
         <TituloCapitulo>
-          <div className='flex items-center'>
+          <div className='flex items-start flex-col lg:flex-row lg:items-center'>
             <span
               style={{ background: `linear-gradient(159.71deg, #02EBB6 0.2%, rgba(115, 115, 115, 0) 41.04%)` }}
-              className='chapter-number text-9xl font-extralight border-2 px-10 py-6 mr-8'
+              className='chapter-number text-8xl lg:text-9xl font-extralight border-2 px-10 py-6 mr-8'
             >
               3
             </span>
-            <div className='overflow-hidden py-3'>
+            <div className='overflow-hidden py-8 lg:py-3'>
               <h1 className='chapter-title text-6xl font-light'>Cultura Digital Unal:</h1>
               <p className='chapter-title text-4xl font-extralight mt-2'>caminos a la transformación digital</p>
             </div>
@@ -630,7 +630,7 @@ export default function CulturaDigital() {
             División Universidad Laboratorio (UNALab) y la División de Gestión Tecnológica (Acuerdo 316 de 2019). Cada
             una de estas dependencias se explica en las siguientes líneas.
           </p>
-          <div className='pl-14'>
+          <div className='pl-7 pt-10 lg:pl-14'>
             <p>
               <em>Oficina de Arquitectura Organizacional</em>. Tiene la función de proponer políticas, estándares e
               iniciativas de arquitectura organizacional de <span className='caps'>TI</span>, de conformidad con los
@@ -1003,7 +1003,7 @@ export default function CulturaDigital() {
             <span className='caps'>DNED</span>, alineadas con esta estrategia, principalmente, las que fortalecen la
             cultura digital y han experimentado un avance significativo:
           </p>
-          <ul className='pl-10'>
+          <ul className='pl-7 lg:pl-14'>
             <li>
               — Desarrollo y escalamiento institucional del sistema Horus Unal, para la visualización de la capacidad
               investigativa y la producción científica de la Universidad.

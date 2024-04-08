@@ -12,7 +12,7 @@ const Podcast = (props) => {
   } = props;
 
   return (
-    <div className='pl-32 max-w-[1440px]'>
+    <div className='lg:pl-32 max-w-[1440px]'>
       <div className='rounded-l-[30px] text-white relative overflow-hidden shadow-xl'>
         <div
           className='absolute w-full h-full'
@@ -21,7 +21,7 @@ const Podcast = (props) => {
           }}
         />
         <img className='absolute w-full opacity-20 h-full' src='./img/texture_34.png' alt='textura' />
-        <div className='pl-48 pr-16 pt-12 pb-16 relative z-10 bg-blue-dark bg-opacity-30'>
+        <div className='px-10 lg:pl-48 lg:pr-16 pt-12 pb-16 relative z-10 bg-blue-dark bg-opacity-30'>
           <div className='max-w-[700px] font-ancizar leading-none pb-5'>
             <p className='font-bold text-3xl mt-4 mb-2'>{title}</p>
             {subtitle && <p className='text-xl'>{subtitle}</p>}

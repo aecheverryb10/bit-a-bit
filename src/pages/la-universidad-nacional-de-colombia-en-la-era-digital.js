@@ -13,14 +13,14 @@ export default function UniversidadEraDigital() {
     <>
       <Capitulo>
         <TituloCapitulo>
-          <div className='flex items-center'>
+          <div className='flex items-start flex-col lg:flex-row lg:items-center'>
             <span
               style={{ background: `linear-gradient(159.71deg, #02EBB6 0.2%, rgba(115, 115, 115, 0) 41.04%)` }}
-              className='chapter-number text-9xl font-extralight border-2 px-10 py-6 mr-8'
+              className='chapter-number text-8xl lg:text-9xl font-extralight border-2 px-10 py-6 mr-8'
             >
               2
             </span>
-            <div className='overflow-hidden py-3'>
+            <div className='overflow-hidden py-8 lg:py-3'>
               <h1 className='chapter-title text-6xl font-light'>
                 La Universidad Nacional de Colombia <span className='block'>en la era digital</span>
               </h1>
