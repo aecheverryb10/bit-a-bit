@@ -13,6 +13,7 @@ const Menu = () => {
   const { asPath } = useRouter();
 
   const menuElement = useRef();
+  const submenuRef = useRef();
   const { height, width } = barraMenu.current?.getBoundingClientRect() ?? {};
   const currentChapter = Capitulos.find((item) => `/${item.url}` === asPath);
 
@@ -80,15 +81,17 @@ const Menu = () => {
         // markers: true,
         toggleActions: 'play none none reverse',
       },
-    });
-    tl_caption.from(purpleBar.current, { y: '-103%', duration: 0.3 });
+    });    
+
+    tl_caption.from(purpleBar.current, { y: '-103%', duration: 0.3 }, 0);
   }, []);
 
 
-  const goToSection = (element) => {
+  const goToSection = (element, index) => {
     const height_purpleBar = purpleBar.current.offsetHeight
     const offsetTop_section = element.offsetTop
 
+    index===0 && setIsSubmenuOpen(false)
     window.scrollTo({ top: offsetTop_section - (height + height_purpleBar), behavior: "smooth"})
 }
 
@@ -186,10 +189,10 @@ const Menu = () => {
         </div>
       )}
 
-      <div className={`absolute flex flex-col w-[640px] items-start transition-all duration-700 ${isSubmenuOpen ? "left-0" : "-left-full"}`}>
+      <div className={`absolute flex flex-col w-[640px] items-start transition-all duration-700 ${isSubmenuOpen ? "left-0" : "-left-full"}`} ref={submenuRef}>
         {
-          submenu?.map(option => {
-            return <button onClick={()=> goToSection(option.element)} key={option.key} dangerouslySetInnerHTML={{ __html: option.content }} />;
+          submenu?.map((option, index) => {
+            return <button onClick={()=> goToSection(option.element, index)} key={option.key} dangerouslySetInnerHTML={{ __html: option.content }} />;
           })
         }
         <button
