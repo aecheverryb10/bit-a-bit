@@ -7,6 +7,7 @@ import { gsap } from 'gsap';
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const barraMenu = useRef();
   const purpleBar = useRef();
   const { asPath } = useRouter();
@@ -16,6 +17,7 @@ const Menu = () => {
   const currentChapter = Capitulos.find((item) => `/${item.url}` === asPath);
 
   const [currentTitle, setCurrentTitle] = useState({ text: currentChapter?.title, position: 0 });
+  const [submenu, setSubMenu] = useState([]);
   const [observers, setObservers] = useState([]);
 
   useEffect(() => {
@@ -47,6 +49,15 @@ const Menu = () => {
         });
 
         setObservers(observers);
+
+        const SUBMENU = Array.from(headlineTags).map((headline) => {
+          return {
+            element: headline.innerHTML,
+            id: headline.id,
+            key: headline.textContent.split(" ").join("-"),
+          };
+        });
+        setSubMenu(SUBMENU);
       }
     };
 
@@ -118,18 +129,16 @@ const Menu = () => {
             return (
               <Link
                 key={`item-menu-${index}`}
-                className={`${
-                  initial ? 'text-2xl' : 'text-5xl '
-                } d-block basis-1/5 text-left px-6 py-6 xl:pt-0 xl:pb-10 ${activeItem ? 'bg-black bg-opacity-80' : ''}`}
+                className={`${initial ? 'text-2xl' : 'text-5xl '
+                  } d-block basis-1/5 text-left px-6 py-6 xl:pt-0 xl:pb-10 ${activeItem ? 'bg-black bg-opacity-80' : ''}`}
                 href={url}
               >
                 <div className='xl:mb-10 hidden xl:block'>
                   <span className='block ml-3 w-px h-28 border-r border-white' />
                   <span className='block ml-2 w-2 h-2 rounded-full bg-white relative z-10' />
                   <span
-                    className={`block w-6 h-6 rounded-full border border-white -mt-4 ${
-                      activeItem ? 'bg-purple-base' : ''
-                    }`}
+                    className={`block w-6 h-6 rounded-full border border-white -mt-4 ${activeItem ? 'bg-purple-base' : ''
+                      }`}
                   />
                 </div>
                 <div className='flex xl:flex-col'>
@@ -157,14 +166,33 @@ const Menu = () => {
       {!!currentChapter && (
         <div
           ref={purpleBar}
-          className='bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg pl-8 lg:pl-48 xl:pl-80'
+          className='flex gap-6 bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg pl-8 lg:pl-48 xl:pl-80'
         >
+          <button onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}>
+            Indice
+          </button>
           <p className='font-extralight text-xl'>
             {/* {currentChapter?.title} {currentChapter?.subtitle ?? ''} */}
             {currentTitle.text}
           </p>
         </div>
       )}
+
+      <div className={`absolute flex flex-col w-[640px] items-start transition-all duration-700 ${isSubmenuOpen ? "left-0" : "-left-full"}`}>
+        {
+          submenu?.map(option => {
+            console.log(option);
+            return <Link href={`#${option.id}`} key={option.key} dangerouslySetInnerHTML={{ __html: option.element }} />;
+          })
+        }
+        <button
+          className='font-extralight uppercase tracking-widest border-top pl-6 pr-16 py-4 bg-blue-dark bg-opacity-90 border-t border-white rounded-br-xl flex items-center'
+          onClick={() => setIsSubmenuOpen(false)}
+        >
+          <img src='./img/close-button.svg' alt='arrow down' className='w-4 mr-4' />
+          Cerrar
+        </button>
+      </div>
     </div>
   );
 };

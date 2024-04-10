@@ -39,7 +39,7 @@ export default function AscendenciasDigitales() {
             inseparable relación con los dedos, en lo que puede ser contabilizado o señalado por ellos.
           </p>
         </ParrafoInicial>
-        <Subtitulo>
+        <Subtitulo id="preludios-digitales">
           <>Preludios digitales:</>
           <span className='block font-extralight'>hacia una comprensión histórica de lo digital</span>
         </Subtitulo>
@@ -253,7 +253,7 @@ export default function AscendenciasDigitales() {
         <div id='recurso-2'>
           <Timeline />
         </div>
-        <Subtitulo>
+        <Subtitulo id="que-paso-en-colombia">
           <>¿Qué pasó en Colombia?</>
         </Subtitulo>
         <BloqueTexto noPaddingBottom={true}>

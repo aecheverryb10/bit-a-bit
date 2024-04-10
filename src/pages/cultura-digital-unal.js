@@ -155,7 +155,7 @@ export default function CulturaDigital() {
             acceder a la clase de la misma manera y con las mismas facilidades.
           </p>
         </BloqueTexto>
-        <Subtitulo>
+        <Subtitulo id="institucionalizacion-tic-cntic-dntic-peti-dned-unalab">
           <>
             Institucionalización <span className='caps'>TIC</span>: <span className='caps'>CNTIC</span>,{' '}
             <span className='caps'>DNTIC</span>, Peti, <span className='caps'>DNED</span>/UNALab
@@ -193,7 +193,7 @@ export default function CulturaDigital() {
             de los sistemas y la definición de los diferentes perfiles que accedían, entre administrativos, estudiantes,
             docentes y contratistas (Acuerdo 46 de 2009).
           </p>
-          <h3 className='text-2xl text-purple-base font-sans mb-10'>
+          <h3 id="plan-estrategico-de-tecnologias-de-informacion-y-comunicaciones" className='text-2xl text-purple-base font-sans mb-10'>
             Plan Estratégico de Tecnologías de Información y Comunicaciones
           </h3>
           <p>
@@ -260,7 +260,7 @@ export default function CulturaDigital() {
             Estos se plantearon como actualizaciones progresiva del plan anterior (Acuerdo 227 de 2016;{' '}
             <span className='caps'>DNED</span>, 2022).
           </p>
-          <h3 className='text-2xl text-purple-base font-sans mb-10'>
+          <h3 id="direccion-nacional-de-tecnologias-de-la-informacion-y-las-comunicaciones" className='text-2xl text-purple-base font-sans mb-10'>
             Dirección Nacional de Tecnologías de la Información y las Comunicaciones
           </h3>
           <p>
@@ -293,7 +293,7 @@ export default function CulturaDigital() {
             todos los miembros de su comunidad, los edificios físicos y sus dependencias, así como los proyectos que
             sustentan su desarrollo académico y administrativo (Resolución 464 de 2014).
           </p>
-          <h3 className='text-2xl text-purple-base font-sans mb-10'>Derecho y seguridad informática</h3>
+          <h3 id="derecho-y-seguridad-informatica" className='text-2xl text-purple-base font-sans mb-10'>Derecho y seguridad informática</h3>
           <p>
             El aumento en el uso de las tecnologías de la información, la masificación del uso de computadoras, la
             expansión de internet y la gigantesca acumulación de datos por parte de gobiernos y empresas han generado la
@@ -398,7 +398,7 @@ export default function CulturaDigital() {
           linkIvoox={'https://go.ivoox.com/rf/126825025'}
         />
         <BloqueTexto noPaddingBottom={true}>
-          <h3 className='text-2xl text-purple-base font-sans mb-10'>
+          <h3 id="iniciativas-estrategicas-de-apropiacion-y-optimizacion-tecnologica" className='text-2xl text-purple-base font-sans mb-10'>
             Iniciativas estratégicas de apropiación y optimización tecnológica
           </h3>
           <p>
@@ -531,7 +531,7 @@ export default function CulturaDigital() {
             inclusión social y el reconocimiento de la riqueza y la diversidad de las regiones (Dirección Nacional de
             Planeación y Estadística, 2019).
           </p>
-          <h3 className='text-2xl text-purple-base font-sans mb-10'>
+          <h3 id="estrategia-de-transformacion-digital-2019-2021-fundacion-de-la-direccion-nacional-de-estrategia-digital" className='text-2xl text-purple-base font-sans mb-10'>
             Estrategia de Transformación Digital 2019-2021: fundación de la Dirección Nacional de Estrategia Digital
           </h3>
           <p>
@@ -801,7 +801,7 @@ export default function CulturaDigital() {
             con el mundo (Dirección Nacional de Planeación y Estadística, 2019, pp. 141-142).
           </p>
         </BloqueTexto>
-        <Subtitulo>Experiencias de cultura y transformación digital</Subtitulo>
+        <Subtitulo id="experiencias-de-cultura-y-transformacion-digital">Experiencias de cultura y transformación digital</Subtitulo>
 
         <ScrollImage
           img={'./img/figura_15.jpg'}
@@ -1122,7 +1122,7 @@ export default function CulturaDigital() {
           </p>
         </BloqueTexto>
         <ScrollVideo url='https://youtu.be/w4UeMPSTuR8' type='video/mp4' />
-        <Subtitulo>Ilusiones y retos tecnológicos en el camino a la transformación digital</Subtitulo>
+        <Subtitulo id="ilusiones-y-retos-tecnologicos-en-el-camino-a-la-transformacion-digital">Ilusiones y retos tecnológicos en el camino a la transformación digital</Subtitulo>
         <BloqueTexto>
           <p>
             Las reflexiones en torno a la transversalidad de las tecnologías digitales en la vida de las sociedades del
