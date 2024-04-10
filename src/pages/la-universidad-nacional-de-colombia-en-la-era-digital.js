@@ -49,7 +49,7 @@ export default function UniversidadEraDigital() {
             </>
           }
         />
-        <Subtitulo>Los inicios</Subtitulo>
+        <Subtitulo id="los-inicios">Los inicios</Subtitulo>
         <BloqueTexto shadow={false}>
           <p>
             Las puertas lógicas mencionadas nacieron como circuitos electrónicos integrados, formados internamente con
@@ -283,7 +283,7 @@ export default function UniversidadEraDigital() {
             de recursos y el desarrollo social y económico (Castellanos-Aceros, 2001, pp. 116–117).
           </p>
         </BloqueTexto>
-        <Subtitulo>Políticas y proyectos en la transición hacia una cultura digital</Subtitulo>
+        <Subtitulo id="politicas-y-proyectos-en-la-transicion-hacia-una-cultura-digital">Políticas y proyectos en la transición hacia una cultura digital</Subtitulo>
         <BloqueTexto noPaddingBottom={true} shadow={false}>
           <p>
             La introducción de nuevas tecnologías y conocimientos transformó la universidad en todas sus áreas del
@@ -297,7 +297,7 @@ export default function UniversidadEraDigital() {
             este proceso de transformación digital.
           </p>
 
-          <h3 className='text-2xl text-purple-base font-sans mb-10'>Las telecomunicaciones</h3>
+          <h3 id="las-telecomunicaciones" className='text-2xl text-purple-base font-sans mb-10'>Las telecomunicaciones</h3>
           <p>
             Como se dijo, para finales de la década de 1960, se crearon varias dependencias especializadas en las
             ciencias computacionales y se estableció un curso completo sobre telecomunicaciones en 1954. Para esta
@@ -336,7 +336,7 @@ export default function UniversidadEraDigital() {
             Este programa buscaba explorar las principales áreas de innovación de la época, como la microelectrónica,
             las telecomunicaciones y la informática, a través de la investigación y el diseño (Acuerdo 34 de 1991).
           </p>
-          <h3 className='text-2xl text-purple-base font-sans mb-10'>Proyectos y dependencias</h3>
+          <h3 id="proyectos-y-dependencias" className='text-2xl text-purple-base font-sans mb-10'>Proyectos y dependencias</h3>
           <p>
             Como puede intuirse, hasta ese momento, las tecnologías computacionales y de las telecomunicaciones aún no
             estaban estrictamente integradas a proyectos o dependencias de la universidad; a primera vista, cada una iba
@@ -430,7 +430,7 @@ export default function UniversidadEraDigital() {
         </BloqueTexto>
 
         <ScrollVideo url='https://youtu.be/FrbvaOtpvAo' type='video/mp4' />
-        <Subtitulo>Bitnet, Runcol e Internet</Subtitulo>
+        <Subtitulo id="bitnet-runcol-e-internet">Bitnet, Runcol e Internet</Subtitulo>
         <BloqueTexto>
           <p>
             El siglo <span className='caps'>XX</span> terminó con la construcción de la primera red de universidades e
@@ -505,7 +505,7 @@ export default function UniversidadEraDigital() {
             },
           ]}
         />
-        <Subtitulo>
+        <Subtitulo id="siglo-xxi-los-softwares-en-la-universidad-nacional-de-colombia">
           <>
             Siglo <span className='caps'>XXI</span>. Los softwares en la Universidad Nacional de Colombia
           </>
