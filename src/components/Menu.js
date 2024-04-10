@@ -24,9 +24,17 @@ const Menu = () => {
     const getAllHeadlines = () => {
       const container = document.querySelector('.chapter');
       if (container) {
+        let SUBMENU = []
         const headlineTags = container.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
         const observers = Array.from(headlineTags).map((headline, index) => {
+          SUBMENU.push({
+            element: headline,
+            content: headline.innerHTML,
+            id: headline.id,
+            key: headline.textContent.split(" ").join("-"),
+          })
+
           const observer = new IntersectionObserver(
             (entries) => {
               if (entries[0].isIntersecting) {
@@ -49,14 +57,6 @@ const Menu = () => {
         });
 
         setObservers(observers);
-
-        const SUBMENU = Array.from(headlineTags).map((headline) => {
-          return {
-            element: headline.innerHTML,
-            id: headline.id,
-            key: headline.textContent.split(" ").join("-"),
-          };
-        });
         setSubMenu(SUBMENU);
       }
     };
@@ -83,6 +83,14 @@ const Menu = () => {
     });
     tl_caption.from(purpleBar.current, { y: '-103%', duration: 0.3 });
   }, []);
+
+
+  const goToSection = (element) => {
+    const height_purpleBar = purpleBar.current.offsetHeight
+    const offsetTop_section = element.offsetTop
+
+    window.scrollTo({ top: offsetTop_section - (height + height_purpleBar), behavior: "smooth"})
+}
 
   return (
     <div
@@ -181,8 +189,7 @@ const Menu = () => {
       <div className={`absolute flex flex-col w-[640px] items-start transition-all duration-700 ${isSubmenuOpen ? "left-0" : "-left-full"}`}>
         {
           submenu?.map(option => {
-            console.log(option);
-            return <Link href={`#${option.id}`} key={option.key} dangerouslySetInnerHTML={{ __html: option.element }} />;
+            return <button onClick={()=> goToSection(option.element)} key={option.key} dangerouslySetInnerHTML={{ __html: option.content }} />;
           })
         }
         <button
