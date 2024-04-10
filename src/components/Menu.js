@@ -13,6 +13,7 @@ const Menu = () => {
   const { asPath } = useRouter();
 
   const menuElement = useRef();
+  const submenuRef = useRef();
   const { height, width } = barraMenu.current?.getBoundingClientRect() ?? {};
   const currentChapter = Capitulos.find((item) => `/${item.url}` === asPath);
 
@@ -20,28 +21,33 @@ const Menu = () => {
   const [submenu, setSubMenu] = useState([]);
   const [observers, setObservers] = useState([]);
 
+
+  const replaceInnerHTML = (innerHTML) => innerHTML.replace("<br/>", " ").replace('block', "")
+
   useEffect(() => {
     const getAllHeadlines = () => {
       const container = document.querySelector('.chapter');
       if (container) {
-        let SUBMENU = []
+        let SUBMENU = [];
         const headlineTags = container.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
         const observers = Array.from(headlineTags).map((headline, index) => {
+          let content = replaceInnerHTML(headline.innerHTML) 
+
           SUBMENU.push({
             element: headline,
-            content: headline.innerHTML,
+            content: content,
             id: headline.id,
             key: headline.textContent.split(" ").join("-"),
-          })
+          });
 
           const observer = new IntersectionObserver(
             (entries) => {
               if (entries[0].isIntersecting) {
-                setCurrentTitle({ text: entries[0].target.textContent, position: index });
+                setCurrentTitle({ content: content, position: index });
               } else {
                 if (!(entries[0].intersectionRect.top < window.innerHeight / 2)) {
-                  setCurrentTitle({ text: headlineTags[index - 1]?.textContent, position: index - 1 });
+                  setCurrentTitle({ content: replaceInnerHTML(headlineTags[index - 1].innerHTML), position: index - 1 });
                 }
               }
             },
@@ -81,16 +87,18 @@ const Menu = () => {
         toggleActions: 'play none none reverse',
       },
     });
-    tl_caption.from(purpleBar.current, { y: '-103%', duration: 0.3 });
+
+    tl_caption.from(purpleBar.current, { y: '-103%', duration: 0.3 }, 0);
   }, []);
 
 
-  const goToSection = (element) => {
-    const height_purpleBar = purpleBar.current.offsetHeight
-    const offsetTop_section = element.offsetTop
+  const goToSection = (element, index) => {
+    const height_purpleBar = purpleBar.current.offsetHeight;
+    const offsetTop_section = element.offsetTop;
 
-    window.scrollTo({ top: offsetTop_section - (height + height_purpleBar), behavior: "smooth"})
-}
+    index === 0 && setIsSubmenuOpen(false);
+    window.scrollTo({ top: offsetTop_section - (height + height_purpleBar), behavior: "smooth" });
+  };
 
   return (
     <div
@@ -179,17 +187,14 @@ const Menu = () => {
           <button onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}>
             Indice
           </button>
-          <p className='font-extralight text-xl'>
-            {/* {currentChapter?.title} {currentChapter?.subtitle ?? ''} */}
-            {currentTitle.text}
-          </p>
+          <p className='font-extralight text-xl' dangerouslySetInnerHTML={{ __html: currentTitle.content }}/>
         </div>
       )}
 
-      <div className={`absolute flex flex-col w-[640px] items-start transition-all duration-700 ${isSubmenuOpen ? "left-0" : "-left-full"}`}>
+      <div className={`absolute flex flex-col w-[640px] items-start transition-all duration-700 ${isSubmenuOpen ? "left-0" : "-left-full"}`} ref={submenuRef}>
         {
-          submenu?.map(option => {
-            return <button onClick={()=> goToSection(option.element)} key={option.key} dangerouslySetInnerHTML={{ __html: option.content }} />;
+          submenu?.map((option, index) => {
+            return <button onClick={() => goToSection(option.element, index)} key={option.key} dangerouslySetInnerHTML={{ __html: option.content }} />;
           })
         }
         <button
