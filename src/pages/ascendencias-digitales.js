@@ -40,7 +40,7 @@ export default function AscendenciasDigitales() {
           </p>
         </ParrafoInicial>
         <Subtitulo id="preludios-digitales">
-          <>Preludios digitales:</>
+          <>Preludios digitales: </>
           <span className='block font-extralight'>hacia una comprensión histórica de lo digital</span>
         </Subtitulo>
         <BloqueTexto>
