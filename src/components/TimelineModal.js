@@ -23,9 +23,13 @@ const TimelineModal = (props) => {
       isOpen={isOpenModal}
       contentLabel='Minimal Modal Example'
       overlayClassName='react-modal-overlay'
+      onAfterOpen={() => {
+        document.getElementsByTagName('body')[0].style.overflowY = 'hidden';
+      }}
       onRequestClose={openCloseModal}
       closeTimeoutMS={300}
       shouldCloseOnOverlayClick={true}
+      preventScroll={true}
       style={{
         overlay: {
           position: 'fixed',
