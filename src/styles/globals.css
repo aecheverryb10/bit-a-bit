@@ -60,7 +60,7 @@ body {
 
 .caps{
   font-variant: small-caps;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 em{
