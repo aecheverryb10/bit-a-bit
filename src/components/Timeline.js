@@ -24,6 +24,7 @@ const Timeline = () => {
   const openCloseModal = (data) => {
     setIsOpenModal(!isOpenModal);
     setModalData(data);
+    document.getElementsByTagName('body')[0].style.overflowY = 'auto';
   };
 
   // Create observers for each sections
