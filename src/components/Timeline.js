@@ -96,7 +96,7 @@ const Timeline = () => {
                       moveTimeline(index_section);
                     }}
                   >
-                    {section.name}
+                    {section.button ?? section.name}
                   </button>
                 );
               })}
