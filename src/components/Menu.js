@@ -21,8 +21,7 @@ const Menu = () => {
   const [submenu, setSubMenu] = useState([]);
   const [observers, setObservers] = useState([]);
 
-
-  const replaceInnerHTML = (innerHTML) => innerHTML.replace("<br/>", " ").replace('block', "")
+  const replaceInnerHTML = (innerHTML) => innerHTML.replace('<br/>', ' ').replace('block', '');
 
   useEffect(() => {
     const getAllHeadlines = () => {
@@ -32,13 +31,13 @@ const Menu = () => {
         const headlineTags = container.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
         const observers = Array.from(headlineTags).map((headline, index) => {
-          let content = replaceInnerHTML(headline.innerHTML) 
+          let content = replaceInnerHTML(headline.innerHTML);
 
           SUBMENU.push({
             element: headline,
             content: content,
             id: headline.id,
-            key: headline.textContent.split(" ").join("-"),
+            key: headline.textContent.split(' ').join('-'),
           });
 
           const observer = new IntersectionObserver(
@@ -47,7 +46,10 @@ const Menu = () => {
                 setCurrentTitle({ content: content, position: index });
               } else {
                 if (!(entries[0].intersectionRect.top < window.innerHeight / 2)) {
-                  setCurrentTitle({ content: replaceInnerHTML(headlineTags[index - 1].innerHTML), position: index - 1 });
+                  setCurrentTitle({
+                    content: replaceInnerHTML(headlineTags[index - 1].innerHTML),
+                    position: index - 1,
+                  });
                 }
               }
             },
@@ -91,13 +93,12 @@ const Menu = () => {
     tl_caption.from(purpleBar.current, { y: '-103%', duration: 0.3 }, 0);
   }, []);
 
-
   const goToSection = (element, index) => {
     const height_purpleBar = purpleBar.current.offsetHeight;
     const offsetTop_section = element.offsetTop;
 
     index === 0 && setIsSubmenuOpen(false);
-    window.scrollTo({ top: offsetTop_section - (height + height_purpleBar), behavior: "smooth" });
+    window.scrollTo({ top: offsetTop_section - (height + height_purpleBar), behavior: 'smooth' });
   };
 
   return (
@@ -107,7 +108,7 @@ const Menu = () => {
         setIsOpen(false);
       }}
     >
-      <div className='bg-black text-white py-4 shadow-lg relative z-10' ref={barraMenu}>
+      <div className='bg-black text-white py-4 shadow-lg relative z-20' ref={barraMenu}>
         <div className='lg:container flex items-center px-9'>
           <button className='flex items-center' onMouseOver={() => setIsOpen(true)} onClick={() => setIsOpen(!isOpen)}>
             <span className='pr-4'>
@@ -129,14 +130,14 @@ const Menu = () => {
       </div>
 
       <div
-        className='absolute transition-all duration-500 z-100 text-white'
+        className='absolute transition-all duration-500 z-50 text-white'
         style={{
           top: `${isOpen ? height : `-${menuElement?.current?.getBoundingClientRect()?.height ?? 600}`}px`,
           width: `${width}px`,
         }}
       >
         <div
-          className='bg-blue-dark bg-opacity-90 rounded-br-[24px] flex flex-col xl:flex-row border-t border-white max-h-[80vh] xl:max-h-none overflow-auto'
+          className='bg-blue-dark rounded-br-[24px] flex flex-col xl:flex-row border-t border-white max-h-[80vh] xl:max-h-none overflow-auto'
           ref={menuElement}
         >
           {Capitulos.filter((item) => !item.notIncludeInMenu)?.map((item, index) => {
@@ -145,16 +146,20 @@ const Menu = () => {
             return (
               <Link
                 key={`item-menu-${index}`}
-                className={`${initial ? 'text-2xl' : 'text-5xl '
-                  } d-block basis-1/5 text-left px-6 py-6 xl:pt-0 xl:pb-10 ${activeItem ? 'bg-black bg-opacity-80' : ''}`}
+                className={`${
+                  initial ? 'text-2xl' : 'text-5xl '
+                } d-block basis-1/5 text-left px-6 py-6 xl:pt-0 xl:pb-10 transition hover:bg-black hover:bg-opacity-80 ${
+                  activeItem ? 'bg-black bg-opacity-80' : ''
+                }`}
                 href={url}
               >
                 <div className='xl:mb-10 hidden xl:block'>
                   <span className='block ml-3 w-px h-28 border-r border-white' />
                   <span className='block ml-2 w-2 h-2 rounded-full bg-white relative z-10' />
                   <span
-                    className={`block w-6 h-6 rounded-full border border-white -mt-4 ${activeItem ? 'bg-purple-base' : ''
-                      }`}
+                    className={`block w-6 h-6 rounded-full border border-white -mt-4 ${
+                      activeItem ? 'bg-purple-base' : ''
+                    }`}
                   />
                 </div>
                 <div className='flex xl:flex-col'>
@@ -182,21 +187,28 @@ const Menu = () => {
       {!!currentChapter && (
         <div
           ref={purpleBar}
-          className='flex gap-6 bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg pl-8 lg:pl-48 xl:pl-80'
+          className='relative z-10 flex gap-6 bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg pl-8 lg:pl-48 xl:pl-80'
         >
-          <button onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}>
-            Indice
-          </button>
-          <p className='font-extralight text-xl' dangerouslySetInnerHTML={{ __html: currentTitle.content }}/>
+          <button onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}>Indice</button>
+          <p className='font-extralight text-xl' dangerouslySetInnerHTML={{ __html: currentTitle.content }} />
         </div>
       )}
 
-      <div className={`absolute flex flex-col w-[640px] items-start transition-all duration-700 ${isSubmenuOpen ? "left-0" : "-left-full"}`} ref={submenuRef}>
-        {
-          submenu?.map((option, index) => {
-            return <button onClick={() => goToSection(option.element, index)} key={option.key} dangerouslySetInnerHTML={{ __html: option.content }} />;
-          })
-        }
+      <div
+        className={`absolute flex flex-col w-[640px] items-start transition-all duration-700 ${
+          isSubmenuOpen ? 'left-0' : '-left-full'
+        }`}
+        ref={submenuRef}
+      >
+        {submenu?.map((option, index) => {
+          return (
+            <button
+              onClick={() => goToSection(option.element, index)}
+              key={option.key}
+              dangerouslySetInnerHTML={{ __html: option.content }}
+            />
+          );
+        })}
         <button
           className='font-extralight uppercase tracking-widest border-top pl-6 pr-16 py-4 bg-blue-dark bg-opacity-90 border-t border-white rounded-br-xl flex items-center'
           onClick={() => setIsSubmenuOpen(false)}

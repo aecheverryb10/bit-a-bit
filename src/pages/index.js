@@ -163,11 +163,14 @@ export default function Home() {
               </div>
 
               <div className='text-center text-white mt-10 lg:-mt-10'>
-                <button className='text-center block mx-auto'>
+                <button
+                  className='text-center block mx-auto'
+                  onClick={() => {
+                    document.getElementsByTagName('html')[0].scrollTop = 100;
+                  }}
+                >
                   <img className='scroll-img w-7 lg:w-14 block mx-auto' src='./img/scroll-button.svg' />{' '}
-                  <span className='inline-block mt-2 text-base font-light tracking-wider opacity-80'>
-                    scroll para empezar
-                  </span>
+                  <span className='inline-block mt-2 text-base font-light tracking-wider opacity-80'>comenzar</span>
                 </button>
               </div>
             </div>

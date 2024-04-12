@@ -39,17 +39,21 @@ export default function AscendenciasDigitales() {
             inseparable relación con los dedos, en lo que puede ser contabilizado o señalado por ellos.
           </p>
         </ParrafoInicial>
-        <Subtitulo id="preludios-digitales">
+        <Subtitulo id='preludios-digitales'>
           <>Preludios digitales: </>
           <span className='block font-extralight'>hacia una comprensión histórica de lo digital</span>
         </Subtitulo>
-        <BloqueTexto>
+        <BloqueTexto noPaddingBottom={true}>
           <p>
             En el siglo <span className='caps'>XX</span>, el concepto de <em>digital</em> se adaptó, para referirse,
             concretamente, a los datos representados por dígitos numéricos (Online Etymology Dictionary, 2021). La
             computación fue la disciplina científica que resignificó este término en un nuevo universo de posibilidades
             para usar y manipular la información. Esta nueva comprensión de lo digital dividió el mundo material,
             mecánico y analógico de uno intangible, representado por sistemas electrónicos y computacionales —recurso 1.
+          </p>
+          <p className='font-sans text-xl pb-8'>
+            <span className='text-purple-base'>Recurso 1.</span>{' '}
+            <span className='font-light'>¿Qué es lo digital? y ¿qué es transformación digital?</span>
           </p>
         </BloqueTexto>
         <ScrollVideo url='https://youtu.be/Cypiyk-Q-2A' type='video/mp4' />
@@ -253,7 +257,7 @@ export default function AscendenciasDigitales() {
         <div id='recurso-2'>
           <Timeline />
         </div>
-        <Subtitulo id="que-paso-en-colombia">
+        <Subtitulo id='que-paso-en-colombia'>
           <>¿Qué pasó en Colombia?</>
         </Subtitulo>
         <BloqueTexto noPaddingBottom={true}>
