@@ -108,7 +108,7 @@ const Menu = () => {
         setIsOpen(false);
       }}
     >
-      <div className='bg-black text-white py-4 shadow-lg relative z-20' ref={barraMenu}>
+      <div className='bg-black text-white py-4 shadow-lg relative z-50' ref={barraMenu}>
         <div className='lg:container flex items-center px-9'>
           <button className='flex items-center' onMouseOver={() => setIsOpen(true)} onClick={() => setIsOpen(!isOpen)}>
             <span className='pr-4'>
@@ -130,7 +130,7 @@ const Menu = () => {
       </div>
 
       <div
-        className='absolute transition-all duration-500 z-50 text-white'
+        className='absolute transition-all duration-500 z-40 text-white'
         style={{
           top: `${isOpen ? height : `-${menuElement?.current?.getBoundingClientRect()?.height ?? 600}`}px`,
           width: `${width}px`,
