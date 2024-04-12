@@ -7,31 +7,47 @@ import { gsap } from 'gsap';
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const barraMenu = useRef();
   const purpleBar = useRef();
   const { asPath } = useRouter();
 
   const menuElement = useRef();
+  const submenuRef = useRef();
   const { height, width } = barraMenu.current?.getBoundingClientRect() ?? {};
   const currentChapter = Capitulos.find((item) => `/${item.url}` === asPath);
 
   const [currentTitle, setCurrentTitle] = useState({ text: currentChapter?.title, position: 0 });
+  const [submenu, setSubMenu] = useState([]);
   const [observers, setObservers] = useState([]);
+
+
+  const replaceInnerHTML = (innerHTML) => innerHTML.replace("<br/>", " ").replace('block', "")
 
   useEffect(() => {
     const getAllHeadlines = () => {
       const container = document.querySelector('.chapter');
       if (container) {
+        let SUBMENU = [];
         const headlineTags = container.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
         const observers = Array.from(headlineTags).map((headline, index) => {
+          let content = replaceInnerHTML(headline.innerHTML) 
+
+          SUBMENU.push({
+            element: headline,
+            content: content,
+            id: headline.id,
+            key: headline.textContent.split(" ").join("-"),
+          });
+
           const observer = new IntersectionObserver(
             (entries) => {
               if (entries[0].isIntersecting) {
-                setCurrentTitle({ text: entries[0].target.textContent, position: index });
+                setCurrentTitle({ content: content, position: index });
               } else {
                 if (!(entries[0].intersectionRect.top < window.innerHeight / 2)) {
-                  setCurrentTitle({ text: headlineTags[index - 1]?.textContent, position: index - 1 });
+                  setCurrentTitle({ content: replaceInnerHTML(headlineTags[index - 1].innerHTML), position: index - 1 });
                 }
               }
             },
@@ -47,6 +63,7 @@ const Menu = () => {
         });
 
         setObservers(observers);
+        setSubMenu(SUBMENU);
       }
     };
 
@@ -70,8 +87,18 @@ const Menu = () => {
         toggleActions: 'play none none reverse',
       },
     });
-    tl_caption.from(purpleBar.current, { y: '-103%', duration: 0.3 });
+
+    tl_caption.from(purpleBar.current, { y: '-103%', duration: 0.3 }, 0);
   }, []);
+
+
+  const goToSection = (element, index) => {
+    const height_purpleBar = purpleBar.current.offsetHeight;
+    const offsetTop_section = element.offsetTop;
+
+    index === 0 && setIsSubmenuOpen(false);
+    window.scrollTo({ top: offsetTop_section - (height + height_purpleBar), behavior: "smooth" });
+  };
 
   return (
     <div
@@ -118,18 +145,16 @@ const Menu = () => {
             return (
               <Link
                 key={`item-menu-${index}`}
-                className={`${
-                  initial ? 'text-2xl' : 'text-5xl '
-                } d-block basis-1/5 text-left px-6 py-6 xl:pt-0 xl:pb-10 ${activeItem ? 'bg-black bg-opacity-80' : ''}`}
+                className={`${initial ? 'text-2xl' : 'text-5xl '
+                  } d-block basis-1/5 text-left px-6 py-6 xl:pt-0 xl:pb-10 ${activeItem ? 'bg-black bg-opacity-80' : ''}`}
                 href={url}
               >
                 <div className='xl:mb-10 hidden xl:block'>
                   <span className='block ml-3 w-px h-28 border-r border-white' />
                   <span className='block ml-2 w-2 h-2 rounded-full bg-white relative z-10' />
                   <span
-                    className={`block w-6 h-6 rounded-full border border-white -mt-4 ${
-                      activeItem ? 'bg-purple-base' : ''
-                    }`}
+                    className={`block w-6 h-6 rounded-full border border-white -mt-4 ${activeItem ? 'bg-purple-base' : ''
+                      }`}
                   />
                 </div>
                 <div className='flex xl:flex-col'>
@@ -157,14 +182,29 @@ const Menu = () => {
       {!!currentChapter && (
         <div
           ref={purpleBar}
-          className='bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg pl-8 lg:pl-48 xl:pl-80'
+          className='flex gap-6 bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg pl-8 lg:pl-48 xl:pl-80'
         >
-          <p className='font-extralight text-xl'>
-            {/* {currentChapter?.title} {currentChapter?.subtitle ?? ''} */}
-            {currentTitle.text}
-          </p>
+          <button onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}>
+            Indice
+          </button>
+          <p className='font-extralight text-xl' dangerouslySetInnerHTML={{ __html: currentTitle.content }}/>
         </div>
       )}
+
+      <div className={`absolute flex flex-col w-[640px] items-start transition-all duration-700 ${isSubmenuOpen ? "left-0" : "-left-full"}`} ref={submenuRef}>
+        {
+          submenu?.map((option, index) => {
+            return <button onClick={() => goToSection(option.element, index)} key={option.key} dangerouslySetInnerHTML={{ __html: option.content }} />;
+          })
+        }
+        <button
+          className='font-extralight uppercase tracking-widest border-top pl-6 pr-16 py-4 bg-blue-dark bg-opacity-90 border-t border-white rounded-br-xl flex items-center'
+          onClick={() => setIsSubmenuOpen(false)}
+        >
+          <img src='./img/close-button.svg' alt='arrow down' className='w-4 mr-4' />
+          Cerrar
+        </button>
+      </div>
     </div>
   );
 };

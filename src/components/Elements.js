@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 const MainSection = (props) => {
-  const { children } = props;
+  const {children } = props;
   return <section className='px-4 md:px-10 xl:pr-0 xl:pl-52 max-w-[1440px] '>{children}</section>;
 };
 
@@ -138,11 +138,11 @@ const TituloCapitulo = (props) => {
 };
 
 const Subtitulo = (props) => {
-  const { children } = props;
+  const { children, id } = props;
   return (
     <MainSection>
       <div className='bg-purple-base bg-opacity-70 text-white'>
-        <h2 className='pl-10 lg:pl-20 xl:pl-40 py-10 font-normal text-3xl'>{children}</h2>
+        <h2 id={id} className='pl-10 lg:pl-20 xl:pl-40 py-10 font-normal text-3xl'>{children}</h2>
       </div>
     </MainSection>
   );
