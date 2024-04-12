@@ -96,15 +96,15 @@ export default function CulturaDigital() {
           <p>
             Este era el contexto tecnológico en el que se encontraba inmersa la Universidad Nacional de Colombia entrado
             el siglo <span className='caps'>XXI</span>. Aunque los principales sistemas de información se pusieron en
-            marcha en la primera década del siglo {" "}
-            <span className='caps'>XXI</span>, aún era necesario desarrollar un plan para que las personas del común
-            aprendieran a manejarlos. La segunda década del siglo, entonces, se caracterizó por implementar una serie de
-            políticas y planes para el desarrollo de la llamada “cultura digital” en las prácticas educativas de la
-            universidad. Fue un cambio de las materialidades del mundo, pero también de sus lógicas; comprender máquinas
-            que parecen hechas por obra de magia, que aceleraban procesos y permitían una comunicación constante con las
-            demás personas cómo nunca se había visto. En otras palabras, significó entender las funcionalidades de
-            nuevos servicios y plataformas, dispositivos que pasaron de funcionar con perillas y botones, a teclados y
-            ratones, pantallas táctiles, proyectores portátiles y celulares
+            marcha en la primera década del siglo <span className='caps'>XXI</span>, aún era necesario desarrollar un
+            plan para que las personas del común aprendieran a manejarlos. La segunda década del siglo, entonces, se
+            caracterizó por implementar una serie de políticas y planes para el desarrollo de la llamada “cultura
+            digital” en las prácticas educativas de la universidad. Fue un cambio de las materialidades del mundo, pero
+            también de sus lógicas; comprender máquinas que parecen hechas por obra de magia, que aceleraban procesos y
+            permitían una comunicación constante con las demás personas cómo nunca se había visto. En otras palabras,
+            significó entender las funcionalidades de nuevos servicios y plataformas, dispositivos que pasaron de
+            funcionar con perillas y botones, a teclados y ratones, pantallas táctiles, proyectores portátiles y
+            celulares
           </p>
         </BloqueTexto>
         <ScrollImage
@@ -155,7 +155,7 @@ export default function CulturaDigital() {
             acceder a la clase de la misma manera y con las mismas facilidades.
           </p>
         </BloqueTexto>
-        <Subtitulo id="institucionalizacion-tic-cntic-dntic-peti-dned-unalab">
+        <Subtitulo id='institucionalizacion-tic-cntic-dntic-peti-dned-unalab'>
           <>
             Institucionalización <span className='caps'>TIC</span>: <span className='caps'>CNTIC</span>,{' '}
             <span className='caps'>DNTIC</span>, Peti, <span className='caps'>DNED</span>/UNALab
@@ -193,7 +193,10 @@ export default function CulturaDigital() {
             de los sistemas y la definición de los diferentes perfiles que accedían, entre administrativos, estudiantes,
             docentes y contratistas (Acuerdo 46 de 2009).
           </p>
-          <h3 id="plan-estrategico-de-tecnologias-de-informacion-y-comunicaciones" className='text-2xl text-purple-base font-sans mb-10'>
+          <h3
+            id='plan-estrategico-de-tecnologias-de-informacion-y-comunicaciones'
+            className='text-2xl text-purple-base font-sans mb-10'
+          >
             Plan Estratégico de Tecnologías de Información y Comunicaciones
           </h3>
           <p>
@@ -232,18 +235,17 @@ export default function CulturaDigital() {
           <p>
             El Peti enfocó sus esfuerzos en dos agentes principales: (1) los usuarios y (2) la institución. En torno a
             los primeros, los distintos cuerpos colegiados debían procurar cumplir determinados requisitos en el marco
-            de las{" "}
-            <span className='caps'>TIC</span>: el acceso a la información y los recursos, el almacenamiento seguro, el
-            trabajo colaborativo, el soporte en{" "}
-            <span className='caps'>TIC</span> y la adquisición de software y hardware. En cuanto a los requisitos
-            institucionales, tenían la premisa de cumplir con las necesidades de las actividades misionales de una
-            “universidad de sedes”, es decir, que su funcionamiento debía luchar contra el carácter centralista que,
-            históricamente, había definido a la universidad y que hasta ese momento había resultado en una
-            administración desigual de las sedes. En este sentido, las tecnologías de la información debían servir a la
-            institución en los siguientes frentes: la formación, investigación y extensión; la educación, entrenamiento
-            y socialización de las <span className='caps'>TIC</span>; la gestión administrativa; el gobierno{' '}
-            <span className='caps'>TIC</span>; los indicadores y estadísticas; la integración de la información; y,
-            finalmente, la memoria institucional e información histórica (Grupo Consultor Peti, 2011, pp. 1-22).
+            de las <span className='caps'>TIC</span>: el acceso a la información y los recursos, el almacenamiento
+            seguro, el trabajo colaborativo, el soporte en <span className='caps'>TIC</span> y la adquisición de
+            software y hardware. En cuanto a los requisitos institucionales, tenían la premisa de cumplir con las
+            necesidades de las actividades misionales de una “universidad de sedes”, es decir, que su funcionamiento
+            debía luchar contra el carácter centralista que, históricamente, había definido a la universidad y que hasta
+            ese momento había resultado en una administración desigual de las sedes. En este sentido, las tecnologías de
+            la información debían servir a la institución en los siguientes frentes: la formación, investigación y
+            extensión; la educación, entrenamiento y socialización de las <span className='caps'>TIC</span>; la gestión
+            administrativa; el gobierno <span className='caps'>TIC</span>; los indicadores y estadísticas; la
+            integración de la información; y, finalmente, la memoria institucional e información histórica (Grupo
+            Consultor Peti, 2011, pp. 1-22).
           </p>
           <p>
             En este contexto, el Peti de 2012 puede entenderse como un referente que integró los esfuerzos y visiones
@@ -260,7 +262,10 @@ export default function CulturaDigital() {
             Estos se plantearon como actualizaciones progresiva del plan anterior (Acuerdo 227 de 2016;{' '}
             <span className='caps'>DNED</span>, 2022).
           </p>
-          <h3 id="direccion-nacional-de-tecnologias-de-la-informacion-y-las-comunicaciones" className='text-2xl text-purple-base font-sans mb-10'>
+          <h3
+            id='direccion-nacional-de-tecnologias-de-la-informacion-y-las-comunicaciones'
+            className='text-2xl text-purple-base font-sans mb-10'
+          >
             Dirección Nacional de Tecnologías de la Información y las Comunicaciones
           </h3>
           <p>
@@ -270,9 +275,8 @@ export default function CulturaDigital() {
             direcciones nacionales creadas en 1997. Como organismo de superior jerarquía, la{' '}
             <span className='caps'>DNTIC</span> se ocupó de diseñar las propuestas de políticas, reglamentación y
             planeación estratégica para el desarrollo de estas tecnologías, mientras servía de veedor de la gestión de
-            las{" "}
-            <span className='caps'>TIC</span> en la universidad, además garantizaba la existencia de la infraestructura
-            tecnológica (Acuerdo 113 de 2013).
+            las <span className='caps'>TIC</span> en la universidad, además garantizaba la existencia de la
+            infraestructura tecnológica (Acuerdo 113 de 2013).
           </p>
 
           <p>
@@ -287,13 +291,15 @@ export default function CulturaDigital() {
           <p>
             La articulación entre las Oficinas <span className='caps'>TIC</span>, <span className='caps'>DNTIC</span>,
             el <span className='caps'>CNTIC</span> y Unimedios institucionalizó el manejo de las tecnologías de la
-            información y creó un terreno fértil para enfrentar al acelerado cambio tecnológico del siglo{" "}
+            información y creó un terreno fértil para enfrentar al acelerado cambio tecnológico del siglo{' '}
             <span className='caps'>XXI</span>. Dichos organismos son los encargados de garantizar el funcionamiento del
             soporte digital de la vida material de la universidad, donde paulatinamente se registra la identidad de
             todos los miembros de su comunidad, los edificios físicos y sus dependencias, así como los proyectos que
             sustentan su desarrollo académico y administrativo (Resolución 464 de 2014).
           </p>
-          <h3 id="derecho-y-seguridad-informatica" className='text-2xl text-purple-base font-sans mb-10'>Derecho y seguridad informática</h3>
+          <h3 id='derecho-y-seguridad-informatica' className='text-2xl text-purple-base font-sans mb-10'>
+            Derecho y seguridad informática
+          </h3>
           <p>
             El aumento en el uso de las tecnologías de la información, la masificación del uso de computadoras, la
             expansión de internet y la gigantesca acumulación de datos por parte de gobiernos y empresas han generado la
@@ -398,7 +404,10 @@ export default function CulturaDigital() {
           linkIvoox={'https://go.ivoox.com/rf/126825025'}
         />
         <BloqueTexto noPaddingBottom={true}>
-          <h3 id="iniciativas-estrategicas-de-apropiacion-y-optimizacion-tecnologica" className='text-2xl text-purple-base font-sans mb-10'>
+          <h3
+            id='iniciativas-estrategicas-de-apropiacion-y-optimizacion-tecnologica'
+            className='text-2xl text-purple-base font-sans mb-10'
+          >
             Iniciativas estratégicas de apropiación y optimización tecnológica
           </h3>
           <p>
@@ -531,20 +540,21 @@ export default function CulturaDigital() {
             inclusión social y el reconocimiento de la riqueza y la diversidad de las regiones (Dirección Nacional de
             Planeación y Estadística, 2019).
           </p>
-          <h3 id="estrategia-de-transformacion-digital-2019-2021-fundacion-de-la-direccion-nacional-de-estrategia-digital" className='text-2xl text-purple-base font-sans mb-10'>
+          <h3
+            id='estrategia-de-transformacion-digital-2019-2021-fundacion-de-la-direccion-nacional-de-estrategia-digital'
+            className='text-2xl text-purple-base font-sans mb-10'
+          >
             Estrategia de Transformación Digital 2019-2021: fundación de la Dirección Nacional de Estrategia Digital
           </h3>
           <p>
             En este punto, la consolidación de una cultura digital y la apropiación tecnológica significaba trabajar en
             favor de una universidad conectada con el país y el mundo a través de la cooperación y el intercambio de
             conocimiento, cultura y tecnología. ¿Qué significa todo esto? Que los proyectos y las políticas que rodean a
-            las{" "}
-            <span className='caps'>TIC</span> están vinculados a objetivos mayores. El Plan Global de Desarrollo (
+            las <span className='caps'>TIC</span> están vinculados a objetivos mayores. El Plan Global de Desarrollo (
             <span className='caps'>PGD</span>) de 2019 -2021, implementado durante la rectoría de Dolly Montoya, se
             declaraba como “Proyecto Cultural y Colectivo de Nación”. Efectivamente, el{' '}
-            <span className='caps'>PGD</span>{' '}
-            de 2019, se articulaba en torno a la conexión de la universidad con la sociedad, su capacidad transformadora
-            y su responsabilidad a niveles socioculturales:
+            <span className='caps'>PGD</span> de 2019, se articulaba en torno a la conexión de la universidad con la
+            sociedad, su capacidad transformadora y su responsabilidad a niveles socioculturales:
           </p>
 
           <blockquote className='mb-10 px-10'>
@@ -736,93 +746,76 @@ export default function CulturaDigital() {
           subtitle="Una conversación con la profesora Liz Karen Herrera Quintero"
         />
         <BloqueTexto>
-          <p>
-            <em>División de Gestión Tecnológica</em>. Es la heredera de las oficinas <span className='caps'>TIC</span>{' '}
-            de las sedes andinas, y sus funciones se reparten en cuatro secciones, distribuidas en varios territorios
-            del país: la Sección de Seguridad de la Información, en la Sede Manizales; la Sección de Infraestructura y
-            Gestión de Servicios de la Información, en la Sede Bogotá; la Sección de Aplicaciones, de la Sede Medellín;
-            y la Sección de Identidades Digitales, de la Sede Palmira. Todas se acompañan de los profesionales en{' '}
-            <span className='caps'>TI</span> de las demás sedes de presencia nacional.
-          </p>
+          <div className='pl-7 pt-10 lg:pl-14'>
+            <p>
+              <em>División de Gestión Tecnológica</em>. Es la heredera de las oficinas <span className='caps'>TIC</span>{' '}
+              de las sedes andinas, y sus funciones se reparten en cuatro secciones, distribuidas en varios territorios
+              del país: la Sección de Seguridad de la Información, en la Sede Manizales; la Sección de Infraestructura y
+              Gestión de Servicios de la Información, en la Sede Bogotá; la Sección de Aplicaciones, de la Sede
+              Medellín; y la Sección de Identidades Digitales, de la Sede Palmira. Todas se acompañan de los
+              profesionales en <span className='caps'>TI</span> de las demás sedes de presencia nacional.
+            </p>
 
-          <p>
-            Esta división cumple varias tareas en torno a la coordinación y el seguimiento de{' '}
-            <span className='caps'>TI</span>, elaborando planes de diseño para la gestión tecnológica y presentando, así
-            también, propuestas de funcionamiento e inversión. La articulación entre las secciones de sedes del
-            territorio nacional brinda la posibilidad de identificar las necesidades tecnológicas a nivel de sedes,
-            facultades, centros e institutos, convirtiéndose en la heredera de las fragmentadas oficinas{' '}
-            <span className='caps'>TIC</span> de 2013 (Resolución 318 de 2020).
-          </p>
+            <p>
+              Esta división cumple varias tareas en torno a la coordinación y el seguimiento de{' '}
+              <span className='caps'>TI</span>, elaborando planes de diseño para la gestión tecnológica y presentando,
+              así también, propuestas de funcionamiento e inversión. La articulación entre las secciones de sedes del
+              territorio nacional brinda la posibilidad de identificar las necesidades tecnológicas a nivel de sedes,
+              facultades, centros e institutos, convirtiéndose en la heredera de las fragmentadas oficinas{' '}
+              <span className='caps'>TIC</span> de 2013 (Resolución 318 de 2020).
+            </p>
 
-          <p>
-            Desde cierto ángulo, esta división se ha erigido como líder en la implementación de políticas tecnológicas
-            en la universidad. Por un lado, se encarga de presentar la propuesta presupuestal de funcionamiento e
-            inversión para la gestión tecnológica, considerando las necesidades tecnológicas de las sedes de la
-            universidad. Además, elabora los planes, diseños y propuestas para la gestión tecnológica, incluyendo las
-            normativas y reglamentos relacionados. Por otra parte, propone, controla y verifica la implementación de las
-            estrategias a cumplir de acuerdo con los criterios de calidad, proyectando los planes de crecimiento de las
-            plataformas tecnológicas y supervisando los servicios de <span className='caps'>TI</span> para la comunidad
-            universitaria.
-          </p>
+            <p>
+              Desde cierto ángulo, esta división se ha erigido como líder en la implementación de políticas tecnológicas
+              en la universidad. Por un lado, se encarga de presentar la propuesta presupuestal de funcionamiento e
+              inversión para la gestión tecnológica, considerando las necesidades tecnológicas de las sedes de la
+              universidad. Además, elabora los planes, diseños y propuestas para la gestión tecnológica, incluyendo las
+              normativas y reglamentos relacionados. Por otra parte, propone, controla y verifica la implementación de
+              las estrategias a cumplir de acuerdo con los criterios de calidad, proyectando los planes de crecimiento
+              de las plataformas tecnológicas y supervisando los servicios de <span className='caps'>TI</span> para la
+              comunidad universitaria.
+            </p>
 
-          <p>
-            En ese sentido, esta división ha logrado importantes avances en los servicios de conectividad a internet
-            para varias de las sedes y la conectividad de usuarios a los aplicativos. Además, ha implementado un esquema
-            a nivel nacional para el soporte de usuarios, <em>webinares</em> de seguridad informática para las nueve
-            sedes e inversiones en equipos de seguridad perimetral y antivirus de última generación (Obando-Montúfar,
-            2023).
-          </p>
+            <p>
+              En ese sentido, esta división ha logrado importantes avances en los servicios de conectividad a internet
+              para varias de las sedes y la conectividad de usuarios a los aplicativos. Además, ha implementado un
+              esquema a nivel nacional para el soporte de usuarios, <em>webinares</em> de seguridad informática para las
+              nueve sedes e inversiones en equipos de seguridad perimetral y antivirus de última generación
+              (Obando-Montúfar, 2023).
+            </p>
 
-          <p>
-            Para apoyar las labores de las oficinas y divisiones de la <span className='caps'>DNED</span>, en 2020, se
-            creó el Comité Nacional de Estrategia Digital como órgano estratégico responsable a nivel institucional de
-            la correcta planeación, evaluación y seguimiento de estrategias, políticas y lineamientos de tecnologías de
-            la información y las comunicaciones en el proceso de transformación digital de la universidad. Sus funciones
-            se basan en la aprobación, verificación y definición de las políticas y planes en materia de{' '}
-            <span className='caps'>TIC</span>. Los miembros que lo conforman son la rectora, los vicerrectores de sede,
-            algunos representantes de transformación digital y <span className='caps'>TI</span>, y el director de la{' '}
-            <span className='caps'>DNED</span> (Resolución 614 2020).
-          </p>
+            <p>
+              Para apoyar las labores de las oficinas y divisiones de la <span className='caps'>DNED</span>, en 2020, se
+              creó el Comité Nacional de Estrategia Digital como órgano estratégico responsable a nivel institucional de
+              la correcta planeación, evaluación y seguimiento de estrategias, políticas y lineamientos de tecnologías
+              de la información y las comunicaciones en el proceso de transformación digital de la universidad. Sus
+              funciones se basan en la aprobación, verificación y definición de las políticas y planes en materia de{' '}
+              <span className='caps'>TIC</span>. Los miembros que lo conforman son la rectora, los vicerrectores de
+              sede, algunos representantes de transformación digital y <span className='caps'>TI</span>, y el director
+              de la <span className='caps'>DNED</span> (Resolución 614 2020).
+            </p>
 
-          <p>
-            Antes de la llegada de la pandemia del covid-19 en el año 2020, esa que impondría de forma obligatoria un
-            tipo de educación virtual, la universidad ya había reflexionado profundamente sobre el impacto y los
-            alcances de las tecnologías digitales en la sociedad. En 2019, se contemplaba la transición hacia una
-            “cultura de la transformación digital”. La transformación organizacional y su proyecto digital resultaban
-            fundamentales para lograr la articulación de las funciones misionales y la gestión académica de una
-            institución pública y el Estado.
-          </p>
+            <p>
+              Antes de la llegada de la pandemia del covid-19 en el año 2020, esa que impondría de forma obligatoria un
+              tipo de educación virtual, la universidad ya había reflexionado profundamente sobre el impacto y los
+              alcances de las tecnologías digitales en la sociedad. En 2019, se contemplaba la transición hacia una
+              “cultura de la transformación digital”. La transformación organizacional y su proyecto digital resultaban
+              fundamentales para lograr la articulación de las funciones misionales y la gestión académica de una
+              institución pública y el Estado.
+            </p>
 
-          <p>
-            De ese modo, se propuso pensar la universidad en términos de cultura digital, desde la integración de los
-            procesos de docencia, investigación, extensión y administrativos de apoyo, mediante el uso de tecnologías
-            digitales, con el objetivo de generar nuevos procesos formativos, lograr vías de comunicación contemporáneas
-            y, en último término, posibilitar la existencia de una universidad abierta, innovadora y en red conectada
-            con el mundo (Dirección Nacional de Planeación y Estadística, 2019, pp. 141-142).
-          </p>
+            <p>
+              De ese modo, se propuso pensar la universidad en términos de cultura digital, desde la integración de los
+              procesos de docencia, investigación, extensión y administrativos de apoyo, mediante el uso de tecnologías
+              digitales, con el objetivo de generar nuevos procesos formativos, lograr vías de comunicación
+              contemporáneas y, en último término, posibilitar la existencia de una universidad abierta, innovadora y en
+              red conectada con el mundo (Dirección Nacional de Planeación y Estadística, 2019, pp. 141-142).
+            </p>
+          </div>
         </BloqueTexto>
-        <Subtitulo id="experiencias-de-cultura-y-transformacion-digital">Experiencias de cultura y transformación digital</Subtitulo>
-
-        <ScrollImage
-          img={'./img/figura_15.jpg'}
-          caption={
-            <>
-              <p>
-                <strong>Figura 15.</strong> Clínica de pequeños animales, Bogotá.
-              </p>
-              <p>Fuente: Archivo Fotográfico Unimedios (Brandon Pinto/2021/Clínica de Pequeños Animales).</p>
-            </>
-          }
-          img2={'./img/figura_16.jpg'}
-          caption2={
-            <>
-              <p>
-                <strong>Figura 16.</strong> Clínica de pequeños animales, Bogotá.
-              </p>
-              <p>Fuente: Archivo Fotográfico Unimedios (Brandon Pinto/2021/Clínica de Pequeños Animales).</p>
-            </>
-          }
-        />
+        <Subtitulo id='experiencias-de-cultura-y-transformacion-digital'>
+          Experiencias de cultura y transformación digital
+        </Subtitulo>
         <BloqueTexto>
           <p>
             A pesar de que la transformación digital se institucionalizó en la Universidad Nacional de Colombia en 2019,
@@ -833,7 +826,34 @@ export default function CulturaDigital() {
             educativas colombianas. A pesar de ello, nombrar las cosas es clave, porque al nombrarlas se les da sentido
             y se les permite estar en el centro de la discusión (figuras 15-16).
           </p>
-
+        </BloqueTexto>
+        <ScrollMultipleImages
+          images={[
+            {
+              img: './img/figura_15.jpg',
+              caption: (
+                <>
+                  <p>
+                    <strong>Figura 15.</strong> Clínica de pequeños animales, Bogotá.
+                  </p>
+                  <p>Fuente: Archivo Fotográfico Unimedios (Brandon Pinto/2021/Clínica de Pequeños Animales).</p>
+                </>
+              ),
+            },
+            {
+              img: './img/figura_16.jpg',
+              caption: (
+                <>
+                  <p>
+                    <strong>Figura 16.</strong> Clínica de pequeños animales, Bogotá.
+                  </p>
+                  <p>Fuente: Archivo Fotográfico Unimedios (Brandon Pinto/2021/Clínica de Pequeños Animales).</p>
+                </>
+              ),
+            },
+          ]}
+        />
+        <BloqueTexto>
           <p>
             Es importante considerar que el concepto de <em>transformación digital</em> no solo implica un cambio de las
             tecnologías, ni se limita a la llegada de máquinas digitales o la presencia de grandes redes que transportan
@@ -906,10 +926,9 @@ export default function CulturaDigital() {
             medio siglo en materia de tecnologías digitales, la universidad contaba con bases tecnológicas y culturales
             para afrontar la cruenta crisis. Como ejemplo de lo anterior, hubo un importante apoyo al Hospital
             Universitario Nacional (<span className='caps'>HUN</span>), con herramientas como TeleUci y Telemedicina; y
-            se habilitó el{" "}
-            <em>call center</em> que atendía las veinticuatro horas del día, para atender a la comunidad universitaria
-            en apoyo psicológico. Además, se logró que el 85 % de los 7500 cursos semestrales se impartieran en
-            modalidad virtual. Asimismo, se expidieron cerca de 20 000 diplomas de grado con tecnología{' '}
+            se habilitó el <em>call center</em> que atendía las veinticuatro horas del día, para atender a la comunidad
+            universitaria en apoyo psicológico. Además, se logró que el 85 % de los 7500 cursos semestrales se
+            impartieran en modalidad virtual. Asimismo, se expidieron cerca de 20 000 diplomas de grado con tecnología{' '}
             <em>blockchain</em> y se desarrollaron aplicativos como <em>#estamoscontigo Unal</em>, para el proceso de
             retorno seguro a las sedes universitarias (Universidad Nacional de Colombia, 2022a, p. 88).
           </p>
@@ -953,10 +972,10 @@ export default function CulturaDigital() {
             Bajo estas preocupaciones y nuevas visiones sobre los impactos de las tecnologías digitales, se
             estructuraron en 2022 el Plan Estratégico Institucional (Plei) 2034 y el Peti 2022-2024, ambos alineados con
             la Estrategia de Transformación Digital con visión 2034 y con el <span className='caps'>PDG</span> 2022-
-            2024. El Plei nació en 2017, con el Acuerdo 2038 del{" "}
-            <span className='caps'>CSU</span>, régimen de planeación y evaluación permanente de resultados que sentó las
-            bases para dar continuidad y coherencia a planes, estrategias y procesos institucionales. Este plan es una
-            carta de navegación, delineada por ejercicios prospectivos a 2034 (Universidad Nacional de Colombia, 2022b).
+            2024. El Plei nació en 2017, con el Acuerdo 2038 del <span className='caps'>CSU</span>, régimen de
+            planeación y evaluación permanente de resultados que sentó las bases para dar continuidad y coherencia a
+            planes, estrategias y procesos institucionales. Este plan es una carta de navegación, delineada por
+            ejercicios prospectivos a 2034 (Universidad Nacional de Colombia, 2022b).
           </p>
 
           <p>
@@ -971,31 +990,37 @@ export default function CulturaDigital() {
             generación de conocimientos —figuras 18-19 (<span className='caps'>DNED</span>, 2022, pp. 15-32).
           </p>
         </BloqueTexto>
-        <ScrollImage
-          img={'./img/figura_18.jpg'}
-          caption={
-            <>
-              <p>
-                <strong>Figura 18.</strong> Transpórtate al futuro con robótica disruptiva.
-              </p>
-              <p>
-                Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Transpórtate al Futuro con Robótica
-                Disruptiva).
-              </p>
-            </>
-          }
-          img2={'./img/figura_19.jpg'}
-          caption2={
-            <>
-              <p>
-                <strong>Figura 19.</strong> Transpórtate al futuro con robótica disruptiva.
-              </p>
-              <p>
-                Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Transpórtate al Futuro con Robótica
-                Disruptiva).
-              </p>
-            </>
-          }
+        <ScrollMultipleImages
+          images={[
+            {
+              img: './img/figura_18.jpg',
+              caption: (
+                <>
+                  <p>
+                    <strong>Figura 18.</strong> Transpórtate al futuro con robótica disruptiva.
+                  </p>
+                  <p>
+                    Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Transpórtate al Futuro con Robótica
+                    Disruptiva).
+                  </p>
+                </>
+              ),
+            },
+            {
+              img: './img/figura_19.jpg',
+              caption: (
+                <>
+                  <p>
+                    <strong>Figura 19.</strong> Transpórtate al futuro con robótica disruptiva.
+                  </p>
+                  <p>
+                    Fuente: Archivo Fotográfico Unimedios (Jeimi Villamizar/2022/Transpórtate al Futuro con Robótica
+                    Disruptiva).
+                  </p>
+                </>
+              ),
+            },
+          ]}
         />
         <BloqueTexto>
           <p>
@@ -1055,11 +1080,16 @@ export default function CulturaDigital() {
           </ul>
         </BloqueTexto>
         <Podcast
-          title={<>
-            Recurso 9. Gestión de los datos en el Siglo <span className='caps'>XXI</span>: clave en la Unal
-          </>}
-          subtitle="Una conversación con la profesora Elizabeth León Guzmán"
+          linkIvoox={'https://go.ivoox.com/rf/127214913'}
+          linkSpotify={'7aCcyvZT1oqEVFDEVVLo2m'}
+          linkWeb={'https://podcastradio.unal.edu.co/detalle/t1-e4-gestion-de-los-datos-en-el-siglo-xxi'}
           src={'./audio/recurso_9_innovacion.mp3'}
+          subtitle="Una conversación con la profesora Elizabeth León Guzmán"
+          title={
+            <>
+              Recurso 9. Gestión de los datos en el Siglo <span className='caps'>XXI</span>: clave en la Unal
+            </>
+          }
         />
         <BloqueTexto>
           <p>
@@ -1122,7 +1152,9 @@ export default function CulturaDigital() {
           </p>
         </BloqueTexto>
         <ScrollVideo url='https://youtu.be/w4UeMPSTuR8' type='video/mp4' />
-        <Subtitulo id="ilusiones-y-retos-tecnologicos-en-el-camino-a-la-transformacion-digital">Ilusiones y retos tecnológicos en el camino a la transformación digital</Subtitulo>
+        <Subtitulo id='ilusiones-y-retos-tecnologicos-en-el-camino-a-la-transformacion-digital'>
+          Ilusiones y retos tecnológicos en el camino a la transformación digital
+        </Subtitulo>
         <BloqueTexto>
           <p>
             Las reflexiones en torno a la transversalidad de las tecnologías digitales en la vida de las sociedades del
@@ -1189,12 +1221,12 @@ export default function CulturaDigital() {
 
           <p>
             No obstante, aún persisten brechas significativas en cuanto las potencialidades de la universidad en la Sede
-            de La paz. La primera es la existencia de procesos manuales innecesarios y burocráticos, que retrasan procesos
-            académicos, investigativos, administrativos y funcionales. Por ejemplo, la universidad podría contar con los
-            medios para ser un campus virtual y monitorear el estado de las instalaciones con ayuda de sensores y
-            dispositivos digitales. Además, la universidad sigue dependiendo ampliamente de las tecnologías diseñadas
-            por agentes externos, a pesar de tener las capacidades dentro de la misma comunidad universitaria para
-            desarrollarlas e innovar de manera autónoma. Sin olvidar que esta es una de las tantas nuevas formas de
+            de La paz. La primera es la existencia de procesos manuales innecesarios y burocráticos, que retrasan
+            procesos académicos, investigativos, administrativos y funcionales. Por ejemplo, la universidad podría
+            contar con los medios para ser un campus virtual y monitorear el estado de las instalaciones con ayuda de
+            sensores y dispositivos digitales. Además, la universidad sigue dependiendo ampliamente de las tecnologías
+            diseñadas por agentes externos, a pesar de tener las capacidades dentro de la misma comunidad universitaria
+            para desarrollarlas e innovar de manera autónoma. Sin olvidar que esta es una de las tantas nuevas formas de
             colonialismo del siglo <span className='caps'>XXI</span>. Por último, también hay constantes fallas en los
             sistemas de información y las herramientas digitales diseñadas por la universidad que aún no dialogan entre
             sí, ni con los restantes sistemas, como <span className='caps'>SIA,</span> Sara y Hermes, etc.
@@ -1219,8 +1251,8 @@ export default function CulturaDigital() {
             monitoreo ágil y oportuno del estado físico de su infraestructura. Afortunadamente, la Sede Medellín ha
             tomado la iniciativa en este campo, al usar un sistema de información para la administración y gestión de
             espacios, donde se ha generado una red de monitoreo de los edificios, para identificar los problemas en el
-            mantenimiento. De modo que, también hace falta implementar estos sistemas de administración de espacios en el
-            ámbito académico, como la distribución de salones o la inscripción de asignaturas de forma más equitativa
+            mantenimiento. De modo que, también hace falta implementar estos sistemas de administración de espacios en
+            el ámbito académico, como la distribución de salones o la inscripción de asignaturas de forma más equitativa
             (Restrepo-Gutiérrez, comunicación personal, 11 de agosto de 2023).
           </p>
 
