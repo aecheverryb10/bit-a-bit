@@ -146,13 +146,13 @@ const Menu = () => {
             );
           })}
         </div>
-        <button
+        {/* <button
           className='font-extralight uppercase tracking-widest border-top pl-6 pr-16 py-4 bg-blue-dark bg-opacity-90 border-t border-white rounded-br-xl flex items-center'
           onClick={() => setIsOpen(false)}
         >
           <img src='./img/close-button.svg' alt='arrow down' className='w-4 mr-4' />
           Cerrar
-        </button>
+        </button> */}
       </div>
       {!!currentChapter && (
         <div

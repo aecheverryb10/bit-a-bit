@@ -96,7 +96,7 @@ export default function CulturaDigital() {
           <p>
             Este era el contexto tecnológico en el que se encontraba inmersa la Universidad Nacional de Colombia entrado
             el siglo <span className='caps'>XXI</span>. Aunque los principales sistemas de información se pusieron en
-            marcha en la primera década del siglo
+            marcha en la primera década del siglo {" "}
             <span className='caps'>XXI</span>, aún era necesario desarrollar un plan para que las personas del común
             aprendieran a manejarlos. La segunda década del siglo, entonces, se caracterizó por implementar una serie de
             políticas y planes para el desarrollo de la llamada “cultura digital” en las prácticas educativas de la
@@ -132,7 +132,7 @@ export default function CulturaDigital() {
           <p>
             La participación se refiere a la interacción con las personas y el medio como actores participantes de esa
             cultura digital. La remediación se refiere a la manipulación, modificación y reformulación de la información
-            disponible, es decir, la mediación con lo digital de modo que se adapte a lo que quieren losindividuos. El
+            disponible, es decir, la mediación con lo digital de modo que se adapte a lo que quieren los individuos. El
             bricolaje, por último,significa el uso de medios y procedimientos de forma autónoma e individual para operar
             esa información, como el <em>ctrl</em> + <em>c</em> y <em>ctrl</em> + <em>v</em>, remezclar, comentar y
             modificar; una forma de empoderamiento en la resolución de problemas informáticos (Uribe-Zapata, 2019).
@@ -232,9 +232,9 @@ export default function CulturaDigital() {
           <p>
             El Peti enfocó sus esfuerzos en dos agentes principales: (1) los usuarios y (2) la institución. En torno a
             los primeros, los distintos cuerpos colegiados debían procurar cumplir determinados requisitos en el marco
-            de las
+            de las{" "}
             <span className='caps'>TIC</span>: el acceso a la información y los recursos, el almacenamiento seguro, el
-            trabajo colaborativo, el soporte en
+            trabajo colaborativo, el soporte en{" "}
             <span className='caps'>TIC</span> y la adquisición de software y hardware. En cuanto a los requisitos
             institucionales, tenían la premisa de cumplir con las necesidades de las actividades misionales de una
             “universidad de sedes”, es decir, que su funcionamiento debía luchar contra el carácter centralista que,
@@ -270,7 +270,7 @@ export default function CulturaDigital() {
             direcciones nacionales creadas en 1997. Como organismo de superior jerarquía, la{' '}
             <span className='caps'>DNTIC</span> se ocupó de diseñar las propuestas de políticas, reglamentación y
             planeación estratégica para el desarrollo de estas tecnologías, mientras servía de veedor de la gestión de
-            las
+            las{" "}
             <span className='caps'>TIC</span> en la universidad, además garantizaba la existencia de la infraestructura
             tecnológica (Acuerdo 113 de 2013).
           </p>
@@ -287,7 +287,7 @@ export default function CulturaDigital() {
           <p>
             La articulación entre las Oficinas <span className='caps'>TIC</span>, <span className='caps'>DNTIC</span>,
             el <span className='caps'>CNTIC</span> y Unimedios institucionalizó el manejo de las tecnologías de la
-            información y creó un terreno fértil para enfrentar al acelerado cambio tecnológico del siglo
+            información y creó un terreno fértil para enfrentar al acelerado cambio tecnológico del siglo{" "}
             <span className='caps'>XXI</span>. Dichos organismos son los encargados de garantizar el funcionamiento del
             soporte digital de la vida material de la universidad, donde paulatinamente se registra la identidad de
             todos los miembros de su comunidad, los edificios físicos y sus dependencias, así como los proyectos que
@@ -347,7 +347,7 @@ export default function CulturaDigital() {
             detectados, detenidos y minimizados significaban un deterioro de la confianza y la fe institucional y, en
             consecuencia, del desarrollo académico, administrativo y misional de la universidad. En este orden de ideas,
             el objetivo fue establecer un primer marco clave que atravesara los procesos y los servicios informáticos,
-            por medio de la adopción de medidastécnicas, estructuraslegales, recursos humanos y capacidades(Acuerdo 228
+            por medio de la adopción de medidastécnicas, estructuraslegales, recursos humanos y capacidades (Acuerdo 228
             de 2016).
           </p>
 
@@ -369,7 +369,7 @@ export default function CulturaDigital() {
             consolidación institucional que apostó por el uso responsable de las tecnologías develaba la relación
             intrínseca entre el derecho y la cultura, y entre la institución y la sociedad. En este sentido, logramos
             observar que la construcción de políticas, dependencias y organismos en torno a las{' '}
-            <span className='caps'>TIC</span> en la universidad implicaba la construcción de estructuras de normas y
+            <span className='caps'>TIC</span> en la universidad implicaba la construcción de estructuras, normas y
             reglas que trazaran los límites de sus proyecciones y sus usos, es decir, la creación de herramientas
             reguladoras del orden colectivo.
           </p>
@@ -388,7 +388,7 @@ export default function CulturaDigital() {
         </BloqueTexto>
         <Podcast
           linkSpotify={'1wBm9beSVGMhChmZQgOoGu'}
-          title={'Seguridad y la ética en la Universidad Nacional'}
+          title={'Recurso 2. Seguridad y la ética en la Universidad Nacional'}
           subtitle={'Una conversación con el director de la DNED, el profesor Johan Sebastián Eslava Garzón'}
           linkWeb={
             'https://podcastradio.unal.edu.co/detalle/t1-e2-la-cultura-digital-en-la-universidad-nacional-de-colombia'
@@ -536,16 +536,16 @@ export default function CulturaDigital() {
             En este punto, la consolidación de una cultura digital y la apropiación tecnológica significaba trabajar en
             favor de una universidad conectada con el país y el mundo a través de la cooperación y el intercambio de
             conocimiento, cultura y tecnología. ¿Qué significa todo esto? Que los proyectos y las políticas que rodean a
-            las
+            las{" "}
             <span className='caps'>TIC</span> están vinculados a objetivos mayores. El Plan Global de Desarrollo (
             <span className='caps'>PGD</span>) de 2019 -2021, implementado durante la rectoría de Dolly Montoya, se
             declaraba como “Proyecto Cultural y Colectivo de Nación”. Efectivamente, el{' '}
-            <span className='caps'>PGD</span>
+            <span className='caps'>PGD</span>{' '}
             de 2019, se articulaba en torno a la conexión de la universidad con la sociedad, su capacidad transformadora
             y su responsabilidad a niveles socioculturales:
           </p>
 
-          <blockquote>
+          <blockquote className='mb-10 px-10'>
             Avanzar, desde las nueve sedes, hacia estrategias institucionales que armonicen con sus funciones misionales
             y articulen el trabajo académico interdisciplinario y en red, de forma que aportemos miradas integrales para
             comprender los problemas de nuestra comunidad, llevando innovación social y tecnológica [a] los territorios.
@@ -596,7 +596,7 @@ export default function CulturaDigital() {
         </BloqueTexto>
         <Podcast
           linkSpotify={'4uM5VjxFIuo6wH8RRuz26o'}
-          title={'Conversación con el exdirector de la DNED, el profesor Gustavo Pérez Zapata'}
+          title={'Recurso 3. Conversación con el exdirector de la DNED, el profesor Gustavo Pérez Zapata'}
           linkWeb={
             'https://podcastradio.unal.edu.co/detalle/t1-e1-la-transformacion-digital-en-la-universidad-nacional-de-colombia'
           }
@@ -730,7 +730,7 @@ export default function CulturaDigital() {
           }
           linkIvoox={'https://go.ivoox.com/rf/126459051'}
           title={
-            'Charla con la profesora y coordinadora de la división UNALab, Liz Karen Herrera Quintero, acerca de la Cultura Digital en la Unal.'
+            'Recurso 4. Charla con la profesora y coordinadora de la división UNALab, Liz Karen Herrera Quintero, acerca de la Cultura Digital en la Unal.'
           }
         />
         <BloqueTexto>
@@ -834,7 +834,7 @@ export default function CulturaDigital() {
 
           <p>
             Es importante considerar que el concepto de <em>transformación digital</em> no solo implica un cambio de las
-            tecnologías, nise limita a la llegada de máquinas digitales o la presencia de grandes redes que transportan
+            tecnologías, ni se limita a la llegada de máquinas digitales o la presencia de grandes redes que transportan
             información. Más bien, la transformación digital es, principal y esencialmente, una transformación cultural
             y, por tanto, un fenómeno que tiene que ver más con las personas que con las máquinas en sí.
           </p>
@@ -904,7 +904,7 @@ export default function CulturaDigital() {
             medio siglo en materia de tecnologías digitales, la universidad contaba con bases tecnológicas y culturales
             para afrontar la cruenta crisis. Como ejemplo de lo anterior, hubo un importante apoyo al Hospital
             Universitario Nacional (<span className='caps'>HUN</span>), con herramientas como TeleUci y Telemedicina; y
-            se habilitó el
+            se habilitó el{" "}
             <em>call center</em> que atendía las veinticuatro horas del día, para atender a la comunidad universitaria
             en apoyo psicológico. Además, se logró que el 85 % de los 7500 cursos semestrales se impartieran en
             modalidad virtual. Asimismo, se expidieron cerca de 20 000 diplomas de grado con tecnología{' '}
@@ -951,7 +951,7 @@ export default function CulturaDigital() {
             Bajo estas preocupaciones y nuevas visiones sobre los impactos de las tecnologías digitales, se
             estructuraron en 2022 el Plan Estratégico Institucional (Plei) 2034 y el Peti 2022-2024, ambos alineados con
             la Estrategia de Transformación Digital con visión 2034 y con el <span className='caps'>PDG</span> 2022-
-            2024. El Plei nació en 2017, con el Acuerdo 2038 del
+            2024. El Plei nació en 2017, con el Acuerdo 2038 del{" "}
             <span className='caps'>CSU</span>, régimen de planeación y evaluación permanente de resultados que sentó las
             bases para dar continuidad y coherencia a planes, estrategias y procesos institucionales. Este plan es una
             carta de navegación, delineada por ejercicios prospectivos a 2034 (Universidad Nacional de Colombia, 2022b).
@@ -1115,7 +1115,7 @@ export default function CulturaDigital() {
             la utilización de las tecnologías por parte de todas las personas. Esto se ha logrado, por ejemplo, al
             enfocarse en el pensamiento de diseño: ¿cómo diseñar plataformas virtuales para que las personas interactúen
             con la realidad de forma comprensible? Se trata de un esfuerzo por crear una red de transformación digital
-            entre las personas, y los distintostipos de hardware y software —recurso 10 (García-Camargo, 2023).
+            entre las personas, y los distintos tipos de hardware y software —recurso 10 (García-Camargo, 2023).
           </p>
         </BloqueTexto>
         <ScrollVideo url='https://youtu.be/w4UeMPSTuR8' type='video/mp4' />
@@ -1186,7 +1186,7 @@ export default function CulturaDigital() {
 
           <p>
             No obstante, aún persisten brechas significativas en cuanto las potencialidades de la universidad en la Sede
-            de La paz. La primera esla existencia de procesos manualesinnecesarios y burocráticos, que retrasan procesos
+            de La paz. La primera es la existencia de procesos manuales innecesarios y burocráticos, que retrasan procesos
             académicos, investigativos, administrativos y funcionales. Por ejemplo, la universidad podría contar con los
             medios para ser un campus virtual y monitorear el estado de las instalaciones con ayuda de sensores y
             dispositivos digitales. Además, la universidad sigue dependiendo ampliamente de las tecnologías diseñadas
@@ -1216,7 +1216,7 @@ export default function CulturaDigital() {
             monitoreo ágil y oportuno del estado físico de su infraestructura. Afortunadamente, la Sede Medellín ha
             tomado la iniciativa en este campo, al usar un sistema de información para la administración y gestión de
             espacios, donde se ha generado una red de monitoreo de los edificios, para identificar los problemas en el
-            mantenimiento. De modo que, también hace falta implementar estossistemas de administración de espacios en el
+            mantenimiento. De modo que, también hace falta implementar estos sistemas de administración de espacios en el
             ámbito académico, como la distribución de salones o la inscripción de asignaturas de forma más equitativa
             (Restrepo-Gutiérrez, comunicación personal, 11 de agosto de 2023).
           </p>

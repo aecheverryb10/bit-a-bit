@@ -39,7 +39,7 @@ const Creditos = () => {
 
                 <div className='py-5'>
                   <p className='font-bold'>Investigación histórica y redacción</p>
-                  <p>Jacobo Zuluaga Forero Adaptación</p>
+                  <p>Jacobo Zuluaga Forero</p>
                 </div>
 
                 <div className='py-5'>
@@ -65,7 +65,7 @@ const Creditos = () => {
                 </div>
 
                 <div className='py-5'>
-                  <p className='font-bold'>Producción Multimedia </p>
+                  <p className='font-bold'>Producción multimedia </p>
 
                   <p className='italic'>Investigación, presentación, supervisión y diseño de entrevistas</p>
                   <p>Paula Carolina Uribe Polo </p>
