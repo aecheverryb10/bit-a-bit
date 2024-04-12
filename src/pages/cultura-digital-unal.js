@@ -91,7 +91,7 @@ export default function CulturaDigital() {
             y la solidaridad —recurso 4 (Morales, 2019).
           </p>
         </BloqueTexto>
-        <Podcast subtitle={'Una conversación con el profesor Fabio Augusto González Osorio'} />
+        <Podcast subtitle={'Una conversación con el profesor Fabio Augusto González Osorio'} />
         <BloqueTexto>
           <p>
             Este era el contexto tecnológico en el que se encontraba inmersa la Universidad Nacional de Colombia entrado
@@ -388,8 +388,10 @@ export default function CulturaDigital() {
         </BloqueTexto>
         <Podcast
           linkSpotify={'1wBm9beSVGMhChmZQgOoGu'}
-          title={'Recurso 2. Seguridad y la ética en la Universidad Nacional'}
-          subtitle={'Una conversación con el director de la DNED, el profesor Johan Sebastián Eslava Garzón'}
+          title={'Recurso 5. ¿Está la Universidad Nacional de Colombia preparada para ataques informáticos o ciberataques?'}
+          subtitle={<>
+            Una conversación con el director de <span className='caps'>DNED</span> Johan Sebatián Eslava Garzón
+          </>}
           linkWeb={
             'https://podcastradio.unal.edu.co/detalle/t1-e2-la-cultura-digital-en-la-universidad-nacional-de-colombia'
           }
@@ -596,7 +598,8 @@ export default function CulturaDigital() {
         </BloqueTexto>
         <Podcast
           linkSpotify={'4uM5VjxFIuo6wH8RRuz26o'}
-          title={'Recurso 3. Conversación con el exdirector de la DNED, el profesor Gustavo Pérez Zapata'}
+          title={'Recurso 6. La transformación digital en la Universidad Nacional de Colombia'}
+          subtitle="Una conversación con el profesor Gustavo Adolfo Pérez Zapata"
           linkWeb={
             'https://podcastradio.unal.edu.co/detalle/t1-e1-la-transformacion-digital-en-la-universidad-nacional-de-colombia'
           }
@@ -729,9 +732,8 @@ export default function CulturaDigital() {
             'https://podcastradio.unal.edu.co/detalle/t1-e2-la-cultura-digital-en-la-universidad-nacional-de-colombia'
           }
           linkIvoox={'https://go.ivoox.com/rf/126459051'}
-          title={
-            'Recurso 4. Charla con la profesora y coordinadora de la división UNALab, Liz Karen Herrera Quintero, acerca de la Cultura Digital en la Unal.'
-          }
+          title='Recurso 7. La Cultura Digital en la Universidad Nacional de Colombia'
+          subtitle="Una conversación con la profesora Liz Karen Herrera Quintero"
         />
         <BloqueTexto>
           <p>
@@ -924,8 +926,8 @@ export default function CulturaDigital() {
           </p>
         </BloqueTexto>
         <Podcast
-          title={'Recurso 5. ¿Existen desigualdades de género en la transformación digital de la Universidad Nacional?'}
-          subtitle={'Una conversación con Mónica López, contratista de UNALab.'}
+          title={'Recurso 8. ¿Existen desigualdades de género en la transformación digital de la Universidad Nacional?'}
+          subtitle={'Una conversación con Mónica López'}
           src={'./audio/recurso_8_desigualdad.mp3'}
         />
         <BloqueTexto>
@@ -1053,9 +1055,10 @@ export default function CulturaDigital() {
           </ul>
         </BloqueTexto>
         <Podcast
-          title={
-            'Recurso 6. Cómo la Universidad Nacional de Colombia está apostando por la innovación, utilizando los datos para la toma de decisiones.'
-          }
+          title={<>
+            Recurso 9. Gestión de los datos en el Siglo <span className='caps'>XXI</span>: clave en la Unal
+          </>}
+          subtitle="Una conversación con la profesora Elizabeth León Guzmán"
           src={'./audio/recurso_9_innovacion.mp3'}
         />
         <BloqueTexto>

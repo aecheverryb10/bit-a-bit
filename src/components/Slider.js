@@ -33,7 +33,7 @@ const Slider = (props) => {
   };
 
   return (
-    <div className='lg:pl-32 '>
+    <div className='lg:pl-32 max-h-[861px]'>
       <div className='rounded-l-[30px] text-white relative overflow-hidden shadow-2xl'>
         <div
           className='absolute w-full h-full'
@@ -55,7 +55,7 @@ const Slider = (props) => {
               }
             }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
-            slidesPerView={1}
+            slidesPerView={3}
             spaceBetween={35}
             breakpoints={{
               768: {

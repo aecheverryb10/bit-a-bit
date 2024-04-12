@@ -118,7 +118,7 @@ export default function UniversidadEraDigital() {
             Más allá de los tecnicismos, la opción por uno u otro tenía implicaciones significativas para su uso
             práctico en el ámbito educativo. Las computadoras digitales podían realizar cálculos más veloces y precisos,
             por su capacidad de realizar operaciones algebraicas y almacenar información. Sin embargo, eran equipos más
-            costosos en comparación con los análogos, además requerían de grandes esfuerzos de programación para
+            costosos en comparación con los análogos; además, requerían de grandes esfuerzos de programación para
             solucionar algunos problemas que para el otro tipo de computadoras resultaba sencillo. Por tal razón, para
             esta época los computadores análogos ya eran una herramienta básica para los ingenieros y los científicos,
             mientras que los digitales aún estaban en proceso de desarrollo (López, 1965, p. 46).{' '}

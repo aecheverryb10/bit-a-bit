@@ -79,7 +79,7 @@ const Timeline = () => {
           <img className='absolute h-full w-full opacity-10' src='./img/texture_34.png' alt='textura' />
           <div className='text-white relative z-50 pb-28 pt-20'>
             <p className='uppercase tracking-wider text-2xl lg:text-3xl text-center'>
-              Hitos de la transformación tecnológica
+              Recurso 2. Hitos de la transformación tecnológica
             </p>
             {/* Menu */}
             <nav className='hidden lg:flex gap-3 py-10 px-10 xl:px-28 flex-wrap max-w-[1100px]'>
