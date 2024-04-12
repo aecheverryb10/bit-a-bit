@@ -1058,7 +1058,7 @@ export default function CulturaDigital() {
           }
           src={'./audio/recurso_9_innovacion.mp3'}
         />
-        <BloqueTexto>
+        <BloqueTexto noPaddingBottom={true} shadow={false}>
           <p>
             Las proyecciones de los planes a 2034 plantean la identificación y el uso de tecnologías emergentes para el
             sector educativo, en tres niveles: (1) las tecnologías base, es decir, las tecnologías de la comunicación y
@@ -1118,7 +1118,12 @@ export default function CulturaDigital() {
             entre las personas, y los distintos tipos de hardware y software —recurso 10 (García-Camargo, 2023).
           </p>
         </BloqueTexto>
-        <ScrollVideo url='https://youtu.be/w4UeMPSTuR8' type='video/mp4' />
+        <ScrollVideo
+          number={10}
+          title={"Recurso 10. ¿Cómo ha evolucionado la incorporación de la tecnología en la enseñanza y el aprendizaje desde que comenzaste a estudiar en la Unal?"}
+          url='https://youtu.be/w4UeMPSTuR8'
+          type='video/mp4'
+        />
         <Subtitulo id="ilusiones-y-retos-tecnologicos-en-el-camino-a-la-transformacion-digital">Ilusiones y retos tecnológicos en el camino a la transformación digital</Subtitulo>
         <BloqueTexto>
           <p>

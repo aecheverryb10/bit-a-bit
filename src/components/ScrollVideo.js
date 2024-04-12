@@ -4,10 +4,11 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 // https://github.com/cookpete/react-player/issues/1474#issuecomment-1184645105
 import dynamic from 'next/dynamic';
+import { BloqueTexto } from './Elements';
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 
 const ScrollVideo = (props) => {
-	const { url } = props;
+	const {number,title, url } = props;
 	//States
 	const [isPlaying, setIsPlaying] = useState(false);
 
@@ -36,9 +37,17 @@ const ScrollVideo = (props) => {
 
 
 	return (
-		<div className='bg-black h-screen' ref={containerRef}>
-			<ReactPlayer className='!h-screen !w-full m-auto' playing={isPlaying} url={url} controls muted />
-		</div>
+		<>
+			<BloqueTexto noPaddingBottom={true}>
+				<p className='font-sans text-xl pb-8'>
+					<span className='text-purple-base'>Recurso {number}.</span>{' '}
+					<span className='font-light'>{title}</span>
+				</p>
+			</BloqueTexto> 
+			<div className='bg-black h-screen' ref={containerRef}>
+				<ReactPlayer className='!h-screen !w-full m-auto' playing={isPlaying} url={url} controls muted />
+			</div>
+		</>
 	);
 };
 

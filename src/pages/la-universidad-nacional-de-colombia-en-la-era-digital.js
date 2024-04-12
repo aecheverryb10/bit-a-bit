@@ -391,7 +391,7 @@ export default function UniversidadEraDigital() {
             <em>universidad digital</em>
           </>
         </Resaltado>
-        <BloqueTexto noPaddingTop={true}>
+        <BloqueTexto noPaddingTop={true} noPaddingBottom={true} shadow={false}>
           <p>
             La computación avanzaba a pasos de gigante. Para inicios de la década de 1980, los estudiantes tuvieron
             contacto con las computadoras a través de las perforadoras de tarjetas; pero al finalizarla, ya tendrían
@@ -429,7 +429,12 @@ export default function UniversidadEraDigital() {
           </p>
         </BloqueTexto>
 
-        <ScrollVideo url='https://youtu.be/FrbvaOtpvAo' type='video/mp4' />
+        <ScrollVideo 
+          number={3}
+          title="¿Cómo eran las clases de Ingeniería de Sistemas en la Sede Bogotá de la Universidad Nacional en los años 1990?"
+          type='video/mp4'
+          url='https://youtu.be/FrbvaOtpvAo'
+        />
         <Subtitulo id="bitnet-runcol-e-internet">Bitnet, Runcol e Internet</Subtitulo>
         <BloqueTexto>
           <p>
