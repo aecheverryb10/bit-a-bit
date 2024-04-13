@@ -39,11 +39,11 @@ export default function AscendenciasDigitales() {
             inseparable relación con los dedos, en lo que puede ser contabilizado o señalado por ellos.
           </p>
         </ParrafoInicial>
-        <Subtitulo>
-          <>Preludios digitales:</>
+        <Subtitulo id='preludios-digitales'>
+          <>Preludios digitales: </>
           <span className='block font-extralight'>hacia una comprensión histórica de lo digital</span>
         </Subtitulo>
-        <BloqueTexto>
+        <BloqueTexto noPaddingBottom={true}>
           <p>
             En el siglo <span className='caps'>XX</span>, el concepto de <em>digital</em> se adaptó, para referirse,
             concretamente, a los datos representados por dígitos numéricos (Online Etymology Dictionary, 2021). La
@@ -52,7 +52,11 @@ export default function AscendenciasDigitales() {
             mecánico y analógico de uno intangible, representado por sistemas electrónicos y computacionales —recurso 1.
           </p>
         </BloqueTexto>
-        <ScrollVideo url='https://youtu.be/Cypiyk-Q-2A' type='video/mp4' />
+        <ScrollVideo 
+          number={1}
+          title={"¿Qué es lo digital? y ¿qué es transformación digital?"} 
+          url='https://youtu.be/Cypiyk-Q-2A' type='video/mp4' 
+        />
         <BloqueTexto shadow={false} noPaddingBottom={true}>
           <p>
             La digitalización puede ser entendida como el proceso de “conversión de datos y procesos analógicos a un
@@ -253,7 +257,7 @@ export default function AscendenciasDigitales() {
         <div id='recurso-2'>
           <Timeline />
         </div>
-        <Subtitulo>
+        <Subtitulo id='que-paso-en-colombia'>
           <>¿Qué pasó en Colombia?</>
         </Subtitulo>
         <BloqueTexto noPaddingBottom={true}>
