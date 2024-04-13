@@ -180,16 +180,16 @@ export default function Home() {
                   className='font-light text-base 2x:text-xl mr-12 uppercase tracking-widest flex align-center'
                   href={'./creditos'}
                 >
-                  <img className='w-7 2xl:w-9 mr-2' src='./img/boton-siguiente.svg' alt='botón siguiente' />{' '}
+                  <img className='w-7 2xl:w-9 mr-2 -m-[2px]' src='./img/boton-siguiente.svg' alt='botón siguiente' />{' '}
                   <span>Créditos</span>
                 </Link>
-                {/* <Link
+                <Link
                   className='font-light text-base 2x:text-xl uppercase tracking-widest flex align-center'
-                  href={'./autores'}
+                  href={'./referencias'}
                 >
-                  <img className='w-7 2xl:w-9 mr-2' src='./img/boton-siguiente.svg' alt='botón siguiente' />{' '}
-                  <span>Autores</span>
-                </Link> */}
+                  <img className='w-7 2xl:w-9 mr-2 -m-[2px]' src='./img/boton-siguiente.svg' alt='botón siguiente' />{' '}
+                  <span>Referencias</span>
+                </Link>
               </div>
             </div>
           </div>
