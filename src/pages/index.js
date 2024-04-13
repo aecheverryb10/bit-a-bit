@@ -140,25 +140,35 @@ export default function Home() {
             </div>
 
             <div className='grow flex flex-col align-center justify-center relative z-50'>
-              <div className='lg:container text-white  2xl:min-h-[70vh] lg:bg-blue-100 lg:bg-opacity-40 bg-blend-multiply flex flex-col'>
+              <div className='lg:container text-white 2xl:min-h-[70vh] lg:bg-blue-100 lg:bg-opacity-40 bg-blend-multiply flex flex-col'>
                 <div className='grow pt-14 2xl:pt-28 overflow-hidden px-10 sm:px-20 2xl:px-36'>
-                  <h1 className='cover-title font-medium text-[5em] leading-none 2xl:text-8xl mb-3'>Bit a Bit</h1>
-                  <h2 className='cover-subtitle font-extralight text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
+                  <h1 className='cover-title font-medium text-[5em] leading-none 2xl:text-8xl short:text-7xl mb-3'>
+                    Bit a Bit
+                  </h1>
+                  <h2 className='cover-subtitle font-extralight short:text-[1.5em] text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
                     La evolución digital en la
                     <br /> Universidad Nacional de Colombia
                   </h2>
-                  <div className='cover-shields flex mt-10 pb-12'>
-                    <div className='w-28 my-auto overflow-hidden'>
+                  <div className='cover-shields flex short:mt-6 mt-10 short:pb-6 pb-12'>
+                    <div className='short:w-24 w-28 my-auto overflow-hidden'>
                       <img className='img-shield ' src={'./img/escudo-dned.svg'} alt={'Escudo DNED'} />
                     </div>
-                    <div className='ml-7 pl-7 mr-4 border-l border-white py-4  overflow-hidden'>
-                      <img className='img-shield w-24' src={'./img/escudo-unalab.svg'} alt={'Escudo Unalab'} />
+                    <div className='ml-7 pl-7 mr-4 border-l border-white short:py-3 py-4  overflow-hidden'>
+                      <img
+                        className='img-shield short:w-20 w-24'
+                        src={'./img/escudo-unalab.svg'}
+                        alt={'Escudo Unalab'}
+                      />
                     </div>
                   </div>
                 </div>
 
-                <div className='un-logo bg-blue-100 rounded-b-xl w-full px-8 py-4 2xl:py-7 flex justify-end pr-20 2xl:pr-36'>
-                  <img className='w-36 2xl:w-40' src={'./img/escudo-unal.svg'} alt={'Escudo universidad nacional'} />
+                <div className='un-logo bg-blue-100 rounded-b-xl w-full px-8 short:py-3 py-4 2xl:py-7 flex justify-end pr-20 2xl:pr-36'>
+                  <img
+                    className='short:w-28 w-36 2xl:w-40'
+                    src={'./img/escudo-unal.svg'}
+                    alt={'Escudo universidad nacional'}
+                  />
                 </div>
               </div>
 
@@ -169,7 +179,7 @@ export default function Home() {
                     document.getElementsByTagName('html')[0].scrollTop = 100;
                   }}
                 >
-                  <img className='scroll-img w-7 lg:w-14 block mx-auto' src='./img/scroll-button.svg' />{' '}
+                  <img className='scroll-img short:w-8 w-7 lg:w-14 block mx-auto' src='./img/scroll-button.svg' />{' '}
                   <span className='inline-block mt-2 text-base font-light tracking-wider opacity-80'>comenzar</span>
                 </button>
               </div>
