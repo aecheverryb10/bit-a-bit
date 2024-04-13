@@ -51,12 +51,12 @@ export default function AscendenciasDigitales() {
             para usar y manipular la información. Esta nueva comprensión de lo digital dividió el mundo material,
             mecánico y analógico de uno intangible, representado por sistemas electrónicos y computacionales —recurso 1.
           </p>
-          <p className='font-sans text-xl pb-8'>
-            <span className='text-purple-base'>Recurso 1.</span>{' '}
-            <span className='font-light'>¿Qué es lo digital? y ¿qué es transformación digital?</span>
-          </p>
         </BloqueTexto>
-        <ScrollVideo url='https://youtu.be/Cypiyk-Q-2A' type='video/mp4' />
+        <ScrollVideo 
+          number={1}
+          title={"¿Qué es lo digital? y ¿qué es transformación digital?"} 
+          url='https://youtu.be/Cypiyk-Q-2A' type='video/mp4' 
+        />
         <BloqueTexto shadow={false} noPaddingBottom={true}>
           <p>
             La digitalización puede ser entendida como el proceso de “conversión de datos y procesos analógicos a un
