@@ -555,10 +555,12 @@ export default function CulturaDigital() {
             sociedad, su capacidad transformadora y su responsabilidad a niveles socioculturales:
           </p>
 
-          <blockquote className='mb-10 px-10'>
+          <blockquote className='pt-6 mb-16 relative pl-6 pr-10 lg:pr-0 block text-xl text-purple-base'>
+            <span>&#xab;</span>
             Avanzar, desde las nueve sedes, hacia estrategias institucionales que armonicen con sus funciones misionales
             y articulen el trabajo académico interdisciplinario y en red, de forma que aportemos miradas integrales para
             comprender los problemas de nuestra comunidad, llevando innovación social y tecnológica [a] los territorios.
+            <span>&#xbb;</span>
           </blockquote>
 
           <p>
@@ -875,15 +877,16 @@ export default function CulturaDigital() {
             Nacional de Colombia
           </p>
 
-          <blockquote>
+          <blockquote className='pt-6 mb-16 relative pl-6 pr-10 lg:pr-0 block text-xl text-purple-base'>
+            <span>&#xab;</span>
             constituye un proceso de cambio cultural en el que la tecnología es apenas una herramienta para emprender
             innovaciones pedagógicas y de investigación, además de cambios fundamentales en la forma como la universidad
             se relaciona con los territorios de su país y con el mundo. La transformación digital nos permite consolidar
             formas de organización más descentralizadas, flexibles y livianas, tomar decisiones horizontales y
             democráticas, y acceder a modos de trabajo por procesos más eficientes y efectivos. (Universidad Nacional de
             Colombia, 2022a, p. 15)
+            <span>&#xbb;</span>
           </blockquote>
-
           <p>
             La universidad se piensa en un contexto más amplio, no solo en su desarrollo académico, sino también en su
             interconexión con los demás seres humanos y los otros seres que habitan el planeta. En ese sentido, se
