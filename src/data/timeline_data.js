@@ -300,6 +300,7 @@ const timeline_data = [
   },
   {
     name: 'Tecnologías de la información y comunicaciones',
+    button: "TIC",
     periods: [
       {
         title: '1967-1976',

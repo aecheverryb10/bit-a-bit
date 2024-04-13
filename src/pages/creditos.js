@@ -17,7 +17,6 @@ const Creditos = () => {
                   <p>© Editorial Universidad Nacional de Colombia</p>
                   <p>© Dirección Nacional de Estrategia digital DNED</p>
                   <p>© División Universidad Laboratorio UNALab</p>
-                  <p>© Liz Karen Herrera Quintero, Jacobo Zuluaga Forero y Paula Carolina Uribe Polo</p>
                 </div>
                 <div className='py-5'>
                    <p className='font-bold'>Editorial Universidad Nacional de Colombia</p>
@@ -95,9 +94,10 @@ const Creditos = () => {
                   </div>
                   <div className='py-5'>
                     <p className='italic'>
-                      Agradecimientos Johan Sebastián Eslava Garzón, José Alfonso Sánchez, Jose Ismael Peña, Jeimi
-                      Villamizar (Unimedios) y Nicol Torres (Unimedios).
+                      Agradecimientos Johan Sebastián Eslava Garzón, José Alfonso Sánchez, José Ismael Peña, Jeimi
+                      Villamizar (Unimedios)
                     </p>
+                    <p className='italic'>Y Nicol Torres (Unimedios).</p>
                   </div>
                 </div>
               </div>

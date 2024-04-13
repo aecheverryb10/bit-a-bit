@@ -76,7 +76,7 @@ export default function Introduccion() {
             se reconstruye la historia de la Universidad desde la enseñanza de la electrónica, las telecomunicaciones y
             la computación, hasta la llegada de Internet y el uso y desarrollo de software dentro de la institución como
             soporte virtual de su infraestructura tecnológica, la adaptación de los espacios físicos y los procesos
-            cotidianos asociados a sus tres funciones misionales.
+            cotidianos asociados a sus tres funciones misionales: docencia, investigación y extensión.
           </p>
 
           <p>

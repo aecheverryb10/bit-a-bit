@@ -55,7 +55,7 @@ const Prologo = () => {
         </p>
 
         <p>
-          Cada capítulo, enriquecido por las experiencias vivenciales de nuestros protagonistas, nos invita a descubrir
+          Cada capítulo, enriquecido por las experiencias de nuestros protagonistas, nos invita a descubrir
           cómo la transformación digital ha impactado no solo en la forma en que enseñamos y aprendemos, sino también en
           la manera en que nos relacionamos con nuestra comunidad y el mundo. Sobre lo último, es importante destacar el
           papel de la División Universidad Laboratorio (UNALab) en este proceso, pues ha sido el motor que ha impulsado
@@ -148,7 +148,7 @@ const Prologo = () => {
           era digital para la educación, y esperamos que sirva de inspiración para otras instituciones que buscan
           avanzar en su transformación digital.
         </p>
-        <p>Liz Karen Herrera</p>
+        <p>Liz Karen Herrera Quintero</p>
       </BloqueTexto>
     </Capitulo>
   );
