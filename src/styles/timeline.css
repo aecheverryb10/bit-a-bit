@@ -17,10 +17,10 @@
 }
 
 
-.timeline-section-0 .timeline-periods .timeline-period:nth-of-type(2){
+.timeline-section-0 .timeline-periods .timeline-period-container:nth-of-type(2){
   flex-basis: 50%;
 }
-.timeline-section-0 .timeline-periods .timeline-period:nth-of-type(5){
+.timeline-section-0 .timeline-periods .timeline-period-container:nth-of-type(5){
   padding-left: 10%;
 }
 

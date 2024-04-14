@@ -4,6 +4,8 @@ import Image from 'next/image';
 //Data
 import timeline_data from '@/data/timeline_data';
 import TimelineModal from './TimelineModal';
+import { useGSAP } from '@gsap/react';
+import gsap from "gsap";
 
 const Timeline = () => {
   //States
@@ -66,6 +68,57 @@ const Timeline = () => {
     };
   }, [observers]);
 
+
+  useGSAP(() => {
+    const observer_timeline = new IntersectionObserver((entries, self) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          self.disconnect();
+
+          const handleIntersection = (entries, observer) => {
+            let targets = [];
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                targets.push(entry.target);
+                observer.unobserve(entry.target);
+              }
+            });
+            const target_line = targets.map(target => [
+              target.getElementsByClassName("timeline-period-line")[0],
+              target.getElementsByClassName("timeline-period-dot")[0],
+            ]);
+            const target_text = targets.map(target => target.getElementsByClassName("timeline-period-text")[0]);
+
+            targets.map((target, index) => {
+              const timeline = gsap.timeline({delay:index/4});
+              timeline.to(target, { opacity: 1, y: 0 })
+                .to(target_line[index], { y: 0 })
+                .to(target_text[index], { opacity: 1 });
+            })
+          };
+
+          const periods = gsap.utils.toArray(".timeline-period-item");
+          const observer = new IntersectionObserver(handleIntersection,
+            {
+              root: timelineContainerRef.current,
+              threshold: 0.5,
+            });
+
+          periods.map((period, index) => {
+            gsap.set(period, { opacity: 0, y: -50 });
+            gsap.set(".timeline-period-text", { opacity: 0});
+            gsap.set(".timeline-period-line, .timeline-period-dot", { y: -80 });
+            gsap.set(".timeline-period-line, .timeline-period-dot", { y: -80 });
+
+            observer.observe(period);
+          });
+        }
+      });
+    });
+
+    observer_timeline.observe(timelineContainerRef.current);
+  }, { scope: timelineContainerRef });
+
   return (
     <>
       <div className='xl:pl-32'>
@@ -86,9 +139,8 @@ const Timeline = () => {
               {timeline_data.map((section, index_section) => {
                 return (
                   <button
-                    className={`uppercase transition text-xl  text-blue-dark px-5 py-2 rounded-md tracking-wider hovers:shadow-sm ${
-                      section.name === activeSection ? 'bg-white' : 'bg-green-light hover:text-white '
-                    }`}
+                    className={`uppercase transition text-xl  text-blue-dark px-5 py-2 rounded-md tracking-wider hovers:shadow-sm ${section.name === activeSection ? 'bg-white' : 'bg-green-light hover:text-white '
+                      }`}
                     key={`button-${section.name}`}
                     type='button'
                     onClick={() => {
@@ -125,22 +177,24 @@ const Timeline = () => {
                         {section.periods.map((period, index_period) => {
                           const { title, image } = period;
                           return (
-                            <div key={`${section}-${title}-${index_period}`} className={`timeline-period text-center`}>
-                              <button
-                                className='relative w-[90px] h-[90px] lg:w-[140px] lg:h-[140px] '
-                                type='button'
-                                onClick={() => openCloseModal(period)}
-                              >
-                                <Image
-                                  className='rounded-full border-white border-2 object-cover'
-                                  alt={`${section.name}-${title}`}
-                                  fill={true}
-                                  src={image}
-                                />
-                              </button>
-                              <div className='border border-dashed h-[60px] w-px mx-auto' />
-                              <div className='w-2 h-2 rounded-full bg-white mx-auto' />
-                              <p className='font-light text-md lg:text-xl pt-6'>{title}</p>
+                            <div key={`${section}-${title}-${index_period}`} className={`timeline-period-container text-center`}>
+                              <div className='timeline-period-item w-fit mx-auto'>
+                                <button
+                                  className='relative w-[90px] h-[90px] lg:w-[140px] lg:h-[140px] '
+                                  type='button'
+                                  onClick={() => openCloseModal(period)}
+                                >
+                                  <Image
+                                    className='timeline-period-image rounded-full border-white border-2 object-cover z-10 bg-white'
+                                    alt={`${section.name}-${title}`}
+                                    fill={true}
+                                    src={image}
+                                  />
+                                </button>
+                                <div className='timeline-period-line border border-dashed h-[60px] w-px mx-auto' />
+                                <div className='timeline-period-dot w-2 h-2 rounded-full bg-white mx-auto' />
+                                <p className='timeline-period-text font-light text-md lg:text-xl pt-6'>{title}</p>
+                              </div>
                             </div>
                           );
                         })}
@@ -149,6 +203,10 @@ const Timeline = () => {
                   );
                 })}
               </div>
+            </div>
+
+            <div className='gap-3 pt-10 px-10 xl:px-28 flex-wrap max-w-[1100px]'>
+              * Haz clic en la imagen para más información
             </div>
           </div>
         </div>
