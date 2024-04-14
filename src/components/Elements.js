@@ -138,11 +138,13 @@ const TituloCapitulo = (props) => {
 };
 
 const Subtitulo = (props) => {
-  const { children } = props;
+  const { children, id } = props;
   return (
     <MainSection>
       <div className='bg-purple-base bg-opacity-70 text-white'>
-        <h2 className='pl-10 lg:pl-20 xl:pl-40 py-10 font-normal text-3xl'>{children}</h2>
+        <h2 id={id} className='pl-10 lg:pl-20 xl:pl-40 py-10 font-normal text-3xl'>
+          {children}
+        </h2>
       </div>
     </MainSection>
   );
@@ -159,7 +161,13 @@ const Resaltado = (props) => {
             <span className='w-8 h-8 rounded-full border-purple-base border-4 block -mr-[22px]' />
             <span className='w-3 h-3 rounded-full bg-purple-base block ' />
           </div>
-          <p className='text-2xl text-purple-base pl-10 pr-10 lg:pr-0'>"{children}"</p>
+          <div className='relative text-purple-base pl-10 pr-10 lg:pr-0'>
+            <span className='font-ancizar text-8xl leading-[0] block lg:absolute lg:top-6 lg:-left-3'>&ldquo;</span>
+            <p className='text-2xl'>{children}</p>
+            <span className='font-ancizar text-8xl leading-[0] block absolute right-10 -bottom-8 lg:-right-6 lg:-bottom-4'>
+              &#x201D;
+            </span>
+          </div>
         </div>
       </div>
     </MainSection>

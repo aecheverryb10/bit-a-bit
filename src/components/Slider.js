@@ -6,7 +6,7 @@ import FsLightbox from 'fslightbox-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/keyboard';
-import { Keyboard, Autoplay } from 'swiper/modules';
+import { Keyboard } from 'swiper/modules';
 import { Portal } from 'react-portal';
 
 const Slider = (props) => {
