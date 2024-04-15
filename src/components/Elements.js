@@ -162,11 +162,11 @@ const Resaltado = (props) => {
             <span className='w-3 h-3 rounded-full bg-purple-base block ' />
           </div>
           <div className='relative text-purple-base pl-10 pr-10 lg:pr-0'>
-            <span className='font-ancizar text-8xl leading-[0] block lg:absolute lg:top-6 lg:-left-3'>&ldquo;</span>
-            <p className='text-2xl'>{children}</p>
-            <span className='font-ancizar text-8xl leading-[0] block absolute right-10 -bottom-8 lg:-right-6 lg:-bottom-4'>
-              &#x201D;
-            </span>
+            <span className='font-ancizar text-6xl leading-[0] block'>&ldquo;</span>
+            <p className='text-2xl'>
+              {children}{' '}
+              <span className='font-ancizar text-6xl leading-[0] mt-12 ml-2 absolute inline-block'>&#x201D;</span>
+            </p>
           </div>
         </div>
       </div>
