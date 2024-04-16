@@ -94,6 +94,8 @@ const Timeline = () => {
               const timeline = gsap.timeline({delay:index/4});
               timeline.to(target, { opacity: 1, y: 0 })
                 .to(target_line[index], { y: 0 })
+                .to(target_line[index][1], { scale: 1.5 })
+                .to(target_line[index][1], { scale: 1 })
                 .to(target_text[index], { opacity: 1 });
             })
           };
