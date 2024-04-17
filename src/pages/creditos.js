@@ -113,7 +113,7 @@ const Creditos = () => {
             </div>
 
             <div className='py-5'>
-              <p>
+              <p className='indent-8'>
                 Herrera Quintero, Liz Karen, 1977-
               </p>
               <p>
@@ -132,10 +132,12 @@ const Creditos = () => {
               <p>
                 Incluye referencias bibliográficas
               </p>
-              <p>
+              <p className='indent-8'>
                 ISBN 978-958-505-595-7 (digital)
               </p>
+            </div>
 
+            <div className='pt-5'>
               <p>
                 1. Universidad Nacional de Colombia. Dirección Nacional de Estrategia Digital (DNED). División Universidad
                 Laboratorio UNALab -- Investigaciones 2. Educación superior -- Innovaciones tecnológicas -- Colombia 3.
@@ -144,7 +146,7 @@ const Creditos = () => {
                 Polo, Paula Carolina, 1992-, autor III. Título
               </p>
             </div>
-
+            
             <div className='pt-5'>
               <p>
                 CDD-23 378.007209861 / 2024
