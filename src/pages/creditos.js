@@ -5,7 +5,7 @@ const Creditos = () => {
   return (
     <Capitulo background={`radial-gradient(63.95% 32.77% at 13.12% 8.61%, #78BEFF 0%, #326799 100%)`}>
       <MainSection>
-        <div className={`bg-white bg-opacity-30 shadow-xl pt-40 pb-20 relative`}>
+        <div className={`bg-white bg-opacity-30 pt-40 pb-20 relative`}>
           <img className='absolute right-0 top-0' src={'./img/creditos-lineas.svg'} />
           <div className={`pl-40 pr-16 `}>
             <div className='max-w-[700px] text-white text-lg font-serif leading-relaxed '>
@@ -101,6 +101,54 @@ const Creditos = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className={`bg-white bg-opacity-30 shadow-xl px-40 pb-20`}>
+          <div className='bord border border-white text-white p-10 font-ancizar'>
+            <div className='pb-5'>
+              <p>
+                Catalogación en la publicación Universidad Nacional de Colombia
+              </p>
+            </div>
+
+            <div className='py-5'>
+              <p>
+                Herrera Quintero, Liz Karen, 1977-
+              </p>
+              <p>
+                Bit a bit: la evolución digital en la Universidad Nacional de Colombia / Liz Karen Herrera Quintero, Jacobo Zuluaga
+                Forero y Paula Carolina Uribe Polo, autores. -- Primera edición. -- Bogotá: Universidad Nacional de Colombia.
+                Vicerrectoria de Investigación. Editorial Universidad Nacional de Colombia: Universidad Nacional de Colombia.
+                Dirección Nacional de Estrategia Digital (DNED). División Universidad Laboratorio UNALab, 2024
+              </p>
+              <p>
+                1 recurso en línea (HTML): ilustraciones (principalmente a color), diagramas, fotografías, facsímiles, podcast,
+                vídeos.
+              </p>
+            </div>
+
+            <div className='py-5'>
+              <p>
+                Incluye referencias bibliográficas
+              </p>
+              <p>
+                ISBN 978-958-505-595-7 (digital)
+              </p>
+
+              <p>
+                1. Universidad Nacional de Colombia. Dirección Nacional de Estrategia Digital (DNED). División Universidad
+                Laboratorio UNALab -- Investigaciones 2. Educación superior -- Innovaciones tecnológicas -- Colombia 3.
+                Transformación digital -- Historia 4. Tecnología educativa -- Colombia 5. Digitalización de la información 6.
+                Cultura digital 7. Tecnologías de la información y la comunicación I. Zuluaga Forero, Jacobo, 1997-, autor II. Uribe
+                Polo, Paula Carolina, 1992-, autor III. Título
+              </p>
+            </div>
+
+            <div className='pt-5'>
+              <p>
+                CDD-23 378.007209861 / 2024
+              </p>
             </div>
           </div>
         </div>
