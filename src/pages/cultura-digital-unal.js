@@ -394,10 +394,14 @@ export default function CulturaDigital() {
         </BloqueTexto>
         <Podcast
           linkSpotify={'1wBm9beSVGMhChmZQgOoGu'}
-          title={'Recurso 5. ¿Está la Universidad Nacional de Colombia preparada para ataques informáticos o ciberataques?'}
-          subtitle={<>
-            Una conversación con el director de <span className='caps'>DNED</span> Johan Sebatián Eslava Garzón
-          </>}
+          title={
+            'Recurso 5. ¿Está la Universidad Nacional de Colombia preparada para ataques informáticos o ciberataques?'
+          }
+          subtitle={
+            <>
+              Una conversación con el director de <span className='caps'>DNED</span> Johan Sebatián Eslava Garzón
+            </>
+          }
           linkWeb={
             'https://podcastradio.unal.edu.co/detalle/t1-e2-la-cultura-digital-en-la-universidad-nacional-de-colombia'
           }
@@ -611,7 +615,7 @@ export default function CulturaDigital() {
         <Podcast
           linkSpotify={'4uM5VjxFIuo6wH8RRuz26o'}
           title={'Recurso 6. La transformación digital en la Universidad Nacional de Colombia'}
-          subtitle="Una conversación con el profesor Gustavo Adolfo Pérez Zapata"
+          subtitle='Una conversación con el profesor Gustavo Adolfo Pérez Zapata'
           linkWeb={
             'https://podcastradio.unal.edu.co/detalle/t1-e1-la-transformacion-digital-en-la-universidad-nacional-de-colombia'
           }
@@ -745,7 +749,7 @@ export default function CulturaDigital() {
           }
           linkIvoox={'https://go.ivoox.com/rf/126459051'}
           title='Recurso 7. La Cultura Digital en la Universidad Nacional de Colombia'
-          subtitle="Una conversación con la profesora Liz Karen Herrera Quintero"
+          subtitle='Una conversación con la profesora Liz Karen Herrera Quintero'
         />
         <BloqueTexto>
           <div className='pl-7 pt-10 lg:pl-14'>
@@ -1083,11 +1087,10 @@ export default function CulturaDigital() {
           </ul>
         </BloqueTexto>
         <Podcast
-          linkIvoox={'https://go.ivoox.com/rf/127214913'}
           linkSpotify={'7aCcyvZT1oqEVFDEVVLo2m'}
+          linkIvoox={'https://go.ivoox.com/rf/127214913'}
           linkWeb={'https://podcastradio.unal.edu.co/detalle/t1-e4-gestion-de-los-datos-en-el-siglo-xxi'}
-          src={'./audio/recurso_9_innovacion.mp3'}
-          subtitle="Una conversación con la profesora Elizabeth León Guzmán"
+          subtitle='Una conversación con la profesora Elizabeth León Guzmán'
           title={
             <>
               Recurso 9. Gestión de los datos en el Siglo <span className='caps'>XXI</span>: clave en la Unal
@@ -1156,11 +1159,15 @@ export default function CulturaDigital() {
         </BloqueTexto>
         <ScrollVideo
           number={10}
-          title={"Recurso 10. ¿Cómo ha evolucionado la incorporación de la tecnología en la enseñanza y el aprendizaje desde que comenzaste a estudiar en la Unal?"}
+          title={
+            'Recurso 10. ¿Cómo ha evolucionado la incorporación de la tecnología en la enseñanza y el aprendizaje desde que comenzaste a estudiar en la Unal?'
+          }
           url='https://youtu.be/w4UeMPSTuR8'
           type='video/mp4'
         />
-        <Subtitulo id="ilusiones-y-retos-tecnologicos-en-el-camino-a-la-transformacion-digital">Ilusiones y retos tecnológicos en el camino a la transformación digital</Subtitulo>
+        <Subtitulo id='ilusiones-y-retos-tecnologicos-en-el-camino-a-la-transformacion-digital'>
+          Ilusiones y retos tecnológicos en el camino a la transformación digital
+        </Subtitulo>
         <BloqueTexto>
           <p>
             Las reflexiones en torno a la transversalidad de las tecnologías digitales en la vida de las sociedades del
