@@ -7,8 +7,15 @@ import ScrollVideo from '@/components/ScrollVideo';
 import Slider from '@/components/Slider';
 import { slider_data } from '@/data/slider_data';
 import Link from 'next/link';
+import { useLayoutEffect } from 'react';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 export default function UniversidadEraDigital() {
+  useLayoutEffect(() => {
+    ScrollTrigger.refresh(true);
+  }, [])
+
+
   return (
     <>
       <Capitulo>

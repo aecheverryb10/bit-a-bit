@@ -26,13 +26,14 @@ const ScrollVideo = (props) => {
 			start: "top",
 			endTrigger: containerRef.current,
 			end: "bottom",
+			markers: true,
 			onEnter: () => playPauseVideo(true),
 			onEnterBack: () => playPauseVideo(true),
 			onLeave: () => playPauseVideo(false),
 			onLeaveBack: () => playPauseVideo(false),
 		});
 
-		ScrollTrigger.refresh();
+		ScrollTrigger.refresh(true);
 	}, { scope: containerRef });
 
 

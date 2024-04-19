@@ -2,8 +2,15 @@ import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } fro
 import Capitulo from '@/components/Capitulo';
 import ScrollVideo from '@/components/ScrollVideo';
 import Timeline from '@/components/Timeline';
+import { useLayoutEffect } from 'react';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+
 
 export default function AscendenciasDigitales() {
+  useLayoutEffect(() => {
+    ScrollTrigger.refresh(true);
+  }, [])
+  
   return (
     <>
       <Capitulo>

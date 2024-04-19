@@ -20,10 +20,11 @@ const ScrollImage = (props) => {
 				start: "top",
 				endTrigger: containerRef.current,
 				end: "bottom",
+				markers: true
 			}
 		});
 		tl_caption.to(captionRef.current, { top: "10%" });
-		tl_caption.scrollTrigger.refresh()
+		tl_caption.scrollTrigger.refresh(true)
 	
 		// gsap code here...
 		const tl_gradient = gsap.timeline({
@@ -32,7 +33,7 @@ const ScrollImage = (props) => {
 				trigger: containerRef.current,
 				start: "top 50%",
 				endTrigger: containerRef.current,
-				end: "bottom",
+				end: "bottom"
 			},
 		});
 		tl_gradient
@@ -40,7 +41,7 @@ const ScrollImage = (props) => {
 		.set(gradientRef.current, { bottom: 0, rotate: 180, top: "auto" })
 		.to(gradientRef.current, { opacity: 1 });
 		
-		tl_gradient.scrollTrigger.refresh()
+		tl_gradient.scrollTrigger.refresh(true)
 
 	}, { scope: containerRef });
 
