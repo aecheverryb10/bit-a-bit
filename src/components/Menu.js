@@ -49,7 +49,7 @@ const Menu = () => {
               } else {
                 if (!(entries[0].intersectionRect.top < window.innerHeight / 2)) {
                   setCurrentTitle({
-                    content: replaceInnerHTML(headlineTags[index - 1].innerHTML),
+                    content: replaceInnerHTML(headlineTags[index - 1]?.innerHTML),
                     position: index - 1,
                   });
                 }
