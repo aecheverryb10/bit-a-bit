@@ -6,8 +6,8 @@ import Capitulos from '@/data/capitulos';
 import Link from 'next/link';
 
 const Capitulo = (props) => {
-  const { asPath } = useRouter();
-  const currentChapterPosition = Capitulos.findIndex((item) => `/${item?.url}` === asPath);
+  const { pathname } = useRouter();
+  const currentChapterPosition = Capitulos.findIndex((item) => `/${item?.url}` === pathname);
   const currentChapter = Capitulos[currentChapterPosition];
   const prevChapter = Capitulos[currentChapterPosition - 1];
   const nextChapter = Capitulos[currentChapterPosition + 1];

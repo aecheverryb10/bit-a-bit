@@ -10,13 +10,13 @@ const Menu = () => {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const barraMenu = useRef();
   const purpleBar = useRef();
-  const { asPath } = useRouter();
+  const { pathname } = useRouter();
 
   const menuElement = useRef();
   const submenuRef = useRef();
   const { height, width } = barraMenu.current?.getBoundingClientRect() ?? {};
-  const currentChapter = Capitulos.find((item) => `/${item.url}` === asPath);
-  const chapterIndex = Capitulos.findIndex((item) => `/${item.url}` === asPath);
+  const currentChapter = Capitulos.find((item) => `/${item.url}` === pathname);
+  const chapterIndex = Capitulos.findIndex((item) => `/${item.url}` === pathname);
 
   const [currentTitle, setCurrentTitle] = useState({ text: currentChapter?.title, position: 0 });
   const [submenu, setSubMenu] = useState([]);
@@ -30,16 +30,16 @@ const Menu = () => {
       if (container) {
         let SUBMENU = [];
         const headlineTags = container.querySelectorAll('h1, h2, h3, h4, h5, h6');
-        
+
         const observers = Array.from(headlineTags).map((headline, index) => {
           let content = replaceInnerHTML(headline.innerHTML);
-          const tagname = headline.tagName
+          const tagname = headline.tagName;
           SUBMENU.push({
             element: headline,
             content: content,
             id: headline.id,
             key: headline.textContent.split(' ').join('-'),
-            classname: tagname === "H3" ? "pl-24 2xl:pl-48" : "pl-16 2xl:pl-40"
+            classname: tagname === 'H3' ? 'pl-24 2xl:pl-48' : 'pl-16 2xl:pl-40',
           });
 
           const observer = new IntersectionObserver(
@@ -145,7 +145,7 @@ const Menu = () => {
           <div className='flex flex-col xl:flex-row'>
             {Capitulos.filter((item) => !item.notIncludeInMenu)?.map((item, index) => {
               const { url, title, subtitle, initial } = item;
-              const activeItem = asPath === `/${url}`;
+              const activeItem = pathname === `/${url}`;
               return (
                 <Link
                   key={`item-menu-${index}`}
@@ -258,7 +258,9 @@ const Menu = () => {
                     <button
                       className={`${
                         option.element.tagName === 'H2' ? 'bg-purple-base bg-opacity-60' : ''
-                        } border-b border-opacity-20 border-white transition font-light block w-full text-left py-2 text-lg hover:bg-white hover:text-purple-base pr-5 ${option.classname}`}
+                      } border-b border-opacity-20 border-white transition font-light block w-full text-left py-2 text-lg hover:bg-white hover:text-purple-base pr-5 ${
+                        option.classname
+                      }`}
                       onClick={() => goToSection(option.element, index)}
                       key={option.key}
                       dangerouslySetInnerHTML={{ __html: option.content }}
