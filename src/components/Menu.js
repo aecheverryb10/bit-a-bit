@@ -238,7 +238,7 @@ const Menu = () => {
             <p className='font-extralight text-xl' dangerouslySetInnerHTML={{ __html: currentTitle.content }} />
           </div>
           <div
-            className={`absolute w-full  max-w-[700px] transition-all duration-700  text-white top-[60px] ${
+            className={`absolute w-full  max-w-[640px] transition-all duration-700  text-white top-[60px] ${
               isSubmenuOpen ? 'left-0 ' : '-left-full overflow-hidden'
             }`}
             ref={submenuRef}
