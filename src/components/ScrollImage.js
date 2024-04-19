@@ -20,7 +20,7 @@ const ScrollImage = (props) => {
 				start: "top",
 				endTrigger: containerRef.current,
 				end: "bottom",
-				markers: true
+				// markers: true
 			}
 		});
 		tl_caption.to(captionRef.current, { top: "10%" });
