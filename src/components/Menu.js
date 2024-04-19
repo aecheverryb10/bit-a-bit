@@ -39,7 +39,7 @@ const Menu = () => {
             content: content,
             id: headline.id,
             key: headline.textContent.split(' ').join('-'),
-            indent: tagname === "H2" ? "indent-4" : tagname === "H3" ? "indent-8" : ""
+            classname: tagname === "H3" ? "pl-24 2xl:pl-48" : "pl-16 2xl:pl-40"
           });
 
           const observer = new IntersectionObserver(
@@ -222,10 +222,17 @@ const Menu = () => {
           <div className='lg:container px-9 flex items-center gap-6'>
             {!currentChapter?.initial && (
               <button
-                className='uppercase tracking-widest hidden lg:block'
+                className='uppercase tracking-widest hidden lg:block lg:border-r border-white pr-6'
                 onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}
               >
-                Indice
+                <div className='flex items-center'>
+                  <span className='pr-4'>
+                    <span className='w-6 block border-t-2 border-white rounded-full' />
+                    <span className='w-6 block border-t-2 border-white rounded-full my-[6px]' />
+                    <span className='w-6 block border-t-2 border-white rounded-full' />
+                  </span>
+                  Indice
+                </div>
               </button>
             )}
             <p className='font-extralight text-xl' dangerouslySetInnerHTML={{ __html: currentTitle.content }} />
@@ -251,7 +258,7 @@ const Menu = () => {
                     <button
                       className={`${
                         option.element.tagName === 'H2' ? 'bg-purple-base bg-opacity-60' : ''
-                        } border-b border-opacity-20 border-white transition font-light block w-full text-left py-2 text-lg pl-16 2xl:pl-40 hover:bg-white hover:text-purple-base pr-5 ${option.indent}`}
+                        } border-b border-opacity-20 border-white transition font-light block w-full text-left py-2 text-lg hover:bg-white hover:text-purple-base pr-5 ${option.classname}`}
                       onClick={() => goToSection(option.element, index)}
                       key={option.key}
                       dangerouslySetInnerHTML={{ __html: option.content }}
