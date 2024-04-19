@@ -4,7 +4,7 @@ import { useGSAP } from '@gsap/react';
 
 const MainSection = (props) => {
   const { children } = props;
-  return <section className='px-4 md:px-10 xl:pr-0 xl:pl-52 max-w-[1440px] '>{children}</section>;
+  return <section className='px-4 md:px-10 max-w-[1440px] mx-auto xl:pl-52 2xl:pl-0 xl:pr-0'>{children}</section>;
 };
 
 const ParrafoInicial = (props) => {
