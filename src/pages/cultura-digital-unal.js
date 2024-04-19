@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Capitulo from '@/components/Capitulo';
 import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
@@ -13,7 +13,7 @@ import { Tooltip } from 'react-tooltip';
 export default function CulturaDigital() {
   useLayoutEffect(() => {
     ScrollTrigger.refresh(true);
-  }, [])
+  }, []);
 
   return (
     <>
@@ -548,7 +548,8 @@ export default function CulturaDigital() {
             id='estrategia-de-transformacion-digital-2019-2021-fundacion-de-la-direccion-nacional-de-estrategia-digital'
             className='text-2xl text-purple-base font-sans mb-10'
           >
-            3.1.5 Estrategia de Transformación Digital 2019-2021: fundación de la Dirección Nacional de Estrategia Digital
+            3.1.5 Estrategia de Transformación Digital 2019-2021: fundación de la Dirección Nacional de Estrategia
+            Digital
           </h3>
           <p>
             En este punto, la consolidación de una cultura digital y la apropiación tecnológica significaba trabajar en
