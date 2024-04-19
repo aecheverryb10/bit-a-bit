@@ -241,19 +241,19 @@ export default function Home() {
                 className='basis-1/6 lg:h-full bg-cover group shadow-capitulo relative z-30'
               >
                 <div className='flex flex-col h-full'>
-                  <div className='text-center lg:py-28'>
+                  <div className='color-introduccion text-center lg:py-28'>
                     <p className='text-9xl font-thin'></p>
                   </div>
-                  <div className='grow border-y border-white font-light text-3xl flex justify-end'>
+                  <div className='grow border-y border-white font-light text-3xl flex justify-end bg-blue-cian bg-opacity-20'>
                     <div className='h-full text-center tracking-wider w-full px-8 2xl:px-16  transition-all group-hover:bg-white group-hover:bg-opacity-10 pb-10 lg:pb-0'>
                       <span className='block border-l border-white h-16 mx-auto w-0' />
-                      <span className='block rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center'>
+                      <span className='block rounded-full border border-white bg-blue-cian h-8 mx-auto w-8 flex items-center justify-center'>
                         <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
                       </span>
                       <h2 className='mt-7 text-2xl 2xl:text-3xl'>Introducción</h2>
                     </div>
                   </div>
-                  <div className='bg-blend-multiply text-center lg:py-20 2xl:py-24'></div>
+                  <div className='color-introduccion bg-blend-multiply text-center lg:py-20 2xl:py-24'></div>
                 </div>
               </Link>
 

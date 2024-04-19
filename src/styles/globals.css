@@ -38,6 +38,12 @@ body {
 	@apply h-full;
 }
 
+
+
+.color-introduccion{
+  background: linear-gradient(233.61deg, rgba(44, 42, 153, 0) 32.27%, rgba(26, 126, 198, 0.7) 91.55%);
+}
+
 .color-capitulo1{
   background: linear-gradient(233.61deg, rgba(44, 42, 153, 0) 32.27%, rgba(74, 70, 255, 0.7) 91.55%);
 }
