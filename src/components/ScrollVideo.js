@@ -26,7 +26,7 @@ const ScrollVideo = (props) => {
 			start: "top",
 			endTrigger: containerRef.current,
 			end: "bottom",
-			markers: true,
+			// markers: true,
 			onEnter: () => playPauseVideo(true),
 			onEnterBack: () => playPauseVideo(true),
 			onLeave: () => playPauseVideo(false),

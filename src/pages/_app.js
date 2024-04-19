@@ -10,11 +10,6 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(ScrollTrigger);
 
 function App({ Component, pageProps }) {
-
-  useGSAP(() => {
-    console.log("cambio");
-  })
-
   return (
     <>
       {/* <Header/> */}
