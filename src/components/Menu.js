@@ -22,7 +22,7 @@ const Menu = () => {
   const [submenu, setSubMenu] = useState([]);
   const [observers, setObservers] = useState([]);
 
-  const replaceInnerHTML = (innerHTML) => innerHTML.replace('<br/>', ' ').replace('block', '');
+  const replaceInnerHTML = (innerHTML) => innerHTML.replace('<br/>', ' ').replace('block', '').replace('text-4xl', '');
 
   useEffect(() => {
     const getAllHeadlines = () => {
@@ -30,14 +30,16 @@ const Menu = () => {
       if (container) {
         let SUBMENU = [];
         const headlineTags = container.querySelectorAll('h1, h2, h3, h4, h5, h6');
-
+        
         const observers = Array.from(headlineTags).map((headline, index) => {
           let content = replaceInnerHTML(headline.innerHTML);
+          const tagname = headline.tagName
           SUBMENU.push({
             element: headline,
             content: content,
             id: headline.id,
             key: headline.textContent.split(' ').join('-'),
+            indent: tagname === "H2" ? "indent-4" : tagname === "H3" ? "indent-8" : ""
           });
 
           const observer = new IntersectionObserver(
@@ -229,7 +231,7 @@ const Menu = () => {
             <p className='font-extralight text-xl' dangerouslySetInnerHTML={{ __html: currentTitle.content }} />
           </div>
           <div
-            className={`absolute w-full  max-w-[640px] transition-all duration-700  text-white top-[60px] ${
+            className={`absolute w-full  max-w-[700px] transition-all duration-700  text-white top-[60px] ${
               isSubmenuOpen ? 'left-0 ' : '-left-full overflow-hidden'
             }`}
             ref={submenuRef}
@@ -249,7 +251,7 @@ const Menu = () => {
                     <button
                       className={`${
                         option.element.tagName === 'H2' ? 'bg-purple-base bg-opacity-60' : ''
-                      } border-b border-opacity-20 border-white transition font-light block w-full text-left py-2 text-lg pl-16 2xl:pl-40 hover:bg-white hover:text-purple-base pr-5`}
+                        } border-b border-opacity-20 border-white transition font-light block w-full text-left py-2 text-lg pl-16 2xl:pl-40 hover:bg-white hover:text-purple-base pr-5 ${option.indent}`}
                       onClick={() => goToSection(option.element, index)}
                       key={option.key}
                       dangerouslySetInnerHTML={{ __html: option.content }}

@@ -157,7 +157,7 @@ export default function CulturaDigital() {
         </BloqueTexto>
         <Subtitulo id='institucionalizacion-tic-cntic-dntic-peti-dned-unalab'>
           <>
-            Institucionalización <span className='caps'>TIC</span>: <span className='caps'>CNTIC</span>,{' '}
+            3.1 Institucionalización <span className='caps'>TIC</span>: <span className='caps'>CNTIC</span>,{' '}
             <span className='caps'>DNTIC</span>, Peti, <span className='caps'>DNED</span>/UNALab
           </>
         </Subtitulo>
@@ -197,7 +197,7 @@ export default function CulturaDigital() {
             id='plan-estrategico-de-tecnologias-de-informacion-y-comunicaciones'
             className='text-2xl text-purple-base font-sans mb-10'
           >
-            Plan Estratégico de Tecnologías de Información y Comunicaciones
+            3.1.1 Plan Estratégico de Tecnologías de Información y Comunicaciones
           </h3>
           <p>
             Con el tiempo, los esfuerzos por regular el uso de las tecnologías de la información se aglutinaron en
@@ -266,7 +266,7 @@ export default function CulturaDigital() {
             id='direccion-nacional-de-tecnologias-de-la-informacion-y-las-comunicaciones'
             className='text-2xl text-purple-base font-sans mb-10'
           >
-            Dirección Nacional de Tecnologías de la Información y las Comunicaciones
+            3.1.2 Dirección Nacional de Tecnologías de la Información y las Comunicaciones
           </h3>
           <p>
             Con la reestructuración académico-administrativa a nivel nacional en 2013, la Vicerrectoría General fijó sus
@@ -298,7 +298,7 @@ export default function CulturaDigital() {
             sustentan su desarrollo académico y administrativo (Resolución 464 de 2014).
           </p>
           <h3 id='derecho-y-seguridad-informatica' className='text-2xl text-purple-base font-sans mb-10'>
-            Derecho y seguridad informática
+            3.1.3 Derecho y seguridad informática
           </h3>
           <p>
             El aumento en el uso de las tecnologías de la información, la masificación del uso de computadoras, la
@@ -394,10 +394,14 @@ export default function CulturaDigital() {
         </BloqueTexto>
         <Podcast
           linkSpotify={'1wBm9beSVGMhChmZQgOoGu'}
-          title={'Recurso 5. ¿Está la Universidad Nacional de Colombia preparada para ataques informáticos o ciberataques?'}
-          subtitle={<>
-            Una conversación con el director de <span className='caps'>DNED</span> Johan Sebatián Eslava Garzón
-          </>}
+          title={
+            'Recurso 5. ¿Está la Universidad Nacional de Colombia preparada para ataques informáticos o ciberataques?'
+          }
+          subtitle={
+            <>
+              Una conversación con el director de <span className='caps'>DNED</span> Johan Sebatián Eslava Garzón
+            </>
+          }
           linkWeb={
             'https://podcastradio.unal.edu.co/detalle/t1-e2-la-cultura-digital-en-la-universidad-nacional-de-colombia'
           }
@@ -408,7 +412,7 @@ export default function CulturaDigital() {
             id='iniciativas-estrategicas-de-apropiacion-y-optimizacion-tecnologica'
             className='text-2xl text-purple-base font-sans mb-10'
           >
-            Iniciativas estratégicas de apropiación y optimización tecnológica
+            3.1.4 Iniciativas estratégicas de apropiación y optimización tecnológica
           </h3>
           <p>
             Paralelamente, en el mismo año en que se desplegaba la política de seguridad informática, se actualizó el
@@ -544,7 +548,7 @@ export default function CulturaDigital() {
             id='estrategia-de-transformacion-digital-2019-2021-fundacion-de-la-direccion-nacional-de-estrategia-digital'
             className='text-2xl text-purple-base font-sans mb-10'
           >
-            Estrategia de Transformación Digital 2019-2021: fundación de la Dirección Nacional de Estrategia Digital
+            3.1.5 Estrategia de Transformación Digital 2019-2021: fundación de la Dirección Nacional de Estrategia Digital
           </h3>
           <p>
             En este punto, la consolidación de una cultura digital y la apropiación tecnológica significaba trabajar en
@@ -611,7 +615,7 @@ export default function CulturaDigital() {
         <Podcast
           linkSpotify={'4uM5VjxFIuo6wH8RRuz26o'}
           title={'Recurso 6. La transformación digital en la Universidad Nacional de Colombia'}
-          subtitle="Una conversación con el profesor Gustavo Adolfo Pérez Zapata"
+          subtitle='Una conversación con el profesor Gustavo Adolfo Pérez Zapata'
           linkWeb={
             'https://podcastradio.unal.edu.co/detalle/t1-e1-la-transformacion-digital-en-la-universidad-nacional-de-colombia'
           }
@@ -745,7 +749,7 @@ export default function CulturaDigital() {
           }
           linkIvoox={'https://go.ivoox.com/rf/126459051'}
           title='Recurso 7. La Cultura Digital en la Universidad Nacional de Colombia'
-          subtitle="Una conversación con la profesora Liz Karen Herrera Quintero"
+          subtitle='Una conversación con la profesora Liz Karen Herrera Quintero'
         />
         <BloqueTexto>
           <div className='pl-7 pt-10 lg:pl-14'>
@@ -816,7 +820,7 @@ export default function CulturaDigital() {
           </div>
         </BloqueTexto>
         <Subtitulo id='experiencias-de-cultura-y-transformacion-digital'>
-          Experiencias de cultura y transformación digital
+          3.2 Experiencias de cultura y transformación digital
         </Subtitulo>
         <BloqueTexto>
           <p>
@@ -1083,11 +1087,10 @@ export default function CulturaDigital() {
           </ul>
         </BloqueTexto>
         <Podcast
-          linkIvoox={'https://go.ivoox.com/rf/127214913'}
           linkSpotify={'7aCcyvZT1oqEVFDEVVLo2m'}
+          linkIvoox={'https://go.ivoox.com/rf/127214913'}
           linkWeb={'https://podcastradio.unal.edu.co/detalle/t1-e4-gestion-de-los-datos-en-el-siglo-xxi'}
-          src={'./audio/recurso_9_innovacion.mp3'}
-          subtitle="Una conversación con la profesora Elizabeth León Guzmán"
+          subtitle='Una conversación con la profesora Elizabeth León Guzmán'
           title={
             <>
               Recurso 9. Gestión de los datos en el Siglo <span className='caps'>XXI</span>: clave en la Unal
@@ -1156,11 +1159,15 @@ export default function CulturaDigital() {
         </BloqueTexto>
         <ScrollVideo
           number={10}
-          title={"Recurso 10. ¿Cómo ha evolucionado la incorporación de la tecnología en la enseñanza y el aprendizaje desde que comenzaste a estudiar en la Unal?"}
+          title={
+            '¿Cómo ha evolucionado la incorporación de la tecnología en la enseñanza y el aprendizaje desde que comenzaste a estudiar en la Unal?'
+          }
           url='https://youtu.be/w4UeMPSTuR8'
           type='video/mp4'
         />
-        <Subtitulo id="ilusiones-y-retos-tecnologicos-en-el-camino-a-la-transformacion-digital">Ilusiones y retos tecnológicos en el camino a la transformación digital</Subtitulo>
+        <Subtitulo id='ilusiones-y-retos-tecnologicos-en-el-camino-a-la-transformacion-digital'>
+          3.3 Ilusiones y retos tecnológicos en el camino a la transformación digital
+        </Subtitulo>
         <BloqueTexto>
           <p>
             Las reflexiones en torno a la transversalidad de las tecnologías digitales en la vida de las sociedades del

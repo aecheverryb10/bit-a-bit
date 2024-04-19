@@ -40,7 +40,7 @@ export default function AscendenciasDigitales() {
           </p>
         </ParrafoInicial>
         <Subtitulo id='preludios-digitales'>
-          <>Preludios digitales: </>
+          <>1.1 Preludios digitales: </>
           <span className='block font-extralight'>hacia una comprensión histórica de lo digital</span>
         </Subtitulo>
         <BloqueTexto noPaddingBottom={true}>
@@ -185,7 +185,7 @@ export default function AscendenciasDigitales() {
             impacto y el papel de las tecnologías digitales en América Latina y el Caribe. En este sentido, hay trabajos
             pioneros que arrojan luces en torno a dos líneas de investigación: por una parte, se ha hablado de los
             flujos de máquinas computacionales a las diferentes regiones de América Latina y el Caribe; y los usos que
-            se le dieron; por otra parte: se ha rastreado la llegada de la informática como disciplina científica,
+            se le dieron; por otra parte, se ha rastreado la llegada de la informática como disciplina científica,
             insertándose en multiplicidad de centros académicos de los países latinoamericanos. Con ello, se ha pensado
             una historia de las Tecnologías de la Información y las Comunicaciones y una historia material de las
             máquinas digitales en el continente (Aguirre y Carnota, 2009; Rodríguez y Carnota, 2015a).
@@ -258,7 +258,7 @@ export default function AscendenciasDigitales() {
           <Timeline />
         </div>
         <Subtitulo id='que-paso-en-colombia'>
-          <>¿Qué pasó en Colombia?</>
+          <>1.2 ¿Qué pasó en Colombia?</>
         </Subtitulo>
         <BloqueTexto noPaddingBottom={true}>
           <p>
