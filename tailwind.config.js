@@ -37,6 +37,7 @@ module.exports = {
           100: '#081c59',
           base: '#4A46FF',
           dark: '#171C30',
+          cian: '#1a7ec6',
         },
         purple: {
           base: '#52188C',

@@ -49,7 +49,7 @@ const ScrollImageVertical = (props) => {
   );
 
   return (
-    <section className='lg:pl-20 max-w-[1440px] '>
+    <section className='px-4 md:px-10 max-w-[1440px] mx-auto xl:pl-52 2xl:pl-0 xl:pr-0'>
       <div className='h-screen lg:bg-white lg:bg-opacity-70' ref={containerRef}>
         <div className='relative h-screen '>
           <div ref={captionRef} className='absolute right-48 bottom-0 text-white z-10 caption-element vertical'>

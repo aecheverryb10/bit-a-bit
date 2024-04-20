@@ -5,12 +5,11 @@ import Timeline from '@/components/Timeline';
 import { useLayoutEffect } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
-
 export default function AscendenciasDigitales() {
   useLayoutEffect(() => {
     ScrollTrigger.refresh(true);
-  }, [])
-  
+  }, []);
+
   return (
     <>
       <Capitulo>
@@ -50,7 +49,7 @@ export default function AscendenciasDigitales() {
           <>1.1 Preludios digitales: </>
           <span className='block font-extralight'>hacia una comprensión histórica de lo digital</span>
         </Subtitulo>
-        <BloqueTexto noPaddingBottom={true}>
+        <BloqueTexto shadow={false} Texto noPaddingBottom={true}>
           <p>
             En el siglo <span className='caps'>XX</span>, el concepto de <em>digital</em> se adaptó, para referirse,
             concretamente, a los datos representados por dígitos numéricos (Online Etymology Dictionary, 2021). La
@@ -59,10 +58,11 @@ export default function AscendenciasDigitales() {
             mecánico y analógico de uno intangible, representado por sistemas electrónicos y computacionales —recurso 1.
           </p>
         </BloqueTexto>
-        <ScrollVideo 
+        <ScrollVideo
           number={1}
-          title={"¿Qué es lo digital? y ¿qué es transformación digital?"} 
-          url='https://youtu.be/Cypiyk-Q-2A' type='video/mp4' 
+          title={'¿Qué es lo digital? y ¿qué es transformación digital?'}
+          url='https://youtu.be/Cypiyk-Q-2A'
+          type='video/mp4'
         />
         <BloqueTexto shadow={false} noPaddingBottom={true}>
           <p>

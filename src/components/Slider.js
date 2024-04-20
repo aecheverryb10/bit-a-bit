@@ -33,7 +33,7 @@ const Slider = (props) => {
   };
   return (
     <>
-      <div className='lg:pl-32 '>
+      <div className='lg:pl-32 max-w-[1920px] mx-auto'>
         <div className='rounded-l-[30px] text-white relative overflow-hidden shadow-2xl'>
           <div
             className='absolute w-full h-full'
