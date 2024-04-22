@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
+import { useDispatch, useTrackedState } from '@/store';
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +12,10 @@ const Menu = () => {
   const barraMenu = useRef();
   const purpleBar = useRef();
   const { pathname } = useRouter();
+
+  const dispatch = useDispatch();
+  const state = useTrackedState();
+  const { fontSize } = state;
 
   const menuElement = useRef();
   const submenuRef = useRef();
@@ -103,6 +108,30 @@ const Menu = () => {
     window.scrollTo({ top: offsetTop_section - (height + height_purpleBar), behavior: 'smooth' });
   };
 
+  const changeFontSize = (decrease) => {
+    const htmlElement = document.getElementsByTagName('html')[0];
+    let baseValue = fontSize;
+    let createNewValue = () => {
+      if (decrease) {
+        let maxValue = 12;
+        let newValue = baseValue - 1;
+        return newValue > maxValue ? newValue : maxValue;
+      } else {
+        let maxValue = 22;
+        let newValue = baseValue + 1;
+        return newValue < maxValue ? newValue : maxValue;
+      }
+    };
+    let newValue = createNewValue();
+    dispatch({ type: 'MODIFY_STATE', property: 'fontSize', value: newValue });
+    htmlElement.style.fontSize = `${newValue}px`;
+  };
+
+  const [menuHeight, setMenuHeight] = useState(600);
+  useEffect(() => {
+    setMenuHeight(menuElement?.current?.getBoundingClientRect()?.height ?? 600);
+  }, [fontSize]);
+
   return (
     <div
       className='fixed z-50 xl:pr-20 w-full'
@@ -120,21 +149,36 @@ const Menu = () => {
             </span>
             <span className='uppercase tracking-widest'>Menú</span>
           </button>
-          <Link href='./'>
+          <Link href='/'>
             <h2 className='uppercase tracking-[0.18em] text-white text-sm pl-24'>
-              <span className='lg:border-r border-white font-medium pr-4 mr-4'>Bit a bit</span>{' '}
+              <span className='lg:border-r hidden md:inline-block border-white font-medium pr-4 mr-4'>Bit a bit</span>{' '}
               <span className='font-light hidden lg:inline-block'>
                 La evolución digital en la Universidad Nacional de Colombia
               </span>
             </h2>
           </Link>
         </div>
+        <div className='absolute right-8 top-3 flex items-center'>
+          <button
+            onClick={() => changeFontSize()}
+            className='w-5 h-5 flex items-center justify-center text-2xl text-white font-ancizar font-bold'
+          >
+            <span>+</span>
+          </button>
+          <button className='text-2xl text-white font-ancizar font-bold mx-2'>A</button>
+          <button
+            onClick={() => changeFontSize(true)}
+            className='w-5 h-5 flex items-center justify-center text-2xl text-white font-ancizar font-bold'
+          >
+            <span>-</span>
+          </button>
+        </div>
       </div>
 
       <div
         className='absolute transition-all duration-500 z-40 text-white'
         style={{
-          top: `${isOpen ? height : `-${menuElement?.current?.getBoundingClientRect()?.height ?? 600}`}px`,
+          top: `${isOpen ? height : `-${menuHeight}`}px`,
           width: `${width}px`,
         }}
       >
@@ -149,17 +193,20 @@ const Menu = () => {
               return (
                 <Link
                   key={`item-menu-${index}`}
-                  className={`${initial ? 'text-2xl' : 'text-5xl '
-                    } d-block basis-1/5 text-left px-6 py-6 xl:pt-0 xl:pb-10 transition hover:bg-black hover:bg-opacity-80 ${activeItem ? 'bg-black bg-opacity-80' : ''
-                    }`}
+                  className={`${
+                    initial ? 'text-2xl' : 'text-5xl '
+                  } d-block basis-1/5 text-left px-6 py-6 xl:pt-0 xl:pb-10 transition hover:bg-black hover:bg-opacity-80 ${
+                    activeItem ? 'bg-black bg-opacity-80' : ''
+                  }`}
                   href={url}
                 >
                   <div className='xl:mb-10 hidden xl:block'>
                     <span className='block ml-3 w-px h-28 border-r border-white' />
                     <span className='block ml-2 w-2 h-2 rounded-full bg-white relative z-10' />
                     <span
-                      className={`block w-6 h-6 rounded-full border border-white -mt-4 ${activeItem ? 'bg-purple-base' : ''
-                        }`}
+                      className={`block w-6 h-6 rounded-full border border-white -mt-4 ${
+                        activeItem ? 'bg-purple-base' : ''
+                      }`}
                     />
                   </div>
                   <div className='flex xl:flex-col'>
@@ -206,7 +253,9 @@ const Menu = () => {
       </div>
       {!!currentChapter && (
         <>
-          {isSubmenuOpen && <div className={`absolute h-screen w-screen cursor-pointer`} onClick={() => setIsSubmenuOpen(false)} />}
+          {isSubmenuOpen && (
+            <div className={`absolute h-screen w-screen cursor-pointer`} onClick={() => setIsSubmenuOpen(false)} />
+          )}
           <div
             ref={purpleBar}
             className='relative z-10  bg-purple-base bg-opacity-70 text-white pt-3 pb-5  rounded-br-[15px] shadow-lg'
@@ -230,8 +279,9 @@ const Menu = () => {
               <p className='font-extralight text-xl' dangerouslySetInnerHTML={{ __html: currentTitle.content }} />
             </div>
             <div
-              className={`absolute w-full z-40 max-w-[640px] transition-all duration-700  text-white top-[60px] ${isSubmenuOpen ? 'left-0 ' : '-left-full overflow-hidden'
-                }`}
+              className={`absolute w-full z-40 max-w-[640px] transition-all duration-700  text-white top-[60px] ${
+                isSubmenuOpen ? 'left-0 ' : '-left-full overflow-hidden'
+              }`}
               ref={submenuRef}
             >
               <div className='w-full h-auto bg-blue-dark bg-opacity-80  rounded-br-2xl pt-4  shadow-xl'>
@@ -247,8 +297,11 @@ const Menu = () => {
                   ?.map((option, index) => {
                     return (
                       <button
-                        className={`${option.element.tagName === 'H2' ? 'bg-purple-base bg-opacity-60' : ''
-                          } border-b border-opacity-20 border-white transition font-light block w-full text-left py-2 text-lg hover:bg-white hover:text-purple-base pr-5 ${option.classname}`}
+                        className={`${
+                          option.element.tagName === 'H2' ? 'bg-purple-base bg-opacity-60' : ''
+                        } border-b border-opacity-20 border-white transition font-light block w-full text-left py-2 text-lg hover:bg-white hover:text-purple-base pr-5 ${
+                          option.classname
+                        }`}
                         onClick={() => goToSection(option.element, index)}
                         key={option.key}
                         dangerouslySetInnerHTML={{ __html: option.content }}
@@ -269,8 +322,6 @@ const Menu = () => {
       )}
     </div>
   );
-
-
 };
 
 export default Menu;
