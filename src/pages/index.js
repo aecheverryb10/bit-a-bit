@@ -142,20 +142,20 @@ export default function Home() {
             <div className='grow flex flex-col align-center justify-center relative z-50'>
               <div className='lg:container text-white 2xl:min-h-[70vh] lg:bg-blue-100 lg:bg-opacity-40 bg-blend-multiply flex flex-col'>
                 <div className='grow pt-14 2xl:pt-28 overflow-hidden px-10 sm:px-20 2xl:px-36'>
-                  <h1 className='cover-title font-medium text-[5em] leading-none 2xl:text-8xl short:text-7xl mb-3'>
+                  <h1 className='cover-title font-medium text-6xl md:text-[5em] leading-none 2xl:text-8xl short:text-7xl mb-3'>
                     Bit a Bit
                   </h1>
-                  <h2 className='cover-subtitle font-extralight short:text-[1.5em] text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
+                  <h2 className='cover-subtitle font-extralight short:text-[1.5em] text-xl md:text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
                     La evolución digital en la
                     <br /> Universidad Nacional de Colombia
                   </h2>
                   <div className='cover-shields flex short:mt-6 mt-10 short:pb-6 pb-12'>
-                    <div className='short:w-24 w-28 my-auto overflow-hidden'>
+                    <div className='short:w-24 w-20 md:w-28 my-auto overflow-hidden'>
                       <img className='img-shield ' src={'./img/escudo-dned.svg'} alt={'Escudo DNED'} />
                     </div>
-                    <div className='ml-7 pl-7 mr-4 border-l border-white short:py-3 py-4  overflow-hidden'>
+                    <div className='ml-7 pl-7 mr-4 border-l border-white short:py-3 py-3 md:py-4  overflow-hidden'>
                       <img
-                        className='img-shield short:w-20 w-24'
+                        className='img-shield short:w-20 w-20 md:w-24'
                         src={'./img/escudo-unalab.svg'}
                         alt={'Escudo Unalab'}
                       />
@@ -165,14 +165,14 @@ export default function Home() {
 
                 <div className='un-logo bg-blue-100 rounded-b-xl w-full px-8 short:py-3 py-4 2xl:py-7 flex justify-end pr-20 2xl:pr-36'>
                   <img
-                    className='short:w-28 w-36 2xl:w-40'
+                    className='short:w-28 w-28 md:w-36 2xl:w-40'
                     src={'./img/escudo-unal.svg'}
                     alt={'Escudo universidad nacional'}
                   />
                 </div>
               </div>
 
-              <div className='text-center text-white mt-10 lg:-mt-10'>
+              <div className='text-center text-white mt-5 md:mt-10 lg:-mt-10'>
                 <button
                   className='text-center block mx-auto'
                   onClick={() => {
@@ -185,16 +185,16 @@ export default function Home() {
               </div>
             </div>
             <div className='bg-black text-white py-5 lg:py-3 2xl:py-5 border-t-2 border-white z-40'>
-              <div className='container flex justify-end'>
+              <div className='container flex pl-10 md:pl-0 md:justify-end'>
                 <Link
-                  className='font-light text-base 2x:text-xl mr-12 uppercase tracking-widest flex align-center'
+                  className='font-light text-sm md:text-base 2x:text-xl mr-12 uppercase tracking-widest flex align-center'
                   href={'./creditos'}
                 >
                   <img className='w-7 2xl:w-9 mr-2 -m-[2px]' src='./img/boton-siguiente.svg' alt='botón siguiente' />{' '}
                   <span>Créditos</span>
                 </Link>
                 <Link
-                  className='font-light text-base 2x:text-xl uppercase tracking-widest flex align-center'
+                  className='font-light text-sm md:text-base 2x:text-xl uppercase tracking-widest flex align-center'
                   href={'./referencias'}
                 >
                   <img className='w-7 2xl:w-9 mr-2 -m-[2px]' src='./img/boton-siguiente.svg' alt='botón siguiente' />{' '}

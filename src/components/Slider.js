@@ -42,7 +42,7 @@ const Slider = (props) => {
             }}
           />
           <img className='absolute h-full opacity-10' src='./img/texture_34.png' alt='textura' />
-          <div className='py-20 px-10 lg:pr-0 lg:pl-20'>
+          <div className={`py-20 px-10 lg:pr-0 lg:pl-20`}>
             <Swiper
               keyboard={{
                 enabled: false,
@@ -68,20 +68,22 @@ const Slider = (props) => {
                 return (
                   <SwiperSlide key={alt}>
                     <div className='h-full' style={{ position: 'relative' }}>
-                      <img
-                        alt={alt}
-                        onClick={() => {
-                          setToggler(!toggler);
-                          let position = PHOTOS.indexOf(src);
-                          setPhoto(position);
-                        }}
-                        src={src}
-                        style={
-                          correctHeight
-                            ? { height: '300px', maxHeight: '300px', width: 'auto' }
-                            : { width: '100%', maxHeight: '552px' }
-                        }
-                      />
+                      <div style={{ height: correctHeight ? '300px' : 'auto', minHeight: '300px' }}>
+                        <img
+                          alt={alt}
+                          onClick={() => {
+                            setToggler(!toggler);
+                            let position = PHOTOS.indexOf(src);
+                            setPhoto(position);
+                          }}
+                          src={src}
+                          style={
+                            correctHeight
+                              ? { height: '300px', maxHeight: '300px', width: 'auto' }
+                              : { width: '100%', maxHeight: '552px' }
+                          }
+                        />
+                      </div>
                       {caption && <div className='mt-8 pr-8'>{caption}</div>}
                     </div>
                   </SwiperSlide>
