@@ -1,19 +1,24 @@
-import { useLayoutEffect } from 'react';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import Capitulo from '@/components/Capitulo';
 import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
+
+import Capitulo from '@/components/Capitulo';
 import Podcast from '@/components/Podcast';
 import ScrollImage from '@/components/ScrollImage';
 import ScrollMultipleImages from '@/components/ScrollMultipleImage';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import ScrollVideo from '@/components/ScrollVideo';
 import Slider from '@/components/Slider';
-import { slider_data2 } from '@/data/slider_data';
 import { Tooltip } from 'react-tooltip';
+import { slider_data2 } from '@/data/slider_data';
+import { useLayoutEffect } from 'react';
+import { useTrackedState } from '@/store';
 
 export default function CulturaDigital() {
+  const state = useTrackedState();
+  const { fontSize } = state;
+
   useLayoutEffect(() => {
     ScrollTrigger.refresh(true);
-  }, []);
+  }, [fontSize]);
 
   return (
     <>

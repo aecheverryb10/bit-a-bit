@@ -1,19 +1,24 @@
-import Capitulo from '@/components/Capitulo';
 import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
+
+import Capitulo from '@/components/Capitulo';
+import Link from 'next/link';
 import ScrollImage from '@/components/ScrollImage';
 import ScrollImageVertical from '@/components/ScrollImageVertical';
 import ScrollMultipleImages from '@/components/ScrollMultipleImage';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import ScrollVideo from '@/components/ScrollVideo';
 import Slider from '@/components/Slider';
 import { slider_data } from '@/data/slider_data';
-import Link from 'next/link';
 import { useLayoutEffect } from 'react';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useTrackedState } from '@/store';
 
 export default function UniversidadEraDigital() {
+  const state = useTrackedState();
+  const { fontSize } = state;
+
   useLayoutEffect(() => {
     ScrollTrigger.refresh(true);
-  }, [])
+  }, [fontSize]);
 
 
   return (
@@ -436,7 +441,7 @@ export default function UniversidadEraDigital() {
           </p>
         </BloqueTexto>
 
-        <ScrollVideo 
+        <ScrollVideo
           number={3}
           title="¿Cómo eran las clases de Ingeniería de Sistemas en la Sede Bogotá de la Universidad Nacional en los años 1990?"
           type='video/mp4'

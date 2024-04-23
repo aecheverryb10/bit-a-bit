@@ -1,14 +1,19 @@
 import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
+
 import Capitulo from '@/components/Capitulo';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import ScrollVideo from '@/components/ScrollVideo';
 import Timeline from '@/components/Timeline';
 import { useLayoutEffect } from 'react';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useTrackedState } from '@/store';
 
 export default function AscendenciasDigitales() {
+  const state = useTrackedState();
+  const { fontSize } = state;
+
   useLayoutEffect(() => {
     ScrollTrigger.refresh(true);
-  }, []);
+  }, [fontSize]);
 
   return (
     <>

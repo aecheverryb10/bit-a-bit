@@ -13,7 +13,6 @@ const ScrollImageVertical = (props) => {
 
   useGSAP(
     () => {
-      // // gsap code here...
       const tl_caption = gsap.timeline({
         scrollTrigger: {
           pin: true,

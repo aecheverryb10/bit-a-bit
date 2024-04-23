@@ -9,7 +9,6 @@ const ScrollMultipleImages = (props) => {
 
   useGSAP(
     () => {
-      // gsap code here...
       const tl_images = gsap.timeline({
         scrollTrigger: {
           pin: true,

@@ -1,10 +1,14 @@
 import { useRef, useState } from 'react';
-import { useGSAP } from "@gsap/react";
+
+import { BloqueTexto } from './Elements';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import dynamic from 'next/dynamic';
+import { useGSAP } from "@gsap/react";
 
 // https://github.com/cookpete/react-player/issues/1474#issuecomment-1184645105
-import dynamic from 'next/dynamic';
-import { BloqueTexto } from './Elements';
+
+
+
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 
 const ScrollVideo = (props) => {
@@ -33,8 +37,11 @@ const ScrollVideo = (props) => {
 			onLeaveBack: () => playPauseVideo(false),
 		});
 
-		ScrollTrigger.refresh(true);
-	}, { scope: containerRef });
+	
+		return () => {
+			ScrollTrigger.killAll()
+		};
+	}, { scope: containerRef});
 
 
 	return (

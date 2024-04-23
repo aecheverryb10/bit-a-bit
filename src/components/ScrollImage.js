@@ -2,7 +2,6 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const ScrollImage = (props) => {
 	const { alt, img, caption } = props;
@@ -11,7 +10,6 @@ const ScrollImage = (props) => {
 	const gradientRef = useRef();
 
 	useGSAP(() => {
-		// gsap code here...
 		const tl_caption = gsap.timeline({
 			scrollTrigger: {
 				pin: true,
