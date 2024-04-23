@@ -1,5 +1,5 @@
-const { default: Capitulo } = require('@/components/Capitulo');
-const { MainSection } = require('@/components/Elements');
+import Capitulo from '@/components/Capitulo';
+import { MainSection } from '@/components/Elements';
 
 const Referencias = () => {
   return (
