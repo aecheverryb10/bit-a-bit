@@ -75,12 +75,12 @@ export default function Home() {
       <main
         className={`min-h-[100vh] bg-cover relative z-50`}
         ref={containerRef}
-        style={{ backgroundImage: `url('./img/cubierta.png')` }}
+        style={{ backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH}img/cubierta.png')` }}
       >
         <div
           ref={coverRef}
           className='fixed z-[60] bg-white w-full min-h-[100vh]'
-          style={{ backgroundImage: `url('./img/cubierta.png')` }}
+          style={{ backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH}img/cubierta.png')` }}
         >
           <div
             className='w-full min-h-[100vh] flex flex-col align-center justify-center relative bg-blend-mode-lighten mix-blend-mode-lighten'
@@ -151,12 +151,16 @@ export default function Home() {
                   </h2>
                   <div className='cover-shields flex short:mt-6 mt-10 short:pb-6 pb-12'>
                     <div className='short:w-24 w-20 md:w-28 my-auto overflow-hidden'>
-                      <img className='img-shield ' src={'./img/escudo-dned.svg'} alt={'Escudo DNED'} />
+                      <img
+                        className='img-shield '
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/escudo-dned.svg`}
+                        alt={'Escudo DNED'}
+                      />
                     </div>
                     <div className='ml-7 pl-7 mr-4 border-l border-white short:py-3 py-3 md:py-4  overflow-hidden'>
                       <img
                         className='img-shield short:w-20 w-20 md:w-24'
-                        src={'./img/escudo-unalab.svg'}
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/escudo-unalab.svg`}
                         alt={'Escudo Unalab'}
                       />
                     </div>
@@ -166,7 +170,7 @@ export default function Home() {
                 <div className='un-logo bg-blue-100 rounded-b-xl w-full px-8 short:py-3 py-4 2xl:py-7 flex justify-end pr-20 2xl:pr-36'>
                   <img
                     className='short:w-28 w-28 md:w-36 2xl:w-40'
-                    src={'./img/escudo-unal.svg'}
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/escudo-unal.svg`}
                     alt={'Escudo universidad nacional'}
                   />
                 </div>
@@ -179,7 +183,10 @@ export default function Home() {
                     document.getElementsByTagName('html')[0].scrollTop = 100;
                   }}
                 >
-                  <img className='scroll-img short:w-8 w-7 lg:w-14 block mx-auto' src='./img/scroll-button.svg' />{' '}
+                  <img
+                    className='scroll-img short:w-8 w-7 lg:w-14 block mx-auto'
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/scroll-button.svg`}
+                  />{' '}
                   <span className='inline-block mt-2 text-base font-light tracking-wider opacity-80'>comenzar</span>
                 </button>
               </div>
@@ -190,14 +197,22 @@ export default function Home() {
                   className='font-light text-sm md:text-base 2x:text-xl mr-12 uppercase tracking-widest flex align-center'
                   href={'./creditos'}
                 >
-                  <img className='w-7 2xl:w-9 mr-2 -m-[2px]' src='./img/boton-siguiente.svg' alt='botón siguiente' />{' '}
+                  <img
+                    className='w-7 2xl:w-9 mr-2 -m-[2px]'
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/boton-siguiente.svg`}
+                    alt='botón siguiente'
+                  />{' '}
                   <span>Créditos</span>
                 </Link>
                 <Link
                   className='font-light text-sm md:text-base 2x:text-xl uppercase tracking-widest flex align-center'
                   href={'./referencias'}
                 >
-                  <img className='w-7 2xl:w-9 mr-2 -m-[2px]' src='./img/boton-siguiente.svg' alt='botón siguiente' />{' '}
+                  <img
+                    className='w-7 2xl:w-9 mr-2 -m-[2px]'
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/boton-siguiente.svg`}
+                    alt='botón siguiente'
+                  />{' '}
                   <span>Referencias</span>
                 </Link>
               </div>
@@ -227,7 +242,11 @@ export default function Home() {
                     <div className='h-full text-center tracking-wider w-full px-8 2xl:px-16 transition-all group-hover:bg-white group-hover:bg-opacity-10 pb-10 lg:pb-0'>
                       <span className='block border-l border-white h-16 mx-auto w-0' />
                       <span className='block rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center'>
-                        <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
+                        <img
+                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/arrow-down.svg`}
+                          alt='arrow down'
+                          className='w-4'
+                        />
                       </span>
                       <h2 className='mt-7 text-2xl 2xl:text-3xl'>Prólogo</h2>
                     </div>
@@ -248,7 +267,11 @@ export default function Home() {
                     <div className='h-full text-center tracking-wider w-full px-8 2xl:px-16  transition-all group-hover:bg-white group-hover:bg-opacity-10 pb-10 lg:pb-0'>
                       <span className='block border-l border-white h-16 mx-auto w-0' />
                       <span className='block rounded-full border border-white bg-blue-cian h-8 mx-auto w-8 flex items-center justify-center'>
-                        <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
+                        <img
+                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/arrow-down.svg`}
+                          alt='arrow down'
+                          className='w-4'
+                        />
                       </span>
                       <h2 className='mt-7 text-2xl 2xl:text-3xl'>Introducción</h2>
                     </div>
@@ -261,7 +284,7 @@ export default function Home() {
                 href={'./ascendencias-digitales'}
                 className='group z-20 relative basis-1/6 h-full shadow-capitulo block'
                 style={{
-                  background: `linear-gradient(233.61deg, rgba(74, 70, 255, 0.2) 32.21%, rgba(44, 42, 153, 0) 91.49%), url('./img/capitulo1-portada.png') center / cover`,
+                  background: `linear-gradient(233.61deg, rgba(74, 70, 255, 0.2) 32.21%, rgba(44, 42, 153, 0) 91.49%), url('${process.env.NEXT_PUBLIC_BASE_PATH}img/capitulo1-portada.png') center / cover`,
                 }}
               >
                 <div className='flex flex-row lg:flex-col h-full'>
@@ -271,7 +294,11 @@ export default function Home() {
                   <div className='grow border-y border-white grow font-light px-7 w-full tracking-wider transition-all group-hover:bg-blue-base group-hover:bg-opacity-10'>
                     <span className='block border-l border-white h-16 mx-auto w-0 hidden lg:block' />
                     <span className='bg-blue-base block rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center hidden lg:flex'>
-                      <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
+                      <img
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/arrow-down.svg`}
+                        alt='arrow down'
+                        className='w-4'
+                      />
                     </span>
                     <h2 className='text-2xl 2xl:text-3xl mt-7'>Ascendencias digitales</h2>
                     <p className='font-extralight text-lg 2xl:text-xl mt-2'>
@@ -287,7 +314,7 @@ export default function Home() {
                 href={'./la-universidad-nacional-de-colombia-en-la-era-digital'}
                 className='group z-10 relative basis-1/6 h-full bg-cover shadow-capitulo block'
                 style={{
-                  background: `linear-gradient(233.61deg, rgba(74, 70, 255, 0.2) 32.21%, rgba(44, 42, 153, 0) 91.49%), url('./img/capitulo2-portada.png') center / cover`,
+                  background: `linear-gradient(233.61deg, rgba(74, 70, 255, 0.2) 32.21%, rgba(44, 42, 153, 0) 91.49%), url('${process.env.NEXT_PUBLIC_BASE_PATH}img/capitulo2-portada.png') center / cover`,
                 }}
               >
                 <div className='flex flex-row lg:flex-col h-full'>
@@ -297,7 +324,11 @@ export default function Home() {
                   <div className='grow border-y border-white grow font-light px-7 w-full tracking-wider transition-all group-hover:bg-purple-base group-hover:bg-opacity-40'>
                     <span className='block border-l border-white h-16 mx-auto w-0 hidden lg:block' />
                     <span className='bg-purple-base rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center hidden lg:flex'>
-                      <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
+                      <img
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/arrow-down.svg`}
+                        alt='arrow down'
+                        className='w-4'
+                      />
                     </span>
                     <h2 className='text-2xl 2xl:text-3xl mt-7'>
                       La Universidad Nacional de Colombia en la era digital
@@ -311,7 +342,7 @@ export default function Home() {
                 href={'./cultura-digital-unal'}
                 className='group basis-1/6 h-full bg-cover block'
                 style={{
-                  background: `linear-gradient(233.61deg, rgba(74, 70, 255, 0.2) 32.21%, rgba(44, 42, 153, 0) 91.49%), url('./img/capitulo3-portada.png')`,
+                  background: `linear-gradient(233.61deg, rgba(74, 70, 255, 0.2) 32.21%, rgba(44, 42, 153, 0) 91.49%), url('${process.env.NEXT_PUBLIC_BASE_PATH}img/capitulo3-portada.png')`,
                 }}
               >
                 <div className='flex flex-row lg:flex-col h-full'>
@@ -321,7 +352,11 @@ export default function Home() {
                   <div className='grow border-y border-white grow font-light px-7 w-full tracking-wider transition-all group-hover:bg-green-light group-hover:bg-opacity-20'>
                     <span className='block border-l border-white h-16 mx-auto w-0 hidden lg:block' />
                     <span className='bg-green-light block rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center hidden lg:flex'>
-                      <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
+                      <img
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/arrow-down.svg`}
+                        alt='arrow down'
+                        className='w-4'
+                      />
                     </span>
                     <h2 className='text-2xl 2xl:text-3xl mt-7'>Cultura digital UNAL</h2>
                     <p className='font-extralight text-lg 2xl:text-xl mt-2'>
@@ -342,7 +377,11 @@ export default function Home() {
                     <div className='h-full text-center tracking-wider w-full transition-all group-hover:bg-white group-hover:bg-opacity-10 pb-10 lg:pb-0'>
                       <span className='block border-l border-white h-16 mx-auto w-0' />
                       <span className='block rounded-full border border-white h-8 mx-auto w-8 flex items-center justify-center'>
-                        <img src='./img/arrow-down.svg' alt='arrow down' className='w-4' />
+                        <img
+                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}img/arrow-down.svg`}
+                          alt='arrow down'
+                          className='w-4'
+                        />
                       </span>
                       <h2 className='text-2xl mt-7 2xl:text-3xl'>Epílogo</h2>
                       <p className='font-extralight text-lg 2xl:text-xl mt-3 2xl:mt-4'>
