@@ -131,6 +131,14 @@ const Menu = () => {
     setMenuHeight(menuElement?.current?.getBoundingClientRect()?.height ?? 600);
   }, [fontSize]);
 
+  const [positionSubMenu, setPositionSubmenu] = useState(60);
+
+  useEffect(() => {
+    if (purpleBar.current) {
+      setPositionSubmenu(purpleBar.current?.getBoundingClientRect()?.height);
+    }
+  }, [currentTitle]);
+
   return (
     <div
       className='fixed z-50 xl:pr-20 w-full'
@@ -284,9 +292,10 @@ const Menu = () => {
               <p className='font-extralight text-xl' dangerouslySetInnerHTML={{ __html: currentTitle.content }} />
             </div>
             <div
-              className={`absolute w-full z-40 max-w-[640px] transition-all duration-700  text-white top-[60px] ${
+              className={`absolute w-full z-40 max-w-[640px] transition-all duration-700  text-white max-h-[70vh] xl:max-h-none overflow-auto ${
                 isSubmenuOpen ? 'left-0 ' : '-left-full overflow-hidden'
               }`}
+              style={{ top: `${positionSubMenu}px` }}
               ref={submenuRef}
             >
               <div className='w-full h-auto bg-blue-dark bg-opacity-80  rounded-br-2xl pt-4  shadow-xl'>
