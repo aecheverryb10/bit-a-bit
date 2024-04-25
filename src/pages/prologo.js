@@ -20,7 +20,7 @@ const Prologo = () => {
             <span className='w-2 h-2 rounded-full block bg-white' />
           </div>
 
-          <div className='container container-title pl-36 overflow-hidden'>
+          <div className='container container-title px-10 lg:pl-36 overflow-hidden'>
             <div className='flex items-center py-20'>
               <div className=''>
                 <h1 className='chapter-title text-6xl font-light'>Prólogo</h1>
@@ -55,9 +55,9 @@ const Prologo = () => {
         </p>
 
         <p>
-          Cada capítulo, enriquecido por las experiencias de nuestros protagonistas, nos invita a descubrir
-          cómo la transformación digital ha impactado no solo en la forma en que enseñamos y aprendemos, sino también en
-          la manera en que nos relacionamos con nuestra comunidad y el mundo. Sobre lo último, es importante destacar el
+          Cada capítulo, enriquecido por las experiencias de nuestros protagonistas, nos invita a descubrir cómo la
+          transformación digital ha impactado no solo en la forma en que enseñamos y aprendemos, sino también en la
+          manera en que nos relacionamos con nuestra comunidad y el mundo. Sobre lo último, es importante destacar el
           papel de la División Universidad Laboratorio (UNALab) en este proceso, pues ha sido el motor que ha impulsado
           el desarrollo de capacidades internas y la consolidación de equipos multidisciplinarios comprometidos con la
           innovación en cultura digital.

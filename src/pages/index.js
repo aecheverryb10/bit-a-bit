@@ -83,7 +83,7 @@ export default function Home() {
           style={{ backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH}img/cubierta.png')` }}
         >
           <div
-            className='w-full min-h-[100vh] flex flex-col align-center justify-center relative bg-blend-mode-lighten mix-blend-mode-lighten'
+            className='w-full min-h-[-webkit-fill-available] min-h-[100vh] flex flex-col align-center justify-center relative bg-blend-mode-lighten mix-blend-mode-lighten'
             style={{
               background: `linear-gradient(39.2deg, rgba(255, 118, 87, 0.2) -7.15%, rgba(0, 0, 0, 0.2) 68.29%), radial-gradient(77.64% 135.08% at 72.62% -5.14%, #326799 0%, rgba(78, 173, 215, 0.348804) 32.19%, rgba(161, 105, 250, 0.04) 100%)`,
             }}
@@ -141,15 +141,15 @@ export default function Home() {
 
             <div className='grow flex flex-col align-center justify-center relative z-50'>
               <div className='lg:container text-white 2xl:min-h-[70vh] lg:bg-blue-100 lg:bg-opacity-40 bg-blend-multiply flex flex-col'>
-                <div className='grow pt-14 2xl:pt-28 overflow-hidden px-10 sm:px-20 2xl:px-36'>
-                  <h1 className='cover-title font-medium text-6xl md:text-[5em] leading-none 2xl:text-8xl short:text-7xl mb-3'>
+                <div className='grow md:pt-14 2xl:pt-28 overflow-hidden px-10 sm:px-20 2xl:px-36'>
+                  <h1 className='cover-title font-medium text-[5em] leading-none 2xl:text-8xl short:text-7xl mb-3'>
                     Bit a Bit
                   </h1>
-                  <h2 className='cover-subtitle font-extralight short:text-[1.5em] text-xl md:text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
+                  <h2 className='cover-subtitle font-extralight short:text-[1.5em] text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
                     La evolución digital en la
                     <br /> Universidad Nacional de Colombia
                   </h2>
-                  <div className='cover-shields flex short:mt-6 mt-10 short:pb-6 pb-12'>
+                  <div className='cover-shields flex short:mt-6 mt-10 short:pb-6 pb-6 md:pb-12'>
                     <div className='short:w-24 w-20 md:w-28 my-auto overflow-hidden'>
                       <img
                         className='img-shield '
@@ -191,7 +191,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className='bg-black text-white py-5 lg:py-3 2xl:py-5 border-t-2 border-white z-40'>
+            <div className='fixed bottom-0 w-full md:relative bg-black text-white py-5 lg:py-3 2xl:py-5 border-t-2 border-white z-40'>
               <div className='container flex pl-10 md:pl-0 md:justify-end'>
                 <Link
                   className='font-light text-sm md:text-base 2x:text-xl mr-12 uppercase tracking-widest flex align-center'

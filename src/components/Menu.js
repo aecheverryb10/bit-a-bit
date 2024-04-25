@@ -44,7 +44,6 @@ const Menu = () => {
             content: content,
             id: headline.id,
             key: headline.textContent.split(' ').join('-'),
-            classname: tagname === 'H3' ? 'pl-24 2xl:pl-48' : 'pl-16 2xl:pl-40',
           });
 
           const observer = new IntersectionObserver(
@@ -187,6 +186,12 @@ const Menu = () => {
           ref={menuElement}
         >
           <div className='flex flex-col xl:flex-row'>
+            <Link
+              className={` md:hidden text-2xl d-block basis-1/5 text-left px-6 py-6 xl:pt-0 xl:pb-10 transition hover:bg-black hover:bg-opacity-80`}
+              href={'/'}
+            >
+              <div className='flex xl:flex-col'>Inicio</div>
+            </Link>
             {Capitulos.filter((item) => !item.notIncludeInMenu)?.map((item, index) => {
               const { url, title, subtitle, initial } = item;
               const activeItem = pathname === `/${url}`;
@@ -263,16 +268,16 @@ const Menu = () => {
             <div className='lg:container px-9 flex items-center gap-6'>
               {!currentChapter?.initial && (
                 <button
-                  className='uppercase tracking-widest hidden lg:block lg:border-r border-white pr-6'
+                  className='uppercase tracking-widest block lg:border-r border-white lg:pr-6'
                   onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}
                 >
                   <div className='flex items-center'>
-                    <span className='pr-4'>
+                    <span className='lg:pr-4'>
                       <span className='w-6 block border-t-2 border-white rounded-full' />
                       <span className='w-6 block border-t-2 border-white rounded-full my-[6px]' />
                       <span className='w-6 block border-t-2 border-white rounded-full' />
                     </span>
-                    Indice
+                    <span className='hidden lg:inline-block'>Índice</span>
                   </div>
                 </button>
               )}
@@ -285,7 +290,7 @@ const Menu = () => {
               ref={submenuRef}
             >
               <div className='w-full h-auto bg-blue-dark bg-opacity-80  rounded-br-2xl pt-4  shadow-xl'>
-                <div className='pl-16 2xl:pl-40 pt-5 pb-8 pr-5'>
+                <div className='pl-8 lg:pl-16 2xl:pl-40 pt-5 pb-8 pr-5'>
                   <p className='text-3xl'>Capítulo {chapterIndex - 1}</p>
                   <p className='font-light text-xl'>
                     {currentChapter?.title}
@@ -298,10 +303,10 @@ const Menu = () => {
                     return (
                       <button
                         className={`${
-                          option.element.tagName === 'H2' ? 'bg-purple-base bg-opacity-60' : ''
-                        } border-b border-opacity-20 border-white transition font-light block w-full text-left py-2 text-lg hover:bg-white hover:text-purple-base pr-5 ${
-                          option.classname
-                        }`}
+                          option.element.tagName === 'H2'
+                            ? 'bg-purple-base bg-opacity-60 pl-8 pl-16 2xl:pl-40'
+                            : 'pl-12 lg:pl-24 2xl:pl-48'
+                        } border-b border-opacity-20 border-white transition font-light block w-full text-left py-2 text-lg hover:bg-white hover:text-purple-base pr-5`}
                         onClick={() => goToSection(option.element, index)}
                         key={option.key}
                         dangerouslySetInnerHTML={{ __html: option.content }}

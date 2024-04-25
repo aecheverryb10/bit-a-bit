@@ -402,7 +402,12 @@ const Referencias = () => {
               <p>
                 Leiner, B. M., Cerf, V. G., Clark, D. D., Kahn, R. E., Kleinrock, L., Lynch, D. C., Postel, J., Roberts,
                 L. G. y Wolff, S. (1997). <em> A brief history of the internet.</em>
-                https://www.internetsociety.org/internet/history-internet/brief-history-internet/
+                <a
+                  href='https://www.internetsociety.org/internet/history-internet/brief-history-internet/'
+                  target='_blank'
+                >
+                  https://www.internetsociety.org/internet/history-internet/brief-history-internet/
+                </a>
               </p>
               <p>
                 <em>

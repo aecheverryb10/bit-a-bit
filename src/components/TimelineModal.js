@@ -51,7 +51,7 @@ const TimelineModal = (props) => {
           overflow: 'auto',
           padding: 30,
           position: 'absolute',
-          width: 1140,
+          maxWidth: 1140,
           margin: 'auto',
           top: 0,
           bottom: 0,

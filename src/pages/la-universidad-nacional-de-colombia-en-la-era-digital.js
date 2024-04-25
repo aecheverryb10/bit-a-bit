@@ -20,7 +20,6 @@ export default function UniversidadEraDigital() {
     ScrollTrigger.refresh(true);
   }, [fontSize]);
 
-
   return (
     <>
       <Capitulo>
@@ -33,7 +32,7 @@ export default function UniversidadEraDigital() {
               2
             </span>
             <div className='overflow-hidden py-8 lg:py-3'>
-              <h1 className='chapter-title text-6xl font-light'>
+              <h1 className='chapter-title text-5xl lg:text-6xl font-light'>
                 La Universidad Nacional de Colombia <span className='block'>en la era digital</span>
               </h1>
             </div>
@@ -61,7 +60,7 @@ export default function UniversidadEraDigital() {
             </>
           }
         />
-        <Subtitulo id="los-inicios">2.1 Los inicios</Subtitulo>
+        <Subtitulo id='los-inicios'>2.1 Los inicios</Subtitulo>
         <BloqueTexto shadow={false}>
           <p>
             Las puertas lógicas mencionadas nacieron como circuitos electrónicos integrados, formados internamente con
@@ -295,7 +294,9 @@ export default function UniversidadEraDigital() {
             de recursos y el desarrollo social y económico (Castellanos-Aceros, 2001, pp. 116–117).
           </p>
         </BloqueTexto>
-        <Subtitulo id="politicas-y-proyectos-en-la-transicion-hacia-una-cultura-digital">2.2 Políticas y proyectos en la transición hacia una cultura digital</Subtitulo>
+        <Subtitulo id='politicas-y-proyectos-en-la-transicion-hacia-una-cultura-digital'>
+          2.2 Políticas y proyectos en la transición hacia una cultura digital
+        </Subtitulo>
         <BloqueTexto noPaddingBottom={true} shadow={false}>
           <p>
             La introducción de nuevas tecnologías y conocimientos transformó la universidad en todas sus áreas del
@@ -309,7 +310,9 @@ export default function UniversidadEraDigital() {
             este proceso de transformación digital.
           </p>
 
-          <h3 id="las-telecomunicaciones" className='text-2xl text-purple-base font-sans mb-10'>2.2.1 Las telecomunicaciones</h3>
+          <h3 id='las-telecomunicaciones' className='text-2xl text-purple-base font-sans mb-10'>
+            2.2.1 Las telecomunicaciones
+          </h3>
           <p>
             Como se dijo, para finales de la década de 1960, se crearon varias dependencias especializadas en las
             ciencias computacionales y se estableció un curso completo sobre telecomunicaciones en 1954. Para esta
@@ -348,7 +351,9 @@ export default function UniversidadEraDigital() {
             Este programa buscaba explorar las principales áreas de innovación de la época, como la microelectrónica,
             las telecomunicaciones y la informática, a través de la investigación y el diseño (Acuerdo 34 de 1991).
           </p>
-          <h3 id="proyectos-y-dependencias" className='text-2xl text-purple-base font-sans mb-10'>2.2.2 Proyectos y dependencias</h3>
+          <h3 id='proyectos-y-dependencias' className='text-2xl text-purple-base font-sans mb-10'>
+            2.2.2 Proyectos y dependencias
+          </h3>
           <p>
             Como puede intuirse, hasta ese momento, las tecnologías computacionales y de las telecomunicaciones aún no
             estaban estrictamente integradas a proyectos o dependencias de la universidad; a primera vista, cada una iba
@@ -443,12 +448,14 @@ export default function UniversidadEraDigital() {
 
         <ScrollVideo
           number={3}
-          title="¿Cómo eran las clases de Ingeniería de Sistemas en la Sede Bogotá de la Universidad Nacional en los años 1990?"
+          title='¿Cómo eran las clases de Ingeniería de Sistemas en la Sede Bogotá de la Universidad Nacional en los años 1990?'
           type='video/mp4'
           url='https://youtu.be/FrbvaOtpvAo'
         />
         <BloqueTexto>
-          <h3 id="proyectos-y-dependencias" className='text-2xl text-purple-base font-sans mb-10'>2.2.3 Bitnet, Runcol e Internet</h3>
+          <h3 id='proyectos-y-dependencias' className='text-2xl text-purple-base font-sans mb-10'>
+            2.2.3 Bitnet, Runcol e Internet
+          </h3>
           <p>
             El siglo <span className='caps'>XX</span> terminó con la construcción de la primera red de universidades e
             instituciones académicas que se comunicaban a grandes distancias y vertiginosas velocidades. Indudablemente,
@@ -523,7 +530,9 @@ export default function UniversidadEraDigital() {
           ]}
         />
         <BloqueTexto>
-          <h3 id="proyectos-y-dependencias" className='text-2xl text-purple-base font-sans mb-10'>2.2.4 Siglo <span className='caps'>XXI</span>. Los softwares en la Universidad Nacional de Colombia</h3>
+          <h3 id='proyectos-y-dependencias' className='text-2xl text-purple-base font-sans mb-10'>
+            2.2.4 Siglo <span className='caps'>XXI</span>. Los softwares en la Universidad Nacional de Colombia
+          </h3>
           <p>
             Durante la década de 1990, varios de los softwares que se usaban en la Universidad Nacional de Colombia eran
             “hechos en casa”. Antes de la reestructuración de la institución en 1997, que representó cierto nivel de

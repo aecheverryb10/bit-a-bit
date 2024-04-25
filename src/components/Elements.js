@@ -157,15 +157,15 @@ const Resaltado = (props) => {
       <div className={`bg-white bg-opacity-70 py-16 font-ancizar font-bold `}>
         <div className='flex max-w-[760px]'>
           <div className='items-center justify-start hidden md:flex'>
-            <span className={`block w-20 lg:w-40 border-2 border-purple-base`}></span>
+            <span className={`block w-20 lg:w-36 border-2 border-purple-base`}></span>
             <span className='w-8 h-8 rounded-full border-purple-base border-4 block -mr-[22px]' />
             <span className='w-3 h-3 rounded-full bg-purple-base block ' />
           </div>
-          <div className='relative text-purple-base pl-10 pr-10 lg:pr-0'>
-            <span className='font-ancizar text-6xl leading-[0] block'>&ldquo;</span>
+          <div className='relative text-purple-base pl-16 pr-10 lg:pr-0'>
+            <span className='font-ancizar text-6xl leading-[0] block absolute inline-block mt-6 left-7'>&ldquo;</span>
             <p className='text-2xl'>
               {children}{' '}
-              <span className='font-ancizar text-6xl leading-[0] mt-12 ml-2 absolute inline-block'>&#x201D;</span>
+              <span className='font-ancizar text-6xl leading-[0] mt-8 ml-2 absolute inline-block'>&#x201D;</span>
             </p>
           </div>
         </div>

@@ -5,9 +5,9 @@ const Creditos = () => {
   return (
     <Capitulo background={`radial-gradient(63.95% 32.77% at 13.12% 8.61%, #78BEFF 0%, #326799 100%)`}>
       <MainSection>
-        <div className={`bg-white bg-opacity-30 pt-40 pb-20 relative`}>
-          <img className='absolute right-0 top-0' src={'./img/creditos-lineas.svg'} />
-          <div className={`pl-40 pr-16 `}>
+        <div className={`bg-white bg-opacity-30 pt-40 pb-10 lg:pb-20 relative`}>
+          <img className='hidden lg:block absolute right-0 top-0' src={'./img/creditos-lineas.svg'} />
+          <div className={`px-6 lg:pl-40 lg:pr-16 `}>
             <div className='max-w-[700px] text-white text-lg font-serif leading-relaxed '>
               <h3 className='text-6xl font-light text-white font-sans'>Créditos</h3>
 
@@ -31,6 +31,10 @@ const Creditos = () => {
                   <p>Fredy Fernando Chaparro Sanabria </p>
                   <p>Jairo Iván Peña Ayazo</p>
                   <p>Pedro Nel Benjumea Hernández</p>
+
+                  <p className='mt-5'>
+                    <span className='caps'>ISBN</span> 978-958-505-595-7 (<span className='caps'>HTML</span>){' '}
+                  </p>
                 </div>
                 <div className='py-5'>
                   <p className='font-bold'>Dirección y coordinación del proyecto</p> <p>Liz Karen Herrera Quintero</p>
@@ -105,8 +109,8 @@ const Creditos = () => {
             </div>
           </div>
         </div>
-        <div className={`bg-white bg-opacity-30 shadow-xl px-40 pb-20`}>
-          <div className='bord border border-white text-white p-10 font-ancizar'>
+        <div className={`bg-white bg-opacity-30 shadow-xl lg:px-40 pb-10 lg:pb-20`}>
+          <div className='lg:border border-white text-white p-6 lg:p-10 font-ancizar'>
             <div className='pb-5'>
               <p>Catalogación en la publicación Universidad Nacional de Colombia</p>
             </div>

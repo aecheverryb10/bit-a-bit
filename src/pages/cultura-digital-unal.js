@@ -32,8 +32,10 @@ export default function CulturaDigital() {
               3
             </span>
             <div className='overflow-hidden py-8 lg:py-3'>
-              <h1 className='chapter-title text-6xl font-light'>Cultura Digital Unal:</h1>
-              <p className='chapter-title text-4xl font-extralight mt-2'>caminos a la transformación digital</p>
+              <h1 className='chapter-title text-5xl lg:text-6xl font-light'>Cultura Digital Unal:</h1>
+              <p className='chapter-title text-3xl lg:text-4xl  font-extralight mt-2'>
+                caminos a la transformación digital
+              </p>
             </div>
           </div>
         </TituloCapitulo>
@@ -96,7 +98,12 @@ export default function CulturaDigital() {
             y la solidaridad —recurso 4 (Morales, 2019).
           </p>
         </BloqueTexto>
-        <Podcast subtitle={'Una conversación con el profesor Fabio Augusto González Osorio'} />
+        <Podcast
+          linkSpotify={'2KI3X8mHMLPQC2KejFsuEO'}
+          linkIvoox={'https://go.ivoox.com/rf/127555602'}
+          linkWeb={'https://podcastradio.unal.edu.co/detalle/t1-e4-gestion-de-los-datos-en-el-siglo-xxi-1'}
+          subtitle={'Una conversación con el profesor Fabio Augusto González Osorio'}
+        />
         <BloqueTexto>
           <p>
             Este era el contexto tecnológico en el que se encontraba inmersa la Universidad Nacional de Colombia entrado
@@ -961,6 +968,11 @@ export default function CulturaDigital() {
           title={'Recurso 8. ¿Existen desigualdades de género en la transformación digital de la Universidad Nacional?'}
           subtitle={'Una conversación con Mónica López'}
           src={'./audio/recurso_8_desigualdad.mp3'}
+          linkIvoox={'https://go.ivoox.com/rf/127883851'}
+          linkWeb={
+            'https://podcastradio.unal.edu.co/detalle/t1-e6-desigualdades-de-genero-en-la-transformacion-digital'
+          }
+          linkSpotify={'1Yb0Dayii3ihkEoKUP5Og4'}
         />
         <BloqueTexto>
           <p>
