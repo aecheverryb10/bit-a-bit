@@ -139,7 +139,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className='-mt-[120px] md:mt-0 grow flex flex-col align-center justify-center relative z-50'>
+            <div className='-mt-[120px] md:mt-0 grow flex flex-col align-center justify-center relative z-40'>
               <div className='lg:container text-white 2xl:min-h-[70vh] lg:bg-blue-100 lg:bg-opacity-40 bg-blend-multiply flex flex-col'>
                 <div className='grow md:pt-14 2xl:pt-28 overflow-hidden px-10 sm:px-20 2xl:px-36'>
                   <h1 className='cover-title font-medium text-[5em] leading-none 2xl:text-8xl short:text-7xl mb-3'>
@@ -191,7 +191,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className='fixed bottom-0 w-full md:relative bg-black text-white py-5 lg:py-3 2xl:py-5 border-t-2 border-white z-40'>
+            <div className='fixed bottom-0 w-full md:relative bg-black text-white py-5 lg:py-3 2xl:py-5 border-t-2 border-white z-50'>
               <div className='container flex pl-10 md:pl-0 md:justify-end'>
                 <Link
                   className='font-light text-sm md:text-base 2x:text-xl mr-12 uppercase tracking-widest flex align-center'
