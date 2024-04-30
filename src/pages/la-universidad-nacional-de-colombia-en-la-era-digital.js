@@ -1,7 +1,6 @@
 import { BloqueTexto, ParrafoInicial, Resaltado, Subtitulo, TituloCapitulo } from '@/components/Elements';
 
 import Capitulo from '@/components/Capitulo';
-import Link from 'next/link';
 import ScrollImage from '@/components/ScrollImage';
 import ScrollImageVertical from '@/components/ScrollImageVertical';
 import ScrollMultipleImages from '@/components/ScrollMultipleImage';
@@ -11,6 +10,7 @@ import Slider from '@/components/Slider';
 import { slider_data } from '@/data/slider_data';
 import { useLayoutEffect } from 'react';
 import { useTrackedState } from '@/store';
+import GeneralLink from '@/components/GeneralLink';
 
 export default function UniversidadEraDigital() {
   const state = useTrackedState();
@@ -425,9 +425,12 @@ export default function UniversidadEraDigital() {
             Posteriormente, en la década de 1990, la Universidad Nacional de Colombia unificó en ciertas dependencias
             las ramas de la informática y las telecomunicaciones, influenciada por la irrupción de Internet en la
             sociedad y los centros educativos (
-            <Link className='font-bold text-purple-base hover:underline' href={'./ascendencias-digitales#recurso-2'}>
+            <GeneralLink
+              className='font-bold text-purple-base hover:underline'
+              href={'./ascendencias-digitales#recurso-2'}
+            >
               recurso 2
-            </Link>
+            </GeneralLink>
             ). Con la redefinición de la estructura a nivel nacional de la universidad en 1997, se crearon tres
             organismos esenciales en la consolidación de la cultura digital en la comunidad universitaria: la División
             de Informática y Comunicaciones, la Dirección Nacional de Informática y Comunicaciones y la Unidad de Medios

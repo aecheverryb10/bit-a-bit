@@ -1,10 +1,10 @@
 import Capitulos from '@/data/capitulos';
 import { useGSAP } from '@gsap/react';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { useDispatch, useTrackedState } from '@/store';
+import GeneralLink from './GeneralLink';
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -156,14 +156,14 @@ const Menu = () => {
             </span>
             <span className='uppercase tracking-widest'>Menú</span>
           </button>
-          <Link href='/'>
+          <GeneralLink href='/'>
             <h2 className='uppercase tracking-[0.18em] text-white text-sm pl-24'>
               <span className='lg:border-r hidden md:inline-block border-white font-medium pr-4 mr-4'>Bit a bit</span>{' '}
               <span className='font-light hidden lg:inline-block'>
                 La evolución digital en la Universidad Nacional de Colombia
               </span>
             </h2>
-          </Link>
+          </GeneralLink>
         </div>
         <div className='absolute right-8 top-3 flex items-center'>
           <button
@@ -194,17 +194,17 @@ const Menu = () => {
           ref={menuElement}
         >
           <div className='flex flex-col xl:flex-row'>
-            <Link
+            <GeneralLink
               className={` md:hidden text-2xl d-block basis-1/5 text-left px-6 py-6 xl:pt-0 xl:pb-10 transition hover:bg-black hover:bg-opacity-80`}
               href={'/'}
             >
               <div className='flex xl:flex-col'>Inicio</div>
-            </Link>
+            </GeneralLink>
             {Capitulos.filter((item) => !item.notIncludeInMenu)?.map((item, index) => {
               const { url, title, subtitle, initial } = item;
               const activeItem = pathname === `/${url}`;
               return (
-                <Link
+                <GeneralLink
                   key={`item-menu-${index}`}
                   className={`${
                     initial ? 'text-2xl' : 'text-5xl '
@@ -232,13 +232,13 @@ const Menu = () => {
                       </p>
                     )}
                   </div>
-                </Link>
+                </GeneralLink>
               );
             })}
           </div>
           <div className='bg-black text-white border-t-2 border-white z-40'>
             <div className='container flex justify-end'>
-              <Link
+              <GeneralLink
                 className='font-light text-base 2x:text-xl px-3 lg:px-5 uppercase tracking-widest flex align-center hover:bg-white hover:bg-opacity-20 transition py-5 lg:py-3 2xl:pt-4 2xl:pb-3'
                 href={'./creditos'}
               >
@@ -248,8 +248,8 @@ const Menu = () => {
                   alt='botón siguiente'
                 />{' '}
                 <span>Créditos</span>
-              </Link>
-              <Link
+              </GeneralLink>
+              <GeneralLink
                 className='font-light text-base 2x:text-xl px-3 lg:px-5  uppercase tracking-widest flex align-center hover:bg-white hover:bg-opacity-20 transition py-5 lg:py-3 2xl:pt-4 2xl:pb-3'
                 href={'./referencias'}
               >
@@ -259,7 +259,7 @@ const Menu = () => {
                   alt='botón siguiente'
                 />{' '}
                 <span>Referencias</span>
-              </Link>
+              </GeneralLink>
             </div>
           </div>
         </div>

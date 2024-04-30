@@ -27,7 +27,7 @@ const Capitulos = [
     background: 'radial-gradient(63.95% 32.77% at 13.12% 8.61%, #E9AAFF 0%, #00FFE0 100%)',
   },
   {
-    title: 'Cultura digital UNAL',
+    title: 'Cultura digital Unal: ',
     subtitle: 'caminos a la transformación digital',
     url: 'cultura-digital-unal',
     img: './img/figura_15.jpg',

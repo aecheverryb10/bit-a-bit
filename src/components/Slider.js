@@ -116,7 +116,7 @@ const Slider = (props) => {
         </div>
       </div>
       <Portal>
-        <FsLightbox toggler={toggler} sources={PHOTOS} sourceIndex={photo} />
+        <FsLightbox toggler={toggler} sources={PHOTOS} sourceIndex={photo} type={'image'} />
       </Portal>
     </>
   );

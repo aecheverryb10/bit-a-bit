@@ -3,7 +3,7 @@ import Menu from './Menu';
 import { MainSection } from './Elements';
 import { useRouter } from 'next/router';
 import Capitulos from '@/data/capitulos';
-import Link from 'next/link';
+import GeneralLink from './GeneralLink';
 
 const Capitulo = (props) => {
   const { pathname } = useRouter();
@@ -35,7 +35,7 @@ const Capitulo = (props) => {
                 <div className='bg-white bg-opacity-70 shadow-xl'>
                   <div className='flex flex-col lg:flex-row'>
                     {prevChapter && (
-                      <Link
+                      <GeneralLink
                         href={prevChapter?.url}
                         className={`text-white grow relative block overflow-hidden ${
                           nextChapter ? 'border-b-4 lg:border-b-0 lg:border-r-4 border-white' : ''
@@ -52,10 +52,10 @@ const Capitulo = (props) => {
                           <p className='font-light text-4xl'>{prevChapter?.title}</p>
                           {prevChapter?.subtitle && <p className='font-extralight text-2xl'>{prevChapter?.subtitle}</p>}
                         </div>
-                      </Link>
+                      </GeneralLink>
                     )}
                     {nextChapter && (
-                      <Link href={nextChapter?.url} className=' text-white grow relative block overflow-hidden'>
+                      <GeneralLink href={nextChapter?.url} className=' text-white grow relative block overflow-hidden'>
                         <div className='absolute bg-blue-dark w-full h-full' />
                         <img
                           className='top-0 left-0 absolute w-full h-auto opacity-20'
@@ -67,7 +67,7 @@ const Capitulo = (props) => {
                           <p className='font-light text-4xl'>{nextChapter?.title}</p>
                           {nextChapter?.subtitle && <p className='font-extralight text-2xl'>{nextChapter?.subtitle}</p>}
                         </div>
-                      </Link>
+                      </GeneralLink>
                     )}
                   </div>
                 </div>

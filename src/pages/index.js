@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import Link from 'next/link';
+import GeneralLink from '@/components/GeneralLink';
 
 export default function Home() {
   const containerRef = useRef();
@@ -143,7 +143,7 @@ export default function Home() {
               <div className='lg:container text-white 2xl:min-h-[70vh] lg:bg-blue-100 lg:bg-opacity-40 bg-blend-multiply flex flex-col'>
                 <div className='grow md:pt-14 2xl:pt-28 overflow-hidden px-10 sm:px-20 2xl:px-36'>
                   <h1 className='cover-title font-medium text-[5em] leading-none 2xl:text-8xl short:text-7xl mb-3'>
-                    Bit a Bit
+                    Bit a bit
                   </h1>
                   <h2 className='cover-subtitle font-extralight short:text-[1.5em] text-[1.65em] 2xl:text-3xl tracking-widest leading-snug'>
                     La evolución digital en la
@@ -193,7 +193,7 @@ export default function Home() {
             </div>
             <div className='fixed bottom-0 w-full md:relative bg-black text-white py-5 lg:py-3 2xl:py-5 border-t-2 border-white z-50'>
               <div className='container flex pl-10 md:pl-0 md:justify-end'>
-                <Link
+                <GeneralLink
                   className='font-light text-sm md:text-base 2x:text-xl mr-12 uppercase tracking-widest flex align-center'
                   href={'./creditos'}
                 >
@@ -203,8 +203,8 @@ export default function Home() {
                     alt='botón siguiente'
                   />{' '}
                   <span>Créditos</span>
-                </Link>
-                <Link
+                </GeneralLink>
+                <GeneralLink
                   className='font-light text-sm md:text-base 2x:text-xl uppercase tracking-widest flex align-center'
                   href={'./referencias'}
                 >
@@ -214,7 +214,7 @@ export default function Home() {
                     alt='botón siguiente'
                   />{' '}
                   <span>Referencias</span>
-                </Link>
+                </GeneralLink>
               </div>
             </div>
           </div>
@@ -233,7 +233,10 @@ export default function Home() {
 
           <div className='grow'>
             <div className='lg:h-[680px] 2xl:h-[calc(100vh_-_56px)] flex flex-col lg:flex-row lg:items-center text-white'>
-              <Link href={'./prologo'} className='basis-1/6 lg:h-full bg-cover group shadow-capitulo relative z-40'>
+              <GeneralLink
+                href={'./prologo'}
+                className='basis-1/6 lg:h-full bg-cover group shadow-capitulo relative z-40'
+              >
                 <div className='flex flex-col h-full'>
                   <div className='text-center lg:py-28'>
                     <p className='text-9xl font-thin'></p>
@@ -253,9 +256,9 @@ export default function Home() {
                   </div>
                   <div className='bg-blend-multiply text-center lg:py-20 2xl:py-24'></div>
                 </div>
-              </Link>
+              </GeneralLink>
 
-              <Link
+              <GeneralLink
                 href={'./introduccion'}
                 className='basis-1/6 lg:h-full bg-cover group shadow-capitulo relative z-30'
               >
@@ -278,9 +281,9 @@ export default function Home() {
                   </div>
                   <div className='color-introduccion bg-blend-multiply text-center lg:py-20 2xl:py-24'></div>
                 </div>
-              </Link>
+              </GeneralLink>
 
-              <Link
+              <GeneralLink
                 href={'./ascendencias-digitales'}
                 className='group z-20 relative basis-1/6 h-full shadow-capitulo block'
                 style={{
@@ -308,9 +311,9 @@ export default function Home() {
                   </div>
                   <div className='color-capitulo1 bg-blend-multiply text-center py-20 2xl:py-24'></div>
                 </div>
-              </Link>
+              </GeneralLink>
 
-              <Link
+              <GeneralLink
                 href={'./la-universidad-nacional-de-colombia-en-la-era-digital'}
                 className='group z-10 relative basis-1/6 h-full bg-cover shadow-capitulo block'
                 style={{
@@ -336,9 +339,9 @@ export default function Home() {
                   </div>
                   <div className='color-capitulo2 bg-blend-multiply text-center py-20 2xl:py-24'></div>
                 </div>
-              </Link>
+              </GeneralLink>
 
-              <Link
+              <GeneralLink
                 href={'./cultura-digital-unal'}
                 className='group basis-1/6 h-full bg-cover block'
                 style={{
@@ -358,7 +361,7 @@ export default function Home() {
                         className='w-4'
                       />
                     </span>
-                    <h2 className='text-2xl 2xl:text-3xl mt-7'>Cultura digital UNAL</h2>
+                    <h2 className='text-2xl 2xl:text-3xl mt-7'>Cultura digital Unal</h2>
                     <p className='font-extralight text-lg 2xl:text-xl mt-2'>
                       caminos a la
                       <span className='lg:block'>transformación digital</span>
@@ -366,9 +369,9 @@ export default function Home() {
                   </div>
                   <div className='color-capitulo3 bg-blend-multiply text-center py-20 2xl:py-24'></div>
                 </div>
-              </Link>
+              </GeneralLink>
 
-              <Link className='basis-1/6 h-full bg-cover group' href={'./epilogo'}>
+              <GeneralLink className='basis-1/6 h-full bg-cover group' href={'./epilogo'}>
                 <div className='flex flex-col h-full'>
                   <div className='text-center lg:py-28'>
                     <p className='text-9xl font-thin'></p>
@@ -391,7 +394,7 @@ export default function Home() {
                   </div>
                   <div className='bg-blend-multiply text-center lg:py-20 2xl:py-24'></div>
                 </div>
-              </Link>
+              </GeneralLink>
             </div>
           </div>
         </div>
