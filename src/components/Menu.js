@@ -1,10 +1,11 @@
+import { useDispatch, useTrackedState } from '@/store';
+import { useEffect, useRef, useState } from 'react';
+
 import Capitulos from '@/data/capitulos';
+import GeneralLink from './GeneralLink';
+import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useRouter } from 'next/router';
-import { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-import { useDispatch, useTrackedState } from '@/store';
-import GeneralLink from './GeneralLink';
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ const Menu = () => {
   const [submenu, setSubMenu] = useState([]);
   const [observers, setObservers] = useState([]);
 
-  const replaceInnerHTML = (innerHTML) => innerHTML?.replace('<br/>', ' ').replace('block', '').replace('text-4xl', '');
+  const replaceInnerHTML = (innerHTML) => innerHTML?.replace('<br/>', ' ').replace('block', '').replace('text-4xl', '').replace('text-3xl', '');
 
   useEffect(() => {
     const getAllHeadlines = () => {

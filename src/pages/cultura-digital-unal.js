@@ -33,8 +33,8 @@ export default function CulturaDigital() {
             </span>
             <div className='overflow-hidden py-8 lg:py-3'>
               <h1 className='chapter-title text-5xl lg:text-6xl font-light'>
-                Cultura Digital Unal:
-                <span className='block chapter-title text-3xl lg:text-4xl  font-extralight mt-2'>
+                Cultura Digital Unal: {" "}
+                <span className='block text-3xl lg:text-4xl  font-extralight mt-2'>
                   caminos a la transformación digital
                 </span>
               </h1>
