@@ -28,9 +28,9 @@ export default function AscendenciasDigitales() {
             </span>
             <div className='overflow-hidden py-8 lg:py-3'>
               <h1 className='chapter-title text-5xl lg:text-6xl font-light'>
-                Ascendencias digitales {" "}
+                Ascendencias digitales:{' '}
                 <span className='block chapter-title text-3xl lg:text-4xl font-extralight mt-2'>
-                perspectivas globales y el caso colombiano
+                  perspectivas globales y el caso colombiano
                 </span>
               </h1>
             </div>

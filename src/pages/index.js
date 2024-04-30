@@ -303,7 +303,7 @@ export default function Home() {
                         className='w-4'
                       />
                     </span>
-                    <h2 className='text-2xl 2xl:text-3xl mt-7'>Ascendencias digitales</h2>
+                    <h2 className='text-2xl 2xl:text-3xl mt-7'>Ascendencias digitales:</h2>
                     <p className='font-extralight text-lg 2xl:text-xl mt-2'>
                       perspectivas globales
                       <span className='lg:block'> y el caso colombiano</span>
